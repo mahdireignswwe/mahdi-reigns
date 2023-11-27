@@ -1,2 +1,2 @@
 # mahdi-Reigns
-# 🆔 telegram: tm.e/Roman_wwe
+# 🆔 telegram: t.me/Roman_wwe
