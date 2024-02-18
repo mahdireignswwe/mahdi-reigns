@@ -1,1 +1,0 @@
-vless://927@00000000:443?type=ws&security=none&path=%2F&encryption=none#%D8%A8%D8%AF%D9%88%D9%86+%D8%B3%D8%B1%D9%88%D8%B1
