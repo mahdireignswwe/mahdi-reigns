@@ -1,4 +1,4 @@
-warp://10oW9fn3-ZGu893N6-98yCsD35@auto
+warp://10oW9fn3-ZGu893N6-98yCsD35/?ifp=5-10
 
 warp://162.159.195.10:5956/?ifp=5-10
 
