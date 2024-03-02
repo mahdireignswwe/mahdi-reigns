@@ -1,7 +1,25 @@
-//profile-title: base64:V0FSUCAoSVJDRik=
-//profile-update-interval: 24
-//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=0
-//support-url: https://t.me/Roman_wwe
-//profile-web-page-url: https://Roman_wwe
+warp://188.114.98.97:4233/?ifp=5-10
 
-warp://auto#WarpInWarp ⭐️&&detour=warp://auto#Warp 🇮🇷
+
+warp://162.159.195.73:4233/?ifp=5-10
+
+
+warp://162.159.192.13:4233/?ifp=5-10
+
+
+warp://162.159.192.25:4233/?ifp=5-10
+
+
+warp://162.159.195.214:4233/?ifp=5-10
+
+
+warp://162.159.195.93:4233/?ifp=5-10
+
+
+warp://188.114.98.2:4233/?ifp=5-10
+
+
+warp://162.159.192.204:4233/?ifp=5-10
+
+
+warp://162.159.192.70:3581/?ifp=5-10
