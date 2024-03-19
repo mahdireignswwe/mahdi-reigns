@@ -1,1 +1,4 @@
-warp://g8O350cu-3279jQnv-57j8ko6A@auto
+//profile-title: WARP
+//profile-update-interval: 24
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+warp://auto
