@@ -1,7 +1,11 @@
+ss://YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ@23.162.200.189:7306#%F0%9F%87%A8%F0%9F%87%A6%E0%BC%BA%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84%E0%BC%BB
+ss://YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ@23.154.136.218:7306#%F0%9F%87%BA%F0%9F%87%B2%E0%BC%BA%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84%E0%BC%BB
+ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==@23.154.136.105:8080#%F0%9F%87%BA%F0%9F%87%B8%E0%BC%BA%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84%E0%BC%BB
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpTZ1lHOTNISzdsbmpFdnUxeGFJMUFo@172.232.45.24:80#%F0%9F%87%A8%F0%9F%87%B5%E0%BC%BA%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84%E0%BC%BB
+vless://a93eacd2-2852-4d84-9355-fd1e6477dccc@108.162.195.89:80?host=esten.free.hr&security=none&type=ws&path=%2F%3Fed%3D2048&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%E0%BC%BA%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84%E0%BC%BB
 vless://78181784-f8a2-43f6-98b4-19a9afb11202@5.42.103.231:12030?host=telewebion.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A8%F0%9F%87%B5+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
 vless://b2172806-cf9a-456d-89b1-7c36b9cad10f@88.198.104.179:39012?host=www.speedtest.net&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
 vless://776e397e-3775-43e2-a073-aee5a238ab77@88.198.104.179:39014?host=www.speedtest.net&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxZWY5akd2QXl6WExMbmpzc1JGcjhN@94.228.169.114:25663#%F0%9F%87%B1%F0%9F%87%BB+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
 vless://da093387-18d7-415a-a81e-4b7f17840a7e@5.75.212.229:39016?host=fast.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
 vless://8986e206-f236-4b87-a9a3-15080d741e05@88.198.104.179:39012?host=www.speedtest.net&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
 vless://9b8c4c50-828d-4cd3-9818-067262909551@88.198.104.179:39014?host=www.speedtest.net&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
