@@ -1,3 +1,1 @@
-warp://188.114.98.248:946/?ifp=5-10
-warp://188.114.98.196:955/?ifp=5-10
-warp://188.114.98.207:946/?ifp=5-10
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@18.175.60.0:443#no.server
