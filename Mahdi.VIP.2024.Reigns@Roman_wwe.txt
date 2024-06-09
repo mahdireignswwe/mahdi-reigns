@@ -1,3 +1,152 @@
+{
+  "remarks": "Test🇩🇪Reigns",
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cloud.kinononva.top",
+            "port": 8080,
+            "users": [
+              {
+                "id": "9cd4db6e-c6ab-41e2-aae7-01e82d725a98",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?ed=2560",
+          "headers": {
+            "Host": "3H2.oMRaM.sHoP"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "fragment",
+          "tcpKeepAliveIdle": 100,
+          "mark": 255,
+          "tcpNoDelay": true
+        }
+      },
+      "mux": {
+        "enabled": true,
+        "concurrency": 8,
+        "xudpConcurrency": 8,
+        "xudpProxyUDP443": "reject"
+      }
+    },
+    {
+      "tag": "fragment",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "AsIs",
+        "fragment": {
+          "packets": "1-1",
+          "length": "10-20",
+          "interval": "1-5"
+        }
+      },
+      "streamSettings": {
+        "sockopt": {
+          "tcpNoDelay": true,
+          "tcpKeepAliveIdle": 100
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "enabled": true
+      },
+      {
+        "id": "5627785659655799759",
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "proxy",
+        "enabled": true
+      }
+    ]
+  }
+}
+
+
+
+
 vless://89b3cbba-e6ac-485a-9481-976a0415eab9@172.67.221.225:443?sni=PPaL03.LUKA-alva.WoRKeRs.Dev&fp=randomized&host=PpAl03.lUkA-alVa.woRkeRS.DeV&alpn=h2,http/1.1&type=ws&security=tls&path=%2FrHTbVEZD742XzHnS%3Fed%3D2560&encryption=none#%F0%9F%87%AE%F0%9F%87%A9%5D%5B%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
 vless://v2ray_best_iran_10@89.235.118.236:55311?host=divarcdn.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%5D%5B%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
 vless://28948c8d-0ec7-40ab-85e0-f71172be14ce@104.17.147.22:8080?host=xn--047h.iman-v2ray.sbs.&security=none&type=ws&path=%2F&encryption=none#%F0%9F%87%AB%F0%9F%87%B7%5D%5B%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84
