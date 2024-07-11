@@ -1,3 +1,12 @@
+vless://ff4c980f-7abe-5ba9-8838-35ed716e5149@104.21.45.66:80?sni=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WoRKeRS.dev&fp=randomized&host=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WoRKeRS.DEV&alpn=h3,h2&type=ws&security=none&path=vless-ws%2F%3Fed%3D2048&encryption=none#%F0%9F%87%B3%F0%9F%87%B1IR-MCI%F0%9F%93%B6%F0%9F%90%B9
+
+vless://ff4c980f-7abe-5ba9-8838-35ed716e5149@104.18.28.155:2052?sni=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WORkeRS.dEV&fp=chrome&host=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WORkeRS.dEV&alpn=h2&type=ws&security=none&path=vless-ws%2F%3Fed%3D2048&encryption=none#%F0%9F%87%B8%F0%9F%87%AAIR-MCI%F0%9F%93%B6%F0%9F%90%B9
+
+vless://ff4c980f-7abe-5ba9-8838-35ed716e5149@104.19.217.148:2052?sni=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.workERs.deV&fp=randomized&host=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.workERs.deV&alpn=h3,h2,http/1.1&type=ws&security=none&path=vless-ws%2F%3Fed%3D2048&encryption=none#%F0%9F%87%A7%F0%9F%87%ACIR-MCI%F0%9F%93%B6%F0%9F%90%B9
+
+vless://ff4c980f-7abe-5ba9-8838-35ed716e5149@104.27.106.225:8880?sni=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WorkeRs.deV&fp=randomized&host=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WorkeRs.deV&alpn=http/1.1&type=ws&security=none&path=vless-ws%2F%3Fed%3D2048&encryption=none#%F0%9F%87%B3%F0%9F%87%B1IR-MCI%F0%9F%93%B6%F0%9F%90%B9
+
+vless://ff4c980f-7abe-5ba9-8838-35ed716e5149@104.20.239.173:80?sni=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WorKeRS.dEv&fp=ios&host=sub.br-server-roman-wwe-mahdi-dns-reigns-wwe-vip-com.WorKeRS.dEv&alpn=h3,h2,http/1.1&type=ws&security=none&path=vless-ws%2F%3Fed%3D2048&encryption=none#%F0%9F%87%A7%F0%9F%87%ACIR-MCI%F0%9F%93%B6%F0%9F%90%B9
 wireguard://GDQNkUoKj7t3ol6gcBPb87cQxNxvjhHdrTqpjFu7qVo%3D@wa.bachebiapain.ir:890?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8e3e%3A1331%3Af25d%3Aea49%3Ac3f8%2F128&reserved=230%2C108%2C227&mtu=1420&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D#insta%F0%9F%9B%9CYouTube
 
 wireguard://wNcZcUQB6AUHzfFZpp7iiujUA3ANFWOWiET4q%2B4VMkU%3D@188.114.97.148:1002?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8f81%3Ad551%3Aa0%3A532e%3Aa2b3%2F128&reserved=100%2C140%2C27&mtu=1280&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D#insta%F0%9F%9B%9CYouTube
