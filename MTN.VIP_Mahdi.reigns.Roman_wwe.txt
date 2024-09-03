@@ -1,6 +1,7 @@
 vless://26c29a39-4947-4b05-92be-90e76120938e@oakstore.bingood.sbs:56009?host=telewebion.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A9%F0%9F%87%AA+Germany
-vless://97588d87-9d5b-4597-9668-a04de8f05018@46.245.72.13:20589?host=Webmail.yjc.ir&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A9%F0%9F%87%AA+Germany
-vless://761e1e0f-12ae-484f-b71a-eeac0b67638a@46.245.72.13:30692?host=Webmail.yjc.ir&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%B5%F0%9F%87%B1+Poland
+vless://0aaf5fb4-f1af-4643-8ff4-9b48231207d9@104.21.19.124:8880?host=mehrnEWs.com.DigIcYBer.CLIck.&security=none&type=httpupgrade&path=%2Fhope%2Fis%2Fall%2Fwe%2Fhave&encryption=none#%F0%9F%87%A9%F0%9F%87%AA+Germany
+vless://0aaf5fb4-f1af-4643-8ff4-9b48231207d9@185.146.173.58:8080?host=fARradars.org.DigIcYBer.CLIck.&security=none&type=httpupgrade&path=%2Fhope%2Fis%2Fall%2Fwe%2Fhave&encryption=none#%F0%9F%87%A9%F0%9F%87%AA+Germany
+vless://91916da6-a63a-4c51-9fc2-b411d6b68594@www.speedtest.net:8080?host=maznet---_-_---maznet2.iMamhussaIn.sbs.&security=none&type=ws&path=%2F%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET%3Fed%3D1024&encryption=none#%F0%9F%87%A8%F0%9F%87%B5+France
 vless://77932067-d448-4511-8acd-c88c4664ed6c@oakstore.bingood.sbs:56009?host=telewebion.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A9%F0%9F%87%AA+Germany
 vless://dd894e42-3510-468a-8893-aa5299151bd0@213.176.0.13:4054?host=header.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%B8%F0%9F%87%AA+Sweden
 vless://7a5a4624-df8d-4955-bccc-b3fa6161411f@www.speedtest.net:80?host=www.speedtest.net.10.10.10.10.ir.xn--g28h.dns-dynamic.neT.&security=none&type=ws&path=%2FTelegram-XV2ry2%3Fed%3D512&encryption=none#%F0%9F%87%AE%F0%9F%87%A9+Singapore
