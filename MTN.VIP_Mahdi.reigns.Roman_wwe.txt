@@ -1,3 +1,4 @@
+vless://c8134247-935b-44d9-b791-4f5c80ffe2b1@16.171.63.64:8081?host=xbox.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A9%F0%9F%87%AA+Germany
 vless://9d1fc09d-815d-48f5-bd53-6ac702df5129@Speedtest.net:443?sni=speedtest.net&fp=firefox&host=ParsashonamFiBot.Com&alpn=h2,http/1.1&type=ws&security=tls&path=%2F%40Parsashonam%2C%40ParsashonamBots%2C%40Parsashonam_Bot%2Fws%2F%3Fed%3D2560&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+Finland
 vless://9d1fc09d-815d-48f5-bd53-6ac702df5129@[2a01:4f9:c011:53fb::1]:12535?security=none&type=tcp&headerType=none&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+Finland
 vless://9d1fc09d-815d-48f5-bd53-6ac702df5129@185.146.173.39:8880?host=Login.CafeBazaar.CYoU.&security=none&type=httpupgrade&path=%2F&encryption=none#%F0%9F%87%AB%F0%9F%87%AE+Finland
