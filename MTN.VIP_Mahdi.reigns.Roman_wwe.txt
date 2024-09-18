@@ -1,4 +1,4 @@
-vless://7e9444c8-93a6-456b-b5aa-1da257c59830@turky.binping.lol:22491?host=telewebion.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A8%F0%9F%87%A6+T%C3%BCrkiye
+vless://7e9444c8-93a6-456b-b5aa-1da257c59830@turky.binping.lol:22491?host=telewebion.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%B9%F0%9F%87%B7+T%C3%BCrkiye
 vless://d5ca2654-93c1-4e4a-9147-08b1453055d6@england.binping.lol:4558?security=none&type=tcp&headerType=none&encryption=none#%F0%9F%87%AC%F0%9F%87%A7+United+Kingdom
 vless://e3624bdb-f7e4-4fb9-9430-481421679e6e@canada.binping.lol:47898?host=telewebion.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A8%F0%9F%87%A6+Canada
 vless://8df07f6e-c060-4962-8c3c-4c95a1599e29@oakstore.bingood.sbs:54450?host=telewebion.com&security=none&type=tcp&headerType=http&encryption=none#%F0%9F%87%A9%F0%9F%87%AA+Germany
