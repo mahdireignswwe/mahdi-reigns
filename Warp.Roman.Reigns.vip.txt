@@ -1,2 +1,1 @@
-warp://3gg16DWH2-Wl42P6350-8h45jyp2@162.159.192.122:880/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#Anonymous&&detour=warp://3gg16DWH2-Wl42P6350-8h45jyp2@auto#Anon-WoW-IPv4
-warp://3gg16DWH2-Wl42P6350-8h45jyp2@188.114.98.104:939/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#Anonymous
+warp://[2606:4700:d1::9d2e:e1f2:3aa9:a108]:1018/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#Anonymous&&detour=warp://auto#Anon-WoW-IPv6
