@@ -1,3 +1,2 @@
-warp://162.159.192.64:1387/?ifp=5-10
-
-warp://188.114.97.7:1180/?ifp=5-10
+warp://3gg16DWH2-Wl42P6350-8h45jyp2@162.159.192.122:880/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#Anonymous&&detour=warp://3gg16DWH2-Wl42P6350-8h45jyp2@auto#Anon-WoW-IPv4
+warp://3gg16DWH2-Wl42P6350-8h45jyp2@188.114.98.104:939/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#Anonymous
