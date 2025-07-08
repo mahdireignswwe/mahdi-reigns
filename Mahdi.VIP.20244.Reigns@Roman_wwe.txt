@@ -1,7 +1,3724 @@
-vless://7586acd8-c1ed-4d33-afb9-df7cadbcc248@91.99.85.92:59884?type=grpc&serviceName=mkghc&authority=&security=reality&pbk=VxnTzM-7FRRYZ_veRcGnwS0LUZOTIVVbzyCSrz-XfSc&fp=chrome&sni=journalofbigdata.springeropen.com&sid=403ac242&spx=%2F#%F0%9F%87%BA%F0%9F%87%B2%201-x7aw248m
+# classes4.dex
 
-trojan://E01liG7MEJ@91.99.85.92:43078?type=grpc&serviceName=&authority=&security=reality&pbk=Azlll5bLnWIJeK8Of4BSpE_VVpHMXKB5WhpGL6X-7y0&fp=chrome&sni=yahoo.com&sid=8c79728f&spx=%2F#%F0%9F%87%A9%F0%9F%87%AA%202-6a7fgpdx
+.class public final Lcom/v2ray/ang/ui/MainActivity;
+.super Lcom/v2ray/ang/ui/BaseActivity;
+.source "MainActivity.kt"
 
-trojan://O1qjjZTpUL@91.99.85.92:41116?type=grpc&serviceName=xmkh&authority=&security=reality&pbk=AQ9tPPRFXDkhqzINxIPLN7lzpMo7fZppHhBWjMcBTQs&fp=chrome&sni=yahoo.com&sid=ab&spx=%2F#%F0%9F%9F%A2-vfm3ix5n
+# interfaces
+.implements Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;
 
-trojan://IPI3b33B4T@91.99.85.92:53481?type=grpc&serviceName=bkop&authority=&security=reality&pbk=SDWmMv0yEmeBQ4g2qi60jeLZxGDahS12q5WedSA2BhA&fp=chrome&sni=yahoo.com&sid=6ae2275704b8&spx=%2F#%F0%9F%9F%A9-am4wr0bz
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/v2ray/ang/ui/MainActivity$Action;,
+        Lcom/v2ray/ang/ui/MainActivity$WhenMappings;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nMainActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MainActivity.kt\ncom/v2ray/ang/ui/MainActivity\n+ 2 ActivityViewModelLazy.kt\nandroidx/activity/ActivityViewModelLazyKt\n+ 3 View.kt\nandroidx/core/view/ViewKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,695:1\n70#2,11:696\n257#3,2:707\n257#3,2:710\n1#4:709\n*S KotlinDebug\n*F\n+ 1 MainActivity.kt\ncom/v2ray/ang/ui/MainActivity\n*L\n78#1:696,11\n245#1:707,2\n262#1:710,2\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u008b\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0015\u0018\u00002\u00020\u00012\u00020\u0002:\u0001OB\u0007¢\u0006\u0004\b\u0003\u0010\u0004J\u0012\u0010$\u001a\u00020%2\b\u0010&\u001a\u0004\u0018\u00010\'H\u0014J\b\u0010(\u001a\u00020%H\u0003J\b\u0010)\u001a\u00020%H\u0002J\b\u0010*\u001a\u00020%H\u0002J\b\u0010+\u001a\u00020%H\u0002J\b\u0010,\u001a\u00020%H\u0002J\b\u0010-\u001a\u00020%H\u0016J\b\u0010.\u001a\u00020%H\u0016J\u0010\u0010/\u001a\u0002002\u0006\u00101\u001a\u000202H\u0016J\u0010\u00103\u001a\u0002002\u0006\u00104\u001a\u000205H\u0016J\u0010\u00106\u001a\u00020%2\u0006\u00107\u001a\u000208H\u0002J\b\u00109\u001a\u000200H\u0002J\b\u0010:\u001a\u000200H\u0002J\u0012\u0010;\u001a\u00020%2\b\u0010<\u001a\u0004\u0018\u00010\u001fH\u0002J\b\u0010=\u001a\u000200H\u0002J\b\u0010>\u001a\u000200H\u0002J\b\u0010?\u001a\u00020%H\u0002J\b\u0010@\u001a\u00020%H\u0002J\b\u0010A\u001a\u00020%H\u0002J\b\u0010B\u001a\u00020%H\u0002J\b\u0010C\u001a\u00020%H\u0002J\b\u0010D\u001a\u00020%H\u0002J\u0010\u0010E\u001a\u00020%2\u0006\u0010F\u001a\u00020GH\u0002J\u0012\u0010H\u001a\u00020%2\b\u0010I\u001a\u0004\u0018\u00010\u001fH\u0002J\u0018\u0010J\u001a\u0002002\u0006\u0010K\u001a\u0002082\u0006\u0010L\u001a\u00020MH\u0016J\u0010\u0010N\u001a\u0002002\u0006\u00104\u001a\u000205H\u0016R\u001b\u0010\u0005\u001a\u00020\u00068BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\t\u0010\n\u001a\u0004\b\u0007\u0010\bR\u001b\u0010\u000b\u001a\u00020\f8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u000f\u0010\n\u001a\u0004\b\r\u0010\u000eR\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0014\u001a\u00020\u0015X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0016R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010\u0019\u001a\u00020\u001a8FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u001d\u0010\n\u001a\u0004\b\u001b\u0010\u001cR\u0014\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u001f0\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020!X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010#\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006P"
+    }
+    d2 = {
+        "Lcom/v2ray/ang/ui/MainActivity;",
+        "Lcom/v2ray/ang/ui/BaseActivity;",
+        "Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;",
+        "<init>",
+        "()V",
+        "binding",
+        "Lcom/v2ray/ang/databinding/ActivityMainBinding;",
+        "getBinding",
+        "()Lcom/v2ray/ang/databinding/ActivityMainBinding;",
+        "binding$delegate",
+        "Lkotlin/Lazy;",
+        "adapter",
+        "Lcom/v2ray/ang/ui/MainRecyclerAdapter;",
+        "getAdapter",
+        "()Lcom/v2ray/ang/ui/MainRecyclerAdapter;",
+        "adapter$delegate",
+        "requestVpnPermission",
+        "Landroidx/activity/result/ActivityResultLauncher;",
+        "Landroid/content/Intent;",
+        "requestSubSettingActivity",
+        "tabGroupListener",
+        "com/v2ray/ang/ui/MainActivity$tabGroupListener$1",
+        "Lcom/v2ray/ang/ui/MainActivity$tabGroupListener$1;",
+        "mItemTouchHelper",
+        "Landroidx/recyclerview/widget/ItemTouchHelper;",
+        "mainViewModel",
+        "Lcom/v2ray/ang/viewmodel/MainViewModel;",
+        "getMainViewModel",
+        "()Lcom/v2ray/ang/viewmodel/MainViewModel;",
+        "mainViewModel$delegate",
+        "requestPermissionLauncher",
+        "",
+        "pendingAction",
+        "Lcom/v2ray/ang/ui/MainActivity$Action;",
+        "chooseFileForCustomConfig",
+        "scanQRCodeForConfig",
+        "onCreate",
+        "",
+        "savedInstanceState",
+        "Landroid/os/Bundle;",
+        "setupViewModel",
+        "migrateLegacy",
+        "initGroupTab",
+        "startV2Ray",
+        "restartV2Ray",
+        "onResume",
+        "onPause",
+        "onCreateOptionsMenu",
+        "",
+        "menu",
+        "Landroid/view/Menu;",
+        "onOptionsItemSelected",
+        "item",
+        "Landroid/view/MenuItem;",
+        "importManually",
+        "createConfigType",
+        "",
+        "importQRcode",
+        "importClipboard",
+        "importBatchConfig",
+        "server",
+        "importConfigLocal",
+        "importConfigViaSub",
+        "exportAll",
+        "delAllConfig",
+        "delDuplicateConfig",
+        "delInvalidConfig",
+        "sortByTestResults",
+        "showFileChooser",
+        "readContentFromUri",
+        "uri",
+        "Landroid/net/Uri;",
+        "setTestState",
+        "content",
+        "onKeyDown",
+        "keyCode",
+        "event",
+        "Landroid/view/KeyEvent;",
+        "onNavigationItemSelected",
+        "Action",
+        "app_playstoreRelease"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final adapter$delegate:Lkotlin/Lazy;
+
+.field private final binding$delegate:Lkotlin/Lazy;
+
+.field private final chooseFileForCustomConfig:Landroidx/activity/result/ActivityResultLauncher;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/ActivityResultLauncher<",
+            "Landroid/content/Intent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mItemTouchHelper:Landroidx/recyclerview/widget/ItemTouchHelper;
+
+.field private final mainViewModel$delegate:Lkotlin/Lazy;
+
+.field private pendingAction:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+.field private final requestPermissionLauncher:Landroidx/activity/result/ActivityResultLauncher;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/ActivityResultLauncher<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final requestSubSettingActivity:Landroidx/activity/result/ActivityResultLauncher;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/ActivityResultLauncher<",
+            "Landroid/content/Intent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final requestVpnPermission:Landroidx/activity/result/ActivityResultLauncher;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/ActivityResultLauncher<",
+            "Landroid/content/Intent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final scanQRCodeForConfig:Landroidx/activity/result/ActivityResultLauncher;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/ActivityResultLauncher<",
+            "Landroid/content/Intent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final tabGroupListener:Lcom/v2ray/ang/ui/MainActivity$tabGroupListener$1;
+
+
+# direct methods
+.method public static synthetic $r8$lambda$1Fr174QH8RZ2TfFg75qGbfcKLJA(Lcom/v2ray/ang/ui/MainActivity;)Z
+    .registers 1
+
+    invoke-static {p0}, Lcom/v2ray/ang/ui/MainActivity;->onCreateOptionsMenu$lambda$14(Lcom/v2ray/ang/ui/MainActivity;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$1K9nU3GOABSKyxj3gJnXdXYSroA(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/Integer;)Lkotlin/Unit;
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setupViewModel$lambda$10(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/Integer;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$8KXQ3JGr2gzCnod4IhaeG-HedMY(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+    .registers 3
+
+    invoke-static {p0, p1, p2}, Lcom/v2ray/ang/ui/MainActivity;->delAllConfig$lambda$15(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$EmbLp-eVyLI9b76ija6UnRQtokA(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+    .registers 1
+
+    invoke-static {p0}, Lcom/v2ray/ang/ui/MainActivity;->adapter_delegate$lambda$1(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$MDWXEW2ZTS2kmlTiPq3DDBqoP5A(Lcom/v2ray/ang/ui/MainActivity;Landroid/view/View;)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->onCreate$lambda$8(Lcom/v2ray/ang/ui/MainActivity;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$OED4JWpuhI9SqYrkBSm3-Bf1xn0(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/String;)Lkotlin/Unit;
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setupViewModel$lambda$11(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$PyDIot3_Gzqk-JpLPetVMY4uiSg(Landroid/content/DialogInterface;I)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->delAllConfig$lambda$16(Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$QCfW3JWOqNQEAHaYMCtO0-K4nKo(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->chooseFileForCustomConfig$lambda$6(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$Sr0EqyLJ__A4lcHYHlCrBEM7WPI(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setupViewModel$lambda$12(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$VjvILG7OdIDT3yvtvE03rFmZSPs(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->requestVpnPermission$lambda$2(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$YazebFTtGVuz3ias6oPbpWM3gJM(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/databinding/ActivityMainBinding;
+    .registers 1
+
+    invoke-static {p0}, Lcom/v2ray/ang/ui/MainActivity;->binding_delegate$lambda$0(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$ZXWaAo0YT4ooaun6-8jEFgVFv3I(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->requestSubSettingActivity$lambda$3(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$c3H6gD7Xktek38hObYe6reucLi8(Landroid/content/DialogInterface;I)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->delInvalidConfig$lambda$20(Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$ng0xeCpZEL5xIIMJkx97fmQ4toE(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+    .registers 3
+
+    invoke-static {p0, p1, p2}, Lcom/v2ray/ang/ui/MainActivity;->delDuplicateConfig$lambda$17(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$oxFlj6SvBtVNDYwC52qEJ_YNxjY(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+    .registers 3
+
+    invoke-static {p0, p1, p2}, Lcom/v2ray/ang/ui/MainActivity;->delInvalidConfig$lambda$19(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$pJAjJ4oA5s4dL6cDMBQBVfitfVw(Lcom/v2ray/ang/ui/MainActivity;Landroid/view/View;)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->onCreate$lambda$9(Lcom/v2ray/ang/ui/MainActivity;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$rYrOMuoYdvPAq28qZVoUAjilGrU(Landroid/content/DialogInterface;I)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->delDuplicateConfig$lambda$18(Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$wHEvdjBzQqMVH05EuqDPqt0kjMI(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->scanQRCodeForConfig$lambda$7(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$yH--h3j3BsrZvcLcqyrdgPRNf9Y(Lcom/v2ray/ang/ui/MainActivity;Z)V
+    .registers 2
+
+    invoke-static {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->requestPermissionLauncher$lambda$5(Lcom/v2ray/ang/ui/MainActivity;Z)V
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 8
+
+    .line 49
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/BaseActivity;-><init>()V
+
+    .line 50
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda18;
+
+    invoke-direct {v0, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda18;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-static {v0}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->binding$delegate:Lkotlin/Lazy;
+
+    .line 54
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda1;
+
+    invoke-direct {v0, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda1;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-static {v0}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->adapter$delegate:Lkotlin/Lazy;
+
+    .line 55
+    new-instance v0, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;
+
+    invoke-direct {v0}, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;-><init>()V
+
+    check-cast v0, Landroidx/activity/result/contract/ActivityResultContract;
+
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda2;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda2;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {p0, v0, v1}, Lcom/v2ray/ang/ui/MainActivity;->registerForActivityResult(Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->requestVpnPermission:Landroidx/activity/result/ActivityResultLauncher;
+
+    .line 60
+    new-instance v0, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;
+
+    invoke-direct {v0}, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;-><init>()V
+
+    check-cast v0, Landroidx/activity/result/contract/ActivityResultContract;
+
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda3;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda3;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {p0, v0, v1}, Lcom/v2ray/ang/ui/MainActivity;->registerForActivityResult(Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->requestSubSettingActivity:Landroidx/activity/result/ActivityResultLauncher;
+
+    .line 63
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$tabGroupListener$1;
+
+    invoke-direct {v0, p0}, Lcom/v2ray/ang/ui/MainActivity$tabGroupListener$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->tabGroupListener:Lcom/v2ray/ang/ui/MainActivity$tabGroupListener$1;
+
+    .line 78
+    move-object v0, p0
+
+    check-cast v0, Landroidx/activity/ComponentActivity;
+
+    .line 700
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$special$$inlined$viewModels$default$1;
+
+    invoke-direct {v1, v0}, Lcom/v2ray/ang/ui/MainActivity$special$$inlined$viewModels$default$1;-><init>(Landroidx/activity/ComponentActivity;)V
+
+    check-cast v1, Lkotlin/jvm/functions/Function0;
+
+    .line 702
+    new-instance v2, Landroidx/lifecycle/ViewModelLazy;
+
+    const-class v3, Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinClass(Ljava/lang/Class;)Lkotlin/reflect/KClass;
+
+    move-result-object v3
+
+    .line 704
+    new-instance v4, Lcom/v2ray/ang/ui/MainActivity$special$$inlined$viewModels$default$2;
+
+    invoke-direct {v4, v0}, Lcom/v2ray/ang/ui/MainActivity$special$$inlined$viewModels$default$2;-><init>(Landroidx/activity/ComponentActivity;)V
+
+    check-cast v4, Lkotlin/jvm/functions/Function0;
+
+    .line 706
+    new-instance v5, Lcom/v2ray/ang/ui/MainActivity$special$$inlined$viewModels$default$3;
+
+    const/4 v6, 0x0
+
+    invoke-direct {v5, v6, v0}, Lcom/v2ray/ang/ui/MainActivity$special$$inlined$viewModels$default$3;-><init>(Lkotlin/jvm/functions/Function0;Landroidx/activity/ComponentActivity;)V
+
+    check-cast v5, Lkotlin/jvm/functions/Function0;
+
+    .line 702
+    invoke-direct {v2, v3, v4, v1, v5}, Landroidx/lifecycle/ViewModelLazy;-><init>(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+
+    check-cast v2, Lkotlin/Lazy;
+
+    .line 78
+    iput-object v2, p0, Lcom/v2ray/ang/ui/MainActivity;->mainViewModel$delegate:Lkotlin/Lazy;
+
+    .line 83
+    new-instance v0, Landroidx/activity/result/contract/ActivityResultContracts$RequestPermission;
+
+    invoke-direct {v0}, Landroidx/activity/result/contract/ActivityResultContracts$RequestPermission;-><init>()V
+
+    check-cast v0, Landroidx/activity/result/contract/ActivityResultContract;
+
+    .line 82
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda4;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda4;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {p0, v0, v1}, Lcom/v2ray/ang/ui/MainActivity;->registerForActivityResult(Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->requestPermissionLauncher:Landroidx/activity/result/ActivityResultLauncher;
+
+    .line 105
+    sget-object v0, Lcom/v2ray/ang/ui/MainActivity$Action;->NONE:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->pendingAction:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    .line 114
+    new-instance v0, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;
+
+    invoke-direct {v0}, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;-><init>()V
+
+    check-cast v0, Landroidx/activity/result/contract/ActivityResultContract;
+
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda5;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda5;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {p0, v0, v1}, Lcom/v2ray/ang/ui/MainActivity;->registerForActivityResult(Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->chooseFileForCustomConfig:Landroidx/activity/result/ActivityResultLauncher;
+
+    .line 121
+    new-instance v0, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;
+
+    invoke-direct {v0}, Landroidx/activity/result/contract/ActivityResultContracts$StartActivityForResult;-><init>()V
+
+    check-cast v0, Landroidx/activity/result/contract/ActivityResultContract;
+
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda6;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda6;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {p0, v0, v1}, Lcom/v2ray/ang/ui/MainActivity;->registerForActivityResult(Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->scanQRCodeForConfig:Landroidx/activity/result/ActivityResultLauncher;
+
+    return-void
+.end method
+
+.method public static final synthetic access$getBinding(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/databinding/ActivityMainBinding;
+    .registers 1
+
+    .line 49
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic access$initGroupTab(Lcom/v2ray/ang/ui/MainActivity;)V
+    .registers 1
+
+    .line 49
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->initGroupTab()V
+
+    return-void
+.end method
+
+.method public static final synthetic access$startV2Ray(Lcom/v2ray/ang/ui/MainActivity;)V
+    .registers 1
+
+    .line 49
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->startV2Ray()V
+
+    return-void
+.end method
+
+.method private static final adapter_delegate$lambda$1(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+    .registers 2
+
+    .line 54
+    new-instance v0, Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    invoke-direct {v0, p0}, Lcom/v2ray/ang/ui/MainRecyclerAdapter;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    return-object v0
+.end method
+
+.method private static final binding_delegate$lambda$0(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/databinding/ActivityMainBinding;
+    .registers 1
+
+    .line 51
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/v2ray/ang/databinding/ActivityMainBinding;->inflate(Landroid/view/LayoutInflater;)Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final chooseFileForCustomConfig$lambda$6(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 4
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 115
+    invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->getData()Landroid/content/Intent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_10
+
+    invoke-virtual {v0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object v0
+
+    goto :goto_11
+
+    :cond_10
+    const/4 v0, 0x0
+
+    .line 116
+    :goto_11
+    invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->getResultCode()I
+
+    move-result p1
+
+    const/4 v1, -0x1
+
+    if-ne p1, v1, :cond_1d
+
+    if-eqz v0, :cond_1d
+
+    .line 117
+    invoke-direct {p0, v0}, Lcom/v2ray/ang/ui/MainActivity;->readContentFromUri(Landroid/net/Uri;)V
+
+    :cond_1d
+    return-void
+.end method
+
+.method private final delAllConfig()V
+    .registers 4
+
+    .line 540
+    new-instance v0, Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    sget v1, Lcom/v2ray/ang/R$string;->del_config_comfirm:I
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 541
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda0;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda0;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    const v2, 0x104000a
+
+    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 552
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda10;
+
+    invoke-direct {v1}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda10;-><init>()V
+
+    const/high16 v2, 0x1040000
+
+    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 555
+    invoke-virtual {v0}, Landroidx/appcompat/app/AlertDialog$Builder;->show()Landroidx/appcompat/app/AlertDialog;
+
+    return-void
+.end method
+
+.method private static final delAllConfig$lambda$15(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+    .registers 9
+
+    .line 542
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->pbWaiting:Lcom/google/android/material/progressindicator/LinearProgressIndicator;
+
+    invoke-virtual {p1}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->show()V
+
+    .line 543
+    move-object p1, p0
+
+    check-cast p1, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {p1}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object p1
+
+    move-object v0, p1
+
+    check-cast v0, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object p1
+
+    move-object v1, p1
+
+    check-cast v1, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance p1, Lcom/v2ray/ang/ui/MainActivity$delAllConfig$1$1;
+
+    const/4 p2, 0x0
+
+    invoke-direct {p1, p0, p2}, Lcom/v2ray/ang/ui/MainActivity$delAllConfig$1$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v3, p1
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private static final delAllConfig$lambda$16(Landroid/content/DialogInterface;I)V
+    .registers 2
+
+    return-void
+.end method
+
+.method private final delDuplicateConfig()V
+    .registers 4
+
+    .line 559
+    new-instance v0, Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    sget v1, Lcom/v2ray/ang/R$string;->del_config_comfirm:I
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 560
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda16;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda16;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    const v2, 0x104000a
+
+    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 571
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda17;
+
+    invoke-direct {v1}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda17;-><init>()V
+
+    const/high16 v2, 0x1040000
+
+    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 574
+    invoke-virtual {v0}, Landroidx/appcompat/app/AlertDialog$Builder;->show()Landroidx/appcompat/app/AlertDialog;
+
+    return-void
+.end method
+
+.method private static final delDuplicateConfig$lambda$17(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+    .registers 9
+
+    .line 561
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->pbWaiting:Lcom/google/android/material/progressindicator/LinearProgressIndicator;
+
+    invoke-virtual {p1}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->show()V
+
+    .line 562
+    move-object p1, p0
+
+    check-cast p1, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {p1}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object p1
+
+    move-object v0, p1
+
+    check-cast v0, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object p1
+
+    move-object v1, p1
+
+    check-cast v1, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance p1, Lcom/v2ray/ang/ui/MainActivity$delDuplicateConfig$1$1;
+
+    const/4 p2, 0x0
+
+    invoke-direct {p1, p0, p2}, Lcom/v2ray/ang/ui/MainActivity$delDuplicateConfig$1$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v3, p1
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private static final delDuplicateConfig$lambda$18(Landroid/content/DialogInterface;I)V
+    .registers 2
+
+    return-void
+.end method
+
+.method private final delInvalidConfig()V
+    .registers 4
+
+    .line 578
+    new-instance v0, Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    sget v1, Lcom/v2ray/ang/R$string;->del_invalid_config_comfirm:I
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 579
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda11;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda11;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    const v2, 0x104000a
+
+    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 590
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda12;
+
+    invoke-direct {v1}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda12;-><init>()V
+
+    const/high16 v2, 0x1040000
+
+    invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 593
+    invoke-virtual {v0}, Landroidx/appcompat/app/AlertDialog$Builder;->show()Landroidx/appcompat/app/AlertDialog;
+
+    return-void
+.end method
+
+.method private static final delInvalidConfig$lambda$19(Lcom/v2ray/ang/ui/MainActivity;Landroid/content/DialogInterface;I)V
+    .registers 9
+
+    .line 580
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->pbWaiting:Lcom/google/android/material/progressindicator/LinearProgressIndicator;
+
+    invoke-virtual {p1}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->show()V
+
+    .line 581
+    move-object p1, p0
+
+    check-cast p1, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {p1}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object p1
+
+    move-object v0, p1
+
+    check-cast v0, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object p1
+
+    move-object v1, p1
+
+    check-cast v1, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance p1, Lcom/v2ray/ang/ui/MainActivity$delInvalidConfig$1$1;
+
+    const/4 p2, 0x0
+
+    invoke-direct {p1, p0, p2}, Lcom/v2ray/ang/ui/MainActivity$delInvalidConfig$1$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v3, p1
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private static final delInvalidConfig$lambda$20(Landroid/content/DialogInterface;I)V
+    .registers 2
+
+    return-void
+.end method
+
+.method private final exportAll()V
+    .registers 8
+
+    .line 526
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->pbWaiting:Lcom/google/android/material/progressindicator/LinearProgressIndicator;
+
+    invoke-virtual {v0}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->show()V
+
+    .line 527
+    move-object v0, p0
+
+    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {v0}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$exportAll$1;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, p0, v3}, Lcom/v2ray/ang/ui/MainActivity$exportAll$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v4, v0
+
+    check-cast v4, Lkotlin/jvm/functions/Function2;
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private final getAdapter()Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+    .registers 2
+
+    .line 54
+    iget-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->adapter$delegate:Lkotlin/Lazy;
+
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    return-object v0
+.end method
+
+.method private final getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+    .registers 2
+
+    .line 50
+    iget-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->binding$delegate:Lkotlin/Lazy;
+
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    return-object v0
+.end method
+
+.method private final importBatchConfig(Ljava/lang/String;)V
+    .registers 9
+
+    .line 461
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->pbWaiting:Lcom/google/android/material/progressindicator/LinearProgressIndicator;
+
+    invoke-virtual {v0}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->show()V
+
+    .line 463
+    move-object v0, p0
+
+    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {v0}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$importBatchConfig$1;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, p1, p0, v3}, Lcom/v2ray/ang/ui/MainActivity$importBatchConfig$1;-><init>(Ljava/lang/String;Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v4, v0
+
+    check-cast v4, Lkotlin/jvm/functions/Function2;
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private final importClipboard()Z
+    .registers 4
+
+    .line 451
+    :try_start_0
+    sget-object v0, Lcom/v2ray/ang/util/Utils;->INSTANCE:Lcom/v2ray/ang/util/Utils;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Lcom/v2ray/ang/util/Utils;->getClipboard(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 452
+    invoke-direct {p0, v0}, Lcom/v2ray/ang/ui/MainActivity;->importBatchConfig(Ljava/lang/String;)V
+    :try_end_c
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_c} :catch_e
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :catch_e
+    move-exception v0
+
+    .line 454
+    const-string v1, "Failed to import config from clipboard"
+
+    check-cast v0, Ljava/lang/Throwable;
+
+    const-string v2, "com.v2ray.ang"
+
+    invoke-static {v2, v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method private final importConfigLocal()Z
+    .registers 4
+
+    .line 494
+    :try_start_0
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->showFileChooser()V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_3} :catch_5
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :catch_5
+    move-exception v0
+
+    .line 496
+    const-string v1, "Failed to import config from local file"
+
+    check-cast v0, Ljava/lang/Throwable;
+
+    const-string v2, "com.v2ray.ang"
+
+    invoke-static {v2, v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method private final importConfigViaSub()Z
+    .registers 8
+
+    .line 507
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->pbWaiting:Lcom/google/android/material/progressindicator/LinearProgressIndicator;
+
+    invoke-virtual {v0}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->show()V
+
+    .line 509
+    move-object v0, p0
+
+    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {v0}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$importConfigViaSub$1;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, p0, v3}, Lcom/v2ray/ang/ui/MainActivity$importConfigViaSub$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v4, v0
+
+    check-cast v4, Lkotlin/jvm/functions/Function2;
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method private final importManually(I)V
+    .registers 4
+
+    .line 424
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 425
+    const-string v1, "createConfigType"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    move-result-object p1
+
+    .line 426
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->getSubscriptionId()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "subscriptionId"
+
+    invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object p1
+
+    .line 427
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-class v1, Lcom/v2ray/ang/ui/ServerActivity;
+
+    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    move-result-object p1
+
+    .line 423
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
+.method private final importQRcode()Z
+    .registers 5
+
+    .line 436
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-string v1, "android.permission.CAMERA"
+
+    invoke-static {v0, v1}, Landroidx/core/content/ContextCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v2
+
+    if-nez v2, :cond_18
+
+    .line 437
+    iget-object v1, p0, Lcom/v2ray/ang/ui/MainActivity;->scanQRCodeForConfig:Landroidx/activity/result/ActivityResultLauncher;
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-class v3, Lcom/v2ray/ang/ui/ScannerActivity;
+
+    invoke-direct {v2, v0, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v1, v2}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    goto :goto_21
+
+    .line 439
+    :cond_18
+    sget-object v0, Lcom/v2ray/ang/ui/MainActivity$Action;->IMPORT_QR_CODE_CONFIG:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->pendingAction:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    .line 440
+    iget-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->requestPermissionLauncher:Landroidx/activity/result/ActivityResultLauncher;
+
+    invoke-virtual {v0, v1}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    :goto_21
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method private final initGroupTab()V
+    .registers 9
+
+    .line 243
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    iget-object v1, p0, Lcom/v2ray/ang/ui/MainActivity;->tabGroupListener:Lcom/v2ray/ang/ui/MainActivity$tabGroupListener$1;
+
+    check-cast v1, Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/tabs/TabLayout;->removeOnTabSelectedListener(Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;)V
+
+    .line 244
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->removeAllTabs()V
+
+    .line 245
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    const-string v1, "tabGroup"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/view/View;
+
+    const/16 v2, 0x8
+
+    .line 707
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 247
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    move-object v2, p0
+
+    check-cast v2, Landroid/content/Context;
+
+    invoke-virtual {v0, v2}, Lcom/v2ray/ang/viewmodel/MainViewModel;->getSubscriptions(Landroid/content/Context;)Lkotlin/Pair;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/List;
+
+    invoke-virtual {v0}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    if-eqz v2, :cond_d3
+
+    if-nez v0, :cond_45
+
+    goto/16 :goto_d3
+
+    .line 252
+    :cond_45
+    move-object v3, v0
+
+    check-cast v3, Ljava/util/Collection;
+
+    invoke-interface {v3}, Ljava/util/Collection;->size()I
+
+    move-result v3
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    :goto_4e
+    if-ge v5, v3, :cond_7b
+
+    .line 253
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v6
+
+    iget-object v6, v6, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    invoke-virtual {v6}, Lcom/google/android/material/tabs/TabLayout;->newTab()Lcom/google/android/material/tabs/TabLayout$Tab;
+
+    move-result-object v6
+
+    const-string v7, "newTab(...)"
+
+    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 254
+    invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/CharSequence;
+
+    invoke-virtual {v6, v7}, Lcom/google/android/material/tabs/TabLayout$Tab;->setText(Ljava/lang/CharSequence;)Lcom/google/android/material/tabs/TabLayout$Tab;
+
+    .line 255
+    invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Lcom/google/android/material/tabs/TabLayout$Tab;->setTag(Ljava/lang/Object;)Lcom/google/android/material/tabs/TabLayout$Tab;
+
+    .line 256
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v7
+
+    iget-object v7, v7, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    invoke-virtual {v7, v6}, Lcom/google/android/material/tabs/TabLayout;->addTab(Lcom/google/android/material/tabs/TabLayout$Tab;)V
+
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_4e
+
+    .line 259
+    :cond_7b
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->getSubscriptionId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {v2, v0}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Ljava/lang/Number;
+
+    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
+
+    move-result v3
+
+    if-ltz v3, :cond_95
+
+    goto :goto_96
+
+    :cond_95
+    const/4 v0, 0x0
+
+    :goto_96
+    if-eqz v0, :cond_9d
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    goto :goto_a5
+
+    :cond_9d
+    check-cast v2, Ljava/util/Collection;
+
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    .line 260
+    :goto_a5
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v3
+
+    iget-object v3, v3, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    invoke-virtual {v3, v0}, Lcom/google/android/material/tabs/TabLayout;->getTabAt(I)Lcom/google/android/material/tabs/TabLayout$Tab;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Lcom/google/android/material/tabs/TabLayout;->selectTab(Lcom/google/android/material/tabs/TabLayout$Tab;)V
+
+    .line 261
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    iget-object v2, p0, Lcom/v2ray/ang/ui/MainActivity;->tabGroupListener:Lcom/v2ray/ang/ui/MainActivity$tabGroupListener$1;
+
+    check-cast v2, Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;
+
+    invoke-virtual {v0, v2}, Lcom/google/android/material/tabs/TabLayout;->addOnTabSelectedListener(Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;)V
+
+    .line 262
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tabGroup:Lcom/google/android/material/tabs/TabLayout;
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/view/View;
+
+    .line 710
+    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_d3
+    :goto_d3
+    return-void
+.end method
+
+.method private final migrateLegacy()V
+    .registers 8
+
+    .line 228
+    move-object v0, p0
+
+    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {v0}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$migrateLegacy$1;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, p0, v3}, Lcom/v2ray/ang/ui/MainActivity$migrateLegacy$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v4, v0
+
+    check-cast v4, Lkotlin/jvm/functions/Function2;
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private static final onCreate$lambda$8(Lcom/v2ray/ang/ui/MainActivity;Landroid/view/View;)V
+    .registers 3
+
+    .line 134
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/viewmodel/MainViewModel;->isRunning()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1f
+
+    .line 135
+    sget-object p1, Lcom/v2ray/ang/service/V2RayServiceManager;->INSTANCE:Lcom/v2ray/ang/service/V2RayServiceManager;
+
+    check-cast p0, Landroid/content/Context;
+
+    invoke-virtual {p1, p0}, Lcom/v2ray/ang/service/V2RayServiceManager;->stopVService(Landroid/content/Context;)V
+
+    return-void
+
+    .line 136
+    :cond_1f
+    sget-object p1, Lcom/v2ray/ang/handler/MmkvManager;->INSTANCE:Lcom/v2ray/ang/handler/MmkvManager;
+
+    const-string v0, "pref_mode"
+
+    invoke-virtual {p1, v0}, Lcom/v2ray/ang/handler/MmkvManager;->decodeSettingsString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "VPN"
+
+    if-nez p1, :cond_2c
+
+    move-object p1, v0
+
+    :cond_2c
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_45
+
+    .line 137
+    move-object p1, p0
+
+    check-cast p1, Landroid/content/Context;
+
+    invoke-static {p1}, Landroid/net/VpnService;->prepare(Landroid/content/Context;)Landroid/content/Intent;
+
+    move-result-object p1
+
+    if-nez p1, :cond_3f
+
+    .line 139
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->startV2Ray()V
+
+    return-void
+
+    .line 141
+    :cond_3f
+    iget-object p0, p0, Lcom/v2ray/ang/ui/MainActivity;->requestVpnPermission:Landroidx/activity/result/ActivityResultLauncher;
+
+    invoke-virtual {p0, p1}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    return-void
+
+    .line 144
+    :cond_45
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->startV2Ray()V
+
+    return-void
+.end method
+
+.method private static final onCreate$lambda$9(Lcom/v2ray/ang/ui/MainActivity;Landroid/view/View;)V
+    .registers 3
+
+    .line 148
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/viewmodel/MainViewModel;->isRunning()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_27
+
+    .line 149
+    sget p1, Lcom/v2ray/ang/R$string;->connection_test_testing:I
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setTestState(Ljava/lang/String;)V
+
+    .line 150
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->testCurrentServerRealPing()V
+
+    :cond_27
+    return-void
+.end method
+
+.method private static final onCreateOptionsMenu$lambda$14(Lcom/v2ray/ang/ui/MainActivity;)Z
+    .registers 2
+
+    .line 308
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object p0
+
+    const-string v0, ""
+
+    invoke-virtual {p0, v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->filterConfig(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private final readContentFromUri(Landroid/net/Uri;)V
+    .registers 6
+
+    .line 633
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x21
+
+    if-lt v0, v1, :cond_9
+
+    .line 634
+    const-string v0, "android.permission.READ_MEDIA_IMAGES"
+
+    goto :goto_b
+
+    .line 636
+    :cond_9
+    const-string v0, "android.permission.READ_EXTERNAL_STORAGE"
+
+    .line 639
+    :goto_b
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-static {v1, v0}, Landroidx/core/content/ContextCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v1
+
+    if-nez v1, :cond_65
+
+    .line 641
+    :try_start_14
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/io/Closeable;
+    :try_end_1e
+    .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_1e} :catch_56
+
+    :try_start_1e
+    move-object v0, p1
+
+    check-cast v0, Ljava/io/InputStream;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_43
+
+    .line 642
+    sget-object v2, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
+
+    new-instance v3, Ljava/io/InputStreamReader;
+
+    invoke-direct {v3, v0, v2}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
+
+    check-cast v3, Ljava/io/Reader;
+
+    instance-of v0, v3, Ljava/io/BufferedReader;
+
+    if-eqz v0, :cond_34
+
+    check-cast v3, Ljava/io/BufferedReader;
+
+    goto :goto_3c
+
+    :cond_34
+    new-instance v0, Ljava/io/BufferedReader;
+
+    const/16 v2, 0x2000
+
+    invoke-direct {v0, v3, v2}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;I)V
+
+    move-object v3, v0
+
+    :goto_3c
+    check-cast v3, Ljava/io/Reader;
+
+    invoke-static {v3}, Lkotlin/io/TextStreamsKt;->readText(Ljava/io/Reader;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_44
+
+    :cond_43
+    move-object v0, v1
+
+    :goto_44
+    invoke-direct {p0, v0}, Lcom/v2ray/ang/ui/MainActivity;->importBatchConfig(Ljava/lang/String;)V
+
+    .line 643
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    :try_end_49
+    .catchall {:try_start_1e .. :try_end_49} :catchall_4f
+
+    .line 641
+    :try_start_49
+    invoke-static {p1, v1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    :try_end_4e
+    .catch Ljava/lang/Exception; {:try_start_49 .. :try_end_4e} :catch_56
+
+    return-void
+
+    :catchall_4f
+    move-exception v0
+
+    :try_start_50
+    throw v0
+    :try_end_51
+    .catchall {:try_start_50 .. :try_end_51} :catchall_51
+
+    :catchall_51
+    move-exception v1
+
+    :try_start_52
+    invoke-static {p1, v0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    throw v1
+    :try_end_56
+    .catch Ljava/lang/Exception; {:try_start_52 .. :try_end_56} :catch_56
+
+    :catch_56
+    move-exception p1
+
+    .line 645
+    const-string v0, "Failed to read content from URI"
+
+    check-cast p1, Ljava/lang/Throwable;
+
+    const-string v1, "com.v2ray.ang"
+
+    invoke-static {v1, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    return-void
+
+    .line 648
+    :cond_65
+    iget-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->requestPermissionLauncher:Landroidx/activity/result/ActivityResultLauncher;
+
+    invoke-virtual {p1, v0}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method private static final requestPermissionLauncher$lambda$5(Lcom/v2ray/ang/ui/MainActivity;Z)V
+    .registers 5
+
+    if-eqz p1, :cond_4b
+
+    .line 86
+    iget-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->pendingAction:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    sget-object v0, Lcom/v2ray/ang/ui/MainActivity$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/ui/MainActivity$Action;->ordinal()I
+
+    move-result p1
+
+    aget p1, v0, p1
+
+    const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_3b
+
+    const/4 v0, 0x2
+
+    if-eq p1, v0, :cond_13
+
+    goto :goto_53
+
+    .line 91
+    :cond_13
+    iget-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->chooseFileForCustomConfig:Landroidx/activity/result/ActivityResultLauncher;
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.GET_CONTENT"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 92
+    const-string v1, "*/*"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 93
+    const-string v1, "android.intent.category.OPENABLE"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 94
+    sget v1, Lcom/v2ray/ang/R$string;->title_file_chooser:I
+
+    invoke-virtual {p0, v1}, Lcom/v2ray/ang/ui/MainActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    .line 91
+    invoke-static {v0, v1}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    const-string v1, "createChooser(...)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1, v0}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    goto :goto_53
+
+    .line 88
+    :cond_3b
+    iget-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->scanQRCodeForConfig:Landroidx/activity/result/ActivityResultLauncher;
+
+    new-instance v0, Landroid/content/Intent;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    const-class v2, Lcom/v2ray/ang/ui/ScannerActivity;
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p1, v0}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    goto :goto_53
+
+    .line 100
+    :cond_4b
+    move-object p1, p0
+
+    check-cast p1, Landroid/content/Context;
+
+    sget v0, Lcom/v2ray/ang/R$string;->toast_permission_denied:I
+
+    invoke-static {p1, v0}, Lcom/v2ray/ang/extension/_ExtKt;->toast(Landroid/content/Context;I)V
+
+    .line 102
+    :goto_53
+    sget-object p1, Lcom/v2ray/ang/ui/MainActivity$Action;->NONE:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    iput-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->pendingAction:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    return-void
+.end method
+
+.method private static final requestSubSettingActivity$lambda$3(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 3
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 61
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->initGroupTab()V
+
+    return-void
+.end method
+
+.method private static final requestVpnPermission$lambda$2(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 3
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 56
+    invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->getResultCode()I
+
+    move-result p1
+
+    const/4 v0, -0x1
+
+    if-ne p1, v0, :cond_f
+
+    .line 57
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->startV2Ray()V
+
+    :cond_f
+    return-void
+.end method
+
+.method private final restartV2Ray()V
+    .registers 8
+
+    .line 274
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->isRunning()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1f
+
+    .line 275
+    sget-object v0, Lcom/v2ray/ang/service/V2RayServiceManager;->INSTANCE:Lcom/v2ray/ang/service/V2RayServiceManager;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Lcom/v2ray/ang/service/V2RayServiceManager;->stopVService(Landroid/content/Context;)V
+
+    .line 277
+    :cond_1f
+    move-object v0, p0
+
+    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {v0}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$restartV2Ray$1;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, p0, v2}, Lcom/v2ray/ang/ui/MainActivity$restartV2Ray$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v4, v0
+
+    check-cast v4, Lkotlin/jvm/functions/Function2;
+
+    const/4 v5, 0x3
+
+    const/4 v6, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private static final scanQRCodeForConfig$lambda$7(Lcom/v2ray/ang/ui/MainActivity;Landroidx/activity/result/ActivityResult;)V
+    .registers 4
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 122
+    invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->getResultCode()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_1d
+
+    .line 123
+    invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->getData()Landroid/content/Intent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_19
+
+    const-string v0, "SCAN_RESULT"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_1a
+
+    :cond_19
+    const/4 p1, 0x0
+
+    :goto_1a
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importBatchConfig(Ljava/lang/String;)V
+
+    :cond_1d
+    return-void
+.end method
+
+.method private final setTestState(Ljava/lang/String;)V
+    .registers 3
+
+    .line 653
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->tvTestState:Landroid/widget/TextView;
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    return-void
+.end method
+
+.method private final setupViewModel()V
+    .registers 5
+
+    .line 201
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->getUpdateListAction()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object v0
+
+    move-object v1, p0
+
+    check-cast v1, Landroidx/lifecycle/LifecycleOwner;
+
+    new-instance v2, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda7;
+
+    invoke-direct {v2, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda7;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    new-instance v3, Lcom/v2ray/ang/ui/MainActivity$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {v3, v2}, Lcom/v2ray/ang/ui/MainActivity$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast v3, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/MutableLiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 208
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->getUpdateTestResultAction()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object v0
+
+    new-instance v2, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda8;
+
+    invoke-direct {v2, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda8;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    new-instance v3, Lcom/v2ray/ang/ui/MainActivity$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {v3, v2}, Lcom/v2ray/ang/ui/MainActivity$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast v3, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/MutableLiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 209
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->isRunning()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object v0
+
+    new-instance v2, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda9;
+
+    invoke-direct {v2, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda9;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    new-instance v3, Lcom/v2ray/ang/ui/MainActivity$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {v3, v2}, Lcom/v2ray/ang/ui/MainActivity$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast v3, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/MutableLiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 223
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->startListenBroadcast()V
+
+    .line 224
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getAssets()Landroid/content/res/AssetManager;
+
+    move-result-object v1
+
+    const-string v2, "getAssets(...)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/v2ray/ang/viewmodel/MainViewModel;->initAssets(Landroid/content/res/AssetManager;)V
+
+    return-void
+.end method
+
+.method private static final setupViewModel$lambda$10(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/Integer;)Lkotlin/Unit;
+    .registers 3
+
+    .line 202
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    if-ltz v0, :cond_15
+
+    .line 203
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getAdapter()Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    move-result-object p0
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainRecyclerAdapter;->notifyItemChanged(I)V
+
+    goto :goto_1c
+
+    .line 205
+    :cond_15
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getAdapter()Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainRecyclerAdapter;->notifyDataSetChanged()V
+
+    .line 207
+    :goto_1c
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final setupViewModel$lambda$11(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/String;)Lkotlin/Unit;
+    .registers 2
+
+    .line 208
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setTestState(Ljava/lang/String;)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final setupViewModel$lambda$12(Lcom/v2ray/ang/ui/MainActivity;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .registers 4
+
+    .line 210
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getAdapter()Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    move-result-object v0
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/v2ray/ang/ui/MainRecyclerAdapter;->setRunning(Z)V
+
+    .line 211
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_49
+
+    .line 212
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->fab:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+
+    sget v0, Lcom/v2ray/ang/R$drawable;->ic_stop_24dp:I
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setImageResource(I)V
+
+    .line 213
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->fab:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    sget v1, Lcom/v2ray/ang/R$color;->color_fab_active:I
+
+    invoke-static {v0, v1}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
+
+    move-result v0
+
+    invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
+
+    .line 214
+    sget p1, Lcom/v2ray/ang/R$string;->connection_connected:I
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setTestState(Ljava/lang/String;)V
+
+    .line 215
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p0
+
+    iget-object p0, p0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->layoutTest:Landroid/widget/LinearLayout;
+
+    const/4 p1, 0x1
+
+    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setFocusable(Z)V
+
+    goto :goto_7d
+
+    .line 217
+    :cond_49
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->fab:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+
+    sget v0, Lcom/v2ray/ang/R$drawable;->ic_play_24dp:I
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setImageResource(I)V
+
+    .line 218
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->fab:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    sget v1, Lcom/v2ray/ang/R$color;->color_fab_inactive:I
+
+    invoke-static {v0, v1}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
+
+    move-result v0
+
+    invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
+
+    .line 219
+    sget p1, Lcom/v2ray/ang/R$string;->connection_not_connected:I
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setTestState(Ljava/lang/String;)V
+
+    .line 220
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p0
+
+    iget-object p0, p0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->layoutTest:Landroid/widget/LinearLayout;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setFocusable(Z)V
+
+    .line 222
+    :goto_7d
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private final showFileChooser()V
+    .registers 4
+
+    .line 611
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.GET_CONTENT"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 612
+    const-string v1, "*/*"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 613
+    const-string v1, "android.intent.category.OPENABLE"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 615
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x21
+
+    if-lt v1, v2, :cond_1a
+
+    .line 616
+    const-string v1, "android.permission.READ_MEDIA_IMAGES"
+
+    goto :goto_1c
+
+    .line 618
+    :cond_1a
+    const-string v1, "android.permission.READ_EXTERNAL_STORAGE"
+
+    .line 621
+    :goto_1c
+    move-object v2, p0
+
+    check-cast v2, Landroid/content/Context;
+
+    invoke-static {v2, v1}, Landroidx/core/content/ContextCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v2
+
+    if-nez v2, :cond_40
+
+    .line 622
+    sget-object v1, Lcom/v2ray/ang/ui/MainActivity$Action;->READ_CONTENT_FROM_URI:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    iput-object v1, p0, Lcom/v2ray/ang/ui/MainActivity;->pendingAction:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    .line 623
+    iget-object v1, p0, Lcom/v2ray/ang/ui/MainActivity;->chooseFileForCustomConfig:Landroidx/activity/result/ActivityResultLauncher;
+
+    sget v2, Lcom/v2ray/ang/R$string;->title_file_chooser:I
+
+    invoke-virtual {p0, v2}, Lcom/v2ray/ang/ui/MainActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/CharSequence;
+
+    invoke-static {v0, v2}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    const-string v2, "createChooser(...)"
+
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    return-void
+
+    .line 625
+    :cond_40
+    iget-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->requestPermissionLauncher:Landroidx/activity/result/ActivityResultLauncher;
+
+    invoke-virtual {v0, v1}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method private final sortByTestResults()V
+    .registers 8
+
+    .line 597
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->pbWaiting:Lcom/google/android/material/progressindicator/LinearProgressIndicator;
+
+    invoke-virtual {v0}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->show()V
+
+    .line 598
+    move-object v0, p0
+
+    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
+
+    invoke-static {v0}, Landroidx/lifecycle/LifecycleOwnerKt;->getLifecycleScope(Landroidx/lifecycle/LifecycleOwner;)Landroidx/lifecycle/LifecycleCoroutineScope;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$sortByTestResults$1;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, p0, v3}, Lcom/v2ray/ang/ui/MainActivity$sortByTestResults$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;Lkotlin/coroutines/Continuation;)V
+
+    move-object v4, v0
+
+    check-cast v4, Lkotlin/jvm/functions/Function2;
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
+.method private final startV2Ray()V
+    .registers 5
+
+    .line 266
+    sget-object v0, Lcom/v2ray/ang/handler/MmkvManager;->INSTANCE:Lcom/v2ray/ang/handler/MmkvManager;
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/handler/MmkvManager;->getSelectServer()Ljava/lang/String;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    if-eqz v0, :cond_1c
+
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    move-result v0
+
+    if-nez v0, :cond_11
+
+    goto :goto_1c
+
+    .line 270
+    :cond_11
+    sget-object v0, Lcom/v2ray/ang/service/V2RayServiceManager;->INSTANCE:Lcom/v2ray/ang/service/V2RayServiceManager;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    const/4 v2, 0x2
+
+    const/4 v3, 0x0
+
+    invoke-static {v0, v1, v3, v2, v3}, Lcom/v2ray/ang/service/V2RayServiceManager;->startVService$default(Lcom/v2ray/ang/service/V2RayServiceManager;Landroid/content/Context;Ljava/lang/String;ILjava/lang/Object;)V
+
+    return-void
+
+    .line 267
+    :cond_1c
+    :goto_1c
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    sget v1, Lcom/v2ray/ang/R$string;->title_file_chooser:I
+
+    invoke-static {v0, v1}, Lcom/v2ray/ang/extension/_ExtKt;->toast(Landroid/content/Context;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+    .registers 2
+
+    .line 78
+    iget-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->mainViewModel$delegate:Lkotlin/Lazy;
+
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    return-object v0
+.end method
+
+.method protected onCreate(Landroid/os/Bundle;)V
+    .registers 13
+
+    .line 128
+    invoke-super {p0, p1}, Lcom/v2ray/ang/ui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 129
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/databinding/ActivityMainBinding;->getRoot()Landroidx/drawerlayout/widget/DrawerLayout;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setContentView(Landroid/view/View;)V
+
+    .line 130
+    sget p1, Lcom/v2ray/ang/R$string;->title_server:I
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 131
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->toolbar:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->setSupportActionBar(Landroidx/appcompat/widget/Toolbar;)V
+
+    .line 133
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->fab:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda14;
+
+    invoke-direct {v0, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda14;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 147
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->layoutTest:Landroid/widget/LinearLayout;
+
+    new-instance v0, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda15;
+
+    invoke-direct {v0, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda15;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 156
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setHasFixedSize(Z)V
+
+    .line 157
+    sget-object p1, Lcom/v2ray/ang/handler/MmkvManager;->INSTANCE:Lcom/v2ray/ang/handler/MmkvManager;
+
+    const-string v1, "pref_double_column_display"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p1, v1, v2}, Lcom/v2ray/ang/handler/MmkvManager;->decodeSettingsBool(Ljava/lang/String;Z)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6a
+
+    .line 158
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    new-instance v0, Landroidx/recyclerview/widget/GridLayoutManager;
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/content/Context;
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Landroidx/recyclerview/widget/GridLayoutManager;-><init>(Landroid/content/Context;I)V
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
+
+    goto :goto_7d
+
+    .line 160
+    :cond_6a
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    new-instance v1, Landroidx/recyclerview/widget/GridLayoutManager;
+
+    move-object v2, p0
+
+    check-cast v2, Landroid/content/Context;
+
+    invoke-direct {v1, v2, v0}, Landroidx/recyclerview/widget/GridLayoutManager;-><init>(Landroid/content/Context;I)V
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
+
+    .line 162
+    :goto_7d
+    move-object v2, p0
+
+    check-cast v2, Lcom/v2ray/ang/ui/BaseActivity;
+
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object v3, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    const-string p1, "recyclerView"
+
+    invoke-static {v3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object v4, p0
+
+    check-cast v4, Landroid/content/Context;
+
+    sget v5, Lcom/v2ray/ang/R$drawable;->custom_divider:I
+
+    const/16 v7, 0x8
+
+    const/4 v8, 0x0
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v2 .. v8}, Lcom/v2ray/ang/ui/BaseActivity;->addCustomDividerToRecyclerView$default(Lcom/v2ray/ang/ui/BaseActivity;Landroidx/recyclerview/widget/RecyclerView;Landroid/content/Context;IIILjava/lang/Object;)V
+
+    .line 163
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getAdapter()Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+
+    .line 165
+    new-instance p1, Landroidx/recyclerview/widget/ItemTouchHelper;
+
+    new-instance v0, Lcom/v2ray/ang/helper/SimpleItemTouchHelperCallback;
+
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getAdapter()Lcom/v2ray/ang/ui/MainRecyclerAdapter;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/v2ray/ang/helper/ItemTouchHelperAdapter;
+
+    invoke-direct {v0, v1}, Lcom/v2ray/ang/helper/SimpleItemTouchHelperCallback;-><init>(Lcom/v2ray/ang/helper/ItemTouchHelperAdapter;)V
+
+    check-cast v0, Landroidx/recyclerview/widget/ItemTouchHelper$Callback;
+
+    invoke-direct {p1, v0}, Landroidx/recyclerview/widget/ItemTouchHelper;-><init>(Landroidx/recyclerview/widget/ItemTouchHelper$Callback;)V
+
+    iput-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->mItemTouchHelper:Landroidx/recyclerview/widget/ItemTouchHelper;
+
+    .line 166
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/v2ray/ang/databinding/ActivityMainBinding;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/ItemTouchHelper;->attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
+
+    .line 168
+    new-instance v5, Landroidx/appcompat/app/ActionBarDrawerToggle;
+
+    .line 169
+    move-object v6, p0
+
+    check-cast v6, Landroid/app/Activity;
+
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object v7, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->drawerLayout:Landroidx/drawerlayout/widget/DrawerLayout;
+
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object v8, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->toolbar:Landroidx/appcompat/widget/Toolbar;
+
+    sget v9, Lcom/v2ray/ang/R$string;->navigation_drawer_open:I
+
+    sget v10, Lcom/v2ray/ang/R$string;->navigation_drawer_close:I
+
+    .line 168
+    invoke-direct/range {v5 .. v10}, Landroidx/appcompat/app/ActionBarDrawerToggle;-><init>(Landroid/app/Activity;Landroidx/drawerlayout/widget/DrawerLayout;Landroidx/appcompat/widget/Toolbar;II)V
+
+    .line 171
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->drawerLayout:Landroidx/drawerlayout/widget/DrawerLayout;
+
+    move-object v0, v5
+
+    check-cast v0, Landroidx/drawerlayout/widget/DrawerLayout$DrawerListener;
+
+    invoke-virtual {p1, v0}, Landroidx/drawerlayout/widget/DrawerLayout;->addDrawerListener(Landroidx/drawerlayout/widget/DrawerLayout$DrawerListener;)V
+
+    .line 172
+    invoke-virtual {v5}, Landroidx/appcompat/app/ActionBarDrawerToggle;->syncState()V
+
+    .line 173
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->navView:Lcom/google/android/material/navigation/NavigationView;
+
+    move-object v0, p0
+
+    check-cast v0, Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/navigation/NavigationView;->setNavigationItemSelectedListener(Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;)V
+
+    .line 175
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->initGroupTab()V
+
+    .line 176
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->setupViewModel()V
+
+    .line 177
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->migrateLegacy()V
+
+    .line 179
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v0, 0x21
+
+    if-lt p1, v0, :cond_116
+
+    .line 180
+    const-string p1, "android.permission.POST_NOTIFICATIONS"
+
+    invoke-static {v4, p1}, Landroidx/core/content/ContextCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_116
+
+    .line 181
+    sget-object v0, Lcom/v2ray/ang/ui/MainActivity$Action;->POST_NOTIFICATIONS:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    iput-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->pendingAction:Lcom/v2ray/ang/ui/MainActivity$Action;
+
+    .line 182
+    iget-object v0, p0, Lcom/v2ray/ang/ui/MainActivity;->requestPermissionLauncher:Landroidx/activity/result/ActivityResultLauncher;
+
+    invoke-virtual {v0, p1}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    .line 186
+    :cond_116
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;
+
+    move-result-object p1
+
+    move-object v0, p0
+
+    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
+
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$onCreate$3;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$onCreate$3;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    check-cast v1, Landroidx/activity/OnBackPressedCallback;
+
+    invoke-virtual {p1, v0, v1}, Landroidx/activity/OnBackPressedDispatcher;->addCallback(Landroidx/lifecycle/LifecycleOwner;Landroidx/activity/OnBackPressedCallback;)V
+
+    return-void
+.end method
+
+.method public onCreateOptionsMenu(Landroid/view/Menu;)Z
+    .registers 4
+
+    const-string v0, "menu"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 293
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMenuInflater()Landroid/view/MenuInflater;
+
+    move-result-object v0
+
+    sget v1, Lcom/v2ray/ang/R$menu;->menu_main:I
+
+    invoke-virtual {v0, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
+
+    .line 295
+    sget v0, Lcom/v2ray/ang/R$id;->search_view:I
+
+    invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_33
+
+    .line 297
+    invoke-interface {v0}, Landroid/view/MenuItem;->getActionView()Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "null cannot be cast to non-null type androidx.appcompat.widget.SearchView"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroidx/appcompat/widget/SearchView;
+
+    .line 298
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$onCreateOptionsMenu$1;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$onCreateOptionsMenu$1;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    check-cast v1, Landroidx/appcompat/widget/SearchView$OnQueryTextListener;
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/SearchView;->setOnQueryTextListener(Landroidx/appcompat/widget/SearchView$OnQueryTextListener;)V
+
+    .line 307
+    new-instance v1, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda13;
+
+    invoke-direct {v1, p0}, Lcom/v2ray/ang/ui/MainActivity$$ExternalSyntheticLambda13;-><init>(Lcom/v2ray/ang/ui/MainActivity;)V
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/SearchView;->setOnCloseListener(Landroidx/appcompat/widget/SearchView$OnCloseListener;)V
+
+    .line 312
+    :cond_33
+    invoke-super {p0, p1}, Lcom/v2ray/ang/ui/BaseActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public onKeyDown(ILandroid/view/KeyEvent;)Z
+    .registers 4
+
+    const-string v0, "event"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x4
+
+    if-eq p1, v0, :cond_11
+
+    const/16 v0, 0x61
+
+    if-eq p1, v0, :cond_11
+
+    .line 670
+    invoke-super {p0, p1, p2}, Lcom/v2ray/ang/ui/BaseActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_11
+    const/4 p1, 0x0
+
+    .line 667
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->moveTaskToBack(Z)Z
+
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public onNavigationItemSelected(Landroid/view/MenuItem;)Z
+    .registers 8
+
+    const-string v0, "item"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 676
+    invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
+
+    move-result p1
+
+    .line 677
+    sget v0, Lcom/v2ray/ang/R$id;->sub_setting:I
+
+    const/4 v1, 0x1
+
+    if-ne p1, v0, :cond_1f
+
+    iget-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->requestSubSettingActivity:Landroidx/activity/result/ActivityResultLauncher;
+
+    new-instance v0, Landroid/content/Intent;
+
+    move-object v2, p0
+
+    check-cast v2, Landroid/content/Context;
+
+    const-class v3, Lcom/v2ray/ang/ui/SubSettingActivity;
+
+    invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p1, v0}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    goto/16 :goto_e8
+
+    .line 678
+    :cond_1f
+    sget v0, Lcom/v2ray/ang/R$id;->per_app_proxy_settings:I
+
+    if-ne p1, v0, :cond_32
+
+    new-instance p1, Landroid/content/Intent;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-class v2, Lcom/v2ray/ang/ui/PerAppProxyActivity;
+
+    invoke-direct {p1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    goto/16 :goto_e8
+
+    .line 679
+    :cond_32
+    sget v0, Lcom/v2ray/ang/R$id;->routing_setting:I
+
+    if-ne p1, v0, :cond_47
+
+    iget-object p1, p0, Lcom/v2ray/ang/ui/MainActivity;->requestSubSettingActivity:Landroidx/activity/result/ActivityResultLauncher;
+
+    new-instance v0, Landroid/content/Intent;
+
+    move-object v2, p0
+
+    check-cast v2, Landroid/content/Context;
+
+    const-class v3, Lcom/v2ray/ang/ui/RoutingSettingActivity;
+
+    invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p1, v0}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
+
+    goto/16 :goto_e8
+
+    .line 680
+    :cond_47
+    sget v0, Lcom/v2ray/ang/R$id;->user_asset_setting:I
+
+    if-ne p1, v0, :cond_5a
+
+    new-instance p1, Landroid/content/Intent;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-class v2, Lcom/v2ray/ang/ui/UserAssetActivity;
+
+    invoke-direct {p1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    goto/16 :goto_e8
+
+    .line 681
+    :cond_5a
+    sget v0, Lcom/v2ray/ang/R$id;->settings:I
+
+    if-ne p1, v0, :cond_86
+
+    .line 682
+    new-instance p1, Landroid/content/Intent;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-class v2, Lcom/v2ray/ang/ui/SettingsActivity;
+
+    invoke-direct {p1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 683
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->isRunning()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v2, "isRunning"
+
+    invoke-virtual {p1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    move-result-object p1
+
+    .line 681
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    goto :goto_e8
+
+    .line 686
+    :cond_86
+    sget v0, Lcom/v2ray/ang/R$id;->promotion:I
+
+    if-ne p1, v0, :cond_b3
+
+    sget-object p1, Lcom/v2ray/ang/util/Utils;->INSTANCE:Lcom/v2ray/ang/util/Utils;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    sget-object v2, Lcom/v2ray/ang/util/Utils;->INSTANCE:Lcom/v2ray/ang/util/Utils;
+
+    const-string v3, "aHR0cHM6Ly85LjIzNDQ1Ni54eXovYWJjLmh0bWw="
+
+    invoke-virtual {v2, v3}, Lcom/v2ray/ang/util/Utils;->decode(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v3
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "?t="
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v0, v2}, Lcom/v2ray/ang/util/Utils;->openUri(Landroid/content/Context;Ljava/lang/String;)V
+
+    goto :goto_e8
+
+    .line 687
+    :cond_b3
+    sget v0, Lcom/v2ray/ang/R$id;->logcat:I
+
+    if-ne p1, v0, :cond_c5
+
+    new-instance p1, Landroid/content/Intent;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-class v2, Lcom/v2ray/ang/ui/LogcatActivity;
+
+    invoke-direct {p1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    goto :goto_e8
+
+    .line 688
+    :cond_c5
+    sget v0, Lcom/v2ray/ang/R$id;->check_for_update:I
+
+    if-ne p1, v0, :cond_d7
+
+    new-instance p1, Landroid/content/Intent;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-class v2, Lcom/v2ray/ang/ui/CheckUpdateActivity;
+
+    invoke-direct {p1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    goto :goto_e8
+
+    .line 689
+    :cond_d7
+    sget v0, Lcom/v2ray/ang/R$id;->about:I
+
+    if-ne p1, v0, :cond_e8
+
+    new-instance p1, Landroid/content/Intent;
+
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    const-class v2, Lcom/v2ray/ang/ui/AboutActivity;
+
+    invoke-direct {p1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    .line 692
+    :cond_e8
+    :goto_e8
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/v2ray/ang/databinding/ActivityMainBinding;->drawerLayout:Landroidx/drawerlayout/widget/DrawerLayout;
+
+    const v0, 0x800003
+
+    invoke-virtual {p1, v0}, Landroidx/drawerlayout/widget/DrawerLayout;->closeDrawer(I)V
+
+    return v1
+.end method
+
+.method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    .registers 8
+
+    const-string v0, "item"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 315
+    invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
+
+    move-result v0
+
+    .line 316
+    sget v1, Lcom/v2ray/ang/R$id;->import_qrcode:I
+
+    const/4 v2, 0x1
+
+    if-ne v0, v1, :cond_12
+
+    .line 317
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->importQRcode()Z
+
+    return v2
+
+    .line 321
+    :cond_12
+    sget v1, Lcom/v2ray/ang/R$id;->import_clipboard:I
+
+    if-ne v0, v1, :cond_1a
+
+    .line 322
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->importClipboard()Z
+
+    return v2
+
+    .line 326
+    :cond_1a
+    sget v1, Lcom/v2ray/ang/R$id;->import_local:I
+
+    if-ne v0, v1, :cond_22
+
+    .line 327
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->importConfigLocal()Z
+
+    return v2
+
+    .line 331
+    :cond_22
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_vmess:I
+
+    if-ne v0, v1, :cond_30
+
+    .line 332
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->VMESS:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 336
+    :cond_30
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_vless:I
+
+    if-ne v0, v1, :cond_3e
+
+    .line 337
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->VLESS:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 341
+    :cond_3e
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_ss:I
+
+    if-ne v0, v1, :cond_4c
+
+    .line 342
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->SHADOWSOCKS:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 346
+    :cond_4c
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_socks:I
+
+    if-ne v0, v1, :cond_5a
+
+    .line 347
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->SOCKS:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 351
+    :cond_5a
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_http:I
+
+    if-ne v0, v1, :cond_68
+
+    .line 352
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->HTTP:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 356
+    :cond_68
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_trojan:I
+
+    if-ne v0, v1, :cond_76
+
+    .line 357
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->TROJAN:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 361
+    :cond_76
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_wireguard:I
+
+    if-ne v0, v1, :cond_84
+
+    .line 362
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->WIREGUARD:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 366
+    :cond_84
+    sget v1, Lcom/v2ray/ang/R$id;->import_manually_hysteria2:I
+
+    if-ne v0, v1, :cond_92
+
+    .line 367
+    sget-object p1, Lcom/v2ray/ang/dto/EConfigType;->HYSTERIA2:Lcom/v2ray/ang/dto/EConfigType;
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/dto/EConfigType;->getValue()I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/v2ray/ang/ui/MainActivity;->importManually(I)V
+
+    return v2
+
+    .line 371
+    :cond_92
+    sget v1, Lcom/v2ray/ang/R$id;->export_all:I
+
+    if-ne v0, v1, :cond_9a
+
+    .line 372
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->exportAll()V
+
+    return v2
+
+    .line 376
+    :cond_9a
+    sget v1, Lcom/v2ray/ang/R$id;->ping_all:I
+
+    const-string v3, "getString(...)"
+
+    const/4 v4, 0x0
+
+    if-ne v0, v1, :cond_d0
+
+    .line 377
+    move-object p1, p0
+
+    check-cast p1, Landroid/content/Context;
+
+    sget v0, Lcom/v2ray/ang/R$string;->connection_test_testing_count:I
+
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/v2ray/ang/viewmodel/MainViewModel;->getServersCache()Ljava/util/List;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Collection;
+
+    invoke-interface {v1}, Ljava/util/Collection;->size()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    new-array v5, v2, [Ljava/lang/Object;
+
+    aput-object v1, v5, v4
+
+    invoke-virtual {p0, v0, v5}, Lcom/v2ray/ang/ui/MainActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    invoke-static {p1, v0}, Lcom/v2ray/ang/extension/_ExtKt;->toast(Landroid/content/Context;Ljava/lang/CharSequence;)V
+
+    .line 378
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/viewmodel/MainViewModel;->testAllTcping()V
+
+    return v2
+
+    .line 382
+    :cond_d0
+    sget v1, Lcom/v2ray/ang/R$id;->real_ping_all:I
+
+    if-ne v0, v1, :cond_103
+
+    .line 383
+    move-object p1, p0
+
+    check-cast p1, Landroid/content/Context;
+
+    sget v0, Lcom/v2ray/ang/R$string;->connection_test_testing_count:I
+
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/v2ray/ang/viewmodel/MainViewModel;->getServersCache()Ljava/util/List;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Collection;
+
+    invoke-interface {v1}, Ljava/util/Collection;->size()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    new-array v5, v2, [Ljava/lang/Object;
+
+    aput-object v1, v5, v4
+
+    invoke-virtual {p0, v0, v5}, Lcom/v2ray/ang/ui/MainActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    invoke-static {p1, v0}, Lcom/v2ray/ang/extension/_ExtKt;->toast(Landroid/content/Context;Ljava/lang/CharSequence;)V
+
+    .line 384
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/v2ray/ang/viewmodel/MainViewModel;->testAllRealPing()V
+
+    return v2
+
+    .line 388
+    :cond_103
+    sget v1, Lcom/v2ray/ang/R$id;->service_restart:I
+
+    if-ne v0, v1, :cond_10b
+
+    .line 389
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->restartV2Ray()V
+
+    return v2
+
+    .line 393
+    :cond_10b
+    sget v1, Lcom/v2ray/ang/R$id;->del_all_config:I
+
+    if-ne v0, v1, :cond_113
+
+    .line 394
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->delAllConfig()V
+
+    return v2
+
+    .line 398
+    :cond_113
+    sget v1, Lcom/v2ray/ang/R$id;->del_duplicate_config:I
+
+    if-ne v0, v1, :cond_11b
+
+    .line 399
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->delDuplicateConfig()V
+
+    return v2
+
+    .line 403
+    :cond_11b
+    sget v1, Lcom/v2ray/ang/R$id;->del_invalid_config:I
+
+    if-ne v0, v1, :cond_123
+
+    .line 404
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->delInvalidConfig()V
+
+    return v2
+
+    .line 408
+    :cond_123
+    sget v1, Lcom/v2ray/ang/R$id;->sort_by_test_results:I
+
+    if-ne v0, v1, :cond_12b
+
+    .line 409
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->sortByTestResults()V
+
+    return v2
+
+    .line 413
+    :cond_12b
+    sget v1, Lcom/v2ray/ang/R$id;->sub_update:I
+
+    if-ne v0, v1, :cond_133
+
+    .line 414
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->importConfigViaSub()Z
+
+    return v2
+
+    .line 419
+    :cond_133
+    invoke-super {p0, p1}, Lcom/v2ray/ang/ui/BaseActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public onPause()V
+    .registers 1
+
+    .line 289
+    invoke-super {p0}, Lcom/v2ray/ang/ui/BaseActivity;->onPause()V
+
+    return-void
+.end method
+
+.method public onResume()V
+    .registers 2
+
+    .line 284
+    invoke-super {p0}, Lcom/v2ray/ang/ui/BaseActivity;->onResume()V
+
+    .line 285
+    invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getMainViewModel()Lcom/v2ray/ang/viewmodel/MainViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/v2ray/ang/viewmodel/MainViewModel;->reloadServerList()V
+
+    return-void
+.end method
