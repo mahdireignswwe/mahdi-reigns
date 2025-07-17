@@ -560,6 +560,79 @@
     return-object v0
 .end method
 
+.method private final addGoldV2raySubServers()V
+    .registers 19
+
+    .line 609
+    sget-object v0, Lcom/v2ray/ang/handler/MmkvManager;->INSTANCE:Lcom/v2ray/ang/handler/MmkvManager;
+
+    const-string v1, "-1"
+
+    invoke-virtual {v0, v1}, Lcom/v2ray/ang/handler/MmkvManager;->decodeSubscription(Ljava/lang/String;)Lcom/v2ray/ang/dto/SubscriptionItem;
+
+    move-result-object v0
+
+    if-nez v0, :cond_21
+
+    new-instance v2, Lcom/v2ray/ang/dto/SubscriptionItem;
+
+    const/16 v16, 0x7ff
+
+    const/16 v17, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const-wide/16 v6, 0x0
+
+    const-wide/16 v8, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    invoke-direct/range {v2 .. v17}, Lcom/v2ray/ang/dto/SubscriptionItem;-><init>(Ljava/lang/String;Ljava/lang/String;ZJJZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    move-object v0, v2
+
+    .line 610
+    :cond_21
+    const-string v2, "Free Servers"
+
+    invoke-virtual {v0, v2}, Lcom/v2ray/ang/dto/SubscriptionItem;->setRemarks(Ljava/lang/String;)V
+
+    .line 611
+    const-string v2, "https://raw.githubusercontent.com/mahdireignswwe/romanreignsmahdiwwe/refs/heads/main/automatic.all.server.free.json"
+
+    invoke-virtual {v0, v2}, Lcom/v2ray/ang/dto/SubscriptionItem;->setUrl(Ljava/lang/String;)V
+
+    const/4 v2, 0x1
+
+    .line 612
+    invoke-virtual {v0, v2}, Lcom/v2ray/ang/dto/SubscriptionItem;->setEnabled(Z)V
+
+    .line 613
+    invoke-virtual {v0, v2}, Lcom/v2ray/ang/dto/SubscriptionItem;->setAutoUpdate(Z)V
+
+    .line 614
+    sget-object v2, Lcom/v2ray/ang/handler/MmkvManager;->INSTANCE:Lcom/v2ray/ang/handler/MmkvManager;
+
+    invoke-virtual {v2, v1, v0}, Lcom/v2ray/ang/handler/MmkvManager;->encodeSubscription(Ljava/lang/String;Lcom/v2ray/ang/dto/SubscriptionItem;)V
+
+    return-void
+.end method
+
 .method private static final binding_delegate$lambda$0(Lcom/v2ray/ang/ui/MainActivity;)Lcom/v2ray/ang/databinding/ActivityMainBinding;
     .registers 1
 
@@ -2649,6 +2722,8 @@
     .line 128
     invoke-super {p0, p1}, Lcom/v2ray/ang/ui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
+    invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->addGoldV2raySubServers()V
+
     .line 129
     invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
 
@@ -2730,7 +2805,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_6a
+    if-eqz p1, :cond_6d
 
     .line 158
     invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
@@ -2753,10 +2828,10 @@
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    goto :goto_7d
+    goto :goto_80
 
     .line 160
-    :cond_6a
+    :cond_6d
     invoke-direct {p0}, Lcom/v2ray/ang/ui/MainActivity;->getBinding()Lcom/v2ray/ang/databinding/ActivityMainBinding;
 
     move-result-object p1
@@ -2776,7 +2851,7 @@
     invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
     .line 162
-    :goto_7d
+    :goto_80
     move-object v2, p0
 
     check-cast v2, Lcom/v2ray/ang/ui/BaseActivity;
@@ -2918,7 +2993,7 @@
 
     const/16 v0, 0x21
 
-    if-lt p1, v0, :cond_116
+    if-lt p1, v0, :cond_119
 
     .line 180
     const-string p1, "android.permission.POST_NOTIFICATIONS"
@@ -2927,7 +3002,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_116
+    if-eqz v0, :cond_119
 
     .line 181
     sget-object v0, Lcom/v2ray/ang/ui/MainActivity$Action;->POST_NOTIFICATIONS:Lcom/v2ray/ang/ui/MainActivity$Action;
@@ -2940,7 +3015,7 @@
     invoke-virtual {v0, p1}, Landroidx/activity/result/ActivityResultLauncher;->launch(Ljava/lang/Object;)V
 
     .line 186
-    :cond_116
+    :cond_119
     invoke-virtual {p0}, Lcom/v2ray/ang/ui/MainActivity;->getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;
 
     move-result-object p1
