@@ -49,8 +49,14 @@
         "2a02:6b8:0:1::feed:0ff"
       ],
       "www.speedtest.net": [
-        "104.17.148.22",
-        "104.17.147.22"
+        "104.17.147.22",
+        "104.17.148.22"
+      ],
+      "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev": [
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
       ]
     },
     "servers": [
@@ -101,11 +107,11 @@
         "vnext": [
           {
             "address": "www.speedtest.net",
-            "port": 2087,
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -129,14 +135,14 @@
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "rEignScoM.pAges.DEV",
+          "serverName": "TLbz9r7YrVYC9f6sVnMX8i1QjMwg3it2.MahDireiGNs54.wORkers.DEV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/97ah68dg0ZV4AU3x"
+          "path": "/eyJqdW5rIjoiWnFLUFJ5NXpOIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
         }
       },
       "tag": "proxy-1"
@@ -150,12 +156,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.47.135",
-            "port": 443,
+            "address": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -165,19 +171,28 @@
       "streamSettings": {
         "network": "ws",
         "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "rEiGNsCOm.pages.DEV",
+          "serverName": "TLbZ9r7yrVyC9f6SvNmx8i1QjmWg3It2.mAhDiREIgNS54.wOrkErS.DEV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/sydBshOeEkd3oMd8"
+          "path": "/eyJqdW5rIjoiSWV6dzZmZDh1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
         }
       },
       "tag": "proxy-2"
@@ -191,12 +206,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.47.135",
-            "port": 2083,
+            "address": "www.speedtest.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -206,19 +221,28 @@
       "streamSettings": {
         "network": "ws",
         "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "rEIGNScOm.pAges.DeV",
+          "serverName": "tlbZ9R7YrVyc9f6sVNmX8I1qJmwg3iT2.MAhDIReIgns54.WorKErs.DEv",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/kbPYOCBn3VdEERKZ"
+          "path": "/eyJqdW5rIjoiSVdNUUIxeEpjVEMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
         }
       },
       "tag": "proxy-3"
@@ -232,12 +256,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.44.121",
-            "port": 2087,
+            "address": "172.67.159.199",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -246,20 +270,11 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "ReIGnSCOm.PaGeS.DEV",
-          "show": false
-        },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/yOMnFPxWbeMTLAyw"
+          "path": "/eyJqdW5rIjoiMjlXWGpueVpwck0iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
         }
       },
       "tag": "proxy-4"
@@ -273,12 +288,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.44.121",
-            "port": 443,
+            "address": "172.67.159.199",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -293,14 +308,14 @@
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "ReIGNscOM.pagES.dEv",
+          "serverName": "tLbZ9R7YrVyC9F6SvNmX8I1qjMWg3IT2.mahDIReIGnS54.WorkErS.DEV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/Ap9BfIReZKNT7URf"
+          "path": "/eyJqdW5rIjoiSVVhYk1PQms1VU1WIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
         }
       },
       "tag": "proxy-5"
@@ -314,12 +329,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 2083,
+            "address": "104.21.90.187",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -329,28 +344,19 @@
       "streamSettings": {
         "network": "ws",
         "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "rEiGNSCOm.Pages.dev",
+          "serverName": "tLBZ9R7yrVyc9f6SvnMX8I1QjMWg3It2.MAHDIReiGNs54.wOrkErs.deV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/7fgiF6YCeBvOfHVF"
+          "path": "/eyJqdW5rIjoiWG5YbmxPNkVBakFyVEsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
         }
       },
       "tag": "proxy-6"
@@ -364,12 +370,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.44.121",
-            "port": 2083,
+            "address": "104.21.90.187",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -378,20 +384,11 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "ReiGNScOm.paGEs.dEV",
-          "show": false
-        },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/V6hUTmF1skBBUKGO"
+          "path": "/eyJqdW5rIjoibzlGczRYa3dCQTg1SE5XIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
         }
       },
       "tag": "proxy-7"
@@ -405,12 +402,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.47.135",
-            "port": 8443,
+            "address": "104.21.90.187",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -425,463 +422,17 @@
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "ReIGnSCOM.paGEs.deV",
+          "serverName": "TlBZ9R7YrVYc9F6SvNMX8i1QJMwg3It2.maHDIREIGNs54.WORkerS.DEV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "reignscom.pages.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/UR3FxhdUuaicWROV"
+          "path": "/eyJqdW5rIjoiNTBxRnNPVFRXYjFxNkkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
         }
       },
       "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "reiGnscom.PagES.DeV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/BSfbyB8rsZAd2ih0"
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.44.121",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "reiGNSCOM.pAGEs.DEV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/scmIeDgWdJPsNP7f"
-        }
-      },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "rEiGNSCom.PaGeS.DEv",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/JsL28aFsUchHcAnq"
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "reIGnsCOM.pAGES.deV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/daWnkHIArufUPjCz"
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.44.121",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "rEIgNscOm.pAges.dEV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/hTgSrGv7qYMDpbBx"
-        }
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.47.135",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "ReIGNscom.PagEs.DEv",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/9ff9OxPp6oU52f5G"
-        }
-      },
-      "tag": "proxy-14"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.47.135",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "ReIGnSCoM.paGES.dEV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/qB5KEu2sYpdx0NFg"
-        }
-      },
-      "tag": "proxy-15"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "REigNScOm.PAgES.DEv",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/sCqSWH1N0yJZZkjz"
-        }
-      },
-      "tag": "proxy-16"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.47.135",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "ReIGNsCoM.PaGes.DEV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/UZVYWu12zOs6lYoC"
-        }
-      },
-      "tag": "proxy-17"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.44.121",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "430b0a8f-75db-45f1-b7a7-ebc4d0652a79",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "REiGNscom.pAGes.deV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "reignscom.pages.dev"
-          },
-          "path": "/Dz3KQiuB3721mpwq"
-        }
-      },
-      "tag": "proxy-18"
     },
     {
       "protocol": "freedom",
@@ -900,7 +451,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "Cloud🔰Server",
+  "remarks": "Cloud📶Server",
   "routing": {
     "balancers": [
       {
