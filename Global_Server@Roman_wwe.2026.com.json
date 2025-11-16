@@ -1,15 +1,4 @@
 {
-  "burstObservatory": {
-    "pingConfig": {
-      "destination": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "sampling": 2,
-      "timeout": "30s"
-    },
-    "subjectSelector": [
-      "proxy-"
-    ]
-  },
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com",
@@ -58,7 +47,18 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ]
+      ],
+      "dl5-de4-cdn.fastfilecdn.org": "57.129.90.180",
+      "dl5-it4-cdn.fastfilecdn.org": "57.131.20.69",
+      "dl5-fi4-cdn.fastfilecdn.org": "37.32.24.237",
+      "dl5-pl4-cdn.fastfilecdn.org": "146.59.127.241",
+      "dl5-tr4-cdn.fastfilecdn.org": "46.31.79.34",
+      "dl5-fr4-cdn.fastfilecdn.org": "57.131.20.77",
+      "dl5-uk4-cdn.fastfilecdn.org": "51.38.71.67",
+      "dl5-ca4-cdn.fastfilecdn.org": "51.222.137.109",
+      "dl5-us5-cdn.fastfilecdn.org": "135.148.11.50",
+      "dl5-sg4-cdn.fastfilecdn.org": "51.79.173.141",
+      "dl5-be4-cdn.fastfilecdn.org": "141.227.137.248"
     },
     "servers": [
       "1.1.1.1"
@@ -89,6 +89,14 @@
   "log": {
     "loglevel": "warning"
   },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
   "outbounds": [
     {
       "mux": {
@@ -99,12 +107,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.159.153.144",
-            "port": 443,
+            "address": "dl5-de4-cdn.fastfilecdn.org",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "eb9123d0-d342-49a8-84d7-a0257a6f0260",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
                 "level": 8
               }
             ]
@@ -113,20 +121,20 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "h3"
-          ],
-          "serverName": "vless.hubp.de",
-          "show": false
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
         "wsSettings": {
           "headers": {
-            "Host": "vless.hubp.de"
+            "Host": "dl5-de4-cdn.fastfilecdn.org"
           },
-          "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000"
+          "path": "/"
         }
       },
       "tag": "proxy-1"
@@ -140,12 +148,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.159.152.53",
-            "port": 443,
+            "address": "193.46.81.151",
+            "port": 50853,
             "users": [
               {
                 "encryption": "none",
-                "id": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+                "id": "d988a5dc-35a4-44e6-8a78-a56659eee68c",
                 "level": 8
               }
             ]
@@ -153,21 +161,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
+        "network": "tcp",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [
-            "h3"
-          ],
-          "serverName": "vless.hubp.de",
+          "fingerprint": "chrome",
+          "publicKey": "XT7qcjwBZkCQPQVgzP_afaX76GUbHIysmOhJ1gWsLjs",
+          "serverName": "miro.com",
+          "shortId": "69",
           "show": false
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "vless.hubp.de"
-          },
-          "path": "/"
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-2"
@@ -181,13 +188,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.17.49.250",
-            "port": 443,
+            "address": "dl5-de4-cdn.fastfilecdn.org",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
                 "level": 8
               }
             ]
@@ -195,20 +201,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
-          "serverName": "cdnjs.com",
-          "shortId": "4c02bbbfa833b3b6",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
           }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
         }
       },
       "tag": "proxy-3"
@@ -222,13 +229,259 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.242.84.181",
-            "port": 443,
+            "address": "dl5-it4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-it4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-fi4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-fi4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-pl4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-pl4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-tr4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-tr4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-fr4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-fr4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.234.94.71",
+            "port": 13718,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "3c0e49cb-8940-561a-83b8-1efbb17f7cf7",
+                "id": "6beb5e1f-566d-4d84-878e-9f0a49283696",
                 "level": 8
               }
             ]
@@ -240,9 +493,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "eYFJombyzUhLsqA8NfdHUBJdStTt7NN-Z63fuyAJUTc",
-          "serverName": "vk.cc",
-          "shortId": "1127691d",
+          "publicKey": "RE5pTjMWTYxFQvDtxxKOCZCnnyYbR2a25zlLnYXWOVw",
+          "serverName": "eightsleep.com",
+          "shortId": "96",
           "show": false
         },
         "security": "reality",
@@ -252,7 +505,89 @@
           }
         }
       },
-      "tag": "proxy-4"
+      "tag": "proxy-10"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-uk4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-uk4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.144.31.234",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "06ff1742-a37d-4e2b-aa60-9571d9f7efdb",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "serverName": "hls-svod.itunes.apple.com",
+          "shortId": "31",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-12"
     },
     {
       "mux": {
@@ -293,7 +628,7 @@
           }
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-13"
     },
     {
       "mux": {
@@ -304,53 +639,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.129.185.102",
-            "port": 443,
+            "address": "dl5-ca4-cdn.fastfilecdn.org",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3c0e49cb-8940-561a-83b8-1efbb17f7cf7",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "-DUZ4cto6rX3yqDLEv6bsa0NSpfIQQJFD7jSG1RUJxU",
-          "serverName": "vk.cc",
-          "shortId": "a9508ad6",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.82.55",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
                 "level": 8
               }
             ]
@@ -359,23 +653,23 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "h3"
-          ],
-          "serverName": "vless.hubp.de",
-          "show": false
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
         "wsSettings": {
           "headers": {
-            "Host": "vless.hubp.de"
+            "Host": "dl5-ca4-cdn.fastfilecdn.org"
           },
           "path": "/"
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-14"
     },
     {
       "mux": {
@@ -386,13 +680,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.29.238.134",
-            "port": 443,
+            "address": "dl5-de4-cdn.fastfilecdn.org",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3c0e49cb-8940-561a-83b8-1efbb17f7cf7",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
                 "level": 8
               }
             ]
@@ -400,105 +693,24 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "RISKPHckl3DzrPOMlGhkBCPeAOYF7bmosy_6mSHFiVw",
-          "serverName": "vk.cc",
-          "shortId": "0a85df2b",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
           }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
         }
       },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "77.83.246.67",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3c0e49cb-8940-561a-83b8-1efbb17f7cf7",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "z5mynawBHPlLYpnbyzYcdMuxz41HBhVlD_wRzatJuQk",
-          "serverName": "vk.cc",
-          "shortId": "7bd292ad",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "85.159.228.228",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3c0e49cb-8940-561a-83b8-1efbb17f7cf7",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dK3qde0IM12Fk9UPhuJcKrrsTQKPtzTi1F5bRa3PQgw",
-          "serverName": "vk.cc",
-          "shortId": "8892fc96",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-10"
+      "tag": "proxy-15"
     },
     {
       "mux": {
@@ -539,7 +751,7 @@
           }
         }
       },
-      "tag": "proxy-11"
+      "tag": "proxy-16"
     },
     {
       "mux": {
@@ -550,13 +762,95 @@
       "settings": {
         "vnext": [
           {
-            "address": "152.53.141.75",
-            "port": 29980,
+            "address": "dl5-us5-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-us5-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-17"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-sg4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-sg4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-18"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "156.229.161.107",
+            "port": 10001,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "c9a206b9-8038-4703-b273-cc3f2d6c7b5c",
+                "id": "9c79aceb-4649-44ea-9698-b5e9ecf6d6da",
                 "level": 8
               }
             ]
@@ -568,9 +862,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "jUgvcPw1Le6BhODiNN_VE-OYsqmxrpQk53uXg_d-qlI",
-          "serverName": "merriam-webster.com",
-          "shortId": "68",
+          "publicKey": "4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4",
+          "serverName": "www.icloud.com",
+          "shortId": "fb2c6678",
           "show": false
         },
         "security": "reality",
@@ -580,7 +874,7 @@
           }
         }
       },
-      "tag": "proxy-12"
+      "tag": "proxy-19"
     },
     {
       "mux": {
@@ -591,13 +885,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.6.1.187",
-            "port": 25607,
+            "address": "dl5-be4-cdn.fastfilecdn.org",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c8451b58-6337-4294-ba28-1a33731331a1",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
                 "level": 8
               }
             ]
@@ -605,23 +898,24 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "j5CgrKQgkDV5bC5Y4pB0lGNupDYxklIDgge4HL1X3zE",
-          "serverName": "store.steampowered.com",
-          "shortId": "84",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
           }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-be4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
         }
       },
-      "tag": "proxy-13"
+      "tag": "proxy-20"
     },
     {
       "mux": {
@@ -632,7 +926,48 @@
       "settings": {
         "vnext": [
           {
-            "address": "103.35.191.221",
+            "address": "dl5-de4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-21"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.242.84.181",
             "port": 443,
             "users": [
               {
@@ -650,9 +985,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "xZ0pVv73Je0cD-3zCB5ABlRROIbWqTLt5YSE3FlA7GI",
+          "publicKey": "eYFJombyzUhLsqA8NfdHUBJdStTt7NN-Z63fuyAJUTc",
           "serverName": "vk.cc",
-          "shortId": "efe06ff4",
+          "shortId": "1127691d",
           "show": false
         },
         "security": "reality",
@@ -662,7 +997,7 @@
           }
         }
       },
-      "tag": "proxy-14"
+      "tag": "proxy-22"
     },
     {
       "mux": {
@@ -673,13 +1008,53 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.129.252.60",
-            "port": 443,
+            "address": "dl5-sg4-cdn.fastfilecdn.org",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+                "id": "66171593-3591-4879-a48f-f659fe4185b6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-sg4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-23"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "77.73.232.61",
+            "port": 19747,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
                 "level": 8
               }
             ]
@@ -691,9 +1066,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
-          "serverName": "cdnjs.com",
-          "shortId": "c2a0b2d60a7fc300",
+          "publicKey": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
+          "serverName": "yahoo.com",
+          "shortId": "2001",
           "show": false
         },
         "security": "reality",
@@ -703,7 +1078,7 @@
           }
         }
       },
-      "tag": "proxy-15"
+      "tag": "proxy-24"
     },
     {
       "protocol": "freedom",
@@ -730,7 +1105,7 @@
           "proxy-"
         ],
         "strategy": {
-          "type": "leastLoad"
+          "type": "leastPing"
         },
         "tag": "proxy-round"
       }
