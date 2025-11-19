@@ -1,4 +1,15 @@
 {
+  "burstObservatory": {
+    "pingConfig": {
+      "destination": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "sampling": 2,
+      "timeout": "30s"
+    },
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com",
@@ -80,14 +91,6 @@
   "log": {
     "loglevel": "warning"
   },
-  "observatory": {
-    "enableConcurrency": true,
-    "probeInterval": "3m",
-    "probeUrl": "https://www.gstatic.com/generate_204",
-    "subjectSelector": [
-      "proxy-"
-    ]
-  },
   "outbounds": [
     {
       "mux": {
@@ -138,12 +141,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "srveztc.irancpi.info",
-            "port": 443,
+            "address": "193.46.81.151",
+            "port": 50853,
             "users": [
               {
                 "encryption": "none",
-                "id": "f385cd11-b7a8-484f-8e7e-f5ccfd640df0",
+                "flow": "",
+                "id": "d988a5dc-35a4-44e6-8a78-a56659eee68c",
                 "level": 8
               }
             ]
@@ -152,15 +156,15 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "XT7qcjwBZkCQPQVgzP_afaX76GUbHIysmOhJ1gWsLjs",
+          "serverName": "miro.com",
+          "shortId": "69",
+          "show": false
         },
+        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -214,29 +218,38 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "8.47.69.0",
-            "port": 8880,
+            "address": "62.60.246.188",
+            "port": 443,
             "users": [
               {
-                "id": "c564eeca-0660-4356-bf0c-64600c529bbd",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "405ec164-7923-4d76-8be5-7ae96e444f4e",
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "garland.sabz-sitentg-noavaran.com"
-          },
-          "path": "/api"
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "o3H8CUivdt6lbFH6S7CQZ6dua7nUg5rYtPdSyXpjpx0",
+          "serverName": "web.max.ru",
+          "shortId": "6104c5e9613ea56c",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-4"
@@ -246,29 +259,37 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.26.5.112",
-            "port": 8880,
+            "address": "195.93.253.49",
+            "port": 33094,
             "users": [
               {
-                "id": "c564eeca-0660-4356-bf0c-64600c529bbd",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "flow": "",
+                "id": "6f8923d9-f812-4ca6-b93a-8f9227bf2eab",
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "backspin.sabz-sitentg-noavaran.com"
-          },
-          "path": "/api"
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "publicKey": "35JazACyPS6LcDwpGibneEeMzkzGYWf4KTG_Oqp0oBE",
+          "serverName": "yahoo.com",
+          "shortId": "29489194da0d5d",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-5"
@@ -282,13 +303,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.144.31.234",
-            "port": 443,
+            "address": "152.53.145.111",
+            "port": 26861,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "06ff1742-a37d-4e2b-aa60-9571d9f7efdb",
+                "id": "04db6938-72dc-42b4-a096-cc6a5e8316d2",
                 "level": 8
               }
             ]
@@ -300,9 +321,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
-          "serverName": "hls-svod.itunes.apple.com",
-          "shortId": "31",
+          "publicKey": "IIdE2p3vqHDjHfLrvJXkrLoYpYMJH0R1tacCkHiDtAA",
+          "serverName": "groww.in",
+          "shortId": "ecc1c4",
           "show": false
         },
         "security": "reality",
@@ -323,13 +344,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.242.84.182",
+            "address": "srveztc.irancpi.info",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3c0e49cb-8940-561a-83b8-1efbb17f7cf7",
+                "id": "f385cd11-b7a8-484f-8e7e-f5ccfd640df0",
                 "level": 8
               }
             ]
@@ -338,15 +358,15 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1pX4yQMG3Gji_VeRpJgZ0dCxHafgiK0ul1_Paje38S4",
-          "serverName": "vk.cc",
-          "shortId": "4395cf86",
-          "show": false
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
-        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -360,29 +380,38 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.3",
-            "port": 8880,
+            "address": "45.90.236.5",
+            "port": 443,
             "users": [
               {
-                "id": "c564eeca-0660-4356-bf0c-64600c529bbd",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "54648aeb-374a-41f5-8ca9-59c3b886a466",
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cosmetics.sabz-sitentg-noavaran.com"
-          },
-          "path": "/api"
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "random",
+          "publicKey": "6bdxTggpMa9veyosJjxCvB3UPZmj-OquWTqp1iXAP3Y",
+          "serverName": "google.com",
+          "shortId": "785be44fdf",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-8"
@@ -392,29 +421,38 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.72.39",
-            "port": 8880,
+            "address": "152.53.146.1",
+            "port": 31502,
             "users": [
               {
-                "id": "c564eeca-0660-4356-bf0c-64600c529bbd",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "b20c12e7-f071-4829-94e7-17dc4e43a37a",
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "portable.sabz-sitentg-noavaran.com"
-          },
-          "path": "/api"
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "oenAlMhG602prGwOqnAt5yZ55yuDEfZwGZXn-WaxizM",
+          "serverName": "marmiton.org",
+          "shortId": "e1814a",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-9"
@@ -428,12 +466,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "77.73.232.61",
-            "port": 19747,
+            "address": "185.236.25.242",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
+                "flow": "xtls-rprx-vision",
+                "id": "8795d657-0140-4e74-8b80-b5d6d576b31b",
                 "level": 8
               }
             ]
@@ -444,10 +483,10 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
-          "serverName": "yahoo.com",
-          "shortId": "2001",
+          "fingerprint": "random",
+          "publicKey": "llUN5iiAQwwKwiAp7zCwfU8wNz7F4lg__e9Qdv_gkWs",
+          "serverName": "google.com",
+          "shortId": "0f1d6a",
           "show": false
         },
         "security": "reality",
@@ -468,13 +507,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.229.161.107",
-            "port": 10001,
+            "address": "45.134.12.47",
+            "port": 31203,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "9c79aceb-4649-44ea-9698-b5e9ecf6d6da",
+                "id": "87d1f4b2-83e7-4125-8d62-5d376871fd41",
                 "level": 8
               }
             ]
@@ -486,9 +525,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4",
-          "serverName": "www.icloud.com",
-          "shortId": "fb2c6678",
+          "publicKey": "tN1ZYDEnM0t_V59FGQSpiq56sOpDo8JZ25Epgg-Z9kg",
+          "serverName": "vt-1.ozone.ru",
+          "shortId": "ab12cd34",
           "show": false
         },
         "security": "reality",
@@ -509,13 +548,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "85.234.94.71",
-            "port": 13718,
+            "address": "195.66.27.139",
+            "port": 45272,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "6beb5e1f-566d-4d84-878e-9f0a49283696",
+                "id": "5bd921b7-117c-4be1-b8e6-7bfb7206e640",
                 "level": 8
               }
             ]
@@ -527,9 +566,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "RE5pTjMWTYxFQvDtxxKOCZCnnyYbR2a25zlLnYXWOVw",
-          "serverName": "eightsleep.com",
-          "shortId": "96",
+          "publicKey": "7bEP1lfl1xFyfkcdVXE1wmXXs9BrGZHEBdroG4XAml0",
+          "serverName": "google.com",
+          "shortId": "9a31393b7a7273",
           "show": false
         },
         "security": "reality",
@@ -540,47 +579,6 @@
         }
       },
       "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.242.84.181",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3c0e49cb-8940-561a-83b8-1efbb17f7cf7",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "eYFJombyzUhLsqA8NfdHUBJdStTt7NN-Z63fuyAJUTc",
-          "serverName": "vk.cc",
-          "shortId": "1127691d",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-13"
     },
     {
       "protocol": "freedom",
@@ -607,7 +605,7 @@
           "proxy-"
         ],
         "strategy": {
-          "type": "leastPing"
+          "type": "leastLoad"
         },
         "tag": "proxy-round"
       }
