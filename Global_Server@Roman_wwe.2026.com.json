@@ -1785,7 +1785,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "Global🔰Severs",
+  "remarks": "Global🔰Servers",
   "routing": {
     "balancers": [
       {
