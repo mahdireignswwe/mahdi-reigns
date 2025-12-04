@@ -1,5 +1,5 @@
 {
-  "remarks": "Global⭐Servers",
+  "remarks": "Global🌟Servers",
   "log": {
     "access": "",
     "error": "",
@@ -63,6 +63,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "vpswlkk.irancpi.info",
+            "port": 8443,
+            "users": [
+              {
+                "id": "e1c3d74b-da4f-4657-8ea8-4240c92a5622",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "proxy-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "141.227.162.151",
             "port": 33919,
             "users": [
@@ -88,35 +117,6 @@
           "permit_without_stream": false,
           "initial_windows_size": 0
         }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-2",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "srvxgic.irancpi.info",
-            "port": 8443,
-            "users": [
-              {
-                "id": "85c4222a-ad78-4b5c-b5be-a0ce596d4f89",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       },
       "mux": {
         "enabled": false,
@@ -167,6 +167,35 @@
       "settings": {
         "vnext": [
           {
+            "address": "srvxgic.irancpi.info",
+            "port": 8443,
+            "users": [
+              {
+                "id": "85c4222a-ad78-4b5c-b5be-a0ce596d4f89",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "proxy-5",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "141.227.128.24",
             "port": 41291,
             "users": [
@@ -199,7 +228,7 @@
       }
     },
     {
-      "tag": "proxy-5",
+      "tag": "proxy-6",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -230,35 +259,6 @@
           "shortId": "48720c",
           "spiderX": ""
         }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-6",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "vpswlkk.irancpi.info",
-            "port": 8443,
-            "users": [
-              {
-                "id": "e1c3d74b-da4f-4657-8ea8-4240c92a5622",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       },
       "mux": {
         "enabled": false,
