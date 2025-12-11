@@ -1,5 +1,5 @@
 {
-  "remarks": "Global⭐Servers",
+  "remarks": "Global🔰Servers",
   "log": {
     "access": "",
     "error": "",
@@ -63,8 +63,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.0",
-            "port": 2083,
+            "address": "www.speedtest.net",
+            "port": 80,
             "users": [
               {
                 "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
@@ -81,19 +81,10 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiSGdidFRORGgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+          "path": "/eyJqdW5rIjoiZXlhS25MR1M4YmR1RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
           "headers": {
             "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "Tlbz9r7YRVYc9F6SvnMX8I1QjMWg3iT2.MahDIrEIGnS54.WoRkeRS.dEv",
-          "alpn": [
-            "http/1.1"
-          ],
-          "show": false
         }
       },
       "mux": {
@@ -107,48 +98,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.169.78",
-            "port": 41647,
+            "address": "fs.ir-sub.fun",
+            "port": 80,
             "users": [
               {
-                "id": "e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false,
-          "idle_timeout": 60,
-          "health_check_timeout": 20,
-          "permit_without_stream": false,
-          "initial_windows_size": 0
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-3",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.107.244.240",
-            "port": 443,
-            "users": [
-              {
-                "id": "500d3ced-b8a3-4a3b-8dce-2ded5dae1fce",
+                "id": "1a452b02-7302-432c-a20c-1bd9ef18c416",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -162,9 +116,44 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/",
+          "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
           "headers": {
-            "Host": "soft98.ir"
+            "Host": "zedd4.global.ssl.fastly.net"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "proxy-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoiZXlhS25MR1M4YmR1RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+          "headers": {
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           }
         }
       },
@@ -179,11 +168,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.217",
-            "port": 443,
+            "address": "fs.ir-sub.fun",
+            "port": 80,
             "users": [
               {
-                "id": "ee122f13-9b54-49b6-abc5-aa47b464fdb3",
+                "id": "a9b548c2-c33e-4b8e-befd-13fec8ab2e2d",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -197,17 +186,10 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/yhowcws",
+          "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
           "headers": {
-            "Host": "azizoarjmand.info"
+            "Host": "zedd2.global.ssl.fastly.net"
           }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "azizoarjmand.info",
-          "alpn": [],
-          "show": false
         }
       },
       "mux": {
@@ -221,31 +203,30 @@
       "settings": {
         "vnext": [
           {
-            "address": "yer1.vpntype.dev",
-            "port": 8443,
+            "address": "141.227.130.6",
+            "port": 46106,
             "users": [
               {
-                "id": "c44d64d3-bc91-43ba-9d59-3a0906e7a2bd",
+                "id": "89d98d66-4695-400d-9fdf-7767af9f24a5",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "google.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "wWi-AH24-O27OYXsaT390rLPZY9hqBRYuvBGIZ9vzkk",
-          "shortId": "",
-          "spiderX": ""
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
         }
       },
       "mux": {
@@ -259,11 +240,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 2096,
+            "address": "168.119.104.156",
+            "port": 10200,
             "users": [
               {
-                "id": "e999db7a-1b17-4da6-bc37-c9fa24af2e93",
+                "id": "b786d9bd-b9f7-4587-a580-eb8a219f19f3",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -278,16 +259,7 @@
         "network": "ws",
         "wsSettings": {
           "path": "/",
-          "headers": {
-            "Host": "smart.zarnovia.info"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "smart.zarnovia.info",
-          "alpn": [],
-          "show": false
+          "headers": {}
         }
       },
       "mux": {
@@ -297,6 +269,41 @@
     },
     {
       "tag": "proxy-7",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fs.ir-sub.fun",
+            "port": 80,
+            "users": [
+              {
+                "id": "f1b3ac3c-3000-4a19-89bb-3d613055df68",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+          "headers": {
+            "Host": "zedd3.global.ssl.fastly.net"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "proxy-8",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -333,49 +340,16 @@
       }
     },
     {
-      "tag": "proxy-8",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "168.119.104.156",
-            "port": 10200,
-            "users": [
-              {
-                "id": "b786d9bd-b9f7-4587-a580-eb8a219f19f3",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {}
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
       "tag": "proxy-9",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "fs.ir-sub.fun",
-            "port": 80,
+            "address": "91.107.169.78",
+            "port": 41647,
             "users": [
               {
-                "id": "2e9177ce-d1cc-45cd-b27f-f16f8fbc117a",
+                "id": "e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -387,12 +361,14 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON",
-          "headers": {
-            "Host": "zedd.global.ssl.fastly.net"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
         }
       },
       "mux": {
@@ -406,69 +382,30 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.173.249.15",
-            "port": 443,
+            "address": "141.227.134.118",
+            "port": 18929,
             "users": [
               {
-                "id": "7405cd73-01d9-48d5-ada9-6905378d3975",
+                "id": "681550bc-d418-46eb-b5da-b2408fbaf19f",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "disk.yandex.ru",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "wffi6nrJbxOiA0g7IuiXB4FZ7tkFtb9eRkPS9UvWPks",
-          "shortId": "9ec7e0",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-11",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hels3.vlessok.store",
-            "port": 443,
-            "users": [
-              {
-                "id": "7405cd73-01d9-48d5-ada9-6905378d3975",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "disk.yandex.ru",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "wffi6nrJbxOiA0g7IuiXB4FZ7tkFtb9eRkPS9UvWPks",
-          "shortId": "9ec7e0",
-          "spiderX": ""
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
         }
       },
       "mux": {
@@ -512,8 +449,7 @@
       "proxy-7",
       "proxy-8",
       "proxy-9",
-      "proxy-10",
-      "proxy-11"
+      "proxy-10"
     ]
   },
   "dns": {
@@ -537,8 +473,7 @@
           "proxy-7",
           "proxy-8",
           "proxy-9",
-          "proxy-10",
-          "proxy-11"
+          "proxy-10"
         ],
         "strategy": {
           "type": "leastLoad"
