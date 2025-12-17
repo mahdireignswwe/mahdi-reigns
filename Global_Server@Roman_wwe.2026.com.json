@@ -62,11 +62,6 @@
       "www.speedtest.net": [
         "104.17.147.22",
         "104.17.148.22"
-      ],
-      "brenna.ns.cloudflare.com": [
-        "108.162.194.176",
-        "162.159.38.176",
-        "172.64.34.176"
       ]
     },
     "servers": [
@@ -149,12 +144,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.166.174.44",
-            "port": 443,
+            "address": "84.201.153.174",
+            "port": 5443,
             "users": [
               {
                 "encryption": "none",
-                "id": "bcace1b8-92b1-4759-a814-3d4f2c4131b0",
+                "flow": "xtls-rprx-vision",
+                "id": "614e9054-36cd-446d-88f0-b66d4524c18f",
                 "level": 8
               }
             ]
@@ -162,20 +158,20 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
-          "serverName": "www.wikipedia.org",
-          "shortId": "1c213fd68e13",
-          "show": false,
-          "spiderX": "/"
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "ads.x5.ru",
+          "shortId": "6ba85179e30d4fc2",
+          "show": false
         },
         "security": "reality",
-        "xhttpSettings": {
-          "host": "",
-          "path": "/farasati1"
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-2"
@@ -189,12 +185,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.142.113",
+            "address": "94.130.56.0",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "5a610843-772e-49a7-8231-ad394372c041",
+                "id": "880b2d75-296f-4a20-a32d-a193c0753d9d",
                 "level": 8
               }
             ]
@@ -229,12 +225,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.62.168.85",
+            "address": "5.75.203.83",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "c14b2fbf-df5f-495e-8825-eb337504998b",
+                "id": "adef172b-c88c-49d8-90d6-a2a6c9b28b1e",
                 "level": 8
               }
             ]
@@ -269,12 +265,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.206.46",
+            "address": "91.107.130.144",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "2810d727-be17-4893-95d1-635669c31f4f",
+                "id": "98fc1abc-c223-43fa-bd44-6495984a74c4",
                 "level": 8
               }
             ]
@@ -309,12 +305,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "167.99.90.76",
+            "address": "5.75.204.254",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "3d2c1c41-99d5-4a55-9ffa-e433f68dcfae",
+                "id": "7a2c0025-b25c-4d20-97d5-793dbaef4463",
                 "level": 8
               }
             ]
@@ -349,12 +345,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "brenna.ns.cloudflare.com",
+            "address": "5.75.193.178",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63",
+                "id": "c85b9db2-800e-4984-9fa4-7e7d91ebd098",
                 "level": 8
               }
             ]
@@ -362,27 +358,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
         },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "terazhedi.info",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "terazhedi.info"
-          },
-          "path": "/sghiyws"
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
         }
       },
       "tag": "proxy-7"
@@ -396,12 +385,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.128.34.52",
+            "address": "91.107.144.197",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "ecd4abf4-fce4-46e9-be3b-3c09e07cfd64",
+                "id": "c26f570f-dc33-40f0-98a3-723ed38b355f",
                 "level": 8
               }
             ]
@@ -436,12 +425,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "139.59.172.10",
+            "address": "78.46.133.196",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "56e12db3-8346-40f7-93e7-42ae19c7d915",
+                "id": "fcc82991-1691-499d-a5d8-f045d6fb0e57",
                 "level": 8
               }
             ]
@@ -476,12 +465,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "134.209.191.114",
+            "address": "91.99.163.168",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "fca73869-cfb1-4967-a995-0ecf5c56819c",
+                "id": "be1bf99d-b8fa-45da-94a2-919086a879b9",
                 "level": 8
               }
             ]
@@ -516,12 +505,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.182.79.163",
-            "port": 45152,
+            "address": "91.107.171.155",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "d6aa109c-f49a-4658-8ec7-220addd981cc",
+                "id": "96f26349-8901-458a-9ce3-bb2e5cb8cfdd",
                 "level": 8
               }
             ]
@@ -529,14 +518,21 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
         },
-        "network": "grpc"
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
       },
       "tag": "proxy-11"
     },
@@ -549,12 +545,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.193.124",
+            "address": "5.75.207.162",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "237aec61-33a3-4a4d-8328-9e8b865fb138",
+                "id": "0223edc8-eabb-497b-8783-423304cdebaa",
                 "level": 8
               }
             ]
@@ -589,12 +585,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.182.79.105",
-            "port": 23920,
+            "address": "91.107.186.198",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "75724a4a-3e8b-405d-b830-2bbc6949ea03",
+                "id": "3254c332-d0e6-4c14-b355-c77e03a2f382",
                 "level": 8
               }
             ]
@@ -602,14 +598,21 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
         },
-        "network": "grpc"
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
       },
       "tag": "proxy-13"
     },
@@ -622,12 +625,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.182.79.117",
-            "port": 25743,
+            "address": "5.75.206.75",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "028c5e34-9f96-476c-a78a-a80a7f47c4fe",
+                "id": "144b2242-dbf4-42b3-81bb-4710087ee0b4",
                 "level": 8
               }
             ]
@@ -635,14 +638,21 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
         },
-        "network": "grpc"
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
       },
       "tag": "proxy-14"
     },
@@ -655,13 +665,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.154.205.131",
+            "address": "128.140.13.117",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fd4b0117-d752-46fd-9a94-21a21e360fdb",
+                "id": "ae735c75-e6fa-4ea5-ab65-464d2e602d16",
                 "level": 8
               }
             ]
@@ -669,23 +678,543 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "xhttp",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
-          "serverName": "ads.x5.ru",
-          "shortId": "672ff0",
-          "show": false
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
         },
         "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
         }
       },
       "tag": "proxy-15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.252.195",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d9b7182d-92a5-4ab8-bfdb-8dca1ec9f28d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "167.71.131.209",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2ac450c2-3de0-42cc-a77e-bcb4d6d7ab49",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-17"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "134.209.176.168",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3ba69c55-2703-4fa0-a71f-27309de124ab",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-18"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.149.219",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fae264ce-ca99-4071-b7a0-3ffa8be47731",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-19"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "167.172.51.219",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b3debbce-9f10-4476-a895-de214a77fe74",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-20"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.171.229",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "f7c2f3fd-6f7a-4580-8fd4-7dede2c4522e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-21"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.172.41",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "44eb7594-4cc3-4d3a-b9bf-2288d7f8c517",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-22"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "167.99.204.38",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fe903359-9ae6-4a75-999d-9b8bb5c4de64",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-23"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.169.124",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3b7f35f7-2a8c-428e-86c9-1facf0b7751c",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-24"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "167.99.201.104",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "03742e41-781d-4c72-841d-984f5c709788",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-25"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.75.195.193",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "efa5ba9c-cd97-48c3-bd53-2efbe8484f4f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-26"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.133.114",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "44a7cd7e-0c1f-43ef-ab79-ddf3414667fc",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-27"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "46.101.84.21",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cddedd5e-8ceb-461e-8979-d82ea000452c",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-28"
     },
     {
       "mux": {
@@ -726,7 +1255,7 @@
           }
         }
       },
-      "tag": "proxy-16"
+      "tag": "proxy-29"
     },
     {
       "mux": {
@@ -737,13 +1266,46 @@
       "settings": {
         "vnext": [
           {
-            "address": "84.201.153.174",
-            "port": 5443,
+            "address": "194.182.79.117",
+            "port": 25743,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "028c5e34-9f96-476c-a78a-a80a7f47c4fe",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+        },
+        "network": "grpc"
+      },
+      "tag": "proxy-30"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.154.205.131",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "614e9054-36cd-446d-88f0-b66d4524c18f",
+                "id": "fd4b0117-d752-46fd-9a94-21a21e360fdb",
                 "level": 8
               }
             ]
@@ -755,9 +1317,9 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "publicKey": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
           "serverName": "ads.x5.ru",
-          "shortId": "6ba85179e30d4fc2",
+          "shortId": "672ff0",
           "show": false
         },
         "security": "reality",
@@ -767,7 +1329,153 @@
           }
         }
       },
-      "tag": "proxy-17"
+      "tag": "proxy-31"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.182.79.105",
+            "port": 23920,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "75724a4a-3e8b-405d-b830-2bbc6949ea03",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+        },
+        "network": "grpc"
+      },
+      "tag": "proxy-32"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "138.68.147.15",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "451bda30-9698-422f-82f5-c609860ad054",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-33"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.182.79.163",
+            "port": 45152,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d6aa109c-f49a-4658-8ec7-220addd981cc",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+        },
+        "network": "grpc"
+      },
+      "tag": "proxy-34"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "77.42.31.96",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "be491349-13f0-49fb-9562-b7eb8ab7a9f5",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
+          "serverName": "www.wikipedia.org",
+          "shortId": "1c213fd68e13",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "host": "",
+          "path": "/farasati1"
+        }
+      },
+      "tag": "proxy-35"
     },
     {
       "protocol": "freedom",
@@ -786,7 +1494,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "Global🔰Servers",
+  "remarks": "Global⭐Servers",
   "routing": {
     "balancers": [
       {
@@ -822,4 +1530,4 @@
       }
     ]
   }
-          }
+}
