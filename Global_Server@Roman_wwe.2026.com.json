@@ -48,51 +48,43 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "srvgwtvm.samanidempire.org": "136.244.90.197",
-      "bitpay.com": [
-        "104.18.78.118",
-        "104.18.79.118",
-        "2606:4700::6812:4e76",
-        "2606:4700::6812:4f76"
-      ],
-      "dl5-de5-cdn.cloud-files-uploader.com": "185.79.158.111",
+      "serveruwofl.samanidempire.org": "45.76.84.125",
       "dl5-tr4-cdn.cloud-files-uploader.com": "46.31.79.34",
       "ip4.ip-54-38-3.eu": "54.38.3.4",
-      "vps-c187ab91.vps.ovh.net": [
-        "146.59.127.241",
-        "2001:41d0:601:1100::5259"
-      ],
-      "vps-8e66b5b2.vps.ovh.net": [
-        "141.227.137.248",
-        "2001:41d0:ab01::4:0:116"
-      ],
       "vps-f857b922.vps.ovh.net": [
         "51.38.71.67",
         "2001:41d0:801:2000::76fb"
       ],
-      "ip50.ip-135-148-11.us": "135.148.11.50",
-      "vps-e7fa62be.vps.ovh.ca": [
-        "51.222.137.109",
-        "2607:5300:205:200::535b"
-      ],
-      "dl1-us1-cdn.cloud-files-uploader.com": [
-        "52.43.74.145",
-        "34.222.115.116"
+      "dl5-de5-cdn.cloud-files-uploader.com": "185.79.158.111",
+      "vps-8e66b5b2.vps.ovh.net": [
+        "141.227.137.248",
+        "2001:41d0:ab01::4:0:116"
       ],
       "vps-e6645c9a.vps.ovh.net": [
         "57.131.35.1",
         "2001:41d0:2005:100::de7"
       ],
+      "www.speedtest.net": [
+        "104.17.147.22",
+        "104.17.148.22"
+      ],
+      "srvgwtvm.samanidempire.org": "136.244.90.197",
+      "vps-c187ab91.vps.ovh.net": [
+        "146.59.127.241",
+        "2001:41d0:601:1100::5259"
+      ],
+      "ip50.ip-135-148-11.us": "135.148.11.50",
       "vps-af4906fe.vps.ovh.ca": [
         "51.79.173.141",
         "2402:1f00:8000:800::3304"
       ],
-      "iran.zanbor.de": "109.122.240.105",
-      "ipcf.ekhtelal.fun": "104.21.67.49",
-      "serveruwofl.samanidempire.org": "45.76.84.125",
-      "www.speedtest.net": [
-        "104.17.148.22",
-        "104.17.147.22"
+      "dl1-us1-cdn.cloud-files-uploader.com": [
+        "52.43.74.145",
+        "34.222.115.116"
+      ],
+      "vps-e7fa62be.vps.ovh.ca": [
+        "51.222.137.109",
+        "2607:5300:205:200::535b"
       ]
     },
     "servers": [
@@ -142,12 +134,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "srvgwtvm.samanidempire.org",
+            "address": "serveruwofl.samanidempire.org",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "47036dc7-0895-4af7-b34d-b6052ff16e1d",
+                "id": "9c44456c-8b80-4e95-80e8-7a79c490e4c7",
                 "level": 8
               }
             ]
@@ -171,184 +163,17 @@
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "srvgwtvm.samanidempire.org",
+          "serverName": "serveruwofl.samanidempire.org",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "srvgwtvm.samanidempire.org"
+            "Host": "serveruwofl.samanidempire.org"
           },
-          "path": "/2747cb53"
+          "path": "/1ab3537d"
         }
       },
       "tag": "proxy-1"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "bitpay.com",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "513f699d-ed8c-4a47-a225-0736fc2213e7",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "rAyAn-cOnFiG-tr-1.pAriSa.dPdNs.oRg",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "rAyAn-cOnFiG-tr-1.pAriSa.dPdNs.oRg"
-          },
-          "path": "/ws"
-        }
-      },
-      "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.132.196",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d0298536-d670-4045-bbb1-ddd5ea68683e",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "a.azadnet003.ddns-ip.net",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "a.azadnet003.ddns-ip.net"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.53.180",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dl5-de5-cdn.cloud-files-uploader.com",
-            "port": 2082,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -364,7 +189,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -389,7 +214,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-6"
+      "tag": "proxy-2"
     },
     {
       "mux": {
@@ -430,7 +255,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-3"
     },
     {
       "mux": {
@@ -441,12 +266,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "vps-c187ab91.vps.ovh.net",
+            "address": "ip4.ip-54-38-3.eu",
             "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -466,53 +291,12 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "vps-c187ab91.vps.ovh.net"
+            "Host": "ip4.ip-54-38-3.eu"
           },
           "path": "/"
         }
       },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "vps-8e66b5b2.vps.ovh.net",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "vps-8e66b5b2.vps.ovh.net"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-9"
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -528,7 +312,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -553,6 +337,211 @@
           "path": "/"
         }
       },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "57.129.53.180",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-8e66b5b2.vps.ovh.net",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-8e66b5b2.vps.ovh.net"
+          },
+          "path": "/"
+        }
+      },
       "tag": "proxy-10"
     },
     {
@@ -564,8 +553,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip50.ip-135-148-11.us",
-            "port": 2052,
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
@@ -589,94 +578,12 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "ip50.ip-135-148-11.us"
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
           },
           "path": "/"
         }
       },
       "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "vps-e7fa62be.vps.ovh.ca",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "vps-e7fa62be.vps.ovh.ca"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dl1-us1-cdn.cloud-files-uploader.com",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "dl1-us1-cdn.cloud-files-uploader.com"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-13"
     },
     {
       "mux": {
@@ -717,7 +624,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-14"
+      "tag": "proxy-12"
     },
     {
       "mux": {
@@ -734,6 +641,88 @@
               {
                 "encryption": "none",
                 "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-13"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiZXlhS25MR1M4YmR1RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+        }
+      },
+      "tag": "proxy-14"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -769,12 +758,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "dl5-de5-cdn.cloud-files-uploader.com",
-            "port": 2082,
+            "address": "vps-e6645c9a.vps.ovh.net",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -794,7 +783,7 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+            "Host": "vps-e6645c9a.vps.ovh.net"
           },
           "path": "/"
         }
@@ -815,7 +804,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -851,12 +840,43 @@
       "settings": {
         "vnext": [
           {
+            "address": "209.38.52.51",
+            "port": 4655,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1602a406-a38e-4211-bbdc-3f75c890303d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-18"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "dl5-de5-cdn.cloud-files-uploader.com",
             "port": 2082,
             "users": [
               {
                 "encryption": "none",
-                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -881,7 +901,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-18"
+      "tag": "proxy-19"
     },
     {
       "mux": {
@@ -892,7 +912,98 @@
       "settings": {
         "vnext": [
           {
-            "address": "vps-af4906fe.vps.ovh.ca",
+            "address": "srvgwtvm.samanidempire.org",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "47036dc7-0895-4af7-b34d-b6052ff16e1d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "srvgwtvm.samanidempire.org",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "srvgwtvm.samanidempire.org"
+          },
+          "path": "/2747cb53"
+        }
+      },
+      "tag": "proxy-20"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-21"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-c187ab91.vps.ovh.net",
             "port": 2052,
             "users": [
               {
@@ -917,105 +1028,94 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "vps-af4906fe.vps.ovh.ca"
+            "Host": "vps-c187ab91.vps.ovh.net"
           },
           "path": "/"
         }
       },
-      "tag": "proxy-19"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "25.129.199.12",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e28d3c04-3c60-4315-a46f-2ff41d21e66e",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "xhttpSettings": {
-          "host": "www.speedtest.net.tax.gov.ir.aparat.com.a.3.jEy.dPdNs.org.",
-          "mode": "auto",
-          "path": "/?TELEGRAM--BYA--CHANEL----@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN"
-        }
-      },
-      "tag": "proxy-20"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.40.99",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "32ee6cfa-a6c2-48ec-b833-b072975c7177",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "xhttpSettings": {
-          "host": "www.speedtest.net.tax.gov.ir.aparat.com.a.3.jEy.dPdNs.org.",
-          "mode": "auto",
-          "path": "/?TELEGRAM--BYA--CHANEL----@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN"
-        }
-      },
-      "tag": "proxy-21"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "146.75.119.82",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fba187bb-4c57-40f7-d248-945ca8c0c41b",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "xhttpSettings": {
-          "host": "hqTm.iR",
-          "mode": "auto",
-          "path": "/@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG--@HqV2RayNG?ed=2056"
-        }
-      },
       "tag": "proxy-22"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-23"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-24"
     },
     {
       "mux": {
@@ -1042,7 +1142,7 @@
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
-          "allowInsecure": true,
+          "allowInsecure": false,
           "fingerprint": "chrome",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "serverName": "fuck.rkn",
@@ -1050,87 +1150,6 @@
           "show": false
         },
         "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-23"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "78.159.247.74",
-            "port": 5444,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "9c4dd65a-7158-4db7-bcef-4b44fb9941f0",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "max.ru",
-          "shortId": "6ba85179e30d4fc2",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-24"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "iran.zanbor.de",
-            "port": 8062,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f93b3a1b-ad96-490d-8836-3b4899053c6c",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -1148,12 +1167,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "209.38.52.51",
-            "port": 4655,
+            "address": "ip50.ip-135-148-11.us",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "1602a406-a38e-4211-bbdc-3f75c890303d",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
                 "level": 8
               }
             ]
@@ -1161,11 +1180,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
           }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "ip50.ip-135-148-11.us"
+          },
+          "path": "/"
         }
       },
       "tag": "proxy-26"
@@ -1179,12 +1208,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.128.245.151",
-            "port": 4655,
+            "address": "vps-c187ab91.vps.ovh.net",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "1602a406-a38e-4211-bbdc-3f75c890303d",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -1192,14 +1221,65 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
           }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-c187ab91.vps.ovh.net"
+          },
+          "path": "/"
         }
       },
       "tag": "proxy-27"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-28"
     },
     {
       "mux": {
@@ -1232,44 +1312,6 @@
         },
         "network": "grpc"
       },
-      "tag": "proxy-28"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.137.222",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "92028bf3-6ca2-4bdd-a570-eacfbc851657",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "joss.gvpn2.web.id",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "joss.gvpn2.web.id"
-          },
-          "path": "/Free-VPN-CF-Geo-Project/57.129.137.222=443"
-        }
-      },
       "tag": "proxy-29"
     },
     {
@@ -1281,59 +1323,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "ipcf.ekhtelal.fun",
-            "port": 8080,
+            "address": "dl5-de5-cdn.cloud-files-uploader.com",
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
-                "id": "9e6d6742-69f5-4b31-b3ae-6612fe845202",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "xhttpSettings": {
-          "extra": {
-            "scMaxEachPostBytes": 1000000,
-            "scMaxConcurrentPosts": 100,
-            "scMinPostsIntervalMs": 30,
-            "xPaddingBytes": "100-1000",
-            "noGRPCHeader": false
-          },
-          "host": "free12.shomboli.blog",
-          "mode": "auto",
-          "path": ""
-        }
-      },
-      "tag": "proxy-30"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "serveruwofl.samanidempire.org",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "9c44456c-8b80-4e95-80e8-7a79c490e4c7",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
                 "level": 8
               }
             ]
@@ -1342,7 +1337,6 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -1352,22 +1346,14 @@
             "tryDelayMs": 250
           }
         },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "serveruwofl.samanidempire.org",
-          "show": false
-        },
         "wsSettings": {
           "headers": {
-            "Host": "serveruwofl.samanidempire.org"
+            "Host": "dl5-de5-cdn.cloud-files-uploader.com"
           },
-          "path": "/1ab3537d"
+          "path": "/"
         }
       },
-      "tag": "proxy-31"
+      "tag": "proxy-30"
     },
     {
       "mux": {
@@ -1417,7 +1403,7 @@
           "path": "/2747cb53"
         }
       },
-      "tag": "proxy-32"
+      "tag": "proxy-31"
     },
     {
       "mux": {
@@ -1428,12 +1414,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 80,
+            "address": "vps-af4906fe.vps.ovh.ca",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
                 "level": 8
               }
             ]
@@ -1453,12 +1439,560 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+            "Host": "vps-af4906fe.vps.ovh.ca"
           },
-          "path": "/eyJqdW5rIjoiZXlhS25MR1M4YmR1RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          "path": "/"
+        }
+      },
+      "tag": "proxy-32"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-f857b922.vps.ovh.net",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-f857b922.vps.ovh.net"
+          },
+          "path": "/"
         }
       },
       "tag": "proxy-33"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ip50.ip-135-148-11.us",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "ip50.ip-135-148-11.us"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-34"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "57.129.137.222",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "92028bf3-6ca2-4bdd-a570-eacfbc851657",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "joss.gvpn2.web.id",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "joss.gvpn2.web.id"
+          },
+          "path": "/Free-VPN-CF-Geo-Project/57.129.137.222=443"
+        }
+      },
+      "tag": "proxy-35"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl1-us1-cdn.cloud-files-uploader.com",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl1-us1-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-36"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl5-tr4-cdn.cloud-files-uploader.com",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl5-tr4-cdn.cloud-files-uploader.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-37"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.132.196",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d0298536-d670-4045-bbb1-ddd5ea68683e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "a.azadnet003.ddns-ip.net",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "a.azadnet003.ddns-ip.net"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-38"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-e7fa62be.vps.ovh.ca",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-e7fa62be.vps.ovh.ca"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-39"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-8e66b5b2.vps.ovh.net",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-8e66b5b2.vps.ovh.net"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-40"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.159.247.74",
+            "port": 5444,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "9c4dd65a-7158-4db7-bcef-4b44fb9941f0",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "max.ru",
+          "shortId": "6ba85179e30d4fc2",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-41"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-af4906fe.vps.ovh.ca",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb0efb38-ed44-4d44-bc96-a1eaec08ee7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-af4906fe.vps.ovh.ca"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-42"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-e7fa62be.vps.ovh.ca",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-e7fa62be.vps.ovh.ca"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-43"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.66.40.99",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "32ee6cfa-a6c2-48ec-b833-b072975c7177",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "xhttpSettings": {
+          "host": "www.speedtest.net.tax.gov.ir.aparat.com.a.3.jEy.dPdNs.org.",
+          "mode": "auto",
+          "path": "/?TELEGRAM--BYA--CHANEL----@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN"
+        }
+      },
+      "tag": "proxy-44"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.128.245.151",
+            "port": 4655,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1602a406-a38e-4211-bbdc-3f75c890303d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-45"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vps-af4906fe.vps.ovh.ca",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd1b4e20-c5a6-4a11-92ee-8cb5f13888e2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vps-af4906fe.vps.ovh.ca"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-46"
     },
     {
       "protocol": "freedom",
@@ -1477,7 +2011,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "Global⭐Servers",
+  "remarks": "Global🌟Servers",
   "routing": {
     "balancers": [
       {
