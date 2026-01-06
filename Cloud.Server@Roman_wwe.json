@@ -1,5 +1,5 @@
 {
-  "remarks": "Cloud🔰Fragment",
+  "remarks": "💦 4 - VLESS F - IPv4 : 443",
   "version": {
     "min": "25.10.15"
   },
@@ -11,13 +11,6 @@
       {
         "address": "https://8.8.8.8/dns-query",
         "tag": "remote-dns"
-      },
-      {
-        "address": "8.8.8.8",
-        "domains": [
-          "full:www.speedtest.net"
-        ],
-        "skipFallback": true
       }
     ],
     "queryStrategy": "UseIP",
@@ -60,8 +53,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 2053,
+            "address": "172.67.189.131",
+            "port": 443,
             "users": [
               {
                 "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
@@ -75,11 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev",
-          "path": "/eyJqdW5rIjoiY0EwbExzcHIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560"
+          "path": "/eyJqdW5rIjoiVWZBS1JSTHlyOHBaVCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "76CmCcaKO8KNJKZKMgw9dwfyRPFbF8X8.WWe78296.wOrKers.DeV",
+          "serverName": "76cMCcAKO8KNJkZKMGW9DwfYRpfbF8x8.WWE78296.WOrkerS.Dev",
           "fingerprint": "chrome",
           "alpn": [
             "http/1.1"
