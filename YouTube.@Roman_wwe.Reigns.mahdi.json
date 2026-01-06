@@ -48,10 +48,21 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "ir1.githubtools.shop": "5.145.113.91",
       "srvgwtvm.samanidempire.org": "136.244.90.197",
-      "fanland2.mms8563.ir": "91.99.173.206",
-      "s4.cloudflare4wards.com": "94.182.228.41"
+      "ip1-fast.tyryqyserver.ir": "151.101.195.8",
+      "ir1.githubtools.shop": "5.145.113.91",
+      "Sr1.baleping.sbs": "185.29.223.204",
+      "Sr4.baleping.sbs": "46.38.150.20",
+      "speedtest.net": [
+        "151.101.66.219",
+        "151.101.194.219",
+        "151.101.130.219",
+        "151.101.2.219",
+        "2a04:4e42:200::731",
+        "2a04:4e42::731",
+        "2a04:4e42:400::731",
+        "2a04:4e42:600::731"
+      ]
     },
     "servers": [
       "1.1.1.1"
@@ -100,46 +111,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "ir1.githubtools.shop",
-            "port": 8081,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6543b1f1-14ae-4ec4-bfb5-aa6b0445b4c7",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-1"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "srvgwtvm.samanidempire.org",
             "port": 443,
             "users": [
@@ -179,6 +150,47 @@
           "path": "/2747cb53"
         }
       },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ip1-fast.tyryqyserver.ir",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "bc4e5ec8-b7e3-42f6-a968-045a19d62f11",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertde1.global.ssl.fastly.net"
+          },
+          "path": "/?ed=2052"
+        }
+      },
       "tag": "proxy-2"
     },
     {
@@ -190,12 +202,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.60.247.89",
-            "port": 3032,
+            "address": "ir1.githubtools.shop",
+            "port": 8081,
             "users": [
               {
                 "encryption": "none",
-                "id": "f48a1736-5421-4f3a-8e24-3f3d524a755e",
+                "id": "a69e2203-d751-4e41-8098-a2db19a94717",
                 "level": 8
               }
             ]
@@ -204,6 +216,15 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -221,13 +242,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "ir1.githubtools.shop",
-            "port": 8081,
+            "address": "ip1-fast.tyryqyserver.ir",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "09d8e09d-032f-4ff0-8335-886f4fba312d",
+                "id": "bc4e5ec8-b7e3-42f6-a968-045a19d62f11",
                 "level": 8
               }
             ]
@@ -235,7 +255,7 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -245,10 +265,11 @@
             "tryDelayMs": 250
           }
         },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertfn1.global.ssl.fastly.net"
+          },
+          "path": "/?ed=2052"
         }
       },
       "tag": "proxy-4"
@@ -262,12 +283,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "fanland2.mms8563.ir",
-            "port": 1002,
+            "address": "ip1-fast.tyryqyserver.ir",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "id": "e3e210bc-33af-4a5c-840c-907084c2dfa7",
+                "id": "701182a3-2109-4b42-bd18-023522c3e61f",
                 "level": 8
               }
             ]
@@ -275,16 +296,7 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "firefox",
-          "publicKey": "c-tUuogXR2StLDExRKiMZm4DYrMiIw4UmJIPTpqybzI",
-          "serverName": "refersion.com",
-          "shortId": "8bce1824a10a8595",
-          "show": false
-        },
-        "security": "reality",
+        "network": "ws",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -294,17 +306,11 @@
             "tryDelayMs": 250
           }
         },
-        "xhttpSettings": {
-          "extra": {
-            "scMaxEachPostBytes": 1000000,
-            "scMaxConcurrentPosts": 100,
-            "scMinPostsIntervalMs": 30,
-            "xPaddingBytes": "100-1000",
-            "noGRPCHeader": false
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertde1.global.ssl.fastly.net"
           },
-          "host": "speedtest.net",
-          "mode": "auto",
-          "path": "/?ed=2048"
+          "path": "/?ed=2052"
         }
       },
       "tag": "proxy-5"
@@ -318,12 +324,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.60.247.89",
-            "port": 3034,
+            "address": "Sr1.baleping.sbs",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "f48a1736-5421-4f3a-8e24-3f3d524a755e",
+                "id": "6dc52671-ad76-4d77-9236-bea14f7a5385",
                 "level": 8
               }
             ]
@@ -332,6 +338,15 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -345,17 +360,17 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "s4.cloudflare4wards.com",
-            "port": 2090,
+            "address": "Sr4.baleping.sbs",
+            "port": 2082,
             "users": [
               {
-                "id": "ee854996-ad30-4d20-2ad6-82418cb795fb",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "id": "6dc52671-ad76-4d77-9236-bea14f7a5385",
+                "level": 8
               }
             ]
           }
@@ -379,6 +394,88 @@
         }
       },
       "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "701182a3-2109-4b42-bd18-023522c3e61f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertde1.global.ssl.fastly.net"
+          },
+          "path": "/?ed=2052"
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "701182a3-2109-4b42-bd18-023522c3e61f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertfn1.global.ssl.fastly.net"
+          },
+          "path": "/?ed=2052"
+        }
+      },
+      "tag": "proxy-9"
     },
     {
       "protocol": "freedom",
