@@ -1,5 +1,5 @@
 {
-  "remarks": "Cloud🔰Servers",
+  "remarks": "Global👑Fast",
   "log": {
     "access": "",
     "error": "",
@@ -63,11 +63,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.189.131",
+            "address": "srvgwtvm.samanidempire.org",
             "port": 443,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "47036dc7-0895-4af7-b34d-b6052ff16e1d",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -81,15 +81,15 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoicnZDWXRDbVdkWDhneSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D",
+          "path": "/2747cb53",
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "srvgwtvm.samanidempire.org"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76CMccAkO8kNJkZKmGW9dwfYRPFbf8X8.wWE78296.WOrkeRS.DeV",
+          "serverName": "srvgwtvm.samanidempire.org",
           "alpn": [
             "http/1.1"
           ],
@@ -107,11 +107,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
+            "address": "http.hexo-music.ir",
+            "port": 2095,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "4fc8707b-0c0d-494c-af35-024840f9a5b9",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -123,21 +123,33 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoidElWdGU4eDdiZUEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "version": "1.1",
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "headers": {
+                "Host": [
+                  "zula.ir"
+                ],
+                "User-Agent": [
+                  ""
+                ],
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache"
+              }
+            }
           }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "76CmccaKo8KNJkZkmgW9dwfYrPfBf8x8.Wwe78296.WorKERs.dEV",
-          "alpn": [
-            "http/1.1"
-          ],
-          "show": false
         }
       },
       "mux": {
@@ -151,11 +163,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 8443,
+            "address": "srvgwtvm.samanidempire.org",
+            "port": 443,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "acce4739-c96f-4033-b3bf-ac0ce10fa3cb",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -169,15 +181,15 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiWE8yQktoZDNyZGRIIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D",
+          "path": "/2747cb53",
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "srvgwtvm.samanidempire.org"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76CMCcAKO8knjkZkMgw9dwFyrpfbf8x8.WWe78296.WoRkERS.Dev",
+          "serverName": "srvgwtvm.samanidempire.org",
           "alpn": [
             "http/1.1"
           ],
@@ -195,37 +207,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.0",
-            "port": 443,
+            "address": "57.129.53.180",
+            "port": 23576,
             "users": [
               {
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoicVlIdUtqUlNNbGhEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D",
-          "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "tLBZ9R7YRVyC9f6SvnMx8i1QJMWG3iT2.MahdiREigNS54.WOrKerS.DEV",
-          "alpn": [
-            "http/1.1"
-          ],
-          "show": false
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "fuck.rkn",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "shortId": "01",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -239,11 +245,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev",
-            "port": 2095,
+            "address": "37.120.186.241",
+            "port": 80,
             "users": [
               {
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -257,9 +263,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiWU1JOFVWdTJWSU5aRFA1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D",
+          "path": "/news",
           "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+            "Host": "cdn.ir"
           }
         }
       },
@@ -274,11 +280,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.0",
-            "port": 80,
+            "address": "ip6-free.shakhle.ir",
+            "port": 55566,
             "users": [
               {
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "1f15e342-9be9-47b1-9666-3d169da1bd27",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -290,11 +296,32 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoidHpnZm01c1NReTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
-          "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "version": "1.1",
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "headers": {
+                "Host": [
+                  "w3.com"
+                ],
+                "User-Agent": [
+                  ""
+                ],
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache"
+              }
+            }
           }
         }
       },
@@ -309,11 +336,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev",
+            "address": "serveruwofl.samanidempire.org",
             "port": 443,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "9c44456c-8b80-4e95-80e8-7a79c490e4c7",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -327,15 +354,15 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiMnhHZ2MxMU5BaXRUeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D",
+          "path": "/1ab3537d",
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "serveruwofl.samanidempire.org"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76CMCcAKo8KNJkzkMGw9DwFyrPFbf8X8.WwE78296.wORKers.dEv",
+          "serverName": "serveruwofl.samanidempire.org",
           "alpn": [
             "http/1.1"
           ],
@@ -353,8 +380,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.0",
-            "port": 8880,
+            "address": "www.speedtest.net",
+            "port": 80,
             "users": [
               {
                 "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
@@ -371,7 +398,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoid0c1TXV3QWpWaEQ3T2oiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+          "path": "/eyJqdW5rIjoiZXlhS25MR1M4YmR1RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
           "headers": {
             "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           }
@@ -388,11 +415,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.189.131",
-            "port": 2096,
+            "address": "freeivp6.shomboli.blog",
+            "port": 443,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "c2bd20ba-2fc0-4765-8223-0401687cfcb7",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -404,21 +431,15 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiaDc2UXVqNW1YOTAyWFkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "76CMccAKO8kNJkZKMgW9dwfYrpFbf8x8.wwe78296.WOrkeRS.dev",
-          "alpn": [
-            "http/1.1"
-          ],
-          "show": false
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "miro.com",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "YLSRUKO-sm6In4ckqgVjagHKrWcA5r2aV7khO5brOUQ",
+          "shortId": "e3c5c005cae07eb7",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -432,11 +453,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
+            "address": "104.17.147.22",
             "port": 8080,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "a8ce3122-3959-5617-89bd-c7cae4493480",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -450,9 +471,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiTjBYcFNkZGN3bm0xcDJWMCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D",
+          "path": "/Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam",
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "Fi.Parsashonam.CfD."
           }
         }
       },
@@ -467,28 +488,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.0",
-            "port": 8080,
+            "address": "45.144.51.22",
+            "port": 443,
             "users": [
               {
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "6c49485f-843c-4e96-abfe-046bc473c7b0",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiaVkyWXZwZG1BIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D",
-          "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "github.com",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "euR8poucesDF-UxANxJ7Uqg1t4cfiDtAzAQcTVhRQCE",
+          "shortId": "140d8b3989bf5116",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -502,11 +526,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev",
-            "port": 8080,
+            "address": "195.2.76.224",
+            "port": 48868,
             "users": [
               {
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "94f729b1-5e1c-474f-a952-b8816a04e2fc",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -518,12 +542,15 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiUWxPRHB1aUo0IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D",
-          "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apple.com",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "QU6XzGL-1O93-UxkJYiV364sy30S5bI5EOahJL2blnE",
+          "shortId": "f2e878",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -537,37 +564,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.0",
-            "port": 443,
+            "address": "87.121.86.31",
+            "port": 57516,
             "users": [
               {
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "de2708c5-6e8e-4582-85ed-98f2554e5208",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiNTZQb0c2THRTIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D",
-          "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "tLbZ9r7YRvYC9f6SvNmX8i1QJmWG3It2.MahDiReIgNs54.WoRkERs.deV",
-          "alpn": [
-            "http/1.1"
-          ],
-          "show": false
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "google.com",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "ScCsL43AFwGSI8WvpjhAE6Y9PguU49ZLbwF-6YTbrTo",
+          "shortId": "c1765dd26b1e70",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -581,11 +602,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 2095,
+            "address": "65.108.231.185",
+            "port": 443,
             "users": [
               {
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "440766d1-858f-4719-84f5-c2de6f6227b2",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -597,12 +618,13 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoidG04cG5lNDJYcTRmRkQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
-          "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
-          }
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "api.avito.ru",
+          "alpn": [],
+          "show": false
         }
       },
       "mux": {
@@ -616,28 +638,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.33.98",
-            "port": 2086,
+            "address": "217.13.104.101",
+            "port": 3443,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "292e75fc-5a8a-40c4-b937-407c2400a42e",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiNnpiNURhZGNYIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D",
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api-maps.yandex.ru",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "shortId": "",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -651,11 +676,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.33.98",
-            "port": 80,
+            "address": "198.50.119.86",
+            "port": 8080,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "e2be0db4-4110-42eb-bca1-ba8df0897319",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -669,9 +694,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiU00zaFk4akpPdiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D",
+          "path": "/39427/Nextlife",
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "telewebion.com"
           }
         }
       },
@@ -686,11 +711,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.189.131",
-            "port": 443,
+            "address": "37.120.184.180",
+            "port": 80,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -704,18 +729,51 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiVWZBS1JSTHlyOHBaVCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D",
+          "path": "/news",
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "cdn.ir"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "proxy-18",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.164.248.122",
+            "port": 443,
+            "users": [
+              {
+                "id": "e258977b-e413-4718-a3af-02d75492c349",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "www.allxniu.qzz.io"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cMCcAKO8KNJkZKMGW9DwfYRpfbF8x8.WWE78296.WOrkerS.Dev",
-          "alpn": [
-            "http/1.1"
-          ],
+          "serverName": "www.allxniu.qzz.io",
+          "alpn": [],
           "show": false
         }
       },
@@ -767,7 +825,8 @@
       "proxy-14",
       "proxy-15",
       "proxy-16",
-      "proxy-17"
+      "proxy-17",
+      "proxy-18"
     ]
   },
   "dns": {
@@ -798,7 +857,8 @@
           "proxy-14",
           "proxy-15",
           "proxy-16",
-          "proxy-17"
+          "proxy-17",
+          "proxy-18"
         ],
         "strategy": {
           "type": "leastLoad"
