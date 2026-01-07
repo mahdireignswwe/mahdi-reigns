@@ -1,20 +1,73 @@
 {
-  "remarks": "💦 15 - VLESS F - IPv4 : 2087",
-  "version": {
-    "min": "25.10.15"
-  },
-  "log": {
-    "loglevel": "warning"
-  },
   "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com",
+      "dns.alidns.com": [
+        "223.5.5.5",
+        "223.6.6.6",
+        "2400:3200::1",
+        "2400:3200:baba::1"
+      ],
+      "one.one.one.one": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
+      "dns.cloudflare.com": [
+        "104.16.132.229",
+        "104.16.133.229",
+        "2606:4700::6810:84e5",
+        "2606:4700::6810:85e5"
+      ],
+      "cloudflare-dns.com": [
+        "104.16.248.249",
+        "104.16.249.249",
+        "2606:4700::6810:f8f9",
+        "2606:4700::6810:f9f9"
+      ],
+      "dot.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
+      ],
+      "dns.google": [
+        "8.8.8.8",
+        "8.8.4.4",
+        "2001:4860:4860::8888",
+        "2001:4860:4860::8844"
+      ],
+      "dns.quad9.net": [
+        "9.9.9.9",
+        "149.112.112.112",
+        "2620:fe::fe",
+        "2620:fe::9"
+      ],
+      "common.dot.dns.yandex.net": [
+        "77.88.8.8",
+        "77.88.8.1",
+        "2a02:6b8::feed:0ff",
+        "2a02:6b8:0:1::feed:0ff"
+      ],
+      "srvgwtvm.samanidempire.org": "136.244.90.197",
+      "ip1-fast.tyryqyserver.ir": "151.101.195.8",
+      "ir1.githubtools.shop": "5.145.113.91",
+      "speedtest.net": [
+        "151.101.130.219",
+        "151.101.66.219",
+        "151.101.2.219",
+        "151.101.194.219",
+        "2a04:4e42::731",
+        "2a04:4e42:600::731",
+        "2a04:4e42:400::731",
+        "2a04:4e42:200::731"
+      ],
+      "Sr1.baleping.sbs": "185.29.223.204",
+      "Sr4.baleping.sbs": "46.38.150.20"
+    },
     "servers": [
-      {
-        "address": "https://8.8.8.8/dns-query",
-        "tag": "remote-dns"
-      }
+      "1.1.1.1"
     ],
-    "queryStrategy": "UseIP",
-    "tag": "dns"
+    "tag": "dns-module"
   },
   "inbounds": [
     {
@@ -23,7 +76,8 @@
       "protocol": "socks",
       "settings": {
         "auth": "noauth",
-        "udp": true
+        "udp": true,
+        "userLevel": 8
       },
       "sniffing": {
         "destOverride": [
@@ -31,34 +85,39 @@
           "tls"
         ],
         "enabled": true,
-        "routeOnly": true
+        "routeOnly": false
       },
-      "tag": "mixed-in"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10853,
-      "protocol": "dokodemo-door",
-      "settings": {
-        "address": "1.1.1.1",
-        "network": "tcp,udp",
-        "port": 53
-      },
-      "tag": "dns-in"
+      "tag": "socks"
     }
   ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
   "outbounds": [
     {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.33.98",
-            "port": 2087,
+            "address": "srvgwtvm.samanidempire.org",
+            "port": 443,
             "users": [
               {
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
-                "encryption": "none"
+                "encryption": "none",
+                "id": "47036dc7-0895-4af7-b34d-b6052ff16e1d",
+                "level": 8
               }
             ]
           }
@@ -66,53 +125,357 @@
       },
       "streamSettings": {
         "network": "ws",
-        "wsSettings": {
-          "host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev",
-          "path": "/eyJqdW5rIjoiMmluNERTUERteVlIIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
-        },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "76cMCcaKo8KnjKzKMGW9DWfyrPFBF8X8.wwE78296.wORkers.DEV",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "allowInsecure": false
-        },
-        "sockopt": {
-          "dialerProxy": "fragment"
-        }
-      },
-      "tag": "proxy"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {
-        "fragment": {
-          "packets": "1-1",
-          "length": "10-20",
-          "interval": "10-20"
-        }
-      },
-      "streamSettings": {
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
-            "tryDelayMs": 250,
-            "prioritizeIPv6": false,
             "interleave": 2,
-            "maxConcurrentTry": 4
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "srvgwtvm.samanidempire.org",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "srvgwtvm.samanidempire.org"
+          },
+          "path": "/2747cb53"
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ip1-fast.tyryqyserver.ir",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "bc4e5ec8-b7e3-42f6-a968-045a19d62f11",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertde1.global.ssl.fastly.net"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ir1.githubtools.shop",
+            "port": 8081,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a69e2203-d751-4e41-8098-a2db19a94717",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
           }
         }
       },
-      "tag": "fragment"
+      "tag": "proxy-3"
     },
     {
-      "protocol": "dns",
-      "settings": {
-        "nonIPQuery": "reject"
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
       },
-      "tag": "dns-out"
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ip1-fast.tyryqyserver.ir",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "701182a3-2109-4b42-bd18-023522c3e61f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertde1.global.ssl.fastly.net"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ip1-fast.tyryqyserver.ir",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "bc4e5ec8-b7e3-42f6-a968-045a19d62f11",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertfn1.global.ssl.fastly.net"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "701182a3-2109-4b42-bd18-023522c3e61f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertfn1.global.ssl.fastly.net"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "701182a3-2109-4b42-bd18-023522c3e61f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "norbertde1.global.ssl.fastly.net"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "Sr1.baleping.sbs",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6dc52671-ad76-4d77-9236-bea14f7a5385",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "Sr4.baleping.sbs",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6dc52671-ad76-4d77-9236-bea14f7a5385",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-9"
     },
     {
       "protocol": "freedom",
@@ -131,77 +494,40 @@
       "tag": "block"
     }
   ],
+  "remarks": "warpIntelligent Selection",
   "routing": {
-    "domainStrategy": "IPIfNonMatch",
+    "balancers": [
+      {
+        "selector": [
+          "proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "tag": "proxy-round"
+      }
+    ],
+    "domainStrategy": "AsIs",
     "rules": [
       {
         "inboundTag": [
-          "mixed-in"
-        ],
-        "port": 53,
-        "outboundTag": "dns-out",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "dns-in"
-        ],
-        "outboundTag": "dns-out",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "remote-dns"
-        ],
-        "outboundTag": "proxy",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "dns"
+          "domestic-dns"
         ],
         "outboundTag": "direct",
         "type": "field"
       },
       {
-        "domain": [
-          "geosite:private"
+        "balancerTag": "proxy-round",
+        "inboundTag": [
+          "dns-module"
         ],
-        "outboundTag": "direct",
         "type": "field"
       },
       {
-        "ip": [
-          "geoip:private"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "network": "udp",
-        "outboundTag": "block",
-        "type": "field"
-      },
-      {
-        "network": "tcp",
-        "outboundTag": "proxy",
+        "balancerTag": "proxy-round",
+        "network": "tcp,udp",
         "type": "field"
       }
     ]
-  },
-  "policy": {
-    "levels": {
-      "0": {
-        "connIdle": 300,
-        "handshake": 4,
-        "uplinkOnly": 1,
-        "downlinkOnly": 1
-      }
-    },
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
-  "stats": {}
+  }
 }
