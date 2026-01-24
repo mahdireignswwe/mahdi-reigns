@@ -1334,7 +1334,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "سرور🌍یک",
+  "remarks": "سرور🌐دو",
   "routing": {
     "balancers": [
       {
