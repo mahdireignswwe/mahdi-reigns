@@ -49,8 +49,8 @@
         "2a02:6b8:0:1::feed:0ff"
       ],
       "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev": [
-        "188.114.96.2",
-        "188.114.97.2"
+        "188.114.97.6",
+        "188.114.96.6"
       ]
     },
     "servers": [
@@ -100,6 +100,248 @@
       "settings": {
         "vnext": [
           {
+            "address": "104.21.33.98",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoicEk0YTBqRnp6Qk9VIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.33.98",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoicEk0YTBqRnp6Qk9VIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.237.25",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiMWhUS2FDZEthVUh2TFZOYiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.33.98",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoicEk0YTBqRnp6Qk9VIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "159.246.55.190",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "76CMccAko8kNJkZkMGW9DwfyRPFbF8x8.WWe78296.WorKERS.dEV",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoieVA2QUs0QUhHaHU0YXFuIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.219.222",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoibVgwQ0RnVGpUeHVPR0xrQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "159.246.55.243",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "76CMccAKO8kNJKZKmgW9DwfyrPfbf8X8.WWE78296.WORkERS.DEV",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiWWF2ZTZFN0QiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "159.246.55.213",
             "port": 443,
             "users": [
@@ -130,7 +372,39 @@
           "path": "/eyJqdW5rIjoidWxVZGhGRWgxU01FczV3NyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
         }
       },
-      "tag": "proxy-1"
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.227.15",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoidnNYcTNRc2YyUTZTeVlqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+        }
+      },
+      "tag": "proxy-9"
     },
     {
       "mux": {
@@ -180,7 +454,7 @@
           "path": "/eyJqdW5rIjoiVVhmSWp4SzBJdCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
         }
       },
-      "tag": "proxy-2"
+      "tag": "proxy-10"
     },
     {
       "mux": {
@@ -191,12 +465,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.3",
-            "port": 443,
+            "address": "159.246.55.214",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
                 "level": 8
               }
             ]
@@ -205,23 +479,14 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "tlBz9r7YRVyc9f6Svnmx8i1QjMwG3IT2.mAhdiReIgNs54.WorkeRs.deV",
-          "show": false
-        },
         "wsSettings": {
           "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiSHJmUkxtRE40cHBDbE8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          "path": "/eyJqdW5rIjoiRWt5WTBMazQ4VyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
         }
       },
-      "tag": "proxy-3"
+      "tag": "proxy-11"
     },
     {
       "mux": {
@@ -262,80 +527,7 @@
           "path": "/eyJqdW5rIjoiSkE1SEZodGd0MSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
         }
       },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.246.55.214",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoiRWt5WTBMazQ4VyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-        }
-      },
-      "tag": "proxy-5"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.246.55.190",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "76CMccAko8kNJkZkMGW9DwfyRPFbF8x8.WWe78296.WorKERS.dEV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoieVA2QUs0QUhHaHU0YXFuIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
-        }
-      },
-      "tag": "proxy-6"
+      "tag": "proxy-12"
     },
     {
       "mux": {
@@ -367,7 +559,7 @@
           "path": "/eyJqdW5rIjoiMEJLRDhkZmE4Z1ZLIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-13"
     },
     {
       "mux": {
@@ -378,7 +570,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "159.246.55.190",
+            "address": "104.21.33.98",
             "port": 2052,
             "users": [
               {
@@ -396,92 +588,10 @@
           "headers": {
             "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiZTFUUm43UGNCdFV1UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+          "path": "/eyJqdW5rIjoicEk0YTBqRnp6Qk9VIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
         }
       },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.246.55.195",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "76CMCcAkO8KnjKzKMGw9DwFYrpfBF8x8.WwE78296.WoRkeRs.dev",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoid0Z2dHZuOGFEV3kiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.246.55.243",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "76CMccAKO8kNJKZKmgW9DwfyrPfbf8X8.WWE78296.WORkERS.DEV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoiWWF2ZTZFN0QiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
-        }
-      },
-      "tag": "proxy-10"
+      "tag": "proxy-14"
     },
     {
       "protocol": "freedom",
@@ -500,7 +610,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "Cloud🔰2",
+  "remarks": "Cloud🌍Vip",
   "routing": {
     "balancers": [
       {
