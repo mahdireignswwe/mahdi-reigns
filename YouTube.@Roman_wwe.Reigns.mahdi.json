@@ -1,1 +1,397 @@
-vless://a8a9158e-0c2f-4afb-9158-a4d534453f28@instxrpt.samanidempire.org:443?path=%2F5a7200cd&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=instxrpt.samanidempire.org&type=ws&allowInsecure=1&sni=instxrpt.samanidempire.org#proxy-7
+{
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com",
+      "dns.alidns.com": [
+        "223.5.5.5",
+        "223.6.6.6",
+        "2400:3200::1",
+        "2400:3200:baba::1"
+      ],
+      "one.one.one.one": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
+      "dns.cloudflare.com": [
+        "104.16.132.229",
+        "104.16.133.229",
+        "2606:4700::6810:84e5",
+        "2606:4700::6810:85e5"
+      ],
+      "cloudflare-dns.com": [
+        "104.16.248.249",
+        "104.16.249.249",
+        "2606:4700::6810:f8f9",
+        "2606:4700::6810:f9f9"
+      ],
+      "dot.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
+      ],
+      "dns.google": [
+        "8.8.8.8",
+        "8.8.4.4",
+        "2001:4860:4860::8888",
+        "2001:4860:4860::8844"
+      ],
+      "dns.quad9.net": [
+        "9.9.9.9",
+        "149.112.112.112",
+        "2620:fe::fe",
+        "2620:fe::9"
+      ],
+      "common.dot.dns.yandex.net": [
+        "77.88.8.8",
+        "77.88.8.1",
+        "2a02:6b8::feed:0ff",
+        "2a02:6b8:0:1::feed:0ff"
+      ],
+      "dnss.iraniranshopdashnoard.ir": "141.101.114.214"
+    },
+    "servers": [
+      "1.1.1.1"
+    ],
+    "tag": "dns-module"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
+        "routeOnly": false
+      },
+      "tag": "socks"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.103.41.211",
+            "port": 15308,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "3936939b-48ad-4d04-8ffd-0379828c9f00",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "57.129.49.1",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.158.206.29",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dnss.iraniranshopdashnoard.ir",
+            "port": 2086,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a2626d27-e0f8-490d-b23c-c9ca0dea4ea9",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "bio.mehrsazi.ir",
+          "path": "/"
+        },
+        "network": "httpupgrade",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.158.206.87",
+            "port": 23576,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "serverName": "fuck.rkn",
+          "shortId": "01",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.29.139.141",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "port": 8080
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "43.173.125.15",
+            "port": 44519,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6b05ea27-051b-450b-965b-f6c5da11a1f0",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "remarks": "max",
+  "routing": {
+    "balancers": [
+      {
+        "selector": [
+          "proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "tag": "proxy-round"
+      }
+    ],
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "inboundTag": [
+          "domestic-dns"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "inboundTag": [
+          "dns-module"
+        ],
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "network": "tcp,udp",
+        "type": "field"
+      }
+    ]
+  }
+}
