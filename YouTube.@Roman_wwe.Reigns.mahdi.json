@@ -48,7 +48,9 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "dnss.iraniranshopdashnoard.ir": "141.101.114.214"
+      "admin.c2.havij.co": "20.108.15.110",
+      "series-a1.samanehha.co": "51.104.204.185",
+      "series-a2.samanehha.co": "51.104.204.185"
     },
     "servers": [
       "1.1.1.1"
@@ -79,40 +81,35 @@
   "log": {
     "loglevel": "warning"
   },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
   "outbounds": [
     {
       "mux": {
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "51.158.206.87",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-                "level": 8
-              }
-            ]
+            "address": "4.158.0.51",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "W74XFALLLuw6m5IA",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01",
-          "show": false
-        },
-        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -126,24 +123,30 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "43.173.125.15",
-            "port": 44519,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6b05ea27-051b-450b-965b-f6c5da11a1f0",
-                "level": 8
-              }
-            ]
+            "address": "admin.c2.havij.co",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "kaQH3hGdcP80XEDI",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -161,17 +164,26 @@
       "settings": {
         "servers": [
           {
-            "address": "193.29.139.141",
+            "address": "series-a1.samanehha.co",
             "level": 8,
             "method": "chacha20-ietf-poly1305",
             "ota": false,
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-            "port": 8080
+            "password": "W74XFALLLuw6m5IA",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -185,35 +197,24 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "dnss.iraniranshopdashnoard.ir",
-            "port": 2086,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a2626d27-e0f8-490d-b23c-c9ca0dea4ea9",
-                "level": 8
-              }
-            ]
+            "address": "20.108.15.110",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "kaQH3hGdcP80XEDI",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "httpupgradeSettings": {
-          "host": "bio.mehrsazi.ir",
-          "path": "/"
-        },
-        "network": "httpupgrade",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
           }
         }
       },
@@ -224,34 +225,30 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "51.158.206.29",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-                "level": 8
-              }
-            ]
+            "address": "series-a2.samanehha.co",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "W74XFALLLuw6m5IA",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01",
-          "show": false
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
-        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -265,34 +262,30 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "57.129.49.1",
-            "port": 23576,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-                "level": 8
-              }
-            ]
+            "address": "series-a1.samanehha.co",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "W74XFALLLuw6m5IA",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "serverName": "fuck.rkn",
-          "shortId": "01",
-          "show": false
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
-        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -300,6 +293,62 @@
         }
       },
       "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "131.145.23.4",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "kaQH3hGdcP80XEDI",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.104.204.185",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "W74XFALLLuw6m5IA",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-8"
     },
     {
       "protocol": "freedom",
@@ -318,7 +367,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "pro",
+  "remarks": "test",
   "routing": {
     "balancers": [
       {
@@ -326,7 +375,7 @@
           "proxy-"
         ],
         "strategy": {
-          "type": "random"
+          "type": "leastPing"
         },
         "tag": "proxy-round"
       }
