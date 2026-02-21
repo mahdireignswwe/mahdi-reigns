@@ -48,7 +48,11 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "instxrpt.samanidempire.org": "192.248.180.137"
+      "instxrpt.samanidempire.org": "192.248.180.137",
+      "a.pabloping.cloud": [
+        "45.130.125.160",
+        "188.114.98.0"
+      ]
     },
     "servers": [
       "1.1.1.1"
@@ -68,8 +72,7 @@
       "sniffing": {
         "destOverride": [
           "http",
-          "tls",
-          "fakedns"
+          "tls"
         ],
         "enabled": true,
         "routeOnly": false
@@ -79,14 +82,6 @@
   ],
   "log": {
     "loglevel": "warning"
-  },
-  "observatory": {
-    "enableConcurrency": true,
-    "probeInterval": "3m",
-    "probeUrl": "https://www.gstatic.com/generate_204",
-    "subjectSelector": [
-      "proxy-"
-    ]
   },
   "outbounds": [
     {
@@ -103,6 +98,7 @@
             "users": [
               {
                 "encryption": "none",
+                "flow": "",
                 "id": "7aa98930-46b2-4f25-af3c-c396d7ebf01d",
                 "level": 8
               }
@@ -144,47 +140,25 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "instxrpt.samanidempire.org",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "a8a9158e-0c2f-4afb-9158-a4d534453f28",
-                "level": 8
-              }
-            ]
+            "address": "149.102.149.207",
+            "level": 8,
+            "method": "aes-256-gcm",
+            "ota": false,
+            "password": "umWwoQJEJGf74SLe",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
           }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "instxrpt.samanidempire.org",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "instxrpt.samanidempire.org"
-          },
-          "path": "/5a7200cd"
         }
       },
       "tag": "proxy-2"
@@ -230,44 +204,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.135.194.50",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "sni.111000.indevs.in",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "sni.111000.indevs.in"
-          },
-          "path": "/?ed=2560&Telegram🇨🇳@WangCai2"
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "157.230.27.167",
             "port": 443,
             "users": [
@@ -292,10 +228,10 @@
           "headers": {
             "Host": "sni.111000.indevs.in"
           },
-          "path": "/?ed=2560&Telegram🇨🇳@WangCai2"
+          "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2="
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -333,6 +269,38 @@
           "path": "/45.76.183.217=49292"
         }
       },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.237.25",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiMWhUS2FDZEthVUh2TFZOYiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+        }
+      },
       "tag": "proxy-6"
     },
     {
@@ -344,13 +312,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.84.113.47",
+            "address": "18.153.93.127",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "a44e0875-210f-4941-9062-89b6361a14c6",
+                "id": "0154d742-3233-4c61-f81c-7407fcf28b87",
                 "level": 8
               }
             ]
@@ -359,15 +326,6 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4",
-          "serverName": "apple.com",
-          "shortId": "8bcfe256cf216fd8",
-          "show": false
-        },
-        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -385,12 +343,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.237.25",
-            "port": 2052,
+            "address": "5.254.85.152",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "flow": "xtls-rprx-vision",
+                "id": "ccedb1b1-35f3-46d1-a85a-c699eef5f3e1",
                 "level": 8
               }
             ]
@@ -398,12 +357,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoiMWhUS2FDZEthVUh2TFZOYiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc",
+          "serverName": "germany.scroogethebest.com",
+          "shortId": "4fa44664f6a566d3",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-8"
@@ -417,12 +384,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.135.194.50",
-            "port": 2053,
+            "address": "85.192.48.1",
+            "port": 8104,
             "users": [
               {
                 "encryption": "none",
-                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+                "flow": "xtls-rprx-vision",
+                "id": "db27262a-4151-4c36-8e5f-2cf7fd387a0f",
                 "level": 8
               }
             ]
@@ -430,18 +398,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "sni.111000.indevs.in",
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A",
+          "serverName": "tradingview.com",
+          "shortId": "9f4ca836ca270ef8",
           "show": false
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "sni.111000.indevs.in"
-          },
-          "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2="
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-9"
@@ -455,12 +425,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.17.148.22",
-            "port": 2096,
+            "address": "104.16.250.22",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "3f0f36f5-f091-45c5-88c9-4bcc545b922c",
+                "flow": "",
+                "id": "e6c7ed63-89db-4ae1-a3f8-7a722921b3b2",
                 "level": 8
               }
             ]
@@ -471,15 +442,16 @@
         "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "hetz.x-smm.com",
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "serverName": "apii.onlineshoppingez.ir",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "hetz.x-smm.com"
+            "Host": "apii.onlineshoppingez.ir"
           },
-          "path": "/45.76.183.217=49292"
+          "path": "/O1w0n3vYgFKYs7EzNAvLPvOp"
         }
       },
       "tag": "proxy-10"
@@ -493,12 +465,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.101.220.197",
-            "port": 2053,
+            "address": "45.144.53.37",
+            "port": 8104,
             "users": [
               {
                 "encryption": "none",
-                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+                "flow": "xtls-rprx-vision",
+                "id": "db27262a-4151-4c36-8e5f-2cf7fd387a0f",
                 "level": 8
               }
             ]
@@ -506,18 +479,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
+        "network": "tcp",
+        "realitySettings": {
           "allowInsecure": false,
-          "serverName": "sni.111000.indevs.in",
+          "fingerprint": "chrome",
+          "publicKey": "4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A",
+          "serverName": "tradingview.com",
+          "shortId": "9f4ca836ca270ef8",
           "show": false
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "sni.111000.indevs.in"
-          },
-          "path": "/?ed=2560&Telegram🇨🇳@WangCai2"
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-11"
@@ -531,12 +506,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.237.25",
-            "port": 2052,
+            "address": "130.193.59.133",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "flow": "xtls-rprx-vision",
+                "id": "c15c00a4-9e8e-4d22-9f2e-dc237c8b1220",
                 "level": 8
               }
             ]
@@ -544,12 +520,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoiMWhUS2FDZEthVUh2TFZOYiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
+          "serverName": "yandex.ru",
+          "shortId": "4ffc99daad0f261f",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-12"
@@ -563,12 +547,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "159.246.55.228",
-            "port": 2052,
+            "address": "212.34.142.191",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "flow": "xtls-rprx-vision",
+                "id": "a5e746f7-328f-4b65-a65f-e2e2a4a5b1a9",
                 "level": 8
               }
             ]
@@ -576,12 +561,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoiMEJLRDhkZmE4Z1ZLIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "wNcFqVd4_PkgJbfgJJeouSU6Pn_Swuce4q4Chw5T0hY",
+          "serverName": "tradingview.com",
+          "shortId": "f7aa9e61197d3ac6",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-13"
@@ -595,12 +588,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.175.86",
+            "address": "47.253.253.238",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "40b074a2-c2c1-450b-b891-3b731b35cb64",
+                "flow": "xtls-rprx-vision",
+                "id": "b9674dd8-c6ed-4be6-af5c-31490ba4d106",
                 "level": 8
               }
             ]
@@ -608,18 +602,18 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "tls",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "ndkwiut2718.ir",
+          "fingerprint": "chrome",
+          "serverName": "us2.b01d1e-cdd6-4a11-9fb8-1c45613e3eab.chaoyueemail.com",
           "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hs-495e987f.ndkwiut2718.ir"
-          },
-          "path": "/pa"
         }
       },
       "tag": "proxy-14"
@@ -629,21 +623,34 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "57.131.41.129",
-            "level": 8,
-            "method": "2022-blake3-aes-256-gcm",
-            "ota": false,
-            "password": "etU8/fvCVPaqmKkXV6bX8v8ULI4Fch+EKvg19MoETLk=",
-            "port": 8390
+            "address": "45.144.53.77",
+            "port": 8104,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "db27262a-4151-4c36-8e5f-2cf7fd387a0f",
+                "level": 8
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A",
+          "serverName": "tradingview.com",
+          "shortId": "9f4ca836ca270ef8",
+          "show": false
+        },
+        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -651,6 +658,87 @@
         }
       },
       "tag": "proxy-15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "38.180.138.72",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "u4S6MmhgEOkPjlLVZ6twDLy-V9JIpLtyj8vDobOVM0w",
+          "serverName": "nyc.cdn.stun.su",
+          "shortId": "1c8eebcb20f6d0ce",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "a.pabloping.cloud",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2271c50f-ac7a-4d7f-8b04-64085b0daa56",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "xhttpSettings": {
+          "host": "nlbv2.pabloping.pro",
+          "mode": "auto",
+          "path": "/pabloping"
+        }
+      },
+      "tag": "proxy-17"
     },
     {
       "protocol": "freedom",
@@ -669,7 +757,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "Svr⭐Speed",
+  "remarks": "Global🔰Servers",
   "routing": {
     "balancers": [
       {
@@ -677,7 +765,7 @@
           "proxy-"
         ],
         "strategy": {
-          "type": "leastPing"
+          "type": "random"
         },
         "tag": "proxy-round"
       }
