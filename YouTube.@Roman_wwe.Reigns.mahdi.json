@@ -1,34 +1,16 @@
 {
-  "remarks": "💦 14 - VLESS - Domain : 443",
+  "remarks": "💦 3 - VLESS - IPv4 : 80",
+  "version": {
+    "min": "25.10.15"
+  },
   "log": {
     "loglevel": "warning"
   },
   "dns": {
-    "hosts": {
-      "geosite:category-ads-all": "#3",
-      "geosite:category-ads-ir": "#3"
-    },
     "servers": [
       {
         "address": "https://8.8.8.8/dns-query",
         "tag": "remote-dns"
-      },
-      {
-        "address": "8.8.8.8",
-        "domains": [
-          "geosite:category-ir"
-        ],
-        "expectIPs": [
-          "geoip:ir"
-        ],
-        "skipFallback": true
-      },
-      {
-        "address": "8.8.8.8",
-        "domains": [
-          "full:www.speedtest.net"
-        ],
-        "skipFallback": true
       }
     ],
     "queryStrategy": "UseIP",
@@ -71,11 +53,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
+            "address": "104.21.33.98",
+            "port": 80,
             "users": [
               {
-                "id": "8f984a10-3ac9-4339-ad7e-2c50feef6785",
+                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
                 "encryption": "none"
               }
             ]
@@ -85,18 +67,10 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "host": "r1f6iu9zly3z3g8j6tf-9qtz1gwjr2ws.mahdiromanreigns768.workers.dev",
-          "path": "/eyJqdW5rIjoiM21PNXNucEl5RnVhWkJpIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560"
+          "host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev",
+          "path": "/eyJqdW5rIjoiNEtCVldxTmFFVTVCIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNDUuODkuNTIuMjQ3Il19?ed=2560"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "R1F6IU9zLy3Z3G8j6tf-9QtZ1gWjR2ws.maHdirOMANrEigNs768.wOrKERS.deV",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "allowInsecure": false
-        },
+        "security": "none",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -182,28 +156,6 @@
       {
         "network": "udp",
         "outboundTag": "block",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:category-ads-all",
-          "geosite:category-ads-ir"
-        ],
-        "outboundTag": "block",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:category-ir"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "geoip:ir"
-        ],
-        "outboundTag": "direct",
         "type": "field"
       },
       {
