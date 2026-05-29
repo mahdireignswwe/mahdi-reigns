@@ -1,259 +1,573 @@
 {
-  "remarks": "Xray-Load-Balancer (Surfboardv2ray)",
-  "log": {
-    "access": "",
-    "error": "",
-    "loglevel": "warning"
+  "dns": {
+    "fallbackStrategy": "disabledIfAnyMatch",
+    "servers": [
+      {
+        "address": "tcp://1.1.1.1",
+        "domains": [],
+        "queryStrategy": "UseIP"
+      },
+      {
+        "address": "localhost",
+        "domains": [
+          "full:uk5.taskflowhub.org",
+          "full:sca17.myfymain.com",
+          "full:dev.silaber.binarydata.ir",
+          "full:sca13.myfymain.com",
+          "full:sca11.myfymain.com",
+          "full:snapp.ir",
+          "full:sca12.myfymain.com",
+          "full:downlod.musicribvar.com",
+          "full:fr-tx.sbrf-cdn342.ru",
+          "full:mypanel.wargen-alkaline.ir",
+          "full:varzesh3.com",
+          "full:chatgpt.com"
+        ],
+        "fallbackStrategy": "disabled",
+        "queryStrategy": "UseIP"
+      }
+    ]
   },
   "inbounds": [
     {
-      "tag": "socks",
-      "port": 10808,
-      "listen": "0.0.0.0",
-      "protocol": "socks",
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "routeOnly": false
-      },
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "allowTransparent": false
-      }
-    },
-    {
-      "tag": "http",
-      "port": 10809,
-      "listen": "0.0.0.0",
-      "protocol": "http",
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "routeOnly": false
-      },
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "allowTransparent": false
-      }
-    },
-    {
-      "tag": "api",
-      "port": 10813,
       "listen": "127.0.0.1",
-      "protocol": "dokodemo-door",
+      "port": 2080,
+      "protocol": "socks",
       "settings": {
-        "udp": false,
-        "address": "127.0.0.1",
-        "allowTransparent": false
-      }
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": true,
+        "metadataOnly": false,
+        "routeOnly": true
+      },
+      "tag": "socks"
     }
   ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "multiObservatory": {
+    "observers": [
+      {
+        "settings": {
+          "probeURL": "http://www.google.com/generate_204",
+          "probeInterval": "300s",
+          "enableConcurrency": true,
+          "subjectSelector": [
+            "proxy-global-3290",
+            "proxy-global-3291",
+            "proxy-global-3292",
+            "proxy-global-3293",
+            "proxy-global-3294",
+            "proxy-global-3295",
+            "proxy-global-3296",
+            "proxy-global-3297",
+            "proxy-global-3330",
+            "proxy-global-3298",
+            "proxy-global-3331",
+            "proxy-global-3299",
+            "proxy-global-3310",
+            "proxy-global-3332",
+            "proxy-global-3311",
+            "proxy-global-3312",
+            "proxy-global-3313",
+            "proxy-global-3314",
+            "proxy-global-3315",
+            "proxy-global-3316",
+            "proxy-global-3317",
+            "proxy-global-3318",
+            "proxy-global-3319",
+            "proxy-global-3286",
+            "proxy-global-3287",
+            "proxy-global-3320",
+            "proxy-global-3288",
+            "proxy-global-3321",
+            "proxy-global-3289",
+            "proxy-global-3300",
+            "proxy-global-3322",
+            "proxy-global-3301",
+            "proxy-global-3323",
+            "proxy-global-3302",
+            "proxy-global-3324",
+            "proxy-global-3303",
+            "proxy-global-3325",
+            "proxy-global-3304",
+            "proxy-global-3326",
+            "proxy-global-3305",
+            "proxy-global-3327",
+            "proxy-global-3306",
+            "proxy-global-3328",
+            "proxy-global-3307",
+            "proxy-global-3329",
+            "proxy-global-3308",
+            "proxy-global-3309"
+          ]
+        },
+        "tag": "observer-proxy"
+      }
+    ]
+  },
   "outbounds": [
     {
-      "tag": "proxy-1",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "31.185.108.30",
+            "address": "104.17.121.71",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9ca41eeb-4b30-4271-a123-22021b1230d0"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "splithttp",
+        "security": "tls",
+        "splithttpSettings": {
+          "host": "mano.tll-far.ir",
+          "path": "/Telegram-Zedmodeon"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "mano.tll-far.ir"
+        }
+      },
+      "tag": "proxy-global-3286"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.121.71",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1a1e38b5-752d-4c65-8dae-a28e5a106d7a"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "splithttp",
+        "security": "tls",
+        "splithttpSettings": {
+          "host": "manok.tll-far.ir",
+          "path": "/Telegram-Zedmodeon"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "manok.tll-far.ir"
+        }
+      },
+      "tag": "proxy-global-3287"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.121.71",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ab5f372a-a488-44a9-80f1-d2581446eadc"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "splithttp",
+        "security": "tls",
+        "splithttpSettings": {
+          "host": "sabio.tll-far.ir",
+          "path": "/ZEDMODEON",
+          "scMaxEachPostBytes": "1000000",
+          "xPaddingBytes": "100-1000"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "sabio.tll-far.ir"
+        }
+      },
+      "tag": "proxy-global-3288"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.210",
+            "method": "chacha20-ietf-poly1305",
+            "password": "k1dBOmOB4oqi7Ump37a1bQ",
+            "port": 8080
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3289"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.186",
+            "method": "chacha20-ietf-poly1305",
+            "password": "k1dBOmOB4oqi7Ump37a1bQ",
+            "port": 8080
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3290"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "packetEncoding": "xudp",
+        "vnext": [
+          {
+            "address": "194.226.169.189",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443",
+                "id": "701bab46-9453-41e6-ad47-009aa3df47e9"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do",
+          "serverName": "stats.vk-portal.net",
+          "shortId": "3c6fc84d"
+        },
+        "security": "reality",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3291"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dev.silaber.binarydata.ir",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "0cc2af07-6568-4ee3-b230-21d48118cf20"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "headers": {
+            "Host": "dev.silaber.binarydata.ir"
+          },
+          "path": "/index.html"
+        }
+      },
+      "tag": "proxy-global-3292"
+    },
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.255.154.10",
+            "port": 2087,
+            "users": [
+              {
+                "id": "78e64117-fb24-4e32-adaa-788ab7876cd3",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "win.ccnnx.ir"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "wIn.CcNnx.IR"
+          },
+          "path": "/@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia"
+        }
+      },
+      "tag": "proxy-global-3293"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.255.154.10",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "33bb6880-03c0-5ada-b3fe-4c5300cbd8b4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wIn.CcNnx.IR"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "wIn.CcNnx.IR"
+          },
+          "path": "/@v2raydia"
+        }
+      },
+      "tag": "proxy-global-3294"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.133.225",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c0506c1d-c26c-496f-a573-9c8f3958a9aa"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3295"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sca13.myfymain.com",
             "port": 8880,
             "users": [
               {
-                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "vms.lifetime23.workers.dev"
-          }
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-2",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.69",
-            "port": 2096,
-            "users": [
-              {
-                "id": "e258977b-e413-4718-a3af-02d75492c349",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/Channel----%40VPNCUSTOMIZE",
-          "headers": {
-            "Host": "jp.aniua.qzz.io"
-          }
+        "grpcSettings": {
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "jp.aniua.qzz.io",
-          "alpn": [],
-          "show": false
-        }
+        "network": "grpc",
+        "security": "none"
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3296"
     },
     {
-      "tag": "proxy-3",
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "45.130.125.69",
-            "port": 2096,
-            "users": [
-              {
-                "id": "e258977b-e413-4718-a3af-02d75492c349",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/Channel----%40VPNCUSTOMIZE",
-          "headers": {
-            "Host": "jp.aniua.qzz.io"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "jp.aniua.qzz.io",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-4",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "empty-dust.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "47777915-7325-44c1-8122-251f701f5cb0",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
+            "address": "82.38.31.194",
+            "method": "chacha20-ietf-poly1305",
+            "password": "k1dBOmOB4oqi7Ump37a1bQ",
+            "port": 8080
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "bitter-voice.empty-dust.ru",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "5yR0iloe8gXWX6PghzeZoxy2j1IC0gC-1Rduw4fUzG8",
-          "shortId": "5c472469282af031",
-          "spiderX": ""
-        }
+        "security": "none",
+        "tcpSettings": {}
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3297"
     },
     {
-      "tag": "proxy-5",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "g1.steptofreedom.one",
-            "port": 443,
+            "address": "sca12.myfymain.com",
+            "port": 8880,
             "users": [
               {
-                "id": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "g1.steptofreedom.one",
-          "fingerprint": "randomized",
-          "show": false,
-          "publicKey": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
-          "shortId": "6d6f13013d3e1d0c",
-          "spiderX": ""
-        }
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "network": "grpc",
+        "security": "none"
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3298"
     },
     {
-      "tag": "proxy-6",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sca11.myfymain.com",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "network": "grpc",
+        "security": "none"
+      },
+      "tag": "proxy-global-3299"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sca17.myfymain.com",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "network": "grpc",
+        "security": "none"
+      },
+      "tag": "proxy-global-3300"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.64.147.255",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "478cc26d-16b3-4fdd-be64-60d5a58c1622"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "headers": {
+            "Host": "tt.andishehparenting.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-global-3301"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.202",
+            "method": "chacha20-ietf-poly1305",
+            "password": "k1dBOmOB4oqi7Ump37a1bQ",
+            "port": 8080
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3302"
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -262,12 +576,8 @@
             "port": 45029,
             "users": [
               {
-                "id": "01ef96b4-e7ec-4218-8ffe-a59e1cdfd836",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "id": "01ef96b4-e7ec-4218-8ffe-a59e1cdfd836"
               }
             ]
           }
@@ -275,168 +585,24 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false
-        }
+        "security": "none",
+        "tcpSettings": {}
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3303"
     },
     {
-      "tag": "proxy-7",
       "protocol": "vless",
       "settings": {
+        "packetEncoding": "xudp",
         "vnext": [
           {
-            "address": "sca9.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false
-        },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false,
-          "idle_timeout": 60,
-          "health_check_timeout": 20,
-          "permit_without_stream": false,
-          "initial_windows_size": 0
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-8",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.128.72.44",
-            "port": 80,
-            "users": [
-              {
-                "id": "a2170d39-140a-47f9-85b8-084078856c36",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v1",
-          "headers": {
-            "Host": ""
-          }
-        },
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false,
-          "fingerprint": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-9",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.32.47",
-            "port": 2096,
-            "users": [
-              {
-                "id": "0e0bd555-4d21-485c-90a4-bb0b497c002a",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "cOMpASSioNAte-INtEntIOnr55Et2c87l.carbONBLACKBMW.IR",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ],
-          "show": false,
-          "fingerprint": "chrome"
-        },
-        "grpcSettings": {
-          "serviceName": "presstv.ir.iribnews.ir.tasnimnews.com.irannewsdaily.com.ifpnews.com.kayhan.ir.irdiplomacy.ir",
-          "multiMode": false,
-          "idle_timeout": 60,
-          "health_check_timeout": 20,
-          "permit_without_stream": false,
-          "initial_windows_size": 0
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-10",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "nl-tx.sbrf-cdn342.ru",
+            "address": "37.49.225.189",
             "port": 443,
             "users": [
               {
-                "id": "01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision-udp443",
+                "id": "01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f"
               }
             ]
           }
@@ -445,78 +611,27 @@
       "streamSettings": {
         "network": "tcp",
         "security": "tls",
+        "tcpSettings": {},
         "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "sub.sbrf-cdn342.ru",
           "alpn": [
             "http/1.1"
           ],
-          "show": false
+          "serverName": "sub.sbrf-cdn342.ru"
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3304"
     },
     {
-      "tag": "proxy-11",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.19.35.49",
-            "port": 443,
+            "address": "5.160.243.153",
+            "port": 3000,
             "users": [
               {
-                "id": "7506fe3e-7e78-497c-bd01-db9d0be4d7e3",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "filter.elitesilver002.workers.dev"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "filter.elitesilver002.workers.dev",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-12",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "node-fi.dostup-est.info",
-            "port": 8443,
-            "users": [
-              {
-                "id": "c931f737-cafe-4e4f-998a-a65517941256",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "7753daae-6164-45ae-8715-86d67112b6cc"
               }
             ]
           }
@@ -524,37 +639,53 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cdnjs.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs",
-          "shortId": "88ce6b586fcaf681",
-          "spiderX": ""
-        }
+        "security": "none",
+        "tcpSettings": {}
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3305"
     },
     {
-      "tag": "proxy-13",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "g1.steptofreedom.one",
+            "address": "217.163.76.118",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "41f37ced-2021-4111-93a8-82d57ff2eb5b"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "fl0.lizardshop.org"
+        },
+        "wsSettings": {
+          "headers": {},
+          "path": "/?ed"
+        }
+      },
+      "tag": "proxy-global-3306"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "packetEncoding": "xudp",
+        "vnext": [
+          {
+            "address": "fr-tx.sbrf-cdn342.ru",
             "port": 443,
             "users": [
               {
-                "id": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "flow": "xtls-rprx-vision-udp443",
+                "id": "01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f"
               }
             ]
           }
@@ -562,198 +693,44 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "g1.steptofreedom.one",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
-          "shortId": "6d6f13013d3e1d0c",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-14",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "fl-3-direct.djarbnet.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "4259cd49-5ad0-432d-a078-29159dc999d0",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/getupdates",
-          "headers": {
-            "Host": "fl-3-direct.djarbnet.ru"
-          }
-        },
         "security": "tls",
+        "tcpSettings": {},
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "fl-3-direct.djarbnet.ru",
-          "alpn": [],
-          "show": false
+          "serverName": "sub.sbrf-cdn342."
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3307"
     },
     {
-      "tag": "proxy-15",
-      "protocol": "trojan",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "104.20.42.250",
-            "method": "chacha20",
-            "ota": false,
-            "password": "humanity",
-            "port": 443,
-            "level": 1,
-            "flow": ""
+            "address": "82.38.31.202",
+            "method": "chacha20-ietf-poly1305",
+            "password": "k1dBOmOB4oqi7Ump37a1bQ",
+            "port": 8080
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.calmloud.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "www.calmloud.com",
-          "alpn": [],
-          "show": false
-        }
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3308"
     },
     {
-      "tag": "proxy-16",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.32.47",
-            "port": 2096,
-            "users": [
-              {
-                "id": "fad00171-5df8-442e-a208-54dea7f474f2",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "Humble-FigUREFnHk81kxjx.CarboNblaCkBmw.iR",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ],
-          "show": false,
-          "fingerprint": "chrome"
-        },
-        "grpcSettings": {
-          "serviceName": "donya-e-eqtesad.com.tasnimnews.com.alef.ir.en.mehrnews.com.entekhab.ir.tasnimnews.com.tehrantimes.com",
-          "multiMode": false,
-          "idle_timeout": 60,
-          "health_check_timeout": 20,
-          "permit_without_stream": false,
-          "initial_windows_size": 0
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-17",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.114.96.3",
-            "method": "chacha20",
-            "ota": false,
-            "password": "humanity",
-            "port": 443,
-            "level": 1,
-            "flow": ""
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.gossipglove.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "www.gossipglove.com",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-18",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "51.83.197.140",
-            "port": 80,
+            "address": "uk5.taskflowhub.org",
+            "port": 2053,
             "users": [
               {
-                "id": "7d8c2904-0917-4002-bff9-9a44e1c92fb1",
-                "alterId": 0,
-                "email": "t@t.tt",
+                "id": "89371dfc-2618-40d7-a558-693ff4f7f1eb",
                 "security": "auto"
               }
             ]
@@ -761,43 +738,32 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v1",
-          "headers": {
-            "Host": ""
-          }
-        },
-        "security": "",
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {},
         "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false,
-          "fingerprint": ""
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3309"
     },
     {
-      "tag": "proxy-19",
       "protocol": "vless",
       "settings": {
+        "packetEncoding": "xudp",
         "vnext": [
           {
-            "address": "51.158.206.29",
+            "address": "51.158.206.93",
             "port": 23576,
             "users": [
               {
-                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "flow": "xtls-rprx-vision-udp443",
+                "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
               }
             ]
           }
@@ -805,149 +771,28 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
         "realitySettings": {
-          "serverName": "fuck.rkn",
           "fingerprint": "chrome",
-          "show": false,
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "shortId": "01",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-20",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.17.121.71",
-            "method": "chacha20",
-            "ota": false,
-            "password": "humanity",
-            "port": 443,
-            "level": 1,
-            "flow": ""
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.calmlunch.com"
-          }
+          "serverName": "fuck.rkn",
+          "shortId": "01"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "www.calmlunch.com",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-21",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "212.183.88.136",
-            "method": "chacha20",
-            "ota": false,
-            "password": "humanity",
-            "port": 443,
-            "level": 1,
-            "flow": ""
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.calmlunch.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "www.calmlunch.com",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-22",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "5.231.202.95",
-            "port": 443,
-            "users": [
-              {
-                "id": "a5c689ce-ef93-4a6a-8b74-3dbe2287d71b",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
         "security": "reality",
-        "realitySettings": {
-          "serverName": "cloudrynth.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "G2i-nsQgWiVf52tdCUV-G_VeuCJ3hggwDnTaEAgvg0Y",
-          "shortId": "",
-          "spiderX": ""
-        }
+        "tcpSettings": {}
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3310"
     },
     {
-      "tag": "proxy-23",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev",
+            "address": "snapp.ir",
             "port": 443,
             "users": [
               {
-                "id": "2730487f-0ed5-4f04-92d5-f95f9253d4f4",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "id": "1f9c499f-cc9d-4db3-a6da-161f92011483"
               }
             ]
           }
@@ -955,377 +800,30 @@
       },
       "streamSettings": {
         "network": "ws",
-        "wsSettings": {
-          "path": "ws",
-          "headers": {
-            "Host": "v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev"
-          }
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "csgo.pbvsrk.carnagesv.top"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev",
-          "alpn": [],
-          "show": false
+        "wsSettings": {
+          "headers": {
+            "Host": "csgo.pbvsrk.carnagesv.top"
+          },
+          "path": "/"
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3311"
     },
     {
-      "tag": "proxy-24",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "g1.steptofreedom.one",
-            "port": 443,
+            "address": "45.130.125.69",
+            "port": 2096,
             "users": [
               {
-                "id": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "g1.steptofreedom.one",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
-          "shortId": "6d6f13013d3e1d0c",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-25",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "87.120.93.243",
-            "port": 443,
-            "users": [
-              {
-                "id": "91e120bc-159a-4390-b4e1-197b19602ea0",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "sub.sbrf-cdn342.ru",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-26",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "144.31.131.33",
-            "port": 443,
-            "users": [
-              {
-                "id": "ae852d97-85f5-45cf-82a4-254eba345480",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cdn.cdnjst.org",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "djH9iD2QV748ocK-wPH7HvDd03lu88zHhS4G-61w6Dc",
-          "shortId": "a120",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-27",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "g1.steptofreedom.one",
-            "port": 443,
-            "users": [
-              {
-                "id": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "g1.steptofreedom.one",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
-          "shortId": "6d6f13013d3e1d0c",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-28",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.107.179.224",
-            "port": 47411,
-            "users": [
-              {
-                "id": "505114b9-e689-5d23-9ba0-f95d74e92a67",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-29",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.224.75.185",
-            "port": 443,
-            "users": [
-              {
-                "id": "a5c689ce-ef93-4a6a-8b74-3dbe2287d71b",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cloudrynth.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "G2i-nsQgWiVf52tdCUV-G_VeuCJ3hggwDnTaEAgvg0Y",
-          "shortId": "",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-30",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "77.73.232.61",
-            "port": 19747,
-            "users": [
-              {
-                "id": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yahoo.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
-          "shortId": "2001",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-31",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "152.53.53.168",
-            "port": 443,
-            "users": [
-              {
-                "id": "a5c689ce-ef93-4a6a-8b74-3dbe2287d71b",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cloudrynth.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "G2i-nsQgWiVf52tdCUV-G_VeuCJ3hggwDnTaEAgvg0Y",
-          "shortId": "",
-          "spiderX": ""
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-32",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "47.82.87.196",
-            "port": 50724,
-            "users": [
-              {
-                "id": "47030ea3-4e8c-4dd6-b440-418a7a54c1a0",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-33",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "mybb.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
+                "id": "e258977b-e413-4718-a3af-02d75492c349"
               }
             ]
           }
@@ -1333,347 +831,315 @@
       },
       "streamSettings": {
         "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "rayan-007.nastaran.dpdns.org"
-          }
-        },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-          "alpn": [],
-          "show": false
+          "serverName": "jp.aniua.qzz.io"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "jp.aniua.qzz.io"
+          },
+          "path": "/Channel----@"
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3312"
     },
     {
-      "tag": "proxy-34",
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "104.17.121.71",
-            "method": "chacha20",
-            "ota": false,
-            "password": "Mitivpn",
-            "port": 443,
-            "level": 1,
-            "flow": ""
+            "address": "5.160.243.153",
+            "port": 3000,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7753daae-6164-45ae-8715-86d67112b6cc"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3313"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.160.243.153",
+            "port": 3000,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7753daae-6164-45ae-8715-86d67112b6cc"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3314"
+    },
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "uk5.taskflowhub.org",
+            "port": 2053,
+            "users": [
+              {
+                "id": "89371dfc-2618-40d7-a558-693ff4f7f1eb",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {},
+        "tlsSettings": {
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-global-3315"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "varzesh3.com",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8742d483-54cd-4bed-825d-d289d5a380c6"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "cdn.hitgram.ir"
-          }
-        },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "cdn.hitgram.ir",
-          "alpn": [],
-          "show": false
+          "serverName": "sub.sesrsa.com"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "p1.sesrsa.com"
+          },
+          "path": "/"
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3316"
     },
     {
-      "tag": "proxy-35",
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "104.17.121.71",
-            "method": "chacha20",
-            "ota": false,
-            "password": "humanity",
-            "port": 443,
-            "level": 1,
-            "flow": ""
+            "address": "45.130.125.69",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e258977b-e413-4718-a3af-02d75492c349"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "ws",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.creationlong.org"
-          }
-        },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "www.creationlong.org",
-          "alpn": [],
-          "show": false
+          "serverName": "jp.aniua.qzz.io"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "jp.aniua.qzz.io"
+          },
+          "path": "/Channel----@"
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3317"
     },
     {
-      "tag": "proxy-36",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "uk5.taskflowhub.org",
+            "port": 2053,
+            "users": [
+              {
+                "id": "89371dfc-2618-40d7-a558-693ff4f7f1eb",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {},
+        "tlsSettings": {
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-global-3318"
+    },
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "uk5.taskflowhub.org",
+            "port": 2053,
+            "users": [
+              {
+                "id": "89371dfc-2618-40d7-a558-693ff4f7f1eb",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {},
+        "tlsSettings": {
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-global-3319"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "3.79.200.72",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b75e2775-45d6-4526-9302-7625cfbf9cc4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {}
+      },
+      "tag": "proxy-global-3320"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.130.125.69",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e258977b-e413-4718-a3af-02d75492c349"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "jp.aniua.qzz.io"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "jp.aniua.qzz.io"
+          },
+          "path": "/Channel----@VPNCUSTOMIZE"
+        }
+      },
+      "tag": "proxy-global-3321"
+    },
+    {
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
             "address": "216.24.57.7",
-            "method": "chacha20",
-            "ota": false,
             "password": "Mitivpn",
-            "port": 443,
-            "level": 1,
-            "flow": ""
+            "port": 443
           }
         ]
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "cdn.hitgram.ir"
+        },
         "wsSettings": {
-          "path": "/",
+          "earlyDataHeaderName": "Sec-WebSocket-Protocol",
           "headers": {
-            "Host": "www.hitgram.ir"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "www.hitgram.ir",
-          "alpn": [],
-          "show": false
+            "Host": "cdn.hitgram.ir"
+          },
+          "maxEarlyData": 2048,
+          "path": "/"
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3322"
     },
     {
-      "tag": "proxy-37",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "a.darafiq.ir",
-            "port": 8880,
-            "users": [
-              {
-                "id": "28154b7e-afc2-449b-8a78-bf1eba31bd05",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {}
-        },
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-38",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.32.47",
-            "port": 2096,
-            "users": [
-              {
-                "id": "e221880c-0ada-4e89-a336-62c3b909f787",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "Old-CaREg74s0ugV9a.CaRboNblAcKBMw.ir",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ],
-          "show": false,
-          "fingerprint": "chrome"
-        },
-        "grpcSettings": {
-          "serviceName": "iranprimer.usip.org.entekhab.ir.presstv.ir.alef.ir.yjc.ir.presstv.ir.en.mehrnews.com",
-          "multiMode": false,
-          "idle_timeout": 60,
-          "health_check_timeout": 20,
-          "permit_without_stream": false,
-          "initial_windows_size": 0
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-39",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "63.141.128.5",
-            "port": 443,
-            "users": [
-              {
-                "id": "b5bd7d6d-5ab9-4965-bccc-32acdbc4f714",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "konkoriazmono.konkuriran.sbs"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "konkoriazmono.konkuriran.sbs",
-          "alpn": [],
-          "show": false
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-40",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "193.56.3.125",
-            "port": 8443,
-            "users": [
-              {
-                "id": "0e3a9376-1bf0-4b9e-a328-f28083bf6c34",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "nl1.skysafe.online",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "f1kpVFY3EHaR41TCKGqSWzZq7HG-WpyE2g_tlMm2US0",
-          "shortId": "844dfa3681e4c4",
-          "spiderX": ""
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "myket.ir"
-                ],
-                "User-Agent": [
-                  ""
-                ],
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Pragma": "no-cache"
-              }
-            }
-          }
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
-      "tag": "proxy-41",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.57.91",
+            "address": "chatgpt.com",
             "port": 80,
             "users": [
               {
-                "id": "04ac1574-583b-408b-a18f-259b62410ee3",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "id": "9ea94f12-3b5e-496a-bd8a-e705cc5ebbcd"
               }
             ]
           }
@@ -1681,41 +1147,92 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "none",
         "wsSettings": {
-          "path": "/",
+          "earlyDataHeaderName": "Sec-WebSocket-Protocol",
           "headers": {
-            "Host": "FIjjI.gloBal.sSl.faStly.NeT."
-          }
-        },
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false
+            "Host": "zanyar-vip.mzaniar4.workers.dev"
+          },
+          "maxEarlyData": 2560,
+          "path": "/eyJqdW5rIjoiT3Y4RURpZEU4Z21uZzRzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3323"
     },
     {
-      "tag": "proxy-42",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "62.76.233.254",
+            "address": "45.130.125.76",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3a40cae4-179e-43dc-8711-745ad5de95cc"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "serviceName": "iranprimer.usip.org.mizanonline.com.fararu.com.financialtribune.com.jamejamonline.ir.iribnews.ir.iranprimer.usip.org"
+        },
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "QuIck-foRESt967D0t4M6x.CArBoNBlaCkBMW.IR"
+        }
+      },
+      "tag": "proxy-global-3324"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.130.125.76",
             "port": 443,
             "users": [
               {
-                "id": "a5c689ce-ef93-00c8-8b74-3dbe2287d71b",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "id": "33bb6880-03c0-5ada-b3fe-4c5300cbd8b4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wIn.CcNnx.IR"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "wIn.CcNnx.IR"
+          },
+          "path": "/@v2raydia"
+        }
+      },
+      "tag": "proxy-global-3325"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "63.178.15.1",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "abbfb2df-819b-4744-b76b-bf7ef9a2a0c0"
               }
             ]
           }
@@ -1723,85 +1240,59 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "G2i-nsQgWiVf52tdCUV-G_VeuCJ3hggwDnTaEAgvg0Y",
-          "shortId": "",
-          "spiderX": ""
-        }
+        "security": "none",
+        "tcpSettings": {}
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3326"
     },
     {
-      "tag": "proxy-43",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.32.47",
-            "port": 2096,
+            "address": "212.87.198.79",
+            "port": 45255,
             "users": [
               {
-                "id": "629325d2-7e7b-47e8-a503-301677a59589",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
+                "id": "dd5ffd23-cef5-44dd-a143-658bd7f3943a",
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "poWeRFUL-HIStORym1zX7jVJwb.cARbonbLAckBmw.Ir",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ],
-          "show": false,
-          "fingerprint": "chrome"
-        },
-        "grpcSettings": {
-          "serviceName": "khabaronline.ir.iranprimer.usip.org.entekhab.ir.alalamtv.net.kayhan.ir.fararu.com.irna.ir",
-          "multiMode": false,
-          "idle_timeout": 60,
-          "health_check_timeout": 20,
-          "permit_without_stream": false,
-          "initial_windows_size": 0
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Host": [
+                  "bale.ai"
+                ]
+              },
+              "path": [
+                "/"
+              ]
+            },
+            "type": "http"
+          }
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3327"
     },
     {
-      "tag": "proxy-44",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "185.255.95.247",
-            "port": 27265,
+            "address": "mypanel.wargen-alkaline.ir",
+            "port": 80,
             "users": [
               {
-                "id": "1f01e53a-f9d1-48a3-8b35-6f10b9be0736",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "id": "2219b75a-91d5-459b-928c-a3b18cc9eb14"
               }
             ]
           }
@@ -1809,172 +1300,262 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "none",
         "wsSettings": {
-          "path": "/ws",
           "headers": {
-            "Host": "185.255.95.247"
-          }
-        },
-        "security": "",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "",
-          "alpn": [],
-          "show": false
+            "Host": "Mypanel.wargen-alkaline.ir"
+          },
+          "path": "/ray"
         }
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
+      "tag": "proxy-global-3328"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.121.71",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c7ccd788-1172-46f2-a749-c1a743da2ef2"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "splithttp",
+        "security": "tls",
+        "splithttpSettings": {
+          "host": "faboo.tll-far.ir",
+          "path": "/Telegram-Zedmodeon"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "faboo.tll-far.ir"
+        }
+      },
+      "tag": "proxy-global-3329"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.121.71",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d644824c-7f7c-4b48-87da-d988722082cb"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "splithttp",
+        "security": "tls",
+        "splithttpSettings": {
+          "host": "sabkpo.tll-far.ir",
+          "path": "/Telegram-Zedmodeon",
+          "scMaxEachPostBytes": "1000000",
+          "scMinPostsIntervalMs": "30",
+          "xPaddingBytes": "100-1000"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "sabkpo.tll-far.ir"
+        }
+      },
+      "tag": "proxy-global-3330"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.121.71",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "70956ee4-e812-4417-9094-5bd568af4903"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "splithttp",
+        "security": "tls",
+        "splithttpSettings": {
+          "host": "sabko.tll-far.ir",
+          "path": "/Telegram-Zedmodeon",
+          "scMaxEachPostBytes": "1000000",
+          "scMinPostsIntervalMs": "30",
+          "xPaddingBytes": "100-1000"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "sabko.tll-far.ir"
+        }
+      },
+      "tag": "proxy-global-3331"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.121.71",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "381179b4-5fec-4457-97c2-869901e6c2ac"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "splithttp",
+        "security": "tls",
+        "splithttpSettings": {
+          "host": "sabkdo.tll-far.ir",
+          "path": "/"
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "sabkdo.tll-far.ir"
+        }
+      },
+      "tag": "proxy-global-3332"
     },
     {
       "protocol": "freedom",
-      "tag": "direct-out"
+      "tag": "bypass"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    },
+    {
+      "protocol": "dns",
+      "settings": {
+        "userLevel": 1
+      },
+      "tag": "dns-out"
     }
   ],
-  "stats": {},
-  "api": {
-    "tag": "api",
-    "services": [
-      "StatsService"
-    ]
-  },
   "policy": {
+    "levels": {
+      "1": {
+        "connIdle": 30
+      }
+    },
     "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
+      "statsOutboundDownlink": true,
+      "statsOutboundUplink": true
     }
-  },
-  "burstObservatory": {
-    "pingConfig": {
-      "connectivity": "http://connectivitycheck.platform.hicloud.com/generate_204",
-      "destination": "http://www.google.com/gen_204",
-      "interval": "15m",
-      "sampling": 10,
-      "timeout": "3s"
-    },
-    "subjectSelector": [
-      "proxy-1",
-      "proxy-2",
-      "proxy-3",
-      "proxy-4",
-      "proxy-5",
-      "proxy-6",
-      "proxy-7",
-      "proxy-8",
-      "proxy-9",
-      "proxy-10",
-      "proxy-11",
-      "proxy-12",
-      "proxy-13",
-      "proxy-14",
-      "proxy-15",
-      "proxy-16",
-      "proxy-17",
-      "proxy-18",
-      "proxy-19",
-      "proxy-20",
-      "proxy-21",
-      "proxy-22",
-      "proxy-23",
-      "proxy-24",
-      "proxy-25",
-      "proxy-26",
-      "proxy-27",
-      "proxy-28",
-      "proxy-29",
-      "proxy-30",
-      "proxy-31",
-      "proxy-32",
-      "proxy-33",
-      "proxy-34",
-      "proxy-35",
-      "proxy-36",
-      "proxy-37",
-      "proxy-38",
-      "proxy-39",
-      "proxy-40",
-      "proxy-41",
-      "proxy-42",
-      "proxy-43",
-      "proxy-44"
-    ]
-  },
-  "dns": {
-    "hosts": {
-      "domain:googleapis.cn": "googleapis.com"
-    },
-    "servers": [
-      "1.1.1.1"
-    ]
   },
   "routing": {
     "balancers": [
       {
         "selector": [
-          "proxy-1",
-          "proxy-2",
-          "proxy-3",
-          "proxy-4",
-          "proxy-5",
-          "proxy-6",
-          "proxy-7",
-          "proxy-8",
-          "proxy-9",
-          "proxy-10",
-          "proxy-11",
-          "proxy-12",
-          "proxy-13",
-          "proxy-14",
-          "proxy-15",
-          "proxy-16",
-          "proxy-17",
-          "proxy-18",
-          "proxy-19",
-          "proxy-20",
-          "proxy-21",
-          "proxy-22",
-          "proxy-23",
-          "proxy-24",
-          "proxy-25",
-          "proxy-26",
-          "proxy-27",
-          "proxy-28",
-          "proxy-29",
-          "proxy-30",
-          "proxy-31",
-          "proxy-32",
-          "proxy-33",
-          "proxy-34",
-          "proxy-35",
-          "proxy-36",
-          "proxy-37",
-          "proxy-38",
-          "proxy-39",
-          "proxy-40",
-          "proxy-41",
-          "proxy-42",
-          "proxy-43",
-          "proxy-44"
+          "proxy-global-3286",
+          "proxy-global-3287",
+          "proxy-global-3288",
+          "proxy-global-3289",
+          "proxy-global-3290",
+          "proxy-global-3291",
+          "proxy-global-3292",
+          "proxy-global-3293",
+          "proxy-global-3294",
+          "proxy-global-3295",
+          "proxy-global-3296",
+          "proxy-global-3297",
+          "proxy-global-3298",
+          "proxy-global-3299",
+          "proxy-global-3300",
+          "proxy-global-3301",
+          "proxy-global-3302",
+          "proxy-global-3303",
+          "proxy-global-3304",
+          "proxy-global-3305",
+          "proxy-global-3306",
+          "proxy-global-3307",
+          "proxy-global-3308",
+          "proxy-global-3309",
+          "proxy-global-3310",
+          "proxy-global-3311",
+          "proxy-global-3312",
+          "proxy-global-3313",
+          "proxy-global-3314",
+          "proxy-global-3315",
+          "proxy-global-3316",
+          "proxy-global-3317",
+          "proxy-global-3318",
+          "proxy-global-3319",
+          "proxy-global-3320",
+          "proxy-global-3321",
+          "proxy-global-3322",
+          "proxy-global-3323",
+          "proxy-global-3324",
+          "proxy-global-3325",
+          "proxy-global-3326",
+          "proxy-global-3327",
+          "proxy-global-3328",
+          "proxy-global-3329",
+          "proxy-global-3330",
+          "proxy-global-3331",
+          "proxy-global-3332"
         ],
         "strategy": {
-          "type": "leastLoad"
+          "settings": {
+            "aliveOnly": true,
+            "observerTag": "observer-proxy"
+          },
+          "type": "random"
         },
-        "tag": "xray-load-balancer"
+        "tag": "balancer-proxy"
       }
     ],
-    "domainMatcher": "hybrid",
-    "domainStrategy": "IPIfNonMatch",
+    "domainStrategy": "AsIs",
     "rules": [
       {
-        "balancerTag": "xray-load-balancer",
         "inboundTag": [
-          "socks",
-          "http"
+          "dns-in"
         ],
+        "outboundTag": "dns-out",
+        "type": "field"
+      },
+      {
+        "balancerTag": "balancer-proxy",
+        "network": "tcp,udp",
         "type": "field"
       }
     ]
-  }
+  },
+  "stats": {}
 }
