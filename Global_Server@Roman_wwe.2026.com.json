@@ -1,15 +1,4 @@
 {
-  "burstObservatory": {
-    "pingConfig": {
-      "destination": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "sampling": 2,
-      "timeout": "30s"
-    },
-    "subjectSelector": [
-      "proxy-proxy-"
-    ]
-  },
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com",
@@ -65,12 +54,28 @@
       "sca17.myfymain.com": "151.115.164.132"
     },
     "servers": [
-      "8.8.8.8",
+      "1.1.1.1",
       {
-        "address": "8.8.8.8",
-        "domains": [],
+        "address": "1.1.1.1",
+        "domains": [
+          "geosite:google"
+        ]
+      },
+      {
+        "address": "223.5.5.5",
+        "domains": [
+          "domain:alidns.com",
+          "domain:doh.pub",
+          "domain:dot.pub",
+          "domain:360.cn",
+          "domain:onedns.net",
+          "geosite:cn"
+        ],
+        "expectIPs": [
+          "geoip:cn"
+        ],
         "skipFallback": true,
-        "tag": "domestic-dns0"
+        "tag": "domestic-dns"
       }
     ],
     "tag": "dns-module"
@@ -88,35 +93,24 @@
       "sniffing": {
         "destOverride": [
           "http",
-          "tls",
-          "quic"
+          "tls"
         ],
         "enabled": true,
         "routeOnly": false
       },
       "tag": "socks"
-    },
-    {
-      "protocol": "tun",
-      "settings": {
-        "mtu": 1500,
-        "name": "xray0",
-        "userLevel": 8
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ],
-        "enabled": true,
-        "routeOnly": false
-      },
-      "tag": "tun"
     }
   ],
   "log": {
     "loglevel": "warning"
+  },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
   },
   "outbounds": [
     {
@@ -159,7 +153,7 @@
           }
         }
       },
-      "tag": "proxy-proxy-1-@SaveProxy⁶"
+      "tag": "proxy-1"
     },
     {
       "mux": {
@@ -201,7 +195,7 @@
           }
         }
       },
-      "tag": "proxy-proxy-2-@T_N2ode بوبولیم خوشحال"
+      "tag": "proxy-2"
     },
     {
       "mux": {
@@ -243,49 +237,7 @@
           }
         }
       },
-      "tag": "proxy-proxy-3-@SaveProxy⁴"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca12.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
-        },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        }
-      },
-      "tag": "proxy-proxy-4-@SaveProxy⁶"
+      "tag": "proxy-3"
     },
     {
       "mux": {
@@ -327,7 +279,7 @@
           }
         }
       },
-      "tag": "proxy-proxy-5-@SaveProxy⁷"
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -369,7 +321,7 @@
           }
         }
       },
-      "tag": "proxy-proxy-6-@SaveProxy⁸"
+      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -400,7 +352,7 @@
           }
         }
       },
-      "tag": "proxy-proxy-7-@SaveProxy👑ⁿ"
+      "tag": "proxy-6"
     },
     {
       "mux": {
@@ -444,7 +396,7 @@
           "show": false
         }
       },
-      "tag": "proxy-proxy-8-@SaveProxy¹²"
+      "tag": "proxy-7"
     },
     {
       "mux": {
@@ -472,7 +424,7 @@
           }
         }
       },
-      "tag": "proxy-proxy-9-@SaveProxy ☄️¹"
+      "tag": "proxy-8"
     },
     {
       "mux": {
@@ -503,7 +455,6 @@
           "alpn": [
             "http/1.1"
           ],
-          "echConfigList": "ip.gs+udp://8.8.8.8",
           "fingerprint": "chrome",
           "serverName": "m.udemy.com.cyylr.eu.cc",
           "show": false
@@ -515,7 +466,7 @@
           "path": "/id-tksi"
         }
       },
-      "tag": "proxy-proxy-10-@SaveProxy¹³"
+      "tag": "proxy-9"
     },
     {
       "mux": {
@@ -546,7 +497,6 @@
           "alpn": [
             "http/1.1"
           ],
-          "echConfigList": "ip.gs+udp://8.8.8.8",
           "fingerprint": "chrome",
           "serverName": "investors.spotify.com.cyylr.eu.cc",
           "show": false
@@ -558,7 +508,7 @@
           "path": "/id-amz"
         }
       },
-      "tag": "proxy-proxy-11-@SaveProxy¹⁴"
+      "tag": "proxy-10"
     },
     {
       "mux": {
@@ -589,7 +539,6 @@
           "alpn": [
             "http/1.1"
           ],
-          "echConfigList": "ip.gs+udp://8.8.8.8",
           "fingerprint": "chrome",
           "serverName": "graph.instagram.com.cyylr.eu.cc",
           "show": false
@@ -601,15 +550,12 @@
           "path": "/id-tksi"
         }
       },
-      "tag": "proxy-proxy-12-@SaveProxy¹⁵"
+      "tag": "proxy-11"
     },
     {
       "protocol": "freedom",
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP"
-        }
+      "settings": {
+        "domainStrategy": "UseIP"
       },
       "tag": "direct"
     },
@@ -623,55 +569,133 @@
       "tag": "block"
     }
   ],
-  "policy": {
-    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    },
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
-  "remarks": "Config💫Vip",
+  "remarks": "Intelligent Selection",
   "routing": {
     "balancers": [
       {
         "selector": [
-          "proxy-proxy-"
+          "proxy-"
         ],
         "strategy": {
-          "type": "leastLoad"
+          "type": "leastPing"
         },
-        "tag": "balancer-main"
+        "tag": "proxy-round"
       }
     ],
     "domainStrategy": "AsIs",
     "rules": [
       {
-        "inboundTag": [
-          "domestic-dns0"
+        "network": "udp",
+        "outboundTag": "block",
+        "port": "443",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "domain": [
+          "geosite:google"
+        ],
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
         ],
         "outboundTag": "direct",
         "type": "field"
       },
       {
-        "balancerTag": "balancer-main",
+        "domain": [
+          "geosite:private"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "223.5.5.5",
+          "223.6.6.6",
+          "2400:3200::1",
+          "2400:3200:baba::1",
+          "119.29.29.29",
+          "1.12.12.12",
+          "120.53.53.53",
+          "2402:4e00::",
+          "2402:4e00:1::",
+          "180.76.76.76",
+          "2400:da00::6666",
+          "114.114.114.114",
+          "114.114.115.115",
+          "114.114.114.119",
+          "114.114.115.119",
+          "114.114.114.110",
+          "114.114.115.110",
+          "180.184.1.1",
+          "180.184.2.2",
+          "101.226.4.6",
+          "218.30.118.6",
+          "123.125.81.6",
+          "140.207.198.6",
+          "1.2.4.8",
+          "210.2.4.8",
+          "52.80.66.66",
+          "117.50.22.22",
+          "2400:7fc0:849e:200::4",
+          "2404:c2c0:85d8:901::4",
+          "117.50.10.10",
+          "52.80.52.52",
+          "2400:7fc0:849e:200::8",
+          "2404:c2c0:85d8:901::8",
+          "117.50.60.30",
+          "52.80.60.30"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "domain:alidns.com",
+          "domain:doh.pub",
+          "domain:dot.pub",
+          "domain:360.cn",
+          "domain:onedns.net"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:cn"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:cn"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "domestic-dns"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
         "inboundTag": [
           "dns-module"
         ],
         "type": "field"
       },
       {
-        "balancerTag": "balancer-main",
+        "balancerTag": "proxy-round",
         "network": "tcp,udp",
         "type": "field"
       }
     ]
-  },
-  "stats": {}
+  }
 }
