@@ -92,21 +92,25 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.107.91.10",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1004
+            "address": "20.86.210.109",
+            "port": 1006,
+            "users": [
+              {
+                "id": "97bc0d79-715b-4677-a685-908595fa63c3",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -120,16 +124,19 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.71.206.216",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1004
+            "address": "20.86.210.109",
+            "port": 1005,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -148,21 +155,25 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.16.48.65",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1004
+            "address": "50.85.90.24",
+            "port": 1006,
+            "users": [
+              {
+                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -176,21 +187,25 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "40.118.19.82",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1004
+            "address": "9.163.152.182",
+            "port": 1006,
+            "users": [
+              {
+                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -204,16 +219,19 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.107.91.10",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1005
+            "address": "9.163.152.182",
+            "port": 1005,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -232,21 +250,25 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.71.206.216",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1005
+            "address": "4.231.72.33",
+            "port": 1006,
+            "users": [
+              {
+                "id": "97bc0d79-715b-4677-a685-908595fa63c3",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -260,16 +282,19 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.16.48.65",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1005
+            "address": "50.85.90.24",
+            "port": 1005,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cc9e58be-7920-4b6a-91e3-d2a447cb3d93",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -292,12 +317,12 @@
       "settings": {
         "servers": [
           {
-            "address": "40.118.19.82",
+            "address": "20.86.210.109",
             "level": 8,
             "method": "chacha20-ietf-poly1305",
             "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1005
+            "password": "yizPso7T7vLD730UFXkXqQ",
+            "port": 1004
           }
         ]
       },
@@ -316,16 +341,19 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.107.91.10",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1006
+            "address": "9.163.152.182",
+            "port": 1005,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cc9e58be-7920-4b6a-91e3-d2a447cb3d93",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -348,12 +376,12 @@
       "settings": {
         "servers": [
           {
-            "address": "20.71.206.216",
+            "address": "9.163.152.182",
             "level": 8,
             "method": "chacha20-ietf-poly1305",
             "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1006
+            "password": "yizPso7T7vLD730UFXkXqQ",
+            "port": 1004
           }
         ]
       },
@@ -372,26 +400,40 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.16.48.65",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1006
+            "address": "20.86.210.109",
+            "port": 1007,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "level": 8
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-11"
     },
@@ -404,12 +446,12 @@
       "settings": {
         "servers": [
           {
-            "address": "40.118.19.82",
+            "address": "9.163.152.182",
             "level": 8,
             "method": "chacha20-ietf-poly1305",
             "ota": false,
             "password": "W62BPQF5iJMB7wCNywR58Q",
-            "port": 1006
+            "port": 1004
           }
         ]
       },
@@ -428,19 +470,16 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "20.107.91.10",
-            "port": 1004,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
-                "level": 8
-              }
-            ]
+            "address": "50.85.90.24",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "yizPso7T7vLD730UFXkXqQ",
+            "port": 1004
           }
         ]
       },
@@ -463,8 +502,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "20.71.206.216",
-            "port": 1004,
+            "address": "9.163.152.182",
+            "port": 1007,
             "users": [
               {
                 "encryption": "none",
@@ -476,12 +515,23 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-14"
     },
@@ -490,17 +540,17 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "20.16.48.65",
-            "port": 1004,
+            "address": "20.86.210.109",
+            "port": 1006,
             "users": [
               {
-                "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
-                "level": 8
+                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
+                "level": 8,
+                "security": "auto"
               }
             ]
           }
@@ -508,6 +558,7 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -521,19 +572,16 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "40.118.19.82",
-            "port": 1004,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
-                "level": 8
-              }
-            ]
+            "address": "50.85.90.24",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "W62BPQF5iJMB7wCNywR58Q",
+            "port": 1004
           }
         ]
       },
@@ -556,12 +604,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "20.107.91.10",
+            "address": "20.86.210.109",
             "port": 1005,
             "users": [
               {
                 "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "id": "cc9e58be-7920-4b6a-91e3-d2a447cb3d93",
                 "level": 8
               }
             ]
@@ -583,17 +631,17 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "20.71.206.216",
-            "port": 1005,
+            "address": "9.163.152.182",
+            "port": 1006,
             "users": [
               {
-                "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
-                "level": 8
+                "id": "97bc0d79-715b-4677-a685-908595fa63c3",
+                "level": 8,
+                "security": "auto"
               }
             ]
           }
@@ -601,6 +649,7 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -618,12 +667,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "20.16.48.65",
-            "port": 1005,
+            "address": "9.163.152.182",
+            "port": 1007,
             "users": [
               {
                 "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "id": "cc9e58be-7920-4b6a-91e3-d2a447cb3d93",
                 "level": 8
               }
             ]
@@ -631,12 +680,23 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-19"
     },
@@ -649,12 +709,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "40.118.19.82",
-            "port": 1005,
+            "address": "50.85.90.24",
+            "port": 1007,
             "users": [
               {
                 "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "id": "cc9e58be-7920-4b6a-91e3-d2a447cb3d93",
                 "level": 8
               }
             ]
@@ -662,12 +722,23 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-20"
     },
@@ -680,8 +751,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "20.107.91.10",
-            "port": 1006,
+            "address": "50.85.90.24",
+            "port": 1005,
             "users": [
               {
                 "encryption": "none",
@@ -707,19 +778,16 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "20.71.206.216",
-            "port": 1006,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
-                "level": 8
-              }
-            ]
+            "address": "20.86.210.109",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "W62BPQF5iJMB7wCNywR58Q",
+            "port": 1004
           }
         ]
       },
@@ -742,12 +810,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "20.16.48.65",
-            "port": 1006,
+            "address": "20.86.210.109",
+            "port": 1007,
             "users": [
               {
                 "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "id": "cc9e58be-7920-4b6a-91e3-d2a447cb3d93",
                 "level": 8
               }
             ]
@@ -755,12 +823,23 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-23"
     },
@@ -769,17 +848,17 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "40.118.19.82",
+            "address": "50.85.90.24",
             "port": 1006,
             "users": [
               {
-                "encryption": "none",
-                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
-                "level": 8
+                "id": "97bc0d79-715b-4677-a685-908595fa63c3",
+                "level": 8,
+                "security": "auto"
               }
             ]
           }
@@ -787,6 +866,7 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -800,30 +880,40 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "20.107.91.10",
-            "port": 1004,
+            "address": "4.231.72.33",
+            "port": 1007,
             "users": [
               {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "id": "cc9e58be-7920-4b6a-91e3-d2a447cb3d93",
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-25"
     },
@@ -832,25 +922,21 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "20.71.206.216",
-            "port": 1004,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "4.231.72.33",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "W62BPQF5iJMB7wCNywR58Q",
+            "port": 1004
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "none",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -864,30 +950,40 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "20.16.48.65",
-            "port": 1004,
+            "address": "4.231.72.33",
+            "port": 1007,
             "users": [
               {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-27"
     },
@@ -896,288 +992,42 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "40.118.19.82",
-            "port": 1004,
+            "address": "50.85.90.24",
+            "port": 1007,
             "users": [
               {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "id": "e0879c54-476d-4567-b6ab-3ddc4c2a3ae3",
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "11v-ABEwOANJiICMQUwHPiARAiWHBDn3D5_MV5ODuFg",
+          "serverName": "www.apple.com",
+          "shortId": "c515314f1dcc95d1",
+          "show": false
+        },
+        "security": "reality"
       },
       "tag": "proxy-28"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.107.91.10",
-            "port": 1005,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-29"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.71.206.216",
-            "port": 1005,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-30"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.16.48.65",
-            "port": 1005,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-31"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "40.118.19.82",
-            "port": 1005,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-32"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.107.91.10",
-            "port": 1006,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-33"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.71.206.216",
-            "port": 1006,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-34"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.16.48.65",
-            "port": 1006,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-35"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "40.118.19.82",
-            "port": 1006,
-            "users": [
-              {
-                "id": "eafedd5f-ed7c-458d-941d-842d8b661ba3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-36"
     },
     {
       "protocol": "freedom",
@@ -1196,7 +1046,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "کانفیگ💫اشتراکی",
+  "remarks": "کانفیگ💫اشتراکی✓",
   "routing": {
     "balancers": [
       {
