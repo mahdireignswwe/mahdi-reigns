@@ -78,6 +78,14 @@
   "log": {
     "loglevel": "warning"
   },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
   "outbounds": [
     {
       "mux": {
@@ -93,7 +101,6 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
                 "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
@@ -110,7 +117,41 @@
           "path": "/eyJqdW5rIjoiWmJDODNFejZaSTR0SDQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI4OS4yMi4yMzMuNTIiXX0="
         }
       },
-      "tag": "proxy"
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.19.229.21",
+            "level": 8,
+            "ota": false,
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "www.calmlunch.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "www.calmlunch.com"
+          },
+          "path": "/assignment"
+        }
+      },
+      "tag": "proxy-2"
     },
     {
       "protocol": "freedom",
@@ -131,6 +172,17 @@
   ],
   "remarks": "Global🔑Config",
   "routing": {
+    "balancers": [
+      {
+        "selector": [
+          "proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "tag": "proxy-round"
+      }
+    ],
     "domainStrategy": "AsIs",
     "rules": [
       {
@@ -141,10 +193,15 @@
         "type": "field"
       },
       {
+        "balancerTag": "proxy-round",
         "inboundTag": [
           "dns-module"
         ],
-        "outboundTag": "proxy",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "network": "tcp,udp",
         "type": "field"
       }
     ]
