@@ -48,12 +48,14 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "sca17.myfymain.com": "151.115.164.132",
-      "sca13.myfymain.com": "151.115.164.110",
-      "cdn9-33.vk-cdnvideo.com": "77.74.123.165",
-      "sca37.myfymain.com": "151.115.167.167",
-      "cdn3-87.vk-cdnvideo.com": "77.74.123.169",
-      "sca15.myfymain.com": "151.115.164.134"
+      "node-1796256123-ef3226.mahdireignsgermany.workers.dev": [
+        "104.21.85.122",
+        "172.67.205.180"
+      ],
+      "www.speedtest.net": [
+        "104.17.148.22",
+        "104.17.147.22"
+      ]
     },
     "servers": [
       "1.1.1.1"
@@ -62,7 +64,6 @@
   },
   "inbounds": [
     {
-      "listen": "127.0.0.1",
       "port": 10808,
       "protocol": "socks",
       "settings": {
@@ -102,12 +103,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca17.myfymain.com",
-            "port": 8880,
+            "address": "188.114.97.6",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "id": "db0a76e2-645b-467d-a41f-841e9af7217c",
                 "level": 8
               }
             ]
@@ -115,22 +116,22 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "nOde-1796256123-EF3226.maHDireIGnsgERMANy.wOrkeRS.DEv",
+          "show": false
         },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-ef3226.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoibnpTOXVURGEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxNDUuMjIzLjEwMC4xMTEiXX0=?ed=2560"
         }
       },
       "tag": "proxy-1"
@@ -144,13 +145,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca13.myfymain.com",
-            "port": 8880,
+            "address": "172.67.205.180",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "id": "db0a76e2-645b-467d-a41f-841e9af7217c",
                 "level": 8
               }
             ]
@@ -158,22 +158,22 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "noDE-1796256123-Ef3226.MahDIreIgNsgErmany.wORkerS.dev",
+          "show": false
         },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-ef3226.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiSm95TUQzOGh0RyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE0NS4yMjMuMTAwLjExMSJdfQ==?ed=2560"
         }
       },
       "tag": "proxy-2"
@@ -187,12 +187,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn9-33.vk-cdnvideo.com",
-            "port": 8443,
+            "address": "node-1796256123-ef3226.mahdireignsgermany.workers.dev",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
+                "id": "db0a76e2-645b-467d-a41f-841e9af7217c",
                 "level": 8
               }
             ]
@@ -200,7 +200,7 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "sockopt": {
           "domainStrategy": "UseIP",
@@ -211,15 +211,20 @@
             "tryDelayMs": 250
           }
         },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "cdn9-33.vk-cdnvideo.com",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "NOdE-1796256123-Ef3226.MaHDiREiGnSGeRmaNy.wORKeRS.dev",
           "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-ef3226.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiYkFXNlFyWkJPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ1LjIyMy4xMDAuMTExIl19?ed=2560"
         }
       },
       "tag": "proxy-3"
@@ -233,12 +238,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "151.115.164.131",
-            "port": 8880,
+            "address": "188.114.97.6",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "flow": "",
+                "id": "db0a76e2-645b-467d-a41f-841e9af7217c",
                 "level": 8
               }
             ]
@@ -246,14 +252,23 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "NoDe-1796256123-ef3226.mahdiREIgNSGERMANy.woRkErs.dev",
+          "show": false
         },
-        "network": "grpc"
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-ef3226.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiSjR1V1ZoV3kiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxNDUuMjIzLjEwMC4xMTEiXX0=?ed=2560"
+        }
       },
       "tag": "proxy-4"
     },
@@ -266,12 +281,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.229.243.72",
-            "port": 8443,
+            "address": "188.114.97.6",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
+                "flow": "",
+                "id": "db0a76e2-645b-467d-a41f-841e9af7217c",
                 "level": 8
               }
             ]
@@ -279,17 +295,22 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "cdn7-09.vk-cdnvideo.com",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "NOdE-1796256123-eF3226.mahdIreIgNSgeRmaNY.woRkers.dev",
           "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-ef3226.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoieWFOU1h3S2V5NDQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxNDUuMjIzLjEwMC4xMTEiXX0=?ed=2560"
         }
       },
       "tag": "proxy-5"
@@ -303,133 +324,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca13.myfymain.com",
-            "port": 8880,
+            "address": "www.speedtest.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
-        },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        }
-      },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca37.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
-        },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        }
-      },
-      "tag": "proxy-7"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "77.74.123.170",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "cdn3-87.vk-cdnvideo.com",
-          "show": false
-        }
-      },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "166.62.108.30",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+                "id": "db0a76e2-645b-467d-a41f-841e9af7217c",
                 "level": 8
               }
             ]
@@ -438,346 +338,33 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "NodE-1796256123-eF3226.MaHdirEiGNsgErmaNY.wORKeRS.DEv",
+          "show": false
+        },
         "wsSettings": {
           "headers": {
-            "Host": "vms.lifetime17.workers.dev"
+            "Host": "node-1796256123-ef3226.mahdireignsgermany.workers.dev"
           },
-          "path": "/"
+          "path": "/eyJqdW5rIjoiUTJaMDJGRTcxbTlqYkk1ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE0NS4yMjMuMTAwLjExMSJdfQ==?ed=2560"
         }
       },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "46.229.243.74",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "cdn7-09.vk-cdnvideo.com",
-          "show": false
-        }
-      },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "46.229.243.133",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "cdn3-87.vk-cdnvideo.com",
-          "show": false
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca17.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
-        },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.115.164.110",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
-        },
-        "network": "grpc"
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "47.91.94.112",
-            "port": 10040,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-14"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "79.133.126.199",
-            "port": 31009,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "46834b61-a623-42cd-9171-a94572ffe56c",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-15"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdn3-87.vk-cdnvideo.com",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "cdn3-87.vk-cdnvideo.com",
-          "show": false
-        }
-      },
-      "tag": "proxy-16"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca15.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
-        },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        }
-      },
-      "tag": "proxy-17"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.115.164.129",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
-        },
-        "network": "grpc"
-      },
-      "tag": "proxy-18"
+      "tag": "proxy-6"
     },
     {
       "protocol": "freedom",
@@ -796,7 +383,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "CDN+🔑MTN",
+  "remarks": "CDN💫CLD",
   "routing": {
     "balancers": [
       {
