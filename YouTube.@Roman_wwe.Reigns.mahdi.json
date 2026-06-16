@@ -47,7 +47,8 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ]
+      ],
+      "pp-cx1.firelinkservers.ir": "45.205.0.210"
     },
     "servers": [
       "1.1.1.1"
@@ -56,6 +57,7 @@
   },
   "inbounds": [
     {
+      "listen": "127.0.0.1",
       "port": 10808,
       "protocol": "socks",
       "settings": {
@@ -95,6 +97,48 @@
       "settings": {
         "vnext": [
           {
+            "address": "45.130.125.60",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "NODe-1796256123-0142E2.mahDirEiGnSGeRmANy.woRKeRS.DeV",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiNGVEaUhwTHZienpHZnMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19?ed=2560"
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "94.140.0.250",
             "port": 2087,
             "users": [
@@ -122,7 +166,7 @@
           "path": "/eyJqdW5rIjoiTVBWTkxLY3VhZTNQWm42IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiODkuMjIuMjMzLjUyIl19"
         }
       },
-      "tag": "proxy-1"
+      "tag": "proxy-2"
     },
     {
       "mux": {
@@ -133,12 +177,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.131.6.203",
-            "port": 443,
+            "address": "188.114.97.2",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
                 "level": 8
               }
             ]
@@ -150,17 +194,157 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "TLBZ9r7YrVYC9F6sVnMx8I1qjmWg3iT2.maHdIrEiGNS54.WorkERS.DEV",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "NODE-1796256123-0142E2.maHdIREiGnSgErMAnY.wOrKerS.deV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiWDlKeHgxdWVPaWpSbFIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI4OS4yMi4yMzMuNTIiXX0="
+          "path": "/eyJqdW5rIjoianpxTjlBTFlBSWEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19?ed=2560"
         }
       },
-      "tag": "proxy-2"
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.97.20",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "noDE-1796256123-0142e2.maHDiReIGNsgErmanY.WORKerS.dEv",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiQ0xmVndqRndRYm0iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19?ed=2560"
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.6.112.8",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "nODe-1796256123-0142E2.mAHdIREIGNsGERMany.wOrkeRs.dEV",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiTm56SFlWR0xmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTUuMTc5LjI1MC42OCJdfQ==?ed=2560"
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pp-cx1.firelinkservers.ir",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "NODE-1796256123-0142E2.maHDiREIGnsgErmanY.WOrkeRs.dEv",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiSVB5UHZvZmMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19?ed=2560"
+        }
+      },
+      "tag": "proxy-6"
     },
     {
       "mux": {
@@ -198,7 +382,45 @@
           "path": "/eyJqdW5rIjoiNHNoRkFzbjZwck1jIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiODkuMjIuMjMzLjUyIl19"
         }
       },
-      "tag": "proxy-3"
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.131.6.203",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "TLBZ9r7YrVYC9F6sVnMx8I1qjmWg3iT2.maHdIrEiGNS54.WorkERS.DEV",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiWDlKeHgxdWVPaWpSbFIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI4OS4yMi4yMzMuNTIiXX0="
+        }
+      },
+      "tag": "proxy-8"
     },
     {
       "protocol": "freedom",
@@ -217,7 +439,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "CDN⚡",
+  "remarks": "FAST⚡CDN",
   "routing": {
     "balancers": [
       {
