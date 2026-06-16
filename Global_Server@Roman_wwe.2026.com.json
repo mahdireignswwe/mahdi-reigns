@@ -100,7 +100,7 @@
   "observatory": {
     "enableConcurrency": true,
     "probeInterval": "3m",
-    "probeUrl": "https://www.gstatic.com/generate_204",
+    "probeUrl": "http://www.google.com/generate_204",
     "subjectSelector": [
       "proxy-"
     ]
@@ -623,7 +623,7 @@
       },
       "streamSettings": {
         "grpcSettings": {
-          "authority": "/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI",
+          "authority": "",
           "health_check_timeout": 20,
           "idle_timeout": 60,
           "multiMode": false,
@@ -903,12 +903,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca27.myfymain.com",
-            "port": 8880,
+            "address": "94.140.0.250",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -916,22 +916,18 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "tlBz9r7YrvYc9F6sVNMx8I1QjMWg3iT2.MAHdIreiGnS54.WOrKErs.deV",
+          "show": false
         },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
+        "wsSettings": {
+          "headers": {
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiTVBWTkxLY3VhZTNQWm42IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiODkuMjIuMjMzLjUyIl19"
         }
       },
       "tag": "proxy-20"
@@ -945,7 +941,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca12.myfymain.com",
+            "address": "sca27.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -987,7 +983,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca11.myfymain.com",
+            "address": "sca12.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1001,7 +997,7 @@
       },
       "streamSettings": {
         "grpcSettings": {
-          "authority": "BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI",
+          "authority": "",
           "health_check_timeout": 20,
           "idle_timeout": 60,
           "multiMode": false,
@@ -1029,7 +1025,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca22.myfymain.com",
+            "address": "sca11.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1071,7 +1067,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca24.myfymain.com",
+            "address": "sca22.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1113,7 +1109,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca8.myfymain.com",
+            "address": "sca24.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1155,7 +1151,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca32.myfymain.com",
+            "address": "sca8.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1197,7 +1193,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca19.myfymain.com",
+            "address": "sca32.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1239,7 +1235,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca9.myfymain.com",
+            "address": "sca19.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1253,7 +1249,7 @@
       },
       "streamSettings": {
         "grpcSettings": {
-          "authority": "v2rayNplus-v2rayNplus-v2rayNplus",
+          "authority": "",
           "health_check_timeout": 20,
           "idle_timeout": 60,
           "multiMode": false,
@@ -1281,7 +1277,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca17.myfymain.com",
+            "address": "sca9.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1323,7 +1319,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca20.myfymain.com",
+            "address": "sca17.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1365,7 +1361,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca15.myfymain.com",
+            "address": "sca20.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1407,7 +1403,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca19.myfymain.com",
+            "address": "sca15.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1449,7 +1445,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca20.myfymain.com",
+            "address": "sca19.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1491,7 +1487,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca24.myfymain.com",
+            "address": "sca20.myfymain.com",
             "port": 8880,
             "users": [
               {
@@ -1533,6 +1529,86 @@
       "settings": {
         "vnext": [
           {
+            "address": "45.131.6.203",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "TLBZ9r7YrVYC9F6sVnMx8I1qjmWg3iT2.maHdIrEiGNS54.WorkERS.DEV",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+          },
+          "path": "/eyJqdW5rIjoiWDlKeHgxdWVPaWpSbFIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI4OS4yMi4yMzMuNTIiXX0="
+        }
+      },
+      "tag": "proxy-35"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sca24.myfymain.com",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": ""
+        },
+        "network": "grpc",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        }
+      },
+      "tag": "proxy-36"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "sca28.myfymain.com",
             "port": 8880,
             "users": [
@@ -1564,7 +1640,7 @@
           }
         }
       },
-      "tag": "proxy-35"
+      "tag": "proxy-37"
     },
     {
       "mux": {
@@ -1595,7 +1671,7 @@
           }
         }
       },
-      "tag": "proxy-36"
+      "tag": "proxy-38"
     },
     {
       "mux": {
@@ -1626,7 +1702,7 @@
           }
         }
       },
-      "tag": "proxy-37"
+      "tag": "proxy-39"
     },
     {
       "protocol": "freedom",
