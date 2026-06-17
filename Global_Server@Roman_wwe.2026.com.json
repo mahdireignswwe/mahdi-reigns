@@ -212,7 +212,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-4a79-b027-c6366e5f741d",
+                "id": "32176553-9dc4-4fc1-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -242,7 +242,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-0002-b027-c6366e5f741d",
+                "id": "32176553-9dc4-0002-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -271,7 +271,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-4a79-b027-c6366e5f741d",
+                "id": "32176553-9dc4-4fc1-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -301,7 +301,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-0003-b027-c6366e5f741d",
+                "id": "32176553-9dc4-0003-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -330,7 +330,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-4a79-b027-c6366e5f741d",
+                "id": "32176553-9dc4-4fc1-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -360,7 +360,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-4a79-b027-c6366e5f741d",
+                "id": "32176553-9dc4-4fc1-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -375,6 +375,7 @@
         "realitySettings": {
           "serverName": "www.icloud.com",
           "publicKey": "k1wKvgZ-_-b_sOJa-L1pNVBTkADk74j_2dJ-S3cziyI",
+          "shortId": "6ba85179e30d4fc2",
           "fingerprint": "firefox"
         }
       }
@@ -389,7 +390,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-0004-b027-c6366e5f741d",
+                "id": "32176553-9dc4-0004-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -418,7 +419,7 @@
             "port": 443,
             "users": [
               {
-                "id": "7e6c6c1e-add3-4a79-b027-c6366e5f741d",
+                "id": "32176553-9dc4-4fc1-b3dc-e916aaf65482",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -466,5 +467,5 @@
     ],
     "enableConcurrency": true
   },
-  "remarks": "کانفیگ⚡اشتراکی"
+  "remarks": "کانفیگ💵اشتراکی✓"
 }
