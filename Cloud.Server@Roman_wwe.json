@@ -212,7 +212,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-4eff-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-48b8-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -227,7 +227,6 @@
         "realitySettings": {
           "serverName": "www.icloud.com",
           "publicKey": "k1wKvgZ-_-b_sOJa-L1pNVBTkADk74j_2dJ-S3cziyI",
-          "shortId": "6ba85179e30d4fc2",
           "fingerprint": "firefox"
         }
       }
@@ -242,7 +241,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-0002-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-0002-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -271,7 +270,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-4eff-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-48b8-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -286,7 +285,6 @@
         "realitySettings": {
           "serverName": "www.icloud.com",
           "publicKey": "k1wKvgZ-_-b_sOJa-L1pNVBTkADk74j_2dJ-S3cziyI",
-          "shortId": "6ba85179e30d4fc2",
           "fingerprint": "firefox"
         }
       }
@@ -301,7 +299,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-0003-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-0003-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -330,7 +328,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-4eff-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-48b8-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -345,7 +343,6 @@
         "realitySettings": {
           "serverName": "www.icloud.com",
           "publicKey": "k1wKvgZ-_-b_sOJa-L1pNVBTkADk74j_2dJ-S3cziyI",
-          "shortId": "6ba85179e30d4fc2",
           "fingerprint": "firefox"
         }
       }
@@ -360,7 +357,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-4eff-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-48b8-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -375,7 +372,6 @@
         "realitySettings": {
           "serverName": "www.icloud.com",
           "publicKey": "k1wKvgZ-_-b_sOJa-L1pNVBTkADk74j_2dJ-S3cziyI",
-          "shortId": "6ba85179e30d4fc2",
           "fingerprint": "firefox"
         }
       }
@@ -390,7 +386,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-0004-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-0004-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -419,7 +415,7 @@
             "port": 443,
             "users": [
               {
-                "id": "2d85e705-2afd-4eff-b139-81b2fffeb92f",
+                "id": "7c6c7a6a-6a7a-48b8-aab3-6088034755de",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -467,5 +463,5 @@
     ],
     "enableConcurrency": true
   },
-  "remarks": "Mix💫Config"
+  "remarks": "اپدیت⚡اشتراکی"
 }
