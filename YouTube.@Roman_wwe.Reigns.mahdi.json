@@ -47,8 +47,7 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ],
-      "pp-cx1.firelinkservers.ir": "45.205.0.210"
+      ]
     },
     "servers": [
       "1.1.1.1"
@@ -97,12 +96,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.60",
-            "port": 443,
+            "address": "104.19.156.81",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -114,14 +113,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cMCCaKO8kNjkZKMgw9DWfYRpFBF8X8.WWE78296.WOrkErS.DEV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiMVBjbHpEcE81ZExmdEdXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTk1LjEzMy40NC4yMSJdfQ=="
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-1"
@@ -135,12 +135,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.140.0.255",
-            "port": 443,
+            "address": "173.245.59.153",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -152,14 +152,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cMccako8knJKzkMgw9dwFyrPfBF8X8.wwe78296.woRKERs.DEV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiSWJ0ZE9SRHRhIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTk1LjEzMy40NC4yMSJdfQ=="
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-2"
@@ -173,12 +174,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.140.0.255",
-            "port": 2053,
+            "address": "198.41.208.255",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -190,14 +191,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cmccaKo8KnJkZkMgW9DwFyrPFBF8x8.WWe78296.woRKerS.dEV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiWEhXNVRVd1NwVWwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxOTUuMTMzLjQ0LjIxIl19"
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-3"
@@ -211,12 +213,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.2",
-            "port": 2053,
+            "address": "104.16.26.238",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -228,14 +230,14 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cmcCaKO8KnJKZkmGW9DWfYrPFBf8X8.wWE78296.WorkeRs.Dev",
+          "serverName": "tlBz9r7YrvYc9F6sVNMx8I1QjMWg3iT2.MAHdIreiGnS54.WOrKErs.deV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiMDh6N3lYZm8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxOTUuMTMzLjQ0LjIxIl19"
+          "path": "/eyJqdW5rIjoiTVBWTkxLY3VhZTNQWm42IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiODkuMjIuMjMzLjUyIl19"
         }
       },
       "tag": "proxy-4"
@@ -249,12 +251,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.33.98",
-            "port": 443,
+            "address": "172.66.0.24",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -266,14 +268,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cMccAko8kNjKzkmgW9dwFyRPFbF8x8.WWE78296.WorkERS.dEv",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiY1hPUkE0Y3hnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTk1LjEzMy40NC4yMSJdfQ=="
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-5"
@@ -287,12 +290,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.60",
-            "port": 2053,
+            "address": "104.17.22.123",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -304,14 +307,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cmCCaKo8kNJKZkMgw9DwfYrpfbf8x8.wwE78296.woRKERS.DEv",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoieXNXczNyT0tmanNvTFJJIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTk1LjEzMy40NC4yMSJdfQ=="
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-6"
@@ -325,12 +329,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.140.0.255",
+            "address": "172.67.65.101",
             "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -342,14 +346,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cmccaKo8KnJkZkMgW9DwFyrPFBF8x8.WWe78296.woRKerS.dEV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiWEhXNVRVd1NwVWwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxOTUuMTMzLjQ0LjIxIl19"
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-7"
@@ -363,12 +368,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.33.98",
-            "port": 2053,
+            "address": "8.35.211.23",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -380,14 +385,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cMcCAKO8KnJkZkmGw9DwfYrpFBF8x8.WWE78296.wORKers.DEV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiV01KRTA3Mnoyd0oiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxOTUuMTMzLjQ0LjIxIl19"
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-8"
@@ -401,12 +407,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.2",
-            "port": 443,
+            "address": "104.17.185.183",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -418,14 +424,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cmCcAKo8Knjkzkmgw9dwfYrPfbf8x8.WWE78296.woRKeRS.DeV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiUmdwUzlZMlpIbjloR2RteiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE5NS4xMzMuNDQuMjEiXX0="
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-9"
@@ -439,12 +446,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "8.6.112.8",
-            "port": 2053,
+            "address": "198.41.208.41",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -456,14 +463,15 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76CmCCakO8kNjkZKMGW9DwFyrpfBf8X8.Wwe78296.wOrkErs.DeV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoic1A5cHBwd3lVUDI2NXhFIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTk1LjEzMy40NC4yMSJdfQ=="
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-10"
@@ -477,12 +485,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.60",
+            "address": "104.17.21.231",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "level": 8
               }
             ]
@@ -494,17 +502,135 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76cMCCaKO8kNjkZKMgw9DWfYRpFBF8X8.WWE78296.WOrkErS.DEV",
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiMVBjbHpEcE81ZExmdEdXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTk1LjEzMy40NC4yMSJdfQ=="
+          "path": "/proxyip=185.219.132.27"
         }
       },
       "tag": "proxy-11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.19.51.177",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          },
+          "path": "/proxyip=185.219.132.27"
+        }
+      },
+      "tag": "proxy-12"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.157.159",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          },
+          "path": "/proxyip=185.219.132.27"
+        }
+      },
+      "tag": "proxy-13"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "198.41.208.138",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          },
+          "path": "/proxyip=185.219.132.27"
+        }
+      },
+      "tag": "proxy-14"
     },
     {
       "mux": {
@@ -520,7 +646,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
                 "level": 8
               }
             ]
@@ -532,64 +658,17 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "76CMCCAKo8kNjkzKmGw9DwFYrpFbf8X8.wwe78296.WorKeRs.dEv",
+          "serverName": "TLBZ9r7YrVYC9F6sVnMx8I1qjmWg3iT2.maHdIrEiGNS54.WorkERS.DEV",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
           },
-          "path": "/eyJqdW5rIjoiUFJmU2dMQkRVIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTk1LjEzMy40NC4yMSJdfQ=="
+          "path": "/eyJqdW5rIjoiWDlKeHgxdWVPaWpSbFIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI4OS4yMi4yMzMuNTIiXX0="
         }
       },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "pp-cx1.firelinkservers.ir",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "930fe5c1-2bfc-495b-b268-5d4914c14605",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "76CMcCaKO8kNjkzkmGW9dWfYrPFBf8X8.WwE78296.wOrkERS.DEV",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "76cmccako8knjkzkmgw9dwfyrpfbf8x8.wwe78296.workers.dev"
-          },
-          "path": "/eyJqdW5rIjoiSDd5YVJSUWxpcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE5NS4xMzMuNDQuMjEiXX0="
-        }
-      },
-      "tag": "proxy-13"
+      "tag": "proxy-15"
     },
     {
       "protocol": "freedom",
@@ -608,7 +687,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "CDN🔑",
+  "remarks": "CDN",
   "routing": {
     "balancers": [
       {
