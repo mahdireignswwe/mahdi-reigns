@@ -48,7 +48,18 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "de5.xonline.sbs": "45.130.125.2"
+      "de1.xonline.sbs": "104.18.152.246",
+      "de2.xonline.sbs": "104.18.152.229",
+      "de3.xonline.sbs": "104.16.72.70",
+      "de4.xonline.sbs": "104.16.72.139",
+      "de5.xonline.sbs": "45.130.125.2",
+      "de6.xonline.sbs": "45.130.125.114",
+      "de7.xonline.sbs": "188.114.97.6",
+      "de8.xonline.sbs": "45.130.125.126",
+      "de9.xonline.sbs": "188.42.88.24",
+      "de10.xonline.sbs": "135.84.67.77",
+      "de11.xonline.sbs": "88.216.67.230",
+      "rshirt.lordmakuboutiqu.site": "194.113.226.169"
     },
     "servers": [
       "1.1.1.1"
@@ -79,7 +90,235 @@
   "log": {
     "loglevel": "warning"
   },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.google.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
   "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de1.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de2.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de3.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de4.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-4"
+    },
     {
       "mux": {
         "concurrency": -1,
@@ -129,7 +368,920 @@
           "path": "/getFile"
         }
       },
-      "tag": "proxy"
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de6.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de7.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de8.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de9.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de10.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-10"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de11.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "rshirt.lordmakuboutiqu.site",
+            "port": 42542,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "play.google.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-12"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "193.151.149.186",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "19163359-2145-4970-a9d6-8ff8a2152e5f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "x.xonline.sbs",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "x.xonline.sbs",
+          "mode": "auto",
+          "path": "/dljdlanrof"
+        }
+      },
+      "tag": "proxy-13"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.194.10.86",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "3e7cede4-721a-4807-b0a2-5fe6586af907",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "firefox",
+          "publicKey": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
+          "serverName": "storage.yandex.net",
+          "shortId": "2cfb5a0ae8ab0cb0",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-14"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "108.162.194.165",
+            "port": 2086,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a88183b3-883b-40ce-9134-673a72c8b4c2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "arshia.lezzatArshia.ir",
+          "path": "/"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.199.192.73",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "a5ea9247-79f3-4655-aece-3fb51e1e669e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "publicKey": "Lt6X7qMkqASgQr2ErbaUbowSn2ylRuON8BsOjmZv6Qw",
+          "serverName": "rezerv19.yunus.guru",
+          "shortId": "b197d7f830dc8062",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.161.242",
+            "level": 8,
+            "ota": false,
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "www.f6r.ir",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "www.f6r.ir"
+          },
+          "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2="
+        }
+      },
+      "tag": "proxy-17"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "92.119.35.119",
+            "level": 8,
+            "ota": false,
+            "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
+        }
+      },
+      "tag": "proxy-18"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.70",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c2f0a8f0-36fe-4a94-824b-bca271ca642b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "alphacdn.alphashops.shop",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "alphacdn.alphashops.shop"
+          },
+          "path": "/ws"
+        }
+      },
+      "tag": "proxy-19"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "92.119.35.105",
+            "level": 8,
+            "ota": false,
+            "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
+        }
+      },
+      "tag": "proxy-20"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "92.119.35.85",
+            "level": 8,
+            "ota": false,
+            "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
+        }
+      },
+      "tag": "proxy-21"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.206.0.46",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "52faee73-e0fe-4661-992d-67259257170f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "publicKey": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
+          "serverName": "storage.yandex.net",
+          "shortId": "ea10cd5686751ec5",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-22"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.96.3",
+            "level": 8,
+            "ota": false,
+            "password": "humanity",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "www.multiplydose.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "www.multiplydose.com"
+          },
+          "path": "/assignment"
+        }
+      },
+      "tag": "proxy-23"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "92.119.35.131",
+            "level": 8,
+            "ota": false,
+            "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
+        }
+      },
+      "tag": "proxy-24"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de9.xonline.sbs",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "alpn": [
+            "h2",
+            "http/1.1",
+            "h3"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
+        },
+        "xhttpSettings": {
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
+          "mode": "auto",
+          "path": "/getFile"
+        }
+      },
+      "tag": "proxy-25"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.253.242",
+            "level": 8,
+            "ota": false,
+            "password": "MiTiVPN",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "www.f6r.ir",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "www.f6r.ir"
+          },
+          "path": "https://t.me/oneclickvpnkeys"
+        }
+      },
+      "tag": "proxy-26"
     },
     {
       "protocol": "freedom",
@@ -148,8 +1300,19 @@
       "tag": "block"
     }
   ],
-  "remarks": "test",
+  "remarks": "اشتراک⚡2",
   "routing": {
+    "balancers": [
+      {
+        "selector": [
+          "proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "tag": "proxy-round"
+      }
+    ],
     "domainStrategy": "AsIs",
     "rules": [
       {
@@ -160,10 +1323,15 @@
         "type": "field"
       },
       {
+        "balancerTag": "proxy-round",
         "inboundTag": [
           "dns-module"
         ],
-        "outboundTag": "proxy",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "network": "tcp,udp",
         "type": "field"
       }
     ]
