@@ -48,11 +48,7 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "tun3.lesss.ir": "94.183.210.20",
-      "us.lesss.ir": "23.80.82.151",
-      "tun.lesss.ir": "94.183.210.20",
-      "direct1.lesss.ir": "10.10.34.36",
-      "tun2.lesss.ir": "10.10.34.36"
+      "de5.xonline.sbs": "45.130.125.2"
     },
     "servers": [
       "1.1.1.1"
@@ -83,14 +79,6 @@
   "log": {
     "loglevel": "warning"
   },
-  "observatory": {
-    "enableConcurrency": true,
-    "probeInterval": "3m",
-    "probeUrl": "https://www.google.com/generate_204",
-    "subjectSelector": [
-      "proxy-"
-    ]
-  },
   "outbounds": [
     {
       "mux": {
@@ -101,113 +89,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tun3.lesss.ir",
-            "port": 8444,
+            "address": "de5.xonline.sbs",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "1EPU1FtapRbV8ZR9e7AU0nahyWYM8L0zuYHD8F1GJAc",
-          "serverName": "www.cloudflare.com",
-          "shortId": "491c54cd0cf5e22d",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-1"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "us.lesss.ir",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "mldsa65Verify": "bO362gUsu1WkZN2UgetqgDUecrHD72MCXL-qLeEoT_zcBCAo6uE3rp8jPlseOsWOrEV0TOspZM0kwJo1SInDpLcA82j-rTQtNM-uEb6RM8DTr_19LlXAjM8H8JT5vejWl_MBfYlCmbuFS9La4oyU7BB52kw56-Ot0zfkV39mPl-K9u9XQ0apHNWDOpTyM1qMXdyEsBN6xSYcSZybUlcQyAq_YJ30mTSZ74LYgLhJdaFdXb7QNCpBrYiaj5utmhEHB1hWnfwq2bgObJPUMZYIXIrR1RQWlIJi8URIHLNg6boVVDoxa180sOrOQTuKefLigzv2U_B0_hoo-NquO4TceWtbXbbg0AIOpLk3kqlPZmF35Z4_B0HkqFrMpd0E-TyCQVlGLLw-_Kn2sOHcXLO7ZLPl8zT5_Yjxy_ZQTzgkloIJ-TgGi2xN4NLEymseOXs3yc2wQPTspGGv7Zzwx09YdjBLv5PEa9Yx4VbTgg3fyOjgG_qJki9VH-sSAFDsbOzdF1-bV2BLfkf-GvgVxr7jw9poOo2PHGuU3S2kfR_w2n_WX0K87F6ehvNxJy1Gq9gcdsV5px0f2ROOqYoUw3cPhD4-ofWFPsVrsYkJ_wVKj2StbcvAXB7GlNE_ZY99b-rHKyF-Ts1ZBrzKN5Wg1Efr6Vw_fLSpa5W9_nrxK9B_p4AIXf9C71DzHxqdvMtVil84VM5cj5C6gQjYL-Ohqs0MgdI69QuJK6hKCsYpcNz6n_dN7l5-EN66DC-O-kRYQnlypfE872d5o1y_fCEwDnbz23eQHuOZApm5REG08EDbFggnvF6pOx1CM12u72Wy1UFR2_OneJl-DP1U0oEHKAEmOrEEw4RE0iswK486AQru15ihH2aCPPWPzrViDxDRIlnqqF1vcZLyKRAP7jOFz6A-vj7xt2Jc-J41pSyV_fyhFDZekfbmaiwoNDTeLUGGr33-D0KUGam-2IHnk-vhBAlDFwkWUKZAidruuHhUiG0nXyPXgGddyxyvYHJz9-39sImQn0-CO7BPyleBhISssyHHowYzPmaT7jgoKWJQok-48vuWLqo67dm2Q_s9dR7LneOCwILpWCiSTfVZh9lI848X_9TXdMdfghDFsmluLhvUfn2bMZqwjPP74PxxhAG58j2P04Q72gVNRrla73qEIP2YM8ius8MP7o2Jboc4Ba6ENRAHF_9jlc6QXU1JfkQPQDeN-H0bZQJcG_Ha_qaK_l4fmK_i66MvRw6Ir7Av-CKpx45Tcqkg2Xr3TTMM2zOjEo28XqjUQTrsE1ei9cBP5M5dxQVKJPirjB7Z-sZ5bupEfPTf57pzr8SFKNHtIdkQ-77eRbyFgjE7zP7AFLZSps-GlUzUedzssOLqN-2GbEBvTyFvGZMITzhVJXnAKSsZQivGz1FqtiqOsW-MVUVNZdRBC7JwaRYTCu5qSp7s9ppa5e4Zm2AyE-ey5zZ0NSVWnIabSCbIIExN90vQB0ZbHi6S3wavgBbk74gL6PDE2uTeIdma7xeLRFGxZivisPSzdnER7eM83MOHVQl2HzUBWU-rnvjBXhcIuX0Y7L7I2UgI0PSnBj1ccRjonAP-Ub1Hg6USCitlDr6A8SJwlnqRwp5mKmJvAG5X_COIZ52Z-ax7zQ9gYoFjQvGVQgrId5RMo_MGH6fiFaIMgeDxS8C1OTi5zNPD1a4lZZ3_9wLfXKtGcrOKjC_y2WgQE2HKQ_F2lzQDBPrM-mZHV1GGlKU_BxX7tYkmVSVeh1cQcGIdr5uQzXi_jhwkhvze5uat4q7ayCzaQf_nLdVjAKPJF0Qjf--Q5At5f_gQ_1UC0e64_cDd4nWC78r-rKkdvR8-TKjBLlnQrzYuS-fVEdXqG3GcbvEC5lK26rONuCLZTEQqukKL0rhLIctxrEQLHwzJi9WzlNV8n-FBnAPL8DrHZvUdmjhi5mbpKNXdkyLXlzCsko2itnzxaby3c40tNLu_ljYden_14Bk-Omo6-LwN7mpj-6UuPKDsAj2Tg3qXAOqtnS-pTkynJPdqBEJM_kqRjF9QOB9akKjfG-zuUHKdHxZsykFSUieAtDII0xkObyoeuU7pyv3UsrmbF7uSutOZqLNKkoD1zhRCeNsgUWr6haZA1nvoZjll7gDk1lltBT3acKxhmHK3oFmv9G687IG2JJFrVIpLKPLMrR0jB77X1L8nWO7-Vhz60lekycdnu19l2hPT5Fyzz15_bYwQaB4fJUJKgw2oR2Mc7WWS5fdkcZ5MT-oe-waRd7BIi2oQT5Qqb0hlw6rt9sDTmN87iyXB5LuBq5z0ZNKO19MdCOZ7Lw1ThekQE2P18VXjIXPl5T2vMXYwhQkdGvGSF-Kgz84Sx_I44o2MiFT6UAJQQQ5aog2oGKAbWDLbI9CjuU99gL4nWX1WpzY4UWEyygYkScg1TgOX-K2e85ITOCEk0mfUtjDO41ahv70GDrd4aVFG3uvHjxeUTPeSdxXHIod_p4w54NFSgkk2glZhSHXRq9lPo319JigM-5GSo6AOq-DqJnTyzVAhEyhWdftaIhBOm3UzOpmWJkm2n6QC-PkTrtEL4-LOrM7Bf-uAjp2sa-uHLv1DlH6e7yE",
-          "publicKey": "1lMHY_oEqthg10oDrHSq9gSwYdqqNb6ZQc9JEewyzVk",
-          "serverName": "play.google.com",
-          "shortId": "bc7c4660adb53714",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "tun3.lesss.ir",
-            "port": 19911,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
+                "flow": "",
+                "id": "9cbe9ddd-85e0-46de-8a53-212d8c7d33b8",
                 "level": 8
               }
             ]
@@ -216,6 +104,7 @@
       },
       "streamSettings": {
         "network": "xhttp",
+        "security": "tls",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -224,197 +113,23 @@
             "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "xco.trevor.ir",
+          "show": false
         },
         "xhttpSettings": {
-          "host": "tun2.lesss.ir",
+          "extra": {
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "xco.trevor.ir",
           "mode": "auto",
-          "path": "/"
+          "path": "/getFile"
         }
       },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "tun.lesss.ir",
-            "port": 2095,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "mldsa65Verify": "20GIhGUCh_xJzxNRI8HT99u-5iZgJEWDa5f9qithb4P_jMRdwgP6hh5GuW4vgVHotz9fSf0ftPBW4vZrFgZDBh44EMxbTKA_gyp_NnNHeyt6kwHv0nX9xdvjF8_z2TH1-nJ2LaZd2Mez23LhCkBfnI3HZcgjmycArlG2clvMyJV7VLVktIX36J4kxAQou_iCuPDY__qgb5LYAeRgiO1eFpMAPnMCnquPk7wvEsE9fej8JRVxguThmXseLrblub7GGWoEFywwPLknv9OMkyo2WDbuvHNrw-TcuI0Uylq04I0QbNPoFt2I75PotW4_bAlp9MEu5ly5eyQLOmbsc1UV8jPXqiGFwT4fobWSyhKM-0761q32hDttbHnovlf5F61bHvQRBkY9orzNc5bBxjqZc5ve31YzbFE4nompCLxSQKLYKpYMHM503mvdhuZW9OslnPzVWYIzmKO27bpBvMFpAhxIBTcd2Tgcmp5ngwpLiOeUp9ht1XhS79UCw_qCapiXFdl68VqHZvDYYqrCZ98N5ZfPoRowz1I-FYE3gQFCvwgReKSKwH11sTQzHHUNUWVC39J7fnvgI4E-vjXlRWmnNLzaLJQy5PdcQTRc5C_S03QMc7pFWRLoIQMuEU8o0FXCSq0gpdaSZ69pxLhQmR7rZQGYPa2RolvlpjXo0VzVNnSfFS6H3er0ll7EWz9v80kuXA0nV595_idZVSwHLRpMSQFRNpG2vqNSIpIYpZN_ihqFXLx3Pw43stIlEPcO2jSRTxFAHx9CTxJklZk3-unyI_DeHLnVv9U5Yq9a8Z7glD5qe9BXxeIfbJQ8a_nfFREVJIQnwlPvGmUSBkBriK8B7Wi-jWmXgoSBkDVAGUrMaIILpDBO2AxUggjxjsCa7Ee_Debw8NhW34iQNk62zKxrwJZSzxzrsxfrnKEgXOkaRMa7CSfjxFWd21AJH3cC-F8uhitlNOX1jDEpgB1Ndk2k-qJBR7-KJI8O9kJ6ZPyliuDYfCwajVgnDQmqdT4KRU-yNgE1CdDz5suv7wUebfXvMVyyuctBiXRErH-e3HMfUM28kj_dFpIo1LfV_c_2a4D_QF_5qZ-6AKl6rr0bXCtsIackp1AJmsFN1FV_Wa-_yrUmumjtu4P4s6Y29O_yVgolfXrDXbNFpyYlwRp3LITrU8g9spu1anBYaA2Zes9eA91y-PZKrYAZtF2I6yWRaNTJizq9lIV6tnSmkfcwXF-r2pW0bo62VFQjWeGkvv-Qdtjg-B1fRj8k9MrwK7BKaY1mpycxsf9xLM4nNPxRrlISeEtRn40XmjfwzwvkyDwPsFq3Xv2noXGKmNl3S2vuDO1JZSJ6ZhJ0Dlxp2VFDUi4MRk6yk0J9J2X8FmSYJaFBAlRIPdEAKvmLdGIMokkntLHwmNyGVz9UMJ523NzG_EBeR_ylNfghmgGYoM8e5Kg3ggRplRtwBTqI-F1z9ntG69YGc9ivXKaD778wCX5wsr14cUHj1zyEdCsZYc9OqRzYAKlJRjy8tdoIjBPprbfIDXulcmqUa8mzdb6KkZikTgvf5hG1FpNDaqvUm9mRDS4TYpS02pOLnnHpQaJN2IknU1zEVMS8mAVPtqY5mymMcxmEelK1skAM5TmV4r_GMkcIYIq0qJVEk1GdOC64FeZrINM9xyVp0kUh-s0WLwUms3rtXyxN0-P1ecZaXDk5d_4wnzRUBsPrui7JkWIx7O3JVoKiw7cdM7fqpYy6ldssG-tcgfiI6R-au7-GeZawNIBZPWsABfSwujmVw9LByxxKjIAraySlJA2wiza8nWbcCXJ3BizWEeP121TfY8AK4hLoLuRoZsdJvASlzKqY-wRtLHSCG82CfeIcML_9RrOvmLdbIt2C_T1ZI1PnaovfinFvzRHj63E8AL-nm009X7hU2z6LPWoZMEeG_D9Cq2vDgk5NuXOK6Dc3aDGOtwg24MJfC4z0a2R5FLa5JB_Z9YBsaSbxby7It-ZjsGRiabJ9jchj0S-Y04Y5MPE-mEBDukvPR3hJalk9H344iEJg6GJYfv8mc1rP8-2BX9s3FNr0M8CnEA2V9Ef5AWkRXIZtxi4xQ4tOHZil-mXHmSUdoIi3OLNOrkQrNIi3g0M6_HFz7U--GBUgPNjcfl7r77lguS97-yLZlbNpWTblI1NaoUeFw8OA5pf4iGirxhN6Motl3SpJTc2zKwXyFJdkKUCOwrqERsbN543FGyVWbVWcAUYRUmFtv0-hwaYrLpsMtPb7pz64mgF8HF-NUDRe56NJH5_CmyBDU8YQ_t3uh6QygdYA7XzA5zmn-vpIGppZhSDiKZ4BbR552yHlTrm5tGHANmZZo8qw9kwnl9mbGHVIIdFws5xYWoFHm0xYuMrvdka2Q_OQKCykwwy6GoKAPcba6xlVvVksodx6xxrsfCmnkZ9PbcbeFUrXCDRFTnjXaXBJSZv_sryxTb_P4scB6VWUDiXy6IeEYX37dxZkU9ve4x33KiPpBTNjKdYZGWyBZn5KmMZaDhTc64z_TNNtEforAjGdiIyO4Hg642rIDe9k9xI5rop2Osva4o3DaGYTvx4U4duvaPDaPlxiR7-Aqf3osOoavMA",
-          "publicKey": "Si89_Rc6Hwd9NN1VfqlEirfJnfulxv6FUETcT7NZ7EI",
-          "serverName": "www.cloudflare.com",
-          "shortId": "a592f9890d12c7ba",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "direct1.lesss.ir",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "mldsa65Verify": "bO362gUsu1WkZN2UgetqgDUecrHD72MCXL-qLeEoT_zcBCAo6uE3rp8jPlseOsWOrEV0TOspZM0kwJo1SInDpLcA82j-rTQtNM-uEb6RM8DTr_19LlXAjM8H8JT5vejWl_MBfYlCmbuFS9La4oyU7BB52kw56-Ot0zfkV39mPl-K9u9XQ0apHNWDOpTyM1qMXdyEsBN6xSYcSZybUlcQyAq_YJ30mTSZ74LYgLhJdaFdXb7QNCpBrYiaj5utmhEHB1hWnfwq2bgObJPUMZYIXIrR1RQWlIJi8URIHLNg6boVVDoxa180sOrOQTuKefLigzv2U_B0_hoo-NquO4TceWtbXbbg0AIOpLk3kqlPZmF35Z4_B0HkqFrMpd0E-TyCQVlGLLw-_Kn2sOHcXLO7ZLPl8zT5_Yjxy_ZQTzgkloIJ-TgGi2xN4NLEymseOXs3yc2wQPTspGGv7Zzwx09YdjBLv5PEa9Yx4VbTgg3fyOjgG_qJki9VH-sSAFDsbOzdF1-bV2BLfkf-GvgVxr7jw9poOo2PHGuU3S2kfR_w2n_WX0K87F6ehvNxJy1Gq9gcdsV5px0f2ROOqYoUw3cPhD4-ofWFPsVrsYkJ_wVKj2StbcvAXB7GlNE_ZY99b-rHKyF-Ts1ZBrzKN5Wg1Efr6Vw_fLSpa5W9_nrxK9B_p4AIXf9C71DzHxqdvMtVil84VM5cj5C6gQjYL-Ohqs0MgdI69QuJK6hKCsYpcNz6n_dN7l5-EN66DC-O-kRYQnlypfE872d5o1y_fCEwDnbz23eQHuOZApm5REG08EDbFggnvF6pOx1CM12u72Wy1UFR2_OneJl-DP1U0oEHKAEmOrEEw4RE0iswK486AQru15ihH2aCPPWPzrViDxDRIlnqqF1vcZLyKRAP7jOFz6A-vj7xt2Jc-J41pSyV_fyhFDZekfbmaiwoNDTeLUGGr33-D0KUGam-2IHnk-vhBAlDFwkWUKZAidruuHhUiG0nXyPXgGddyxyvYHJz9-39sImQn0-CO7BPyleBhISssyHHowYzPmaT7jgoKWJQok-48vuWLqo67dm2Q_s9dR7LneOCwILpWCiSTfVZh9lI848X_9TXdMdfghDFsmluLhvUfn2bMZqwjPP74PxxhAG58j2P04Q72gVNRrla73qEIP2YM8ius8MP7o2Jboc4Ba6ENRAHF_9jlc6QXU1JfkQPQDeN-H0bZQJcG_Ha_qaK_l4fmK_i66MvRw6Ir7Av-CKpx45Tcqkg2Xr3TTMM2zOjEo28XqjUQTrsE1ei9cBP5M5dxQVKJPirjB7Z-sZ5bupEfPTf57pzr8SFKNHtIdkQ-77eRbyFgjE7zP7AFLZSps-GlUzUedzssOLqN-2GbEBvTyFvGZMITzhVJXnAKSsZQivGz1FqtiqOsW-MVUVNZdRBC7JwaRYTCu5qSp7s9ppa5e4Zm2AyE-ey5zZ0NSVWnIabSCbIIExN90vQB0ZbHi6S3wavgBbk74gL6PDE2uTeIdma7xeLRFGxZivisPSzdnER7eM83MOHVQl2HzUBWU-rnvjBXhcIuX0Y7L7I2UgI0PSnBj1ccRjonAP-Ub1Hg6USCitlDr6A8SJwlnqRwp5mKmJvAG5X_COIZ52Z-ax7zQ9gYoFjQvGVQgrId5RMo_MGH6fiFaIMgeDxS8C1OTi5zNPD1a4lZZ3_9wLfXKtGcrOKjC_y2WgQE2HKQ_F2lzQDBPrM-mZHV1GGlKU_BxX7tYkmVSVeh1cQcGIdr5uQzXi_jhwkhvze5uat4q7ayCzaQf_nLdVjAKPJF0Qjf--Q5At5f_gQ_1UC0e64_cDd4nWC78r-rKkdvR8-TKjBLlnQrzYuS-fVEdXqG3GcbvEC5lK26rONuCLZTEQqukKL0rhLIctxrEQLHwzJi9WzlNV8n-FBnAPL8DrHZvUdmjhi5mbpKNXdkyLXlzCsko2itnzxaby3c40tNLu_ljYden_14Bk-Omo6-LwN7mpj-6UuPKDsAj2Tg3qXAOqtnS-pTkynJPdqBEJM_kqRjF9QOB9akKjfG-zuUHKdHxZsykFSUieAtDII0xkObyoeuU7pyv3UsrmbF7uSutOZqLNKkoD1zhRCeNsgUWr6haZA1nvoZjll7gDk1lltBT3acKxhmHK3oFmv9G687IG2JJFrVIpLKPLMrR0jB77X1L8nWO7-Vhz60lekycdnu19l2hPT5Fyzz15_bYwQaB4fJUJKgw2oR2Mc7WWS5fdkcZ5MT-oe-waRd7BIi2oQT5Qqb0hlw6rt9sDTmN87iyXB5LuBq5z0ZNKO19MdCOZ7Lw1ThekQE2P18VXjIXPl5T2vMXYwhQkdGvGSF-Kgz84Sx_I44o2MiFT6UAJQQQ5aog2oGKAbWDLbI9CjuU99gL4nWX1WpzY4UWEyygYkScg1TgOX-K2e85ITOCEk0mfUtjDO41ahv70GDrd4aVFG3uvHjxeUTPeSdxXHIod_p4w54NFSgkk2glZhSHXRq9lPo319JigM-5GSo6AOq-DqJnTyzVAhEyhWdftaIhBOm3UzOpmWJkm2n6QC-PkTrtEL4-LOrM7Bf-uAjp2sa-uHLv1DlH6e7yE",
-          "publicKey": "1lMHY_oEqthg10oDrHSq9gSwYdqqNb6ZQc9JEewyzVk",
-          "serverName": "play.google.com",
-          "shortId": "bc7c4660adb53714",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-5"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "tun2.lesss.ir",
-            "port": 19911,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "xhttpSettings": {
-          "host": "tun2.lesss.ir",
-          "mode": "auto",
-          "path": "/"
-        }
-      },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.226.93.243",
-            "port": 8444,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fffddb84-b839-4973-9388-ce26443c6a64",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "1EPU1FtapRbV8ZR9e7AU0nahyWYM8L0zuYHD8F1GJAc",
-          "serverName": "www.cloudflare.com",
-          "shortId": "491c54cd0cf5e22d",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-7"
+      "tag": "proxy"
     },
     {
       "protocol": "freedom",
@@ -433,19 +148,8 @@
       "tag": "block"
     }
   ],
-  "remarks": "Config⚡IR-MCI",
+  "remarks": "test",
   "routing": {
-    "balancers": [
-      {
-        "selector": [
-          "proxy-"
-        ],
-        "strategy": {
-          "type": "leastPing"
-        },
-        "tag": "proxy-round"
-      }
-    ],
     "domainStrategy": "AsIs",
     "rules": [
       {
@@ -456,15 +160,10 @@
         "type": "field"
       },
       {
-        "balancerTag": "proxy-round",
         "inboundTag": [
           "dns-module"
         ],
-        "type": "field"
-      },
-      {
-        "balancerTag": "proxy-round",
-        "network": "tcp,udp",
+        "outboundTag": "proxy",
         "type": "field"
       }
     ]
