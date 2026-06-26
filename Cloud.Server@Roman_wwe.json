@@ -47,7 +47,9 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ]
+      ],
+      "bypass.uk-gthost-01.com": "45.206.0.58",
+      "sca30.mysilipdir.com": "151.115.166.129"
     },
     "servers": [
       "1.1.1.1"
@@ -92,26 +94,31 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.184.156.126",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "rWNsK0j6ZQF7eA3h0R8WMQ",
-            "port": 1003
+            "address": "151.115.167.21",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "level": 8
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": ""
+        },
+        "network": "grpc"
       },
       "tag": "proxy-1"
     },
@@ -124,12 +131,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "3.71.8.174",
-            "port": 1001,
+            "address": "31.76.91.36",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "1d7145bf-602b-4a98-8c11-9d95a01744e9",
+                "flow": "xtls-rprx-vision",
+                "id": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
                 "level": 8
               }
             ]
@@ -138,6 +146,15 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "edge",
+          "publicKey": "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs",
+          "serverName": "jp.s3-cloud.org",
+          "shortId": "7a3f9e2b1c8d4f6a",
+          "show": false
+        },
+        "security": "reality",
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -151,30 +168,37 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "18.184.156.126",
-            "port": 1002,
-            "users": [
-              {
-                "id": "7fd70b71-894d-4880-b647-b8502c860eaf",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "83.228.251.47",
+            "level": 8,
+            "ota": false,
+            "password": "SoftNetConnect",
+            "port": 2087
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "185.204.169.129",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": ""
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8",
+          "serverName": "www.yahoo.com",
+          "shortId": "96a17085678b",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality"
       },
       "tag": "proxy-3"
     },
@@ -183,21 +207,43 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "3.71.8.174",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "rWNsK0j6ZQF7eA3h0R8WMQ",
-            "port": 1003
+            "address": "bypass.uk-gthost-01.com",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "52faee73-e0fe-4661-992d-67259257170f",
+                "level": 8
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
+          "serverName": "storage.yandex.net",
+          "shortId": "ea10cd5686751ec5",
+          "show": false
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -215,12 +261,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "18.184.156.126",
-            "port": 1001,
+            "address": "sca30.mysilipdir.com",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
-                "id": "1d7145bf-602b-4a98-8c11-9d95a01744e9",
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
                 "level": 8
               }
             ]
@@ -228,10 +274,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": ""
+        },
+        "network": "grpc",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
           }
         }
       },
@@ -242,249 +299,33 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "20.74.213.64",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "rWNsK0j6ZQF7eA3h0R8WMQ",
-            "port": 1003
+            "address": "151.115.164.129",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "level": 8
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": ""
+        },
+        "network": "grpc"
       },
       "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.74.213.64",
-            "port": 1001,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1d7145bf-602b-4a98-8c11-9d95a01744e9",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-7"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3.71.8.174",
-            "port": 1002,
-            "users": [
-              {
-                "id": "7fd70b71-894d-4880-b647-b8502c860eaf",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.74.213.64",
-            "port": 1002,
-            "users": [
-              {
-                "id": "7fd70b71-894d-4880-b647-b8502c860eaf",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "3.71.8.174",
-            "port": 1008,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1d7145bf-602b-4a98-8c11-9d95a01744e9",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": "grpc"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "GXDMecomfLm7sEDp4ZcAsoDY2HhurLg9xRGfj7hMU20",
-          "serverName": "www.apple.com",
-          "shortId": "cc0fe3bfea219901",
-          "show": false
-        },
-        "security": "reality"
-      },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.74.213.64",
-            "port": 1008,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1d7145bf-602b-4a98-8c11-9d95a01744e9",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": "grpc"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "GXDMecomfLm7sEDp4ZcAsoDY2HhurLg9xRGfj7hMU20",
-          "serverName": "www.apple.com",
-          "shortId": "cc0fe3bfea219901",
-          "show": false
-        },
-        "security": "reality"
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "18.184.156.126",
-            "port": 1008,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1d7145bf-602b-4a98-8c11-9d95a01744e9",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": "grpc"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "GXDMecomfLm7sEDp4ZcAsoDY2HhurLg9xRGfj7hMU20",
-          "serverName": "www.apple.com",
-          "shortId": "cc0fe3bfea219901",
-          "show": false
-        },
-        "security": "reality"
-      },
-      "tag": "proxy-12"
     },
     {
       "protocol": "freedom",
@@ -503,7 +344,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "اشتراک⚡SVR",
+  "remarks": "MTN+⭐",
   "routing": {
     "balancers": [
       {
