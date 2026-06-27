@@ -1,131 +1,30 @@
 {
   "dns": {
-    "hosts": {
-      "domain:googleapis.cn": "googleapis.com",
-      "dns.alidns.com": [
-        "223.5.5.5",
-        "223.6.6.6",
-        "2400:3200::1",
-        "2400:3200:baba::1"
-      ],
-      "dns.sse.cisco.com": [
-        "208.67.220.220",
-        "208.67.222.222",
-        "2620:119:35::35",
-        "2620:119:53::53"
-      ],
-      "dns.umbrella.com": [
-        "208.67.220.220",
-        "208.67.222.222",
-        "2620:119:35::35",
-        "2620:119:53::53"
-      ],
-      "one.one.one.one": [
-        "1.1.1.1",
-        "1.0.0.1",
-        "2606:4700:4700::1111",
-        "2606:4700:4700::1001"
-      ],
-      "1dot1dot1dot1.cloudflare-dns.com": [
-        "1.1.1.1",
-        "1.0.0.1",
-        "2606:4700:4700::1111",
-        "2606:4700:4700::1001"
-      ],
-      "dns.cloudflare.com": [
-        "162.159.61.8",
-        "172.64.41.8",
-        "2a06:98c1:52::8",
-        "2803:f800:53::8"
-      ],
-      "cloudflare-dns.com": [
-        "104.16.248.249",
-        "104.16.249.249",
-        "2606:4700::6810:f8f9",
-        "2606:4700::6810:f9f9"
-      ],
-      "engage.cloudflareclient.com": [
-        "162.159.192.1",
-        "2606:4700:d0::a29f:c001"
-      ],
-      "doh.pub": [
-        "1.12.12.12",
-        "120.53.53.53"
-      ],
-      "dot.pub": [
-        "1.12.12.12",
-        "120.53.53.53"
-      ],
-      "dns.google": [
-        "8.8.8.8",
-        "8.8.4.4",
-        "2001:4860:4860::8888",
-        "2001:4860:4860::8844"
-      ],
-      "dns.quad9.net": [
-        "9.9.9.9",
-        "149.112.112.112",
-        "2620:fe::fe",
-        "2620:fe::9"
-      ],
-      "dns.sb": [
-        "45.11.45.11",
-        "185.222.222.222",
-        "2a09::",
-        "2a11::"
-      ],
-      "common.dot.dns.yandex.net": [
-        "77.88.8.8",
-        "77.88.8.1",
-        "2a02:6b8::feed:0ff",
-        "2a02:6b8:0:1::feed:0ff"
-      ],
-      "francer1.jobwebs.ir": "57.128.30.154"
-    },
+    "fallbackStrategy": "disabledIfAnyMatch",
     "servers": [
-      "1.1.1.1",
       {
-        "address": "1.1.1.1",
-        "domains": [
-          "geosite:google"
-        ]
+        "address": "tcp://1.1.1.1",
+        "domains": [],
+        "queryStrategy": "UseIP"
       },
       {
-        "address": "223.5.5.5",
+        "address": "localhost",
         "domains": [
-          "geosite:private",
-          "domain:alidns.com",
-          "domain:doh.pub",
-          "domain:dot.pub",
-          "domain:360.cn",
-          "domain:onedns.net"
+          "full:francer1.jobwebs.ir"
         ],
-        "skipFallback": true,
-        "tag": "domestic-dns0"
-      },
-      {
-        "address": "223.5.5.5",
-        "domains": [
-          "geosite:cn"
-        ],
-        "expectIPs": [
-          "geoip:cn"
-        ],
-        "skipFallback": true,
-        "tag": "domestic-dns0_cn_expect"
+        "fallbackStrategy": "disabled",
+        "queryStrategy": "UseIP"
       }
-    ],
-    "tag": "dns-module"
+    ]
   },
   "inbounds": [
     {
       "listen": "127.0.0.1",
-      "port": 10808,
+      "port": 2080,
       "protocol": "socks",
       "settings": {
         "auth": "noauth",
-        "udp": true,
-        "userLevel": 8
+        "udp": true
       },
       "sniffing": {
         "destOverride": [
@@ -134,7 +33,8 @@
           "quic"
         ],
         "enabled": true,
-        "routeOnly": false
+        "metadataOnly": false,
+        "routeOnly": true
       },
       "tag": "socks"
     }
@@ -142,20 +42,27 @@
   "log": {
     "loglevel": "warning"
   },
-  "observatory": {
-    "enableConcurrency": true,
-    "probeInterval": "3m",
-    "probeUrl": "https://www.gstatic.com/generate_204",
-    "subjectSelector": [
-      "proxy-proxy-"
+  "multiObservatory": {
+    "observers": [
+      {
+        "settings": {
+          "probeURL": "https://www.gstatic.com/generate_204",
+          "probeInterval": "300s",
+          "enableConcurrency": true,
+          "subjectSelector": [
+            "proxy-global-8535",
+            "proxy-global-8536",
+            "proxy-global-8534",
+            "proxy-global-8537",
+            "proxy-global-8538"
+          ]
+        },
+        "tag": "observer-proxy"
+      }
     ]
   },
   "outbounds": [
     {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -165,41 +72,32 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "1c9ef1ae-bea7-4406-a1a0-bbf43c0c8d34",
-                "level": 8
+                "id": "1c9ef1ae-bea7-4406-a1a0-bbf43c0c8d34"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "splithttp",
         "realitySettings": {
-          "allowInsecure": false,
           "fingerprint": "chrome",
           "publicKey": "LeoX--ZpuXko-hvIYwsWm-fKHAkxpw4qe_jKJjQbB18",
           "serverName": "www.aparat.com",
           "shortId": "ba62480f68"
         },
         "security": "reality",
-        "xhttpSettings": {
-          "extra": {
-            "scMaxEachPostBytes": "1000000",
-            "xPaddingBytes": "100-1000",
-            "uplinkChunkSize": "0"
-          },
-          "host": "",
+        "splithttpSettings": {
           "mode": "stream-up",
-          "path": "/NXRFqdfT74wvTrhjneowm8H2oeGhcq?ed=2560"
+          "path": "/NXRFqdfT74wvTrhjneowm8H2oeGhcq?ed=2560",
+          "scMaxEachPostBytes": "1000000",
+          "uplinkChunkSize": "0",
+          "xPaddingBytes": "100-1000"
         }
       },
-      "tag": "proxy-proxy-1-[Free] 🇫🇮 Finland"
+      "tag": "proxy-global-8534"
     },
     {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -209,9 +107,7 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
-                "level": 8
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e"
               }
             ]
           }
@@ -225,17 +121,15 @@
           "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev"
         },
         "wsSettings": {
-          "host": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          },
           "path": "/proxyip=185.219.132.27"
         }
       },
-      "tag": "proxy-proxy-2-proxy-5"
+      "tag": "proxy-global-8535"
     },
     {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -245,8 +139,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "level": 8
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
               }
             ]
           }
@@ -254,21 +147,14 @@
       },
       "streamSettings": {
         "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
           "serviceName": ""
         },
-        "network": "grpc"
+        "network": "grpc",
+        "security": "none"
       },
-      "tag": "proxy-proxy-3-proxy-6"
+      "tag": "proxy-global-8536"
     },
     {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -278,8 +164,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "14b59caf-a196-4ec2-8c70-c7b388062f5b",
-                "level": 8
+                "id": "14b59caf-a196-4ec2-8c70-c7b388062f5b"
               }
             ]
           }
@@ -289,21 +174,18 @@
         "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": false,
           "serverName": "vangoghhh.info"
         },
         "wsSettings": {
-          "host": "vangoghhh.info",
+          "headers": {
+            "Host": "vangoghhh.info"
+          },
           "path": "/rdfgtws"
         }
       },
-      "tag": "proxy-proxy-4-@netghjlkj+3"
+      "tag": "proxy-global-8537"
     },
     {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -313,8 +195,7 @@
             "users": [
               {
                 "encryption": "none",
-                "id": "5ad9dd2c-7a04-4213-a28a-e68387c0fded",
-                "level": 8
+                "id": "5ad9dd2c-7a04-4213-a28a-e68387c0fded"
               }
             ]
           }
@@ -322,193 +203,83 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
+        "security": "none",
         "tcpSettings": {
           "header": {
             "request": {
               "headers": {
-                "Connection": [
-                  "keep-alive"
-                ],
                 "Host": [
                   "play.google.com"
-                ],
-                "Pragma": "no-cache",
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "User-Agent": [
-                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
                 ]
-              },
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "version": "1.1"
+              }
             },
             "type": "http"
           }
         }
       },
-      "tag": "proxy-proxy-5-@netghjlkj+3"
+      "tag": "proxy-global-8538"
     },
     {
       "protocol": "freedom",
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP"
-        }
-      },
-      "tag": "direct"
+      "tag": "bypass"
     },
     {
       "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      },
       "tag": "block"
+    },
+    {
+      "protocol": "dns",
+      "settings": {
+        "userLevel": 1
+      },
+      "tag": "dns-out"
     }
   ],
-  "remarks": "mTn✨",
+  "policy": {
+    "levels": {
+      "1": {
+        "connIdle": 30
+      }
+    },
+    "system": {
+      "statsOutboundDownlink": true,
+      "statsOutboundUplink": true
+    }
+  },
   "routing": {
     "balancers": [
       {
         "selector": [
-          "proxy-proxy-"
+          "proxy-global-8534",
+          "proxy-global-8535",
+          "proxy-global-8536",
+          "proxy-global-8537",
+          "proxy-global-8538"
         ],
         "strategy": {
+          "settings": {
+            "observerTag": "observer-proxy"
+          },
           "type": "leastPing"
         },
-        "tag": "balancer-main"
+        "tag": "balancer-proxy"
       }
     ],
     "domainStrategy": "AsIs",
     "rules": [
       {
-        "network": "udp",
-        "outboundTag": "block",
-        "port": "443",
-        "type": "field"
-      },
-      {
-        "balancerTag": "balancer-main",
-        "domain": [
-          "geosite:google"
-        ],
-        "type": "field"
-      },
-      {
-        "ip": [
-          "ext:geoip-only-cn-private.dat:private"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:private"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "223.5.5.5",
-          "223.6.6.6",
-          "2400:3200::1",
-          "2400:3200:baba::1",
-          "119.29.29.29",
-          "1.12.12.12",
-          "120.53.53.53",
-          "2402:4e00::",
-          "2402:4e00:1::",
-          "180.76.76.76",
-          "2400:da00::6666",
-          "114.114.114.114",
-          "114.114.115.115",
-          "114.114.114.119",
-          "114.114.115.119",
-          "114.114.114.110",
-          "114.114.115.110",
-          "180.184.1.1",
-          "180.184.2.2",
-          "101.226.4.6",
-          "218.30.118.6",
-          "123.125.81.6",
-          "140.207.198.6",
-          "1.2.4.8",
-          "210.2.4.8",
-          "52.80.66.66",
-          "117.50.22.22",
-          "2400:7fc0:849e:200::4",
-          "2404:c2c0:85d8:901::4",
-          "117.50.10.10",
-          "52.80.52.52",
-          "2400:7fc0:849e:200::8",
-          "2404:c2c0:85d8:901::8",
-          "117.50.60.30",
-          "52.80.60.30"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "domain:alidns.com",
-          "domain:doh.pub",
-          "domain:dot.pub",
-          "domain:360.cn",
-          "domain:onedns.net"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "ext:geoip-only-cn-private.dat:cn"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:cn"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
         "inboundTag": [
-          "domestic-dns0",
-          "domestic-dns0_cn_expect"
+          "dns-in"
         ],
-        "outboundTag": "direct",
+        "outboundTag": "dns-out",
         "type": "field"
       },
       {
-        "balancerTag": "balancer-main",
-        "inboundTag": [
-          "dns-module"
-        ],
-        "type": "field"
-      },
-      {
-        "balancerTag": "balancer-main",
+        "balancerTag": "balancer-proxy",
         "network": "tcp,udp",
         "type": "field"
       }
     ]
-  }
+  },
+  "stats": {}
 }
