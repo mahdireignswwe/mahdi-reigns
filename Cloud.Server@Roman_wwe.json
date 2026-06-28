@@ -1,1 +1,324 @@
-vless://5dacd868-abc4-4065-88ed-0232b63b509e@104.16.72.70:8443?path=%2Fproxyip%3D185.219.132.27&security=tls&encryption=none&insecure=1&host=icy-base-c57a.mahdireignsgermany.workers.dev&type=ws&allowInsecure=1&sni=icy-base-c57a.mahdireignsgermany.workers.dev#proxy-5
+{
+  "remarks": "MTN⚡",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "https://8.8.8.8/dns-query",
+      "https://1.1.1.1/dns-query",
+      "8.8.8.8",
+      "1.1.1.1"
+    ],
+    "queryStrategy": "UseIP"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "settings": {
+        "userLevel": 8
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.212.49.141",
+            "port": 443,
+            "users": [
+              {
+                "id": "1c9ef1ae-bea7-4406-a1a0-bbf43c0c8d34",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.aparat.com",
+          "publicKey": "LeoX--ZpuXko-hvIYwsWm-fKHAkxpw4qe_jKJjQbB18",
+          "shortId": "ba62480f68",
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
+        }
+      },
+      "tag": "MTN⚡-1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.70",
+            "port": 8443,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "MTN⚡-2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.115.164.129",
+            "port": 8880,
+            "users": [
+              {
+                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "/",
+          "multiMode": true
+        }
+      },
+      "tag": "MTN⚡-3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.70",
+            "port": 443,
+            "users": [
+              {
+                "id": "14b59caf-a196-4ec2-8c70-c7b388062f5b",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/rdfgtws",
+          "headers": {
+            "Host": "vangoghhh.info"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "vangoghhh.info",
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "MTN⚡-4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "francer1.jobwebs.ir",
+            "port": 2026,
+            "users": [
+              {
+                "id": "5ad9dd2c-7a04-4213-a28a-e68387c0fded",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "path": [
+                "/"
+              ],
+              "headers": {
+                "Host": [
+                  "play.google.com"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "tag": "MTN⚡-5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.14.73",
+            "port": 2096,
+            "users": [
+              {
+                "id": "ccfd0105-39c3-4cde-a026-8b4c64992c90",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/eyJqdW5rIjoibTNtU2d2aUF1VFZLQVZ3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiODkuMjIuMjMzLjUyIl19",
+          "headers": {
+            "Host": "tlbz9r7yrvyc9f6svnmx8i1qjmwg3it2.mahdireigns54.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "TLBZ9R7yRvyc9f6sVnMx8i1QjMwg3iT2.MAHdIReiGns54.worKeRS.DeV",
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "MTN⚡-6"
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {}
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "balancers": [
+      {
+        "tag": "MTN⚡",
+        "selector": [
+          "MTN⚡"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        }
+      }
+    ],
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:private"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "balancerTag": "MTN⚡"
+      }
+    ]
+  },
+  "observatory": {
+    "subjectSelector": [
+      "MTN⚡"
+    ],
+    "probeUrl": "http://www.gstatic.com/generate_204",
+    "probeInterval": "1m",
+    "enableConcurrency": true
+  },
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 30,
+        "bufferSize": 10240
+      }
+    }
+  }
+}
