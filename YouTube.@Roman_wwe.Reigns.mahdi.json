@@ -33,11 +33,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.85.122",
-            "port": 2053,
+            "address": "173.245.59.144",
+            "port": 2087,
             "users": [
               {
-                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "encryption": "none"
               }
             ]
@@ -48,13 +48,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiR3cyMGN6WkgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19",
+          "path": "/proxyip=185.219.132.27",
           "headers": {
-            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           }
         },
         "tlsSettings": {
-          "serverName": "noDe-1796256123-0142e2.MaHDirEIgNsgeRmany.WoRkers.dEV",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "allowInsecure": true
         },
         "sockopt": {
@@ -63,92 +63,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "CDN_0"
+      "tag": "NebulaWeb_0"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.205.180",
-            "port": 2053,
-            "users": [
-              {
-                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoibUhlUDZ1VFZyQlVKejEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19",
-          "headers": {
-            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "nODE-1796256123-0142e2.MAhDIreignSgErManY.woRkeRs.DEv",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "CDN_1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.43.223",
-            "port": 443,
-            "users": [
-              {
-                "id": "8f730740-b1fe-4e19-b631-55607d479389",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/sync",
-          "headers": {
-            "Host": "node-1796256123-93ed86.mahdireignsgermany.workers.dev"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "node-1796256123-93ed86.mahdireignsgermany.workers.dev",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "CDN_2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.18.230.91",
+            "address": "104.19.35.183",
             "port": 8443,
             "users": [
               {
-                "id": "8f730740-b1fe-4e19-b631-55607d479389",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "encryption": "none"
               }
             ]
@@ -159,13 +85,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/sync",
+          "path": "/proxyip=185.219.132.27",
           "headers": {
-            "Host": "node-1796256123-93ed86.mahdireignsgermany.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           }
         },
         "tlsSettings": {
-          "serverName": "node-1796256123-93ed86.mahdireignsgermany.workers.dev",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "allowInsecure": true
         },
         "sockopt": {
@@ -174,18 +100,55 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "CDN_3"
+      "tag": "NebulaWeb_1"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.2",
+            "address": "104.17.158.0",
+            "port": 8443,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.191.3",
             "port": 2053,
             "users": [
               {
-                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
                 "encryption": "none"
               }
             ]
@@ -196,13 +159,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/eyJqdW5rIjoiaWVuYWpmR1dsQnA0YVdnSiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjk1LjE3OS4yNTAuNjgiXX0=",
+          "path": "/proxyip=185.219.132.27",
           "headers": {
-            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           }
         },
         "tlsSettings": {
-          "serverName": "nODE-1796256123-0142e2.MahDIREIgnSgErmaNy.wORkERs.dev",
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
           "allowInsecure": true
         },
         "sockopt": {
@@ -211,14 +174,273 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "CDN_4"
+      "tag": "NebulaWeb_3"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "162.159.38.9",
+            "address": "104.17.150.58",
+            "port": 2087,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.67.68.171",
+            "port": 443,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.38.149",
+            "port": 2087,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.26.15.80",
+            "port": 2083,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.67.77.107",
+            "port": 2053,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "108.162.198.125",
+            "port": 2053,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.150.168",
+            "port": 443,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.19.32.149",
             "port": 2096,
             "users": [
               {
@@ -248,15 +470,15 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "CDN_5"
+      "tag": "NebulaWeb_11"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.19.34.128",
-            "port": 8443,
+            "address": "104.16.243.156",
+            "port": 2053,
             "users": [
               {
                 "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
@@ -285,7 +507,118 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "CDN_6"
+      "tag": "NebulaWeb_12"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.19.150.177",
+            "port": 2083,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.209.198",
+            "port": 2083,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_14"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.172.253",
+            "port": 443,
+            "users": [
+              {
+                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/proxyip=185.219.132.27",
+          "headers": {
+            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "NebulaWeb_15"
     },
     {
       "tag": "direct",
@@ -299,18 +632,27 @@
     }
   ],
   "routing": {
-    "domainStrategy": "IPIfNonMatch",
+    "domainStrategy": "AsIs",
     "balancers": [
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "CDN_0",
-          "CDN_1",
-          "CDN_2",
-          "CDN_3",
-          "CDN_4",
-          "CDN_5",
-          "CDN_6"
+          "NebulaWeb_0",
+          "NebulaWeb_1",
+          "NebulaWeb_2",
+          "NebulaWeb_3",
+          "NebulaWeb_4",
+          "NebulaWeb_5",
+          "NebulaWeb_6",
+          "NebulaWeb_7",
+          "NebulaWeb_8",
+          "NebulaWeb_9",
+          "NebulaWeb_10",
+          "NebulaWeb_11",
+          "NebulaWeb_12",
+          "NebulaWeb_13",
+          "NebulaWeb_14",
+          "NebulaWeb_15"
         ],
         "strategy": {
           "type": "leastPing"
@@ -328,7 +670,10 @@
         "type": "field",
         "outboundTag": "block",
         "domain": [
-          "geosite:category-ads-all"
+          "geosite:category-ads-all",
+          "domain:an.facebook.com",
+          "domain:ads.facebook.com",
+          "domain:graph.facebook.com"
         ]
       },
       {
@@ -374,17 +719,26 @@
   },
   "observatory": {
     "subjectSelector": [
-      "CDN_0",
-      "CDN_1",
-      "CDN_2",
-      "CDN_3",
-      "CDN_4",
-      "CDN_5",
-      "CDN_6"
+      "NebulaWeb_0",
+      "NebulaWeb_1",
+      "NebulaWeb_2",
+      "NebulaWeb_3",
+      "NebulaWeb_4",
+      "NebulaWeb_5",
+      "NebulaWeb_6",
+      "NebulaWeb_7",
+      "NebulaWeb_8",
+      "NebulaWeb_9",
+      "NebulaWeb_10",
+      "NebulaWeb_11",
+      "NebulaWeb_12",
+      "NebulaWeb_13",
+      "NebulaWeb_14",
+      "NebulaWeb_15"
     ],
     "url": "http://cp.cloudflare.com/generate_204",
-    "interval": "5m",
+    "interval": "30s",
     "enableConcurrency": true
   },
-  "remarks": "CDN"
+  "remarks": "NebulaWeb"
 }
