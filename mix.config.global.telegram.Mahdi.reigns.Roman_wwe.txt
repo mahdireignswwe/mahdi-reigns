@@ -64,7 +64,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_0"
+      "tag": "ApexProxy_0"
     },
     {
       "protocol": "vless",
@@ -97,7 +97,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_1"
+      "tag": "ApexProxy_1"
     },
     {
       "protocol": "vless",
@@ -131,7 +131,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_2"
+      "tag": "ApexProxy_2"
     },
     {
       "protocol": "vless",
@@ -165,7 +165,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_3"
+      "tag": "ApexProxy_3"
     },
     {
       "protocol": "vless",
@@ -199,7 +199,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_4"
+      "tag": "ApexProxy_4"
     },
     {
       "protocol": "vless",
@@ -233,7 +233,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_5"
+      "tag": "ApexProxy_5"
     },
     {
       "protocol": "vless",
@@ -271,7 +271,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_6"
+      "tag": "ApexProxy_6"
     },
     {
       "protocol": "vless",
@@ -309,7 +309,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_7"
+      "tag": "ApexProxy_7"
     },
     {
       "protocol": "vless",
@@ -347,7 +347,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_8"
+      "tag": "ApexProxy_8"
     },
     {
       "protocol": "vless",
@@ -385,7 +385,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_9"
+      "tag": "ApexProxy_9"
     },
     {
       "protocol": "vless",
@@ -423,7 +423,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_10"
+      "tag": "ApexProxy_10"
     },
     {
       "protocol": "vless",
@@ -457,7 +457,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_11"
+      "tag": "ApexProxy_11"
     },
     {
       "protocol": "vless",
@@ -490,7 +490,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_12"
+      "tag": "ApexProxy_12"
     },
     {
       "protocol": "vless",
@@ -523,7 +523,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_13"
+      "tag": "ApexProxy_13"
     },
     {
       "protocol": "vless",
@@ -557,7 +557,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_14"
+      "tag": "ApexProxy_14"
     },
     {
       "protocol": "vless",
@@ -590,7 +590,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_15"
+      "tag": "ApexProxy_15"
     },
     {
       "protocol": "vless",
@@ -623,7 +623,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_16"
+      "tag": "ApexProxy_16"
     },
     {
       "protocol": "vless",
@@ -656,7 +656,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_17"
+      "tag": "ApexProxy_17"
     },
     {
       "protocol": "vless",
@@ -690,7 +690,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_18"
+      "tag": "ApexProxy_18"
     },
     {
       "protocol": "vless",
@@ -723,7 +723,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_19"
+      "tag": "ApexProxy_19"
     },
     {
       "protocol": "vless",
@@ -757,7 +757,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_20"
+      "tag": "ApexProxy_20"
     },
     {
       "protocol": "vless",
@@ -791,7 +791,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_21"
+      "tag": "ApexProxy_21"
     },
     {
       "protocol": "vless",
@@ -825,7 +825,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_22"
+      "tag": "ApexProxy_22"
     },
     {
       "protocol": "vless",
@@ -859,7 +859,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_23"
+      "tag": "ApexProxy_23"
     },
     {
       "protocol": "vless",
@@ -893,7 +893,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_24"
+      "tag": "ApexProxy_24"
     },
     {
       "protocol": "vless",
@@ -927,7 +927,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_25"
+      "tag": "ApexProxy_25"
     },
     {
       "protocol": "vless",
@@ -961,7 +961,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_26"
+      "tag": "ApexProxy_26"
     },
     {
       "protocol": "vless",
@@ -995,7 +995,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_27"
+      "tag": "ApexProxy_27"
     },
     {
       "protocol": "vless",
@@ -1029,7 +1029,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_28"
+      "tag": "ApexProxy_28"
     },
     {
       "protocol": "vless",
@@ -1063,7 +1063,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_29"
+      "tag": "ApexProxy_29"
     },
     {
       "protocol": "vless",
@@ -1097,7 +1097,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_30"
+      "tag": "ApexProxy_30"
     },
     {
       "protocol": "vless",
@@ -1131,7 +1131,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_31"
+      "tag": "ApexProxy_31"
     },
     {
       "protocol": "vless",
@@ -1165,7 +1165,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_32"
+      "tag": "ApexProxy_32"
     },
     {
       "protocol": "vless",
@@ -1203,7 +1203,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_33"
+      "tag": "ApexProxy_33"
     },
     {
       "protocol": "vless",
@@ -1236,7 +1236,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "TitanFlow_34"
+      "tag": "ApexProxy_34"
     },
     {
       "tag": "direct",
@@ -1255,41 +1255,41 @@
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "TitanFlow_0",
-          "TitanFlow_1",
-          "TitanFlow_2",
-          "TitanFlow_3",
-          "TitanFlow_4",
-          "TitanFlow_5",
-          "TitanFlow_6",
-          "TitanFlow_7",
-          "TitanFlow_8",
-          "TitanFlow_9",
-          "TitanFlow_10",
-          "TitanFlow_11",
-          "TitanFlow_12",
-          "TitanFlow_13",
-          "TitanFlow_14",
-          "TitanFlow_15",
-          "TitanFlow_16",
-          "TitanFlow_17",
-          "TitanFlow_18",
-          "TitanFlow_19",
-          "TitanFlow_20",
-          "TitanFlow_21",
-          "TitanFlow_22",
-          "TitanFlow_23",
-          "TitanFlow_24",
-          "TitanFlow_25",
-          "TitanFlow_26",
-          "TitanFlow_27",
-          "TitanFlow_28",
-          "TitanFlow_29",
-          "TitanFlow_30",
-          "TitanFlow_31",
-          "TitanFlow_32",
-          "TitanFlow_33",
-          "TitanFlow_34"
+          "ApexProxy_0",
+          "ApexProxy_1",
+          "ApexProxy_2",
+          "ApexProxy_3",
+          "ApexProxy_4",
+          "ApexProxy_5",
+          "ApexProxy_6",
+          "ApexProxy_7",
+          "ApexProxy_8",
+          "ApexProxy_9",
+          "ApexProxy_10",
+          "ApexProxy_11",
+          "ApexProxy_12",
+          "ApexProxy_13",
+          "ApexProxy_14",
+          "ApexProxy_15",
+          "ApexProxy_16",
+          "ApexProxy_17",
+          "ApexProxy_18",
+          "ApexProxy_19",
+          "ApexProxy_20",
+          "ApexProxy_21",
+          "ApexProxy_22",
+          "ApexProxy_23",
+          "ApexProxy_24",
+          "ApexProxy_25",
+          "ApexProxy_26",
+          "ApexProxy_27",
+          "ApexProxy_28",
+          "ApexProxy_29",
+          "ApexProxy_30",
+          "ApexProxy_31",
+          "ApexProxy_32",
+          "ApexProxy_33",
+          "ApexProxy_34"
         ],
         "strategy": {
           "type": "leastPing"
@@ -1356,45 +1356,45 @@
   },
   "observatory": {
     "subjectSelector": [
-      "TitanFlow_0",
-      "TitanFlow_1",
-      "TitanFlow_2",
-      "TitanFlow_3",
-      "TitanFlow_4",
-      "TitanFlow_5",
-      "TitanFlow_6",
-      "TitanFlow_7",
-      "TitanFlow_8",
-      "TitanFlow_9",
-      "TitanFlow_10",
-      "TitanFlow_11",
-      "TitanFlow_12",
-      "TitanFlow_13",
-      "TitanFlow_14",
-      "TitanFlow_15",
-      "TitanFlow_16",
-      "TitanFlow_17",
-      "TitanFlow_18",
-      "TitanFlow_19",
-      "TitanFlow_20",
-      "TitanFlow_21",
-      "TitanFlow_22",
-      "TitanFlow_23",
-      "TitanFlow_24",
-      "TitanFlow_25",
-      "TitanFlow_26",
-      "TitanFlow_27",
-      "TitanFlow_28",
-      "TitanFlow_29",
-      "TitanFlow_30",
-      "TitanFlow_31",
-      "TitanFlow_32",
-      "TitanFlow_33",
-      "TitanFlow_34"
+      "ApexProxy_0",
+      "ApexProxy_1",
+      "ApexProxy_2",
+      "ApexProxy_3",
+      "ApexProxy_4",
+      "ApexProxy_5",
+      "ApexProxy_6",
+      "ApexProxy_7",
+      "ApexProxy_8",
+      "ApexProxy_9",
+      "ApexProxy_10",
+      "ApexProxy_11",
+      "ApexProxy_12",
+      "ApexProxy_13",
+      "ApexProxy_14",
+      "ApexProxy_15",
+      "ApexProxy_16",
+      "ApexProxy_17",
+      "ApexProxy_18",
+      "ApexProxy_19",
+      "ApexProxy_20",
+      "ApexProxy_21",
+      "ApexProxy_22",
+      "ApexProxy_23",
+      "ApexProxy_24",
+      "ApexProxy_25",
+      "ApexProxy_26",
+      "ApexProxy_27",
+      "ApexProxy_28",
+      "ApexProxy_29",
+      "ApexProxy_30",
+      "ApexProxy_31",
+      "ApexProxy_32",
+      "ApexProxy_33",
+      "ApexProxy_34"
     ],
     "url": "http://cp.cloudflare.com/generate_204",
     "interval": "30s",
     "enableConcurrency": true
   },
-  "remarks": "TitanFlow"
+  "remarks": "ApexProxy"
 }
