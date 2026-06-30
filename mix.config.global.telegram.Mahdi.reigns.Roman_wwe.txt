@@ -64,7 +64,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_0"
+      "tag": "NovaNet_0"
     },
     {
       "protocol": "vless",
@@ -97,7 +97,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_1"
+      "tag": "NovaNet_1"
     },
     {
       "protocol": "vless",
@@ -131,7 +131,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_2"
+      "tag": "NovaNet_2"
     },
     {
       "protocol": "vless",
@@ -165,7 +165,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_3"
+      "tag": "NovaNet_3"
     },
     {
       "protocol": "vless",
@@ -199,7 +199,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_4"
+      "tag": "NovaNet_4"
     },
     {
       "protocol": "vless",
@@ -233,7 +233,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_5"
+      "tag": "NovaNet_5"
     },
     {
       "protocol": "vless",
@@ -271,7 +271,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_6"
+      "tag": "NovaNet_6"
     },
     {
       "protocol": "vless",
@@ -309,7 +309,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_7"
+      "tag": "NovaNet_7"
     },
     {
       "protocol": "vless",
@@ -347,7 +347,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_8"
+      "tag": "NovaNet_8"
     },
     {
       "protocol": "vless",
@@ -385,7 +385,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_9"
+      "tag": "NovaNet_9"
     },
     {
       "protocol": "vless",
@@ -423,7 +423,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_10"
+      "tag": "NovaNet_10"
     },
     {
       "protocol": "vless",
@@ -457,7 +457,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_11"
+      "tag": "NovaNet_11"
     },
     {
       "protocol": "vless",
@@ -490,7 +490,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_12"
+      "tag": "NovaNet_12"
     },
     {
       "protocol": "vless",
@@ -523,7 +523,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_13"
+      "tag": "NovaNet_13"
     },
     {
       "protocol": "vless",
@@ -557,7 +557,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_14"
+      "tag": "NovaNet_14"
     },
     {
       "protocol": "vless",
@@ -590,7 +590,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_15"
+      "tag": "NovaNet_15"
     },
     {
       "protocol": "vless",
@@ -623,7 +623,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_16"
+      "tag": "NovaNet_16"
     },
     {
       "protocol": "vless",
@@ -656,7 +656,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_17"
+      "tag": "NovaNet_17"
     },
     {
       "protocol": "vless",
@@ -690,7 +690,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_18"
+      "tag": "NovaNet_18"
     },
     {
       "protocol": "vless",
@@ -723,7 +723,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_19"
+      "tag": "NovaNet_19"
     },
     {
       "protocol": "vless",
@@ -757,7 +757,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_20"
+      "tag": "NovaNet_20"
     },
     {
       "protocol": "vless",
@@ -791,7 +791,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_21"
+      "tag": "NovaNet_21"
     },
     {
       "protocol": "vless",
@@ -825,7 +825,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_22"
+      "tag": "NovaNet_22"
     },
     {
       "protocol": "vless",
@@ -859,7 +859,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_23"
+      "tag": "NovaNet_23"
     },
     {
       "protocol": "vless",
@@ -893,7 +893,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_24"
+      "tag": "NovaNet_24"
     },
     {
       "protocol": "vless",
@@ -927,7 +927,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_25"
+      "tag": "NovaNet_25"
     },
     {
       "protocol": "vless",
@@ -961,7 +961,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_26"
+      "tag": "NovaNet_26"
     },
     {
       "protocol": "vless",
@@ -995,7 +995,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_27"
+      "tag": "NovaNet_27"
     },
     {
       "protocol": "vless",
@@ -1029,7 +1029,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_28"
+      "tag": "NovaNet_28"
     },
     {
       "protocol": "vless",
@@ -1063,7 +1063,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_29"
+      "tag": "NovaNet_29"
     },
     {
       "protocol": "vless",
@@ -1097,7 +1097,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_30"
+      "tag": "NovaNet_30"
     },
     {
       "protocol": "vless",
@@ -1131,7 +1131,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_31"
+      "tag": "NovaNet_31"
     },
     {
       "protocol": "vless",
@@ -1165,7 +1165,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_32"
+      "tag": "NovaNet_32"
     },
     {
       "protocol": "vless",
@@ -1203,7 +1203,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_33"
+      "tag": "NovaNet_33"
     },
     {
       "protocol": "vless",
@@ -1236,7 +1236,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ApexProxy_34"
+      "tag": "NovaNet_34"
     },
     {
       "tag": "direct",
@@ -1255,41 +1255,41 @@
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "ApexProxy_0",
-          "ApexProxy_1",
-          "ApexProxy_2",
-          "ApexProxy_3",
-          "ApexProxy_4",
-          "ApexProxy_5",
-          "ApexProxy_6",
-          "ApexProxy_7",
-          "ApexProxy_8",
-          "ApexProxy_9",
-          "ApexProxy_10",
-          "ApexProxy_11",
-          "ApexProxy_12",
-          "ApexProxy_13",
-          "ApexProxy_14",
-          "ApexProxy_15",
-          "ApexProxy_16",
-          "ApexProxy_17",
-          "ApexProxy_18",
-          "ApexProxy_19",
-          "ApexProxy_20",
-          "ApexProxy_21",
-          "ApexProxy_22",
-          "ApexProxy_23",
-          "ApexProxy_24",
-          "ApexProxy_25",
-          "ApexProxy_26",
-          "ApexProxy_27",
-          "ApexProxy_28",
-          "ApexProxy_29",
-          "ApexProxy_30",
-          "ApexProxy_31",
-          "ApexProxy_32",
-          "ApexProxy_33",
-          "ApexProxy_34"
+          "NovaNet_0",
+          "NovaNet_1",
+          "NovaNet_2",
+          "NovaNet_3",
+          "NovaNet_4",
+          "NovaNet_5",
+          "NovaNet_6",
+          "NovaNet_7",
+          "NovaNet_8",
+          "NovaNet_9",
+          "NovaNet_10",
+          "NovaNet_11",
+          "NovaNet_12",
+          "NovaNet_13",
+          "NovaNet_14",
+          "NovaNet_15",
+          "NovaNet_16",
+          "NovaNet_17",
+          "NovaNet_18",
+          "NovaNet_19",
+          "NovaNet_20",
+          "NovaNet_21",
+          "NovaNet_22",
+          "NovaNet_23",
+          "NovaNet_24",
+          "NovaNet_25",
+          "NovaNet_26",
+          "NovaNet_27",
+          "NovaNet_28",
+          "NovaNet_29",
+          "NovaNet_30",
+          "NovaNet_31",
+          "NovaNet_32",
+          "NovaNet_33",
+          "NovaNet_34"
         ],
         "strategy": {
           "type": "leastPing"
@@ -1356,45 +1356,45 @@
   },
   "observatory": {
     "subjectSelector": [
-      "ApexProxy_0",
-      "ApexProxy_1",
-      "ApexProxy_2",
-      "ApexProxy_3",
-      "ApexProxy_4",
-      "ApexProxy_5",
-      "ApexProxy_6",
-      "ApexProxy_7",
-      "ApexProxy_8",
-      "ApexProxy_9",
-      "ApexProxy_10",
-      "ApexProxy_11",
-      "ApexProxy_12",
-      "ApexProxy_13",
-      "ApexProxy_14",
-      "ApexProxy_15",
-      "ApexProxy_16",
-      "ApexProxy_17",
-      "ApexProxy_18",
-      "ApexProxy_19",
-      "ApexProxy_20",
-      "ApexProxy_21",
-      "ApexProxy_22",
-      "ApexProxy_23",
-      "ApexProxy_24",
-      "ApexProxy_25",
-      "ApexProxy_26",
-      "ApexProxy_27",
-      "ApexProxy_28",
-      "ApexProxy_29",
-      "ApexProxy_30",
-      "ApexProxy_31",
-      "ApexProxy_32",
-      "ApexProxy_33",
-      "ApexProxy_34"
+      "NovaNet_0",
+      "NovaNet_1",
+      "NovaNet_2",
+      "NovaNet_3",
+      "NovaNet_4",
+      "NovaNet_5",
+      "NovaNet_6",
+      "NovaNet_7",
+      "NovaNet_8",
+      "NovaNet_9",
+      "NovaNet_10",
+      "NovaNet_11",
+      "NovaNet_12",
+      "NovaNet_13",
+      "NovaNet_14",
+      "NovaNet_15",
+      "NovaNet_16",
+      "NovaNet_17",
+      "NovaNet_18",
+      "NovaNet_19",
+      "NovaNet_20",
+      "NovaNet_21",
+      "NovaNet_22",
+      "NovaNet_23",
+      "NovaNet_24",
+      "NovaNet_25",
+      "NovaNet_26",
+      "NovaNet_27",
+      "NovaNet_28",
+      "NovaNet_29",
+      "NovaNet_30",
+      "NovaNet_31",
+      "NovaNet_32",
+      "NovaNet_33",
+      "NovaNet_34"
     ],
     "url": "http://cp.cloudflare.com/generate_204",
     "interval": "30s",
     "enableConcurrency": true
   },
-  "remarks": "ApexProxy"
+  "remarks": "NovaNet"
 }
