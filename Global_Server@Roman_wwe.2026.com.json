@@ -33,871 +33,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "151.115.166.43",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca25.speedmeter.shop",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.115.166.221",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "85.234.114.53",
+            "address": "178.159.10.78",
             "port": 443,
             "users": [
               {
-                "id": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision-udp443"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "r1.mizulina.top",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "gb7.univesalsrv.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "810b8ba9-3232-42ac-a474-3e921fdc8845",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "tls",
-        "grpcSettings": {
-          "serviceName": "mobile.api.Event"
-        },
-        "tlsSettings": {
-          "serverName": "gb7.univesalsrv.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "85.234.114.53",
-            "port": 22231,
-            "users": [
-              {
-                "id": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision-udp443"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "r1.mizulina.top",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_5"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "130.162.130.105",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_6"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.77.21.104",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_7"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.164.248.122",
-            "port": 443,
-            "password": "6c862415-30d2-4813-8e49-42e99a0bd415"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/us-gllc",
-          "headers": {
-            "Host": "space.byu.id.yxls.eu.cc"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "space.byu.id.yxls.eu.cc",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_8"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.67.210.234",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_9"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "46.8.226.197",
-            "port": 8443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_10"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.231.112.217",
-            "port": 40443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.creationlong.org"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "www.creationlong.org",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_11"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "156.231.113.141",
-            "port": 8443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "hhcm.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "hhcm.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_12"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.40.34",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.gossipglove.com"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "www.gossipglove.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_13"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "64.176.36.17",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_15"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "144.202.83.188",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "hhcm.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "hhcm.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_16"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.17.121.71",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.multiplydose.com"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "www.multiplydose.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_18"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "168.138.212.80",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "hhcm.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "hhcm.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_19"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.152.219",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.ignitelimit.com"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "www.ignitelimit.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_20"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "47.79.85.185",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_21"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "168.138.165.174",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_22"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "213.35.127.18",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "hhcm.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "hhcm.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_23"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "tjsp.hhxaf.cc.cd",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": ""
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_24"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.72.70",
-            "port": 443,
-            "password": "6c862415-30d2-4813-8e49-42e99a0bd415"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/us-gllc",
-          "headers": {
-            "Host": "space.byu.id.yxls.eu.cc"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "space.byu.id.yxls.eu.cc",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_25"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "43.169.18.179",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.creationlong.org"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "www.creationlong.org",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_26"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "108.160.132.132",
-            "port": 443,
-            "password": "eeb6823c-b926-4ea2-866a-5542edd26e59"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "tjsp.hhxaf.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "tjsp.hhxaf.cc.cd",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_27"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "r1.mizulina.top",
-            "port": 22231,
-            "users": [
-              {
-                "id": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision-udp443"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "r1.mizulina.top",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_28"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "r1.mizulina.top",
-            "port": 22231,
-            "users": [
-              {
-                "id": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -907,10 +47,12 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": true
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.vodafone.co.uk",
+          "publicKey": "6tORX9bm6UlGJ4dR8L2kzOd21oSrOyzpN7gC6SqGGyc",
+          "shortId": "d27683580fc15f1e",
+          "fingerprint": "chrome"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -918,18 +60,52 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "GhostShield_29"
+      "tag": "MatrixNet_0"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "79.127.196.11",
-            "port": 8443,
+            "address": "netraidly.ru",
+            "port": 40443,
             "users": [
               {
-                "id": "55f7d143-a594-4a91-b030-f227039f85ef",
+                "id": "4480161e-2c59-4d37-8736-675c9af32bf1",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "deepl.com",
+          "publicKey": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y",
+          "shortId": "01d1bf2d4755d40c",
+          "fingerprint": "qq"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "77.73.232.61",
+            "port": 19747,
+            "users": [
+              {
+                "id": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
                 "encryption": "none"
               }
             ]
@@ -938,10 +114,12 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "cdg-1.fromblancwithlove.com",
-          "allowInsecure": true
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "yahoo.com",
+          "publicKey": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
+          "shortId": "2001",
+          "fingerprint": "chrome"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -949,72 +127,52 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "GhostShield_30"
+      "tag": "MatrixNet_2"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "18.153.81.34",
+            "address": "159.89.87.21",
+            "port": 28190,
+            "users": [
+              {
+                "id": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "aws.amazon.com",
+          "publicKey": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
+          "shortId": "",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de-3.coinbridge.nl",
             "port": 443,
             "users": [
               {
-                "id": "ad73ff14-a0e3-46d1-adc0-02ca29a32485",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_31"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.13.119.219",
-            "port": 8888,
-            "users": [
-              {
-                "id": "eb77be10-9d9e-527b-a78d-8caaf58992d6",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_32"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca10.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+                "id": "b0f08ae1-7cf9-4612-ad61-72681e0b92da",
                 "encryption": "none"
               }
             ]
@@ -1023,9 +181,15 @@
       },
       "streamSettings": {
         "network": "grpc",
-        "security": "none",
+        "security": "reality",
         "grpcSettings": {
-          "serviceName": ""
+          "serviceName": "data-sync"
+        },
+        "realitySettings": {
+          "serverName": "google.com",
+          "publicKey": "kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI",
+          "shortId": "d5c7f84e37e0c12d",
+          "fingerprint": "random"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -1033,318 +197,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "GhostShield_33"
+      "tag": "MatrixNet_4"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "sca36.speedmeter.shop",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_34"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca22.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_35"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca9.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_36"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca26.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_37"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca8.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_38"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca12.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_39"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca31.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_40"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca20.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_41"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca14.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_42"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca35.myfymain.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_43"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "all.tellmethetrue.shop",
+            "address": "51.89.229.134",
             "port": 443,
             "users": [
               {
-                "id": "e4824193-4f54-453b-d037-88368e85ef0e",
+                "id": "53821f3c-5b03-456a-89f3-f8379f130752",
                 "encryption": "none"
               }
             ]
@@ -1352,14 +216,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "security": "tls",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "tlsSettings": {
-          "serverName": "gco1.afterdomain.shop",
-          "allowInsecure": true
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "publicKey": "4e4FI0siWxFtLCRCVDQurn1wLTuvKWhRY0zj1SaUcyw",
+          "shortId": "a13a7cc5",
+          "fingerprint": "chrome"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -1367,14 +230,14 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "GhostShield_44"
+      "tag": "MatrixNet_5"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "sca28.myfymain.com",
+            "address": "sca30.mysilipdir.com",
             "port": 8880,
             "users": [
               {
@@ -1397,7 +260,400 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "GhostShield_45"
+      "tag": "MatrixNet_6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.74.93.254",
+            "port": 443,
+            "users": [
+              {
+                "id": "146eb6cf-a99c-4022-85ca-022cf81502dc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "web.max.ru",
+          "publicKey": "7ReQIe2kMtP4rCrptgH5glkOM-JGcSAPzHNxOED-Z0s",
+          "shortId": "247fd6dab1a34a48",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "70.34.201.81",
+            "port": 443,
+            "users": [
+              {
+                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.booking.com",
+          "publicKey": "Mm-d06LgjpLq_Y0aTRuf8cbueCumBku9r4ygFUGTE2o",
+          "shortId": "7b7c7376cba460cf",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fi.faygo.bot",
+            "port": 443,
+            "users": [
+              {
+                "id": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "enterprisekitten.com",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "shortId": "6ba85179e30d4fc2",
+          "fingerprint": "qq"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "83.228.228.243",
+            "port": 2083,
+            "users": [
+              {
+                "id": "89049f79-320b-48a0-b1cf-110165cae30c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.yahoo.com",
+          "publicKey": "l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY",
+          "shortId": "4e590fdc",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.234.65.130",
+            "port": 6000,
+            "users": [
+              {
+                "id": "f75566a5-4744-4806-ac2e-ccaefe1b1080",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "telekom.com",
+          "publicKey": "F6D_xS9iNp_eeQsHkFpUiLgFsGOH62Q1RFrY4qo5_X4",
+          "shortId": "bc03731d6e4c2f7f",
+          "fingerprint": "firefox"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_11"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "155.103.69.33",
+            "port": 42841,
+            "users": [
+              {
+                "id": "EarnMoneyarz-ZoRo",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.yahoo.com",
+          "publicKey": "dzQmB-5PshfbZ228GO154TnSIcKV1HvG8sAhzlLn_zo",
+          "shortId": "a00ad308",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_12"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "abr.mohammadaz2arvan.ir",
+            "port": 42348,
+            "users": [
+              {
+                "id": "e286cebe-7473-44e9-8c30-273ac36ac83b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.150.147",
+            "port": 26191,
+            "users": [
+              {
+                "id": "5cbc3beb-61f1-45eb-b365-9555353cdf96",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_14"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "52.73.150.215",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ea9b76e2-3b93-4f6f-9fd5-441082de0a1c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.intel.com",
+          "publicKey": "dV6O_qJsz93umq7BzAqvlnM8rEwaCFBrPlYSSkmCwQk",
+          "shortId": "2bfc17da341dcf",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_15"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "md.arghavanrezaii.co.uk",
+            "port": 2082,
+            "users": [
+              {
+                "id": "c5ee3bba-f737-42d5-b0bc-cccec1ffe7e2",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "play.google.com",
+          "mode": "auto"
+        },
+        "realitySettings": {
+          "serverName": "play.google.com",
+          "publicKey": "VxW_T8XUwWi2ELxLK4g9LWVNBLRjMLDBKQcJNoIFwi8",
+          "shortId": "72d1809de52ebf95",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "213.156.152.182",
+            "port": 2083,
+            "users": [
+              {
+                "id": "615cc118-2bdf-4c68-b277-f5faaa2c34c4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.yahoo.com",
+          "publicKey": "bALX2hvFIEvdai_RwJ3DwaEPafINjNsxwMBIgkaQIDc",
+          "shortId": "fd",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_17"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "stdata.aghayradical.space",
+            "port": 55974,
+            "users": [
+              {
+                "id": "025805d8-0d0a-46d6-ac73-018d608d0be3",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "stdata.aghayradical.space",
+          "publicKey": "dD0ZPqZZR8OTjYiXDUBbeiSQ-hdN5IGymB3yj-jseUM",
+          "shortId": "536c1575aa324737",
+          "fingerprint": "ios"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "MatrixNet_18"
     },
     {
       "tag": "direct",
@@ -1416,50 +672,25 @@
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "GhostShield_0",
-          "GhostShield_1",
-          "GhostShield_2",
-          "GhostShield_3",
-          "GhostShield_4",
-          "GhostShield_5",
-          "GhostShield_6",
-          "GhostShield_7",
-          "GhostShield_8",
-          "GhostShield_9",
-          "GhostShield_10",
-          "GhostShield_11",
-          "GhostShield_12",
-          "GhostShield_13",
-          "GhostShield_15",
-          "GhostShield_16",
-          "GhostShield_18",
-          "GhostShield_19",
-          "GhostShield_20",
-          "GhostShield_21",
-          "GhostShield_22",
-          "GhostShield_23",
-          "GhostShield_24",
-          "GhostShield_25",
-          "GhostShield_26",
-          "GhostShield_27",
-          "GhostShield_28",
-          "GhostShield_29",
-          "GhostShield_30",
-          "GhostShield_31",
-          "GhostShield_32",
-          "GhostShield_33",
-          "GhostShield_34",
-          "GhostShield_35",
-          "GhostShield_36",
-          "GhostShield_37",
-          "GhostShield_38",
-          "GhostShield_39",
-          "GhostShield_40",
-          "GhostShield_41",
-          "GhostShield_42",
-          "GhostShield_43",
-          "GhostShield_44",
-          "GhostShield_45"
+          "MatrixNet_0",
+          "MatrixNet_1",
+          "MatrixNet_2",
+          "MatrixNet_3",
+          "MatrixNet_4",
+          "MatrixNet_5",
+          "MatrixNet_6",
+          "MatrixNet_7",
+          "MatrixNet_8",
+          "MatrixNet_9",
+          "MatrixNet_10",
+          "MatrixNet_11",
+          "MatrixNet_12",
+          "MatrixNet_13",
+          "MatrixNet_14",
+          "MatrixNet_15",
+          "MatrixNet_16",
+          "MatrixNet_17",
+          "MatrixNet_18"
         ],
         "strategy": {
           "type": "leastPing"
@@ -1477,7 +708,10 @@
         "type": "field",
         "outboundTag": "block",
         "domain": [
-          "geosite:category-ads-all"
+          "geosite:category-ads-all",
+          "domain:an.facebook.com",
+          "domain:ads.facebook.com",
+          "domain:graph.facebook.com"
         ]
       },
       {
@@ -1523,54 +757,29 @@
   },
   "observatory": {
     "subjectSelector": [
-      "GhostShield_0",
-      "GhostShield_1",
-      "GhostShield_2",
-      "GhostShield_3",
-      "GhostShield_4",
-      "GhostShield_5",
-      "GhostShield_6",
-      "GhostShield_7",
-      "GhostShield_8",
-      "GhostShield_9",
-      "GhostShield_10",
-      "GhostShield_11",
-      "GhostShield_12",
-      "GhostShield_13",
-      "GhostShield_15",
-      "GhostShield_16",
-      "GhostShield_18",
-      "GhostShield_19",
-      "GhostShield_20",
-      "GhostShield_21",
-      "GhostShield_22",
-      "GhostShield_23",
-      "GhostShield_24",
-      "GhostShield_25",
-      "GhostShield_26",
-      "GhostShield_27",
-      "GhostShield_28",
-      "GhostShield_29",
-      "GhostShield_30",
-      "GhostShield_31",
-      "GhostShield_32",
-      "GhostShield_33",
-      "GhostShield_34",
-      "GhostShield_35",
-      "GhostShield_36",
-      "GhostShield_37",
-      "GhostShield_38",
-      "GhostShield_39",
-      "GhostShield_40",
-      "GhostShield_41",
-      "GhostShield_42",
-      "GhostShield_43",
-      "GhostShield_44",
-      "GhostShield_45"
+      "MatrixNet_0",
+      "MatrixNet_1",
+      "MatrixNet_2",
+      "MatrixNet_3",
+      "MatrixNet_4",
+      "MatrixNet_5",
+      "MatrixNet_6",
+      "MatrixNet_7",
+      "MatrixNet_8",
+      "MatrixNet_9",
+      "MatrixNet_10",
+      "MatrixNet_11",
+      "MatrixNet_12",
+      "MatrixNet_13",
+      "MatrixNet_14",
+      "MatrixNet_15",
+      "MatrixNet_16",
+      "MatrixNet_17",
+      "MatrixNet_18"
     ],
     "url": "http://cp.cloudflare.com/generate_204",
     "interval": "30s",
     "enableConcurrency": true
   },
-  "remarks": "GhostShield"
+  "remarks": "MatrixNet"
 }
