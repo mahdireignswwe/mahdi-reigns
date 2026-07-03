@@ -33,85 +33,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.85.122",
-            "port": 2053,
-            "users": [
-              {
-                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiR3cyMGN6WkgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19",
-          "headers": {
-            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "noDe-1796256123-0142e2.MaHDirEIgNsgeRmany.WoRkers.dEV",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "QuantumLeap_0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.205.180",
-            "port": 2053,
-            "users": [
-              {
-                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoibUhlUDZ1VFZyQlVKejEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5NS4xNzkuMjUwLjY4Il19",
-          "headers": {
-            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "nODE-1796256123-0142e2.MAhDIreignSgErManY.woRkeRs.DEv",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "QuantumLeap_1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.43.223",
+            "address": "83.168.71.216",
             "port": 443,
             "users": [
               {
-                "id": "8f730740-b1fe-4e19-b631-55607d479389",
+                "id": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
                 "encryption": "none"
               }
             ]
@@ -119,16 +45,38 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/sync",
-          "headers": {
-            "Host": "node-1796256123-93ed86.mahdireignsgermany.workers.dev"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ads.x5.ru",
+          "publicKey": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "shortId": "2f49bccf11150ef2",
+          "fingerprint": "chrome"
         },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_0"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "119.246.1.143",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
         "tlsSettings": {
-          "serverName": "node-1796256123-93ed86.mahdireignsgermany.workers.dev",
+          "serverName": "",
           "allowInsecure": true
         },
         "sockopt": {
@@ -137,36 +85,33 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "QuantumLeap_2"
+      "tag": "PhantomVPN_1"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.230.91",
+            "address": "45.195.137.81",
             "port": 8443,
             "users": [
               {
-                "id": "8f730740-b1fe-4e19-b631-55607d479389",
-                "encryption": "none"
+                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/sync",
-          "headers": {
-            "Host": "node-1796256123-93ed86.mahdireignsgermany.workers.dev"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "node-1796256123-93ed86.mahdireignsgermany.workers.dev",
-          "allowInsecure": true
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
+          "shortId": "e3d38cee79d4f94c",
+          "fingerprint": "chrome"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -174,92 +119,187 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "QuantumLeap_3"
+      "tag": "PhantomVPN_2"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.2",
-            "port": 2053,
-            "users": [
-              {
-                "id": "17c2c97c-12b5-4819-ba6c-5ce145181037",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiaWVuYWpmR1dsQnA0YVdnSiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjk1LjE3OS4yNTAuNjgiXX0=",
-          "headers": {
-            "Host": "node-1796256123-0142e2.mahdireignsgermany.workers.dev"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "nODE-1796256123-0142e2.MahDIREIgnSgErmaNy.wORkERs.dev",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "QuantumLeap_4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.38.9",
-            "port": 2096,
-            "users": [
-              {
-                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/proxyip=185.219.132.27",
-          "headers": {
-            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "QuantumLeap_5"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.19.34.128",
+            "address": "31.77.161.2",
             "port": 8443,
             "users": [
               {
-                "id": "5dacd868-abc4-4065-88ed-0232b63b509e",
+                "id": "a6704fb4-4874-4e6b-98f4-571b048e3d90",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "prod.de-node-01.security-sbrf.ru",
+          "publicKey": "4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE",
+          "shortId": "db04ce8bdb8900f1",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.195.137.191",
+            "port": 8443,
+            "users": [
+              {
+                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
+          "shortId": "e3d38cee79d4f94c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.195.137.38",
+            "port": 8443,
+            "users": [
+              {
+                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
+          "shortId": "e3d38cee79d4f94c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.195.137.189",
+            "port": 8443,
+            "users": [
+              {
+                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
+          "shortId": "e3d38cee79d4f94c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.195.137.167",
+            "port": 8443,
+            "users": [
+              {
+                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
+          "shortId": "e3d38cee79d4f94c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.143.232.201",
+            "port": 443,
+            "users": [
+              {
+                "id": "16227db7-1914-4a97-bb6b-7bf98e6b525b",
                 "encryption": "none"
               }
             ]
@@ -270,13 +310,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/proxyip=185.219.132.27",
+          "path": "/",
           "headers": {
-            "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
+            "Host": "zapzap.mc.filimo.cam"
           }
         },
         "tlsSettings": {
-          "serverName": "icy-base-c57a.mahdireignsgermany.workers.dev",
+          "serverName": "zapzap.mc.filimo.cam",
           "allowInsecure": true
         },
         "sockopt": {
@@ -285,7 +325,214 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "QuantumLeap_6"
+      "tag": "PhantomVPN_8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.195.137.25",
+            "port": 8443,
+            "users": [
+              {
+                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
+          "shortId": "e3d38cee79d4f94c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "186.190.211.188",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "186.190.211.188",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.120",
+            "port": 443,
+            "users": [
+              {
+                "id": "af42f8db-09a9-4eb5-9047-e97b5a072627",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/?ed=2048",
+          "headers": {
+            "Host": "npnl-2-two.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "global.fastly.com",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_11"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "109.107.190.54",
+            "port": 443,
+            "users": [
+              {
+                "id": "de2edd29-c746-4dc7-a50b-e0692b01209d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "yahoo.com",
+          "publicKey": "F43rc1ullrGWMLp-YdYLE3jMpqx_EDFdq5AzVmoqtkc",
+          "shortId": "bd04ebf0",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_12"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.143",
+            "port": 443,
+            "users": [
+              {
+                "id": "af42f8db-09a9-4eb5-9047-e97b5a072627",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/?ed=2048",
+          "headers": {
+            "Host": "npnl-2-one.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "global.fastly.com",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "139.84.236.5",
+            "port": 443,
+            "users": [
+              {
+                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.alibaba.com",
+          "publicKey": "UkoqOh9VtAhhMrlKY3wAmijgjCrLIKMZT-An0NjrHng",
+          "shortId": "8d17b7ebab7b99d7",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "PhantomVPN_14"
     },
     {
       "tag": "direct",
@@ -304,13 +551,21 @@
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "QuantumLeap_0",
-          "QuantumLeap_1",
-          "QuantumLeap_2",
-          "QuantumLeap_3",
-          "QuantumLeap_4",
-          "QuantumLeap_5",
-          "QuantumLeap_6"
+          "PhantomVPN_0",
+          "PhantomVPN_1",
+          "PhantomVPN_2",
+          "PhantomVPN_3",
+          "PhantomVPN_4",
+          "PhantomVPN_5",
+          "PhantomVPN_6",
+          "PhantomVPN_7",
+          "PhantomVPN_8",
+          "PhantomVPN_9",
+          "PhantomVPN_10",
+          "PhantomVPN_11",
+          "PhantomVPN_12",
+          "PhantomVPN_13",
+          "PhantomVPN_14"
         ],
         "strategy": {
           "type": "leastPing"
@@ -377,17 +632,25 @@
   },
   "observatory": {
     "subjectSelector": [
-      "QuantumLeap_0",
-      "QuantumLeap_1",
-      "QuantumLeap_2",
-      "QuantumLeap_3",
-      "QuantumLeap_4",
-      "QuantumLeap_5",
-      "QuantumLeap_6"
+      "PhantomVPN_0",
+      "PhantomVPN_1",
+      "PhantomVPN_2",
+      "PhantomVPN_3",
+      "PhantomVPN_4",
+      "PhantomVPN_5",
+      "PhantomVPN_6",
+      "PhantomVPN_7",
+      "PhantomVPN_8",
+      "PhantomVPN_9",
+      "PhantomVPN_10",
+      "PhantomVPN_11",
+      "PhantomVPN_12",
+      "PhantomVPN_13",
+      "PhantomVPN_14"
     ],
     "url": "http://cp.cloudflare.com/generate_204",
     "interval": "30s",
     "enableConcurrency": true
   },
-  "remarks": "QuantumLeap"
+  "remarks": "PhantomVPN"
 }
