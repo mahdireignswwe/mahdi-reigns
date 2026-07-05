@@ -33,6 +33,686 @@
       "settings": {
         "vnext": [
           {
+            "address": "fastly.videobazi.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "ab49ea5f-f7a3-4248-a237-27758f4bae09",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "dutschh.global.ssl.fastly.net",
+          "mode": "auto"
+        },
+        "tlsSettings": {
+          "serverName": "default.ssl.fastly.net",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cd3.postshup.ir",
+            "port": 2086,
+            "users": [
+              {
+                "id": "ab49ea5f-f7a3-4248-a237-27758f4bae09",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/?ed=8192",
+          "host": "bBB.cafearen.ir",
+          "mode": "auto"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ns2.zabidat.ir",
+            "port": 2086,
+            "users": [
+              {
+                "id": "ab49ea5f-f7a3-4248-a237-27758f4bae09",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/?ed=2082",
+          "host": "aaa.cafearen.ir",
+          "mode": "auto"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "forallpanel.srtongston.ir",
+            "port": 8880,
+            "users": [
+              {
+                "id": "ab49ea5f-f7a3-4248-a237-27758f4bae09",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "security": "none",
+        "httpupgradeSettings": {
+          "path": "/",
+          "host": "DD.postshup.ir"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.198.80.150",
+            "port": 443,
+            "users": [
+              {
+                "id": "eece4171-e025-40a3-9027-e395036ff99d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
+          "shortId": "28047c78b3f5ee2c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.196.182.66",
+            "port": 443,
+            "users": [
+              {
+                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "shortId": "d020b987f84eb78a",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.196.182.120",
+            "port": 443,
+            "users": [
+              {
+                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "shortId": "d020b987f84eb78a",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.198.80.240",
+            "port": 443,
+            "users": [
+              {
+                "id": "eece4171-e025-40a3-9027-e395036ff99d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
+          "shortId": "28047c78b3f5ee2c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.198.80.101",
+            "port": 443,
+            "users": [
+              {
+                "id": "eece4171-e025-40a3-9027-e395036ff99d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
+          "shortId": "28047c78b3f5ee2c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.198.80.100",
+            "port": 443,
+            "users": [
+              {
+                "id": "eece4171-e025-40a3-9027-e395036ff99d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
+          "shortId": "28047c78b3f5ee2c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.196.182.41",
+            "port": 443,
+            "users": [
+              {
+                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "shortId": "d020b987f84eb78a",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_10"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "petrolicious.com",
+            "port": 443,
+            "password": "MITIVPN"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Us",
+          "headers": {
+            "Host": "U-s.MaQror.ir"
+          }
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.196.182.39",
+            "port": 443,
+            "users": [
+              {
+                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "shortId": "d020b987f84eb78a",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_20"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.198.80.62",
+            "port": 443,
+            "users": [
+              {
+                "id": "eece4171-e025-40a3-9027-e395036ff99d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
+          "shortId": "28047c78b3f5ee2c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_21"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.196.182.52",
+            "port": 443,
+            "users": [
+              {
+                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "shortId": "d020b987f84eb78a",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_22"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.198.80.192",
+            "port": 443,
+            "users": [
+              {
+                "id": "eece4171-e025-40a3-9027-e395036ff99d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
+          "shortId": "28047c78b3f5ee2c",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_23"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.196.182.119",
+            "port": 443,
+            "users": [
+              {
+                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "shortId": "d020b987f84eb78a",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_24"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.192.63.38",
+            "port": 443,
+            "users": [
+              {
+                "id": "2d223452-afb4-4bcf-a604-ac7a5c67c826",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "",
+          "mode": "auto"
+        },
+        "realitySettings": {
+          "serverName": "o.aolcdn.com",
+          "publicKey": "Rb0425FK9dw-iJ9dqDnklCEOKFBguv4OI_uidzP3hE4",
+          "shortId": "f9af798aa0",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_25"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.192.63.38",
+            "port": 8443,
+            "users": [
+              {
+                "id": "2d223452-afb4-4bcf-a604-ac7a5c67c826",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "",
+          "mode": "auto"
+        },
+        "realitySettings": {
+          "serverName": "stg-au2-images.shop.samsung.com",
+          "publicKey": "PgMlBvqUfsB8YR_x2eu9A5sUtxUnm649QnxdGCRxEQc",
+          "shortId": "760b756d9f844df7",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_26"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.101.57.134",
+            "port": 443,
+            "users": [
+              {
+                "id": "294e5326-b661-5378-886d-a73155038ce7",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "default.ssl.fastly.net",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_28"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "83.168.71.216",
             "port": 443,
             "users": [
@@ -59,46 +739,19 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "PhantomVPN_0"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "119.246.1.143",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_1"
+      "tag": "ZenithProxy_29"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.195.137.81",
-            "port": 8443,
+            "address": "fn.fifapes.monster",
+            "port": 2090,
             "users": [
               {
-                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "eab915bc-d2df-73d1-47d0-6eb240497055",
+                "encryption": "none"
               }
             ]
           }
@@ -106,20 +759,50 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "shortId": "e3d38cee79d4f94c",
-          "fingerprint": "chrome"
-        },
+        "security": "none",
         "sockopt": {
           "tcpFastOpen": true,
           "tcpNoDelay": true,
           "tcpMtu": 1400
         }
       },
-      "tag": "PhantomVPN_2"
+      "tag": "ZenithProxy_31"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.233.161.92",
+            "port": 8390,
+            "method": "chacha20-ietf-poly1305",
+            "password": "EyGy11BMfeP-6UHjsgajWw"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "ZenithProxy_32"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "40.112.71.34",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "F9EvaK52fwKbQ8Lf"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "ZenithProxy_33"
     },
     {
       "protocol": "vless",
@@ -152,18 +835,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "PhantomVPN_3"
+      "tag": "ZenithProxy_35"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.195.137.191",
-            "port": 8443,
+            "address": "zbvn.foot8all.ir",
+            "port": 50567,
             "users": [
               {
-                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "id": "c141bff1-9984-4818-b3df-063dc4bfb7ce",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -175,9 +858,9 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "shortId": "e3d38cee79d4f94c",
+          "serverName": "play.google.com",
+          "publicKey": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
+          "shortId": "545df9caf95f7cd8",
           "fingerprint": "chrome"
         },
         "sockopt": {
@@ -186,18 +869,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "PhantomVPN_4"
+      "tag": "ZenithProxy_36"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.195.137.38",
-            "port": 8443,
+            "address": "38.79.154.34",
+            "port": 2020,
             "users": [
               {
-                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "id": "db8c3c80-a025-46f9-bffb-fde63c2e3ac1",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -209,9 +892,9 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "shortId": "e3d38cee79d4f94c",
+          "serverName": "aparat.com",
+          "publicKey": "KWlccWTLW11wEojieRNfg6zezd3KMxPpAkwZ11VNhSM",
+          "shortId": "7e82",
           "fingerprint": "chrome"
         },
         "sockopt": {
@@ -220,86 +903,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "PhantomVPN_5"
+      "tag": "ZenithProxy_37"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.195.137.189",
-            "port": 8443,
+            "address": "pan2.mashkestan.com",
+            "port": 2087,
             "users": [
               {
-                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "shortId": "e3d38cee79d4f94c",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.195.137.167",
-            "port": 8443,
-            "users": [
-              {
-                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "shortId": "e3d38cee79d4f94c",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.143.232.201",
-            "port": 443,
-            "users": [
-              {
-                "id": "16227db7-1914-4a97-bb6b-7bf98e6b525b",
+                "id": "7943183f-5c33-4728-8d57-8f18efe6ce25",
                 "encryption": "none"
               }
             ]
@@ -307,17 +922,167 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
+        "network": "tcp",
+        "security": "none",
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_39"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.132.234.156",
+            "port": 443,
+            "users": [
+              {
+                "id": "a3ab68bd-e835-5129-b8c5-335a709e8b3f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api.samsungcloud.com",
+          "publicKey": "41qm1VGkyODbyc7LvIyXhcG4XUKmTaomF9jDAMEaW3c",
+          "shortId": "03e223bc474c6f1d",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_42"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pan1.mashkestan.com",
+            "port": 2087,
+            "users": [
+              {
+                "id": "7943183f-5c33-4728-8d57-8f18efe6ce25",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_47"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.252.26.85",
+            "port": 443,
+            "users": [
+              {
+                "id": "c662cb42-b584-4b82-88f8-e2a64384bf20",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.yahoo.com",
+          "publicKey": "sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc",
+          "shortId": "8af36420",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_53"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "arazlink.marzgozar.com",
+            "port": 6400,
+            "users": [
+              {
+                "id": "01cf905a-234c-4f0b-b538-74501aaebcd9",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "play.google.com",
+          "publicKey": "0WcBGfCxVDJDCkiDjLPhAQg4sZJ1dvyPpH9-CRlJlz0",
+          "shortId": "e251f5ea64441c6f",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "ZenithProxy_65"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cd3.postshup.ir",
+            "port": 2086,
+            "users": [
+              {
+                "id": "ab49ea5f-f7a3-4248-a237-27758f4bae09",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
           "path": "/",
-          "headers": {
-            "Host": "zapzap.mc.filimo.cam"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "zapzap.mc.filimo.cam",
-          "allowInsecure": true
+          "host": "bBB.cafearen.ir",
+          "mode": "auto"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -325,18 +1090,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "PhantomVPN_8"
+      "tag": "ZenithProxy_66"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.195.137.25",
-            "port": 8443,
+            "address": "45.196.182.78",
+            "port": 443,
             "users": [
               {
-                "id": "7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08",
+                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -349,8 +1114,8 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "storage.yandex.net",
-          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "shortId": "e3d38cee79d4f94c",
+          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "shortId": "d020b987f84eb78a",
           "fingerprint": "chrome"
         },
         "sockopt": {
@@ -359,180 +1124,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "PhantomVPN_9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.190.211.188",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "186.190.211.188",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_10"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.120",
-            "port": 443,
-            "users": [
-              {
-                "id": "af42f8db-09a9-4eb5-9047-e97b5a072627",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/?ed=2048",
-          "headers": {
-            "Host": "npnl-2-two.global.ssl.fastly.net"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "global.fastly.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_11"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "109.107.190.54",
-            "port": 443,
-            "users": [
-              {
-                "id": "de2edd29-c746-4dc7-a50b-e0692b01209d",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yahoo.com",
-          "publicKey": "F43rc1ullrGWMLp-YdYLE3jMpqx_EDFdq5AzVmoqtkc",
-          "shortId": "bd04ebf0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_12"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.143",
-            "port": 443,
-            "users": [
-              {
-                "id": "af42f8db-09a9-4eb5-9047-e97b5a072627",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/?ed=2048",
-          "headers": {
-            "Host": "npnl-2-one.global.ssl.fastly.net"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "global.fastly.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_13"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "139.84.236.5",
-            "port": 443,
-            "users": [
-              {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.alibaba.com",
-          "publicKey": "UkoqOh9VtAhhMrlKY3wAmijgjCrLIKMZT-An0NjrHng",
-          "shortId": "8d17b7ebab7b99d7",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "PhantomVPN_14"
+      "tag": "ZenithProxy_70"
     },
     {
       "tag": "direct",
@@ -551,24 +1143,48 @@
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "PhantomVPN_0",
-          "PhantomVPN_1",
-          "PhantomVPN_2",
-          "PhantomVPN_3",
-          "PhantomVPN_4",
-          "PhantomVPN_5",
-          "PhantomVPN_6",
-          "PhantomVPN_7",
-          "PhantomVPN_8",
-          "PhantomVPN_9",
-          "PhantomVPN_10",
-          "PhantomVPN_11",
-          "PhantomVPN_12",
-          "PhantomVPN_13",
-          "PhantomVPN_14"
+          "ZenithProxy_0",
+          "ZenithProxy_1",
+          "ZenithProxy_2",
+          "ZenithProxy_3",
+          "ZenithProxy_4",
+          "ZenithProxy_5",
+          "ZenithProxy_6",
+          "ZenithProxy_7",
+          "ZenithProxy_8",
+          "ZenithProxy_9",
+          "ZenithProxy_10",
+          "ZenithProxy_18",
+          "ZenithProxy_20",
+          "ZenithProxy_21",
+          "ZenithProxy_22",
+          "ZenithProxy_23",
+          "ZenithProxy_24",
+          "ZenithProxy_25",
+          "ZenithProxy_26",
+          "ZenithProxy_28",
+          "ZenithProxy_29",
+          "ZenithProxy_31",
+          "ZenithProxy_32",
+          "ZenithProxy_33",
+          "ZenithProxy_35",
+          "ZenithProxy_36",
+          "ZenithProxy_37",
+          "ZenithProxy_39",
+          "ZenithProxy_42",
+          "ZenithProxy_47",
+          "ZenithProxy_53",
+          "ZenithProxy_65",
+          "ZenithProxy_66",
+          "ZenithProxy_70"
         ],
         "strategy": {
-          "type": "leastPing"
+          "type": "leastLoad",
+          "settings": {
+            "cost": 2,
+            "baseline": 300,
+            "expected": 1
+          }
         }
       }
     ],
@@ -632,25 +1248,44 @@
   },
   "observatory": {
     "subjectSelector": [
-      "PhantomVPN_0",
-      "PhantomVPN_1",
-      "PhantomVPN_2",
-      "PhantomVPN_3",
-      "PhantomVPN_4",
-      "PhantomVPN_5",
-      "PhantomVPN_6",
-      "PhantomVPN_7",
-      "PhantomVPN_8",
-      "PhantomVPN_9",
-      "PhantomVPN_10",
-      "PhantomVPN_11",
-      "PhantomVPN_12",
-      "PhantomVPN_13",
-      "PhantomVPN_14"
+      "ZenithProxy_0",
+      "ZenithProxy_1",
+      "ZenithProxy_2",
+      "ZenithProxy_3",
+      "ZenithProxy_4",
+      "ZenithProxy_5",
+      "ZenithProxy_6",
+      "ZenithProxy_7",
+      "ZenithProxy_8",
+      "ZenithProxy_9",
+      "ZenithProxy_10",
+      "ZenithProxy_18",
+      "ZenithProxy_20",
+      "ZenithProxy_21",
+      "ZenithProxy_22",
+      "ZenithProxy_23",
+      "ZenithProxy_24",
+      "ZenithProxy_25",
+      "ZenithProxy_26",
+      "ZenithProxy_28",
+      "ZenithProxy_29",
+      "ZenithProxy_31",
+      "ZenithProxy_32",
+      "ZenithProxy_33",
+      "ZenithProxy_35",
+      "ZenithProxy_36",
+      "ZenithProxy_37",
+      "ZenithProxy_39",
+      "ZenithProxy_42",
+      "ZenithProxy_47",
+      "ZenithProxy_53",
+      "ZenithProxy_65",
+      "ZenithProxy_66",
+      "ZenithProxy_70"
     ],
-    "url": "http://cp.cloudflare.com/generate_204",
-    "interval": "30s",
+    "url": "https://www.google.com/favicon.ico",
+    "interval": "1m",
     "enableConcurrency": true
   },
-  "remarks": "PhantomVPN"
+  "remarks": "ZenithProxy"
 }
