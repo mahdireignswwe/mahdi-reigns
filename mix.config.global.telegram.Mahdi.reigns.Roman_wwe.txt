@@ -1,22 +1,42 @@
 {
+  "remarks": "NEO-NET",
   "log": {
-    "loglevel": "none"
+    "loglevel": "warning"
   },
   "dns": {
     "servers": [
+      "localhost",
       "8.8.8.8",
       "1.1.1.1"
     ],
-    "queryStrategy": "UseIP"
+    "queryStrategy": "UseIPv4"
   },
   "inbounds": [
     {
+      "tag": "socks",
       "port": 10808,
       "listen": "127.0.0.1",
       "protocol": "socks",
       "settings": {
         "auth": "noauth",
-        "udp": true
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "settings": {
+        "userLevel": 8
       },
       "sniffing": {
         "enabled": true,
@@ -38,7 +58,7 @@
             "users": [
               {
                 "id": "cd7365e1-5397-411c-9979-fc81d3a5ccbf",
-                "encryption": "mlkem768x25519plus.native.0rtt.u11XaDVDY8NRKpRGCtbksuhnefKg6RZBQfg5m2OepyI",
+                "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
             ]
@@ -55,16 +75,15 @@
         },
         "tlsSettings": {
           "serverName": "neranald.jonghafteh.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_0"
+      "tag": "NEO-NET-1"
     },
     {
       "protocol": "vless",
@@ -76,7 +95,7 @@
             "users": [
               {
                 "id": "cd7365e1-5397-411c-9979-fc81d3a5ccbf",
-                "encryption": "mlkem768x25519plus.native.0rtt.ubGkuvmTdf-SZf6KOfGDMJKdCItjssyvnGvSZmO9a1o",
+                "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
             ]
@@ -93,16 +112,15 @@
         },
         "tlsSettings": {
           "serverName": "fin1.paketdownlaod.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_1"
+      "tag": "NEO-NET-2"
     },
     {
       "protocol": "vless",
@@ -114,7 +132,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -130,16 +149,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_2"
+      "tag": "NEO-NET-3"
     },
     {
       "protocol": "vless",
@@ -151,7 +169,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -167,16 +186,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_3"
+      "tag": "NEO-NET-4"
     },
     {
       "protocol": "vless",
@@ -188,7 +206,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -204,16 +223,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_4"
+      "tag": "NEO-NET-5"
     },
     {
       "protocol": "vless",
@@ -225,7 +243,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -241,16 +260,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_5"
+      "tag": "NEO-NET-6"
     },
     {
       "protocol": "vless",
@@ -262,7 +280,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -278,16 +297,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_6"
+      "tag": "NEO-NET-7"
     },
     {
       "protocol": "vless",
@@ -299,7 +317,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -315,16 +334,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_7"
+      "tag": "NEO-NET-8"
     },
     {
       "protocol": "vless",
@@ -336,7 +354,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -352,16 +371,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_8"
+      "tag": "NEO-NET-9"
     },
     {
       "protocol": "vless",
@@ -373,7 +391,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -389,16 +408,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_9"
+      "tag": "NEO-NET-10"
     },
     {
       "protocol": "vless",
@@ -410,7 +428,8 @@
             "users": [
               {
                 "id": "8ee19304-fdf4-43dd-ab77-133a77d349ed",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -426,16 +445,15 @@
         },
         "tlsSettings": {
           "serverName": "sa.sorixset.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_10"
+      "tag": "NEO-NET-11"
     },
     {
       "protocol": "vless",
@@ -447,7 +465,7 @@
             "users": [
               {
                 "id": "cd7365e1-5397-411c-9979-fc81d3a5ccbf",
-                "encryption": "mlkem768x25519plus.native.0rtt.1rNu38khjbsP7TVzY7fuxaRUOBdkbKA3l-EXdN0Vqjw",
+                "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
             ]
@@ -464,16 +482,15 @@
         },
         "tlsSettings": {
           "serverName": "german3.amaratstore.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_11"
+      "tag": "NEO-NET-12"
     },
     {
       "protocol": "vless",
@@ -485,7 +502,8 @@
             "users": [
               {
                 "id": "72ffdff3-610d-b6d1-9d44-8fe430fe569f",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -497,20 +515,19 @@
         "xhttpSettings": {
           "path": "/xhttp-siz10/packet-up/72ffdff3-610d-b6d1-9d44-8fe430fe569f",
           "host": "tel-timazadi-mimi.up.railway.app",
-          "mode": "packet-up"
+          "mode": "auto"
         },
         "tlsSettings": {
           "serverName": "tel-timazadi-mimi.up.railway.app",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_12"
+      "tag": "NEO-NET-13"
     },
     {
       "protocol": "vless",
@@ -522,7 +539,8 @@
             "users": [
               {
                 "id": "72ffdff3-610d-b6d1-9d44-8fe430fe569f",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -534,20 +552,19 @@
         "xhttpSettings": {
           "path": "/xhttp-siz10/stream-up/72ffdff3-610d-b6d1-9d44-8fe430fe569f",
           "host": "tel-timazadi-mimi.up.railway.app",
-          "mode": "stream-up"
+          "mode": "auto"
         },
         "tlsSettings": {
           "serverName": "tel-timazadi-mimi.up.railway.app",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
-      "tag": "BlazeNet_13"
+      "tag": "NEO-NET-14"
     },
     {
       "protocol": "vless",
@@ -559,7 +576,8 @@
             "users": [
               {
                 "id": "58d23d23-0d2b-4cf1-809b-2625ded3dba0",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -572,16 +590,12 @@
           "serverName": "www.yahoo.com",
           "publicKey": "D4hKOdrSTKmI0HIYFf1-Ggy0ADaB39k7AQAZmeK9qCM",
           "shortId": "70",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_14"
+      "tag": "NEO-NET-15"
     },
     {
       "protocol": "vless",
@@ -593,7 +607,8 @@
             "users": [
               {
                 "id": "564397f8-4805-4433-ab5b-a24aa133bac2",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -603,22 +618,19 @@
         "network": "grpc",
         "security": "reality",
         "grpcSettings": {
-          "serviceName": "api.v1.StreamService"
+          "serviceName": "/",
+          "multiMode": true
         },
         "realitySettings": {
           "serverName": "hub.oneoknews.com",
           "publicKey": "KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc",
           "shortId": "064c2d37308aeeb6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_15"
+      "tag": "NEO-NET-16"
     },
     {
       "protocol": "vless",
@@ -630,7 +642,8 @@
             "users": [
               {
                 "id": "3f298aca-2412-49ac-9f20-235f0e448d31",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -643,16 +656,12 @@
           "serverName": "yahoo.com",
           "publicKey": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
           "shortId": "",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_16"
+      "tag": "NEO-NET-17"
     },
     {
       "protocol": "vless",
@@ -664,7 +673,8 @@
             "users": [
               {
                 "id": "39757a70-d447-30c7-9d3a-d60ae1f07d45",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -677,16 +687,12 @@
           "serverName": "yahoo.com",
           "publicKey": "qb_gbW7hjeuegpgb0AgMst4xrEBCg2W1r371PxgX6Gs",
           "shortId": "972594a9",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_17"
+      "tag": "NEO-NET-18"
     },
     {
       "protocol": "vless",
@@ -712,16 +718,12 @@
           "serverName": "www.google.com",
           "publicKey": "BR69ZK8WI9lWKssofXxe45kViW7TcBoIPKv5aZI4uxE",
           "shortId": "abcd1234",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_18"
+      "tag": "NEO-NET-19"
     },
     {
       "protocol": "vless",
@@ -747,16 +749,12 @@
           "serverName": "auto.quattro-tech.ru",
           "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
           "shortId": "43dcff53849b81e6",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_19"
+      "tag": "NEO-NET-20"
     },
     {
       "protocol": "vless",
@@ -768,7 +766,8 @@
             "users": [
               {
                 "id": "3f298aca-2412-49ac-9f20-235f0e448d31",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -781,16 +780,12 @@
           "serverName": "yahoo.com",
           "publicKey": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
           "shortId": "",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_20"
+      "tag": "NEO-NET-21"
     },
     {
       "protocol": "vless",
@@ -816,16 +811,12 @@
           "serverName": "yahoo.com",
           "publicKey": "NJrlB9wz9ctlwMOIK8Jp7Ml25j77QlFOjpha1lEktkg",
           "shortId": "4a9acf81b8773e1e",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_21"
+      "tag": "NEO-NET-22"
     },
     {
       "protocol": "vless",
@@ -851,16 +842,12 @@
           "serverName": "ads.x5.ru",
           "publicKey": "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk",
           "shortId": "",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_22"
+      "tag": "NEO-NET-23"
     },
     {
       "protocol": "vless",
@@ -872,7 +859,8 @@
             "users": [
               {
                 "id": "3e16b4a3-bce1-47ee-8b9c-359343ae1876",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -890,16 +878,12 @@
           "serverName": "www.cdnjs.com",
           "publicKey": "gRoN7UaXM6Is394O1zH_128yM-e2jYjuT3kwemTVHyQ",
           "shortId": "5d",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_23"
+      "tag": "NEO-NET-24"
     },
     {
       "protocol": "vless",
@@ -911,7 +895,8 @@
             "users": [
               {
                 "id": "a6704fb4-4874-4e6b-98f4-571b048e3d90",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -924,16 +909,12 @@
           "serverName": "prod.de-node-01.security-sbrf.ru",
           "publicKey": "4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE",
           "shortId": "db04ce8bdb8900f1",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_24"
+      "tag": "NEO-NET-25"
     },
     {
       "protocol": "vless",
@@ -945,7 +926,8 @@
             "users": [
               {
                 "id": "a4d1aadf-1885-41de-9a91-59ed0dc2b803",
-                "encryption": "mlkem768x25519plus.native.0rtt.vUXOwkVAeo_lDKyUq-7sxm-PAgBJO6Jo3zzqM3rrQ1Y"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -958,16 +940,12 @@
           "serverName": "aws.amazon.com",
           "publicKey": "YvIuoleRse6CDbLRBj7f8XJ8x50VI2Z4XmXFbLd8QHs",
           "shortId": "84325573327f04d5",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_25"
+      "tag": "NEO-NET-26"
     },
     {
       "protocol": "vless",
@@ -993,16 +971,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
           "shortId": "d020b987f84eb78a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_26"
+      "tag": "NEO-NET-27"
     },
     {
       "protocol": "vless",
@@ -1014,7 +988,8 @@
             "users": [
               {
                 "id": "3f298aca-2412-49ac-9f20-235f0e448d31",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1027,16 +1002,12 @@
           "serverName": "yahoo.com",
           "publicKey": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
           "shortId": "",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_27"
+      "tag": "NEO-NET-28"
     },
     {
       "protocol": "vless",
@@ -1062,16 +1033,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
           "shortId": "d020b987f84eb78a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_28"
+      "tag": "NEO-NET-29"
     },
     {
       "protocol": "vless",
@@ -1097,16 +1064,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
           "shortId": "2cfb5a0ae8ab0cb0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_29"
+      "tag": "NEO-NET-30"
     },
     {
       "protocol": "vless",
@@ -1132,16 +1095,12 @@
           "serverName": "it.s3-cloud.xyz",
           "publicKey": "zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY",
           "shortId": "7a3f9e2b1c8d4f6a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_30"
+      "tag": "NEO-NET-31"
     },
     {
       "protocol": "vless",
@@ -1153,7 +1112,8 @@
             "users": [
               {
                 "id": "36644091-0cec-47fe-9955-97c3f424baf7",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1166,16 +1126,12 @@
           "serverName": "play.google.com",
           "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
           "shortId": "98fa0b00d09419f7",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_31"
+      "tag": "NEO-NET-32"
     },
     {
       "protocol": "vless",
@@ -1187,7 +1143,8 @@
             "users": [
               {
                 "id": "cc3e6e36-b329-435b-bb71-192fb5c718ae",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1200,16 +1157,12 @@
           "serverName": "play.google.com",
           "publicKey": "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw",
           "shortId": "b7b70c104ad267b8",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_32"
+      "tag": "NEO-NET-33"
     },
     {
       "protocol": "vless",
@@ -1235,16 +1188,12 @@
           "serverName": "play.google.com",
           "publicKey": "Yu_365Vt6Jls5IMRC3Ktdzny2pfm8nKZWemdVGGo6jU",
           "shortId": "cd57166459e98196",
-          "fingerprint": "ios"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_33"
+      "tag": "NEO-NET-34"
     },
     {
       "protocol": "vless",
@@ -1270,16 +1219,12 @@
           "serverName": "play.google.com",
           "publicKey": "vsk5Gct4zcJxWTgDqAj5wtv9dCa-Zk-uNVQHq44vFhI",
           "shortId": "2a7f6b8788caca70",
-          "fingerprint": "ios"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_34"
+      "tag": "NEO-NET-35"
     },
     {
       "protocol": "vless",
@@ -1291,7 +1236,8 @@
             "users": [
               {
                 "id": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1304,16 +1250,12 @@
           "serverName": "ads.x5.ru",
           "publicKey": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
           "shortId": "2f49bccf11150ef2",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_35"
+      "tag": "NEO-NET-36"
     },
     {
       "protocol": "vless",
@@ -1339,16 +1281,12 @@
           "serverName": "aparat.com",
           "publicKey": "KWlccWTLW11wEojieRNfg6zezd3KMxPpAkwZ11VNhSM",
           "shortId": "7e82",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_36"
+      "tag": "NEO-NET-37"
     },
     {
       "protocol": "vless",
@@ -1374,16 +1312,12 @@
           "serverName": "play.google.com",
           "publicKey": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
           "shortId": "6115f6a9eb8467c6",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_37"
+      "tag": "NEO-NET-38"
     },
     {
       "protocol": "vless",
@@ -1409,16 +1343,12 @@
           "serverName": "dl.google.com",
           "publicKey": "NoUe-bym0cEln3DLkDSbQkdrQnAIEJsUaSAsBeqRyDI",
           "shortId": "debe2d45025d8d1b",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_38"
+      "tag": "NEO-NET-39"
     },
     {
       "protocol": "vless",
@@ -1444,16 +1374,12 @@
           "serverName": "auto.quattro-tech.ru",
           "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
           "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_39"
+      "tag": "NEO-NET-40"
     },
     {
       "protocol": "vless",
@@ -1479,16 +1405,12 @@
           "serverName": "auto.quattro-tech.ru",
           "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
           "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_40"
+      "tag": "NEO-NET-41"
     },
     {
       "protocol": "vless",
@@ -1514,16 +1436,12 @@
           "serverName": "auto.quattro-tech.ru",
           "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
           "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_41"
+      "tag": "NEO-NET-42"
     },
     {
       "protocol": "vless",
@@ -1549,16 +1467,12 @@
           "serverName": "ads.x5.ru",
           "publicKey": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
           "shortId": "50",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_42"
+      "tag": "NEO-NET-43"
     },
     {
       "protocol": "vless",
@@ -1584,16 +1498,12 @@
           "serverName": "pro.radeon.com",
           "publicKey": "zsNsbbUCPvdTt7tciShGmr6sAu8vpUNo3yk4aaqH-GU",
           "shortId": "2ccb692216e2a6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_43"
+      "tag": "NEO-NET-44"
     },
     {
       "protocol": "vless",
@@ -1605,7 +1515,8 @@
             "users": [
               {
                 "id": "4262c320-5080-4e93-904a-cb77d7fa1d70",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1618,16 +1529,12 @@
           "serverName": "icloud.com",
           "publicKey": "JU2RSU2sL-MAlzjOqLOYr-cDpg5ystXrF9Pdk2GWPhM",
           "shortId": "cfad2da14133",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_44"
+      "tag": "NEO-NET-45"
     },
     {
       "protocol": "vless",
@@ -1653,16 +1560,12 @@
           "serverName": "se.quattro-tech.ru",
           "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
           "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_45"
+      "tag": "NEO-NET-46"
     },
     {
       "protocol": "vless",
@@ -1674,7 +1577,8 @@
             "users": [
               {
                 "id": "02c5fca9-cca0-4a81-a5e3-5fc734cc560c",
-                "encryption": "mlkem768x25519plus.native.0rtt.bHRJoW9nvDfcJd3ZRLXLDwT4i216yH90Uz42CXEoVUc"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1687,16 +1591,12 @@
           "serverName": "www.yahoo.com",
           "publicKey": "uOXWzNhsJ6sMuaZV8zPNZLu0kHNoUmDTRv6P1mlnsXk",
           "shortId": "7e22b650c8262519",
-          "fingerprint": "random"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_46"
+      "tag": "NEO-NET-47"
     },
     {
       "protocol": "vless",
@@ -1722,16 +1622,12 @@
           "serverName": "kz.quattro-tech.ru",
           "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
           "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_47"
+      "tag": "NEO-NET-48"
     },
     {
       "protocol": "vless",
@@ -1757,16 +1653,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
           "shortId": "d020b987f84eb78a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_48"
+      "tag": "NEO-NET-49"
     },
     {
       "protocol": "vless",
@@ -1778,7 +1670,8 @@
             "users": [
               {
                 "id": "3f298aca-2412-49ac-9f20-235f0e448d31",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1791,16 +1684,12 @@
           "serverName": "yahoo.com",
           "publicKey": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
           "shortId": "",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_49"
+      "tag": "NEO-NET-50"
     },
     {
       "protocol": "vless",
@@ -1826,16 +1715,12 @@
           "serverName": "4.oncloudnineservicestreang.com",
           "publicKey": "P5ceHLOW8Gmz45z-ozbm9T6xsdSsIGLB71-jMfSjCBQ",
           "shortId": "04bc695105689674",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_50"
+      "tag": "NEO-NET-51"
     },
     {
       "protocol": "vless",
@@ -1847,7 +1732,8 @@
             "users": [
               {
                 "id": "b4229f01-45e5-4da1-9471-b76227fa5dc8",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -1860,16 +1746,12 @@
           "serverName": "play.google.com",
           "publicKey": "lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo",
           "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_51"
+      "tag": "NEO-NET-52"
     },
     {
       "protocol": "vless",
@@ -1881,23 +1763,17 @@
             "users": [
               {
                 "id": "10987d8f-228f-4648-80b5-34c9d0a25140",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_52"
+      "tag": "NEO-NET-53"
     },
     {
       "protocol": "vless",
@@ -1909,23 +1785,17 @@
             "users": [
               {
                 "id": "7943183f-5c33-4728-8d57-8f18efe6ce25",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_53"
+      "tag": "NEO-NET-54"
     },
     {
       "protocol": "vless",
@@ -1937,23 +1807,17 @@
             "users": [
               {
                 "id": "070aec23-1e66-4e06-8cdb-a9fc4ac2b4c1",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_54"
+      "tag": "NEO-NET-55"
     },
     {
       "protocol": "vless",
@@ -1965,23 +1829,17 @@
             "users": [
               {
                 "id": "070aec23-1e66-4e06-8cdb-a9fc4ac2b4c1",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_55"
+      "tag": "NEO-NET-56"
     },
     {
       "protocol": "vless",
@@ -1993,23 +1851,17 @@
             "users": [
               {
                 "id": "f75566a5-4744-4806-ac2e-ccaefe1b1080",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_56"
+      "tag": "NEO-NET-57"
     },
     {
       "protocol": "vless",
@@ -2021,23 +1873,17 @@
             "users": [
               {
                 "id": "eab915bc-d2df-73d1-47d0-6eb240497055",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_57"
+      "tag": "NEO-NET-58"
     },
     {
       "protocol": "vless",
@@ -2049,23 +1895,17 @@
             "users": [
               {
                 "id": "7943183f-5c33-4728-8d57-8f18efe6ce25",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_58"
+      "tag": "NEO-NET-59"
     },
     {
       "protocol": "vless",
@@ -2077,23 +1917,17 @@
             "users": [
               {
                 "id": "110e0e58-3349-4796-bbef-978f59d70d09",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_59"
+      "tag": "NEO-NET-60"
     },
     {
       "protocol": "vless",
@@ -2105,23 +1939,17 @@
             "users": [
               {
                 "id": "900ca7c5-6c69-4536-b0f8-efa4e3976016",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_60"
+      "tag": "NEO-NET-61"
     },
     {
       "protocol": "vless",
@@ -2133,23 +1961,17 @@
             "users": [
               {
                 "id": "10a6b923-e349-4594-92bb-d81a6245aaec",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_61"
+      "tag": "NEO-NET-62"
     },
     {
       "protocol": "vless",
@@ -2161,23 +1983,17 @@
             "users": [
               {
                 "id": "9c940549-ac64-370e-eda9-67257bab6815",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_62"
+      "tag": "NEO-NET-63"
     },
     {
       "protocol": "vless",
@@ -2189,23 +2005,17 @@
             "users": [
               {
                 "id": "110e0e58-3349-4796-bbef-978f59d70d09",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none",
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "network": "tcp"
       },
-      "tag": "BlazeNet_63"
+      "tag": "NEO-NET-64"
     },
     {
       "protocol": "vless",
@@ -2231,16 +2041,12 @@
           "serverName": "fuck.rkn",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "shortId": "01",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_64"
+      "tag": "NEO-NET-65"
     },
     {
       "protocol": "vless",
@@ -2266,16 +2072,12 @@
           "serverName": "enterprisekitten.com",
           "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
           "shortId": "6ba85179e30d4fc2",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_65"
+      "tag": "NEO-NET-66"
     },
     {
       "protocol": "vless",
@@ -2287,7 +2089,8 @@
             "users": [
               {
                 "id": "d8dd94fd-540e-461d-b5d4-acebef02c22a",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -2300,16 +2103,12 @@
           "serverName": "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me",
           "publicKey": "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA",
           "shortId": "e8ab71d0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_66"
+      "tag": "NEO-NET-67"
     },
     {
       "protocol": "vless",
@@ -2321,7 +2120,8 @@
             "users": [
               {
                 "id": "e332f028-d343-5b44-8016-b3130f39e133",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -2331,22 +2131,19 @@
         "network": "grpc",
         "security": "reality",
         "grpcSettings": {
-          "serviceName": ""
+          "serviceName": "/",
+          "multiMode": true
         },
         "realitySettings": {
           "serverName": "www.ebay.com",
           "publicKey": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
           "shortId": "775eb6408888248e",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_67"
+      "tag": "NEO-NET-68"
     },
     {
       "protocol": "vless",
@@ -2372,16 +2169,12 @@
           "serverName": "www.booking.com",
           "publicKey": "Mm-d06LgjpLq_Y0aTRuf8cbueCumBku9r4ygFUGTE2o",
           "shortId": "7b7c7376cba460cf",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_68"
+      "tag": "NEO-NET-69"
     },
     {
       "protocol": "vless",
@@ -2407,16 +2200,12 @@
           "serverName": "google.com",
           "publicKey": "vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0",
           "shortId": "b318242471ba4f5b",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_69"
+      "tag": "NEO-NET-70"
     },
     {
       "protocol": "vless",
@@ -2442,16 +2231,12 @@
           "serverName": "www.amazon.com",
           "publicKey": "H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8",
           "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_70"
+      "tag": "NEO-NET-71"
     },
     {
       "protocol": "vless",
@@ -2477,16 +2262,12 @@
           "serverName": "www.laposte.fr",
           "publicKey": "nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU",
           "shortId": "ad3c6641d540b4e1",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_71"
+      "tag": "NEO-NET-72"
     },
     {
       "protocol": "vless",
@@ -2512,16 +2293,12 @@
           "serverName": "www.booking.com",
           "publicKey": "ZnlCl_Jc2dV5-KK_ymmMcEDoe5lPyZ-5z_LGMRoiNTU",
           "shortId": "b87063a35aaa942e",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_72"
+      "tag": "NEO-NET-73"
     },
     {
       "protocol": "vless",
@@ -2547,16 +2324,12 @@
           "serverName": "github.com",
           "publicKey": "cm3MNPIRmySoBcEgeH6QEuVyoPbBQyjRhs8UF_swl1E",
           "shortId": "41388e02247a3902",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_73"
+      "tag": "NEO-NET-74"
     },
     {
       "protocol": "vless",
@@ -2582,16 +2355,12 @@
           "serverName": "yahoo.com",
           "publicKey": "nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8",
           "shortId": "ead3d6f82a9d",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_74"
+      "tag": "NEO-NET-75"
     },
     {
       "protocol": "vless",
@@ -2603,7 +2372,8 @@
             "users": [
               {
                 "id": "3f298aca-2412-49ac-9f20-235f0e448d31",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -2616,16 +2386,12 @@
           "serverName": "yahoo.com",
           "publicKey": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
           "shortId": "",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_75"
+      "tag": "NEO-NET-76"
     },
     {
       "protocol": "vless",
@@ -2651,16 +2417,12 @@
           "serverName": "dipvpn.ru",
           "publicKey": "1BdgrQ_esOEya01sDCBYK4MGpJgaUhssHQG-aWJkyFQ",
           "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_76"
+      "tag": "NEO-NET-77"
     },
     {
       "protocol": "vless",
@@ -2672,7 +2434,8 @@
             "users": [
               {
                 "id": "564397f8-4805-4433-ab5b-a24aa133bac2",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -2682,22 +2445,19 @@
         "network": "grpc",
         "security": "reality",
         "grpcSettings": {
-          "serviceName": "api.v1.StreamService"
+          "serviceName": "/",
+          "multiMode": true
         },
         "realitySettings": {
           "serverName": "hub.oneoknews.com",
           "publicKey": "KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc",
           "shortId": "064c2d37308aeeb6",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_77"
+      "tag": "NEO-NET-78"
     },
     {
       "protocol": "vless",
@@ -2723,16 +2483,12 @@
           "serverName": "rezerv7.yunus.guru",
           "publicKey": "6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE",
           "shortId": "34256b39b4ebb864",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_78"
+      "tag": "NEO-NET-79"
     },
     {
       "protocol": "vless",
@@ -2758,16 +2514,12 @@
           "serverName": "www.googletagmanager.com",
           "publicKey": "w-7OnHTgZcqOMrpIADIVnpAcbyColg9Y9w3BYpFeTg8",
           "shortId": "06e557c2cc84390f",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_79"
+      "tag": "NEO-NET-80"
     },
     {
       "protocol": "vless",
@@ -2793,16 +2545,12 @@
           "serverName": "www.alibaba.com",
           "publicKey": "UkoqOh9VtAhhMrlKY3wAmijgjCrLIKMZT-An0NjrHng",
           "shortId": "8d17b7ebab7b99d7",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_80"
+      "tag": "NEO-NET-81"
     },
     {
       "protocol": "vless",
@@ -2828,16 +2576,12 @@
           "serverName": "fuck.rkn",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "shortId": "01",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_81"
+      "tag": "NEO-NET-82"
     },
     {
       "protocol": "vless",
@@ -2863,16 +2607,12 @@
           "serverName": "www.nvidia.com",
           "publicKey": "z6_OFl0jskilOOxkQcUcdQOCS4-LVndwFF9i7kIOPzg",
           "shortId": "d23753491eefde7e",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_82"
+      "tag": "NEO-NET-83"
     },
     {
       "protocol": "vless",
@@ -2884,7 +2624,8 @@
             "users": [
               {
                 "id": "b7725d23-840a-4f8e-993c-69b40424cfc0",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -2897,16 +2638,12 @@
           "serverName": "yahoo.com",
           "publicKey": "W3aiFnhZRvZuZP0Zyfy7888t-NbHc0RmMEyFa7fYShU",
           "shortId": "f71c22",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_83"
+      "tag": "NEO-NET-84"
     },
     {
       "protocol": "vless",
@@ -2932,16 +2669,12 @@
           "serverName": "www.alibaba.com",
           "publicKey": "kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw",
           "shortId": "c906f73d3ba8211f",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_84"
+      "tag": "NEO-NET-85"
     },
     {
       "protocol": "vless",
@@ -2967,16 +2700,12 @@
           "serverName": "deepl.com",
           "publicKey": "-sirwzF9HjIp1PVRK-z-2Ux39ufs6_W1cBw1cFoHXHc",
           "shortId": "a852",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_85"
+      "tag": "NEO-NET-86"
     },
     {
       "protocol": "vless",
@@ -3002,16 +2731,12 @@
           "serverName": "play.google.com",
           "publicKey": "zSjG6wndmLAzE8ykCBXpAm2eh0viWVSy3gt2juXF4EE",
           "shortId": "eaa8",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_86"
+      "tag": "NEO-NET-87"
     },
     {
       "protocol": "vless",
@@ -3037,16 +2762,12 @@
           "serverName": "telegraph.co.uk",
           "publicKey": "YD3G553bQP0uWuyYDY9ZvhLCmfF9tmKUo8MRuALEFUw",
           "shortId": "deee73",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_87"
+      "tag": "NEO-NET-88"
     },
     {
       "protocol": "vless",
@@ -3072,16 +2793,12 @@
           "serverName": "web.max.ru",
           "publicKey": "7ReQIe2kMtP4rCrptgH5glkOM-JGcSAPzHNxOED-Z0s",
           "shortId": "247fd6dab1a34a48",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_88"
+      "tag": "NEO-NET-89"
     },
     {
       "protocol": "vless",
@@ -3107,16 +2824,12 @@
           "serverName": "enterprisekitten.com",
           "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
           "shortId": "6ba85179e30d4fc2",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_89"
+      "tag": "NEO-NET-90"
     },
     {
       "protocol": "vless",
@@ -3142,16 +2855,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
           "shortId": "ea10cd5686751ec5",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_90"
+      "tag": "NEO-NET-91"
     },
     {
       "protocol": "vless",
@@ -3177,16 +2886,12 @@
           "serverName": "fuck.rkn",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "shortId": "01",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_91"
+      "tag": "NEO-NET-92"
     },
     {
       "protocol": "vless",
@@ -3212,16 +2917,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
           "shortId": "2cfb5a0ae8ab0cb0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_92"
+      "tag": "NEO-NET-93"
     },
     {
       "protocol": "vless",
@@ -3247,16 +2948,12 @@
           "serverName": "fuck.rkn",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "shortId": "01",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_94"
+      "tag": "NEO-NET-94"
     },
     {
       "protocol": "vless",
@@ -3282,16 +2979,12 @@
           "serverName": "enterprisekitten.com",
           "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
           "shortId": "6ba85179e30d4fc2",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_95"
+      "tag": "NEO-NET-95"
     },
     {
       "protocol": "vless",
@@ -3303,7 +2996,8 @@
             "users": [
               {
                 "id": "b4229f01-45e5-4da1-9471-b76227fa5dc8",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3316,16 +3010,12 @@
           "serverName": "play.google.com",
           "publicKey": "lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo",
           "shortId": "",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_96"
+      "tag": "NEO-NET-96"
     },
     {
       "protocol": "vless",
@@ -3337,7 +3027,8 @@
             "users": [
               {
                 "id": "e0bb3250-1873-4b9d-b9b5-7aa6c863885f",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3347,22 +3038,19 @@
         "network": "grpc",
         "security": "reality",
         "grpcSettings": {
-          "serviceName": ""
+          "serviceName": "/",
+          "multiMode": true
         },
         "realitySettings": {
           "serverName": "c.primarymaster.online",
           "publicKey": "S05RWQUVH-p3uqekd0iRpIeH__NpCt0XEN2xCiQJs3Y",
           "shortId": "c56c3ba3b9f676c5",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_97"
+      "tag": "NEO-NET-97"
     },
     {
       "protocol": "vless",
@@ -3388,16 +3076,12 @@
           "serverName": "deepl.com",
           "publicKey": "AYL1z7PNyo6LqYLeZpXa50FnK9eEu7o18KHRhOlST1w",
           "shortId": "bd72",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_98"
+      "tag": "NEO-NET-98"
     },
     {
       "protocol": "vless",
@@ -3409,7 +3093,8 @@
             "users": [
               {
                 "id": "a2415a12-3f92-4636-9823-9828d3ceb818",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3422,16 +3107,12 @@
           "serverName": "www.intel.com",
           "publicKey": "rqtY-HQaeREXyphzsfaFjavFmn-IA66s01KZxDLdwiE",
           "shortId": "a097e0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_99"
+      "tag": "NEO-NET-99"
     },
     {
       "protocol": "vless",
@@ -3443,7 +3124,8 @@
             "users": [
               {
                 "id": "d61b4e1b-4745-484f-8362-18537825a7af",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3456,16 +3138,12 @@
           "serverName": "www.samsung.com",
           "publicKey": "fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo",
           "shortId": "05fdaa8a05be46a9",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_100"
+      "tag": "NEO-NET-100"
     },
     {
       "protocol": "vless",
@@ -3491,16 +3169,12 @@
           "serverName": "fuck.rkn",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "shortId": "01",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_101"
+      "tag": "NEO-NET-101"
     },
     {
       "protocol": "vless",
@@ -3526,16 +3200,12 @@
           "serverName": "fuck.rkn",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "shortId": "01",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_102"
+      "tag": "NEO-NET-102"
     },
     {
       "protocol": "vless",
@@ -3547,7 +3217,8 @@
             "users": [
               {
                 "id": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3560,16 +3231,12 @@
           "serverName": "yahoo.com",
           "publicKey": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
           "shortId": "2001",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_103"
+      "tag": "NEO-NET-103"
     },
     {
       "protocol": "vless",
@@ -3581,7 +3248,8 @@
             "users": [
               {
                 "id": "dcba77d7-bb59-4802-b32c-37fd7011fca4",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3594,16 +3262,12 @@
           "serverName": "google.com",
           "publicKey": "upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo",
           "shortId": "3ca620a7ed5f3196",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_104"
+      "tag": "NEO-NET-104"
     },
     {
       "protocol": "vless",
@@ -3629,16 +3293,12 @@
           "serverName": "www.aliexpress.com",
           "publicKey": "kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw",
           "shortId": "9b4fc5a116efd6c8",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_105"
+      "tag": "NEO-NET-105"
     },
     {
       "protocol": "vless",
@@ -3664,16 +3324,12 @@
           "serverName": "enterprisekitten.com",
           "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
           "shortId": "6ba85179e30d4fc2",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_106"
+      "tag": "NEO-NET-106"
     },
     {
       "protocol": "vless",
@@ -3685,7 +3341,8 @@
             "users": [
               {
                 "id": "8f6ccdb2-2b4e-4834-a90b-344bff490402",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3698,16 +3355,12 @@
           "serverName": "play.google.com",
           "publicKey": "lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo",
           "shortId": "",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_107"
+      "tag": "NEO-NET-107"
     },
     {
       "protocol": "vless",
@@ -3733,16 +3386,12 @@
           "serverName": "store.steampowered.com",
           "publicKey": "tboI265nKvT77HoZPyA6bgZNuLap_Jy-XvAx2-4Rcwk",
           "shortId": "0c1553316a645758",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_108"
+      "tag": "NEO-NET-108"
     },
     {
       "protocol": "vless",
@@ -3754,7 +3403,8 @@
             "users": [
               {
                 "id": "b0f08ae1-7cf9-4612-ad61-72681e0b92da",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -3764,22 +3414,19 @@
         "network": "grpc",
         "security": "reality",
         "grpcSettings": {
-          "serviceName": "data-sync"
+          "serviceName": "/",
+          "multiMode": true
         },
         "realitySettings": {
           "serverName": "google.com",
           "publicKey": "kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI",
           "shortId": "d5c7f84e37e0c12d",
-          "fingerprint": "random"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_109"
+      "tag": "NEO-NET-109"
     },
     {
       "protocol": "vless",
@@ -3805,16 +3452,12 @@
           "serverName": "enterprisekitten.com",
           "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
           "shortId": "6ba85179e30d4fc2",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_110"
+      "tag": "NEO-NET-110"
     },
     {
       "protocol": "vless",
@@ -3840,16 +3483,12 @@
           "serverName": "play.google.com",
           "publicKey": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
           "shortId": "c077229044b68285",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_111"
+      "tag": "NEO-NET-111"
     },
     {
       "protocol": "vless",
@@ -3875,16 +3514,12 @@
           "serverName": "web.max.ru",
           "publicKey": "7ReQIe2kMtP4rCrptgH5glkOM-JGcSAPzHNxOED-Z0s",
           "shortId": "247fd6dab1a34a48",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_112"
+      "tag": "NEO-NET-112"
     },
     {
       "protocol": "vless",
@@ -3910,16 +3545,12 @@
           "serverName": "3.oncloudnineservicestreang.com",
           "publicKey": "dp-ncBuRHgZl5O80eHBYhSKo1i9qbt-J7MJ1alyWXmM",
           "shortId": "1991780b928b292d",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_113"
+      "tag": "NEO-NET-113"
     },
     {
       "protocol": "vless",
@@ -3945,16 +3576,12 @@
           "serverName": "service.mycloudsfere.abrdns.com",
           "publicKey": "Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw",
           "shortId": "d9654598d4415f95",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_114"
+      "tag": "NEO-NET-114"
     },
     {
       "protocol": "vless",
@@ -3980,16 +3607,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
           "shortId": "d020b987f84eb78a",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_115"
+      "tag": "NEO-NET-115"
     },
     {
       "protocol": "vless",
@@ -4015,16 +3638,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo",
           "shortId": "6f15101ff2cc4887",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_116"
+      "tag": "NEO-NET-116"
     },
     {
       "protocol": "vless",
@@ -4036,7 +3655,8 @@
             "users": [
               {
                 "id": "d8dd94fd-540e-461d-b5d4-acebef02c22a",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -4049,16 +3669,12 @@
           "serverName": "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me",
           "publicKey": "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA",
           "shortId": "e8ab71d0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_117"
+      "tag": "NEO-NET-117"
     },
     {
       "protocol": "vless",
@@ -4084,16 +3700,12 @@
           "serverName": "fuck.rkn",
           "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "shortId": "01",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_118"
+      "tag": "NEO-NET-118"
     },
     {
       "protocol": "vless",
@@ -4105,7 +3717,8 @@
             "users": [
               {
                 "id": "e5bd3d75-06b3-490e-9651-930b1dc29cdb",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -4118,16 +3731,12 @@
           "serverName": "yahoo.com",
           "publicKey": "GMnXK7wz7qTo_IFmPy--pQcODPhYJG_CLaY2Sh4fTCI",
           "shortId": "33f2",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_119"
+      "tag": "NEO-NET-119"
     },
     {
       "protocol": "vless",
@@ -4153,16 +3762,12 @@
           "serverName": "storage.yandex.net",
           "publicKey": "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo",
           "shortId": "8d3293f0066e129a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_120"
+      "tag": "NEO-NET-120"
     },
     {
       "protocol": "vless",
@@ -4188,16 +3793,12 @@
           "serverName": "www.nvidia.com",
           "publicKey": "Zfr2SDTLuLNtbRR4hGX0oE3z1wbK3XvwzrvUfPQNugE",
           "shortId": "205f8d",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_121"
+      "tag": "NEO-NET-121"
     },
     {
       "protocol": "vless",
@@ -4209,7 +3810,8 @@
             "users": [
               {
                 "id": "534cbbe2-cc36-4f2d-8fb0-90410e7148c9",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -4222,16 +3824,12 @@
           "serverName": "yahoo.com",
           "publicKey": "tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc",
           "shortId": "52a6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_122"
+      "tag": "NEO-NET-122"
     },
     {
       "protocol": "vless",
@@ -4257,16 +3855,12 @@
           "serverName": "iv.kommersant.ru",
           "publicKey": "tsxzBG6xHNl1Nu8XPpd3hWk_zPGrpFrv2Z-difc3nGY",
           "shortId": "a5bd715847213387",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_124"
+      "tag": "NEO-NET-123"
     },
     {
       "protocol": "vless",
@@ -4292,16 +3886,12 @@
           "serverName": "aws.amazon.com",
           "publicKey": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
           "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_125"
+      "tag": "NEO-NET-124"
     },
     {
       "protocol": "vless",
@@ -4313,7 +3903,8 @@
             "users": [
               {
                 "id": "8224aa92-4a38-4756-a7d9-a9e7cde12a31",
-                "encryption": "none"
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -4326,16 +3917,12 @@
           "serverName": "www.samsung.com",
           "publicKey": "nE2H52_rX3dHXENKxpHFDfZPKP40AjGoHyJv9olrr20",
           "shortId": "124107a81dcd5199",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_126"
+      "tag": "NEO-NET-125"
     },
     {
       "protocol": "vless",
@@ -4361,16 +3948,12 @@
           "serverName": "deepl.com",
           "publicKey": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU",
           "shortId": "c84f",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_127"
+      "tag": "NEO-NET-126"
     },
     {
       "protocol": "vless",
@@ -4396,16 +3979,12 @@
           "serverName": "iamsterdam.com",
           "publicKey": "1RFs75L42oUjmgEKqahFVrKKN52cosDkrWskT053D3o",
           "shortId": "0aafc7b3b9",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "chrome",
+          "spiderX": "/",
+          "show": false
         }
       },
-      "tag": "BlazeNet_128"
+      "tag": "NEO-NET-127"
     },
     {
       "tag": "direct",
@@ -4419,138 +3998,12 @@
     }
   ],
   "routing": {
-    "domainStrategy": "AsIs",
+    "domainStrategy": "IPIfNonMatch",
     "balancers": [
       {
-        "tag": "best_ping_balancer",
+        "tag": "NEO-NET",
         "selector": [
-          "BlazeNet_0",
-          "BlazeNet_1",
-          "BlazeNet_2",
-          "BlazeNet_3",
-          "BlazeNet_4",
-          "BlazeNet_5",
-          "BlazeNet_6",
-          "BlazeNet_7",
-          "BlazeNet_8",
-          "BlazeNet_9",
-          "BlazeNet_10",
-          "BlazeNet_11",
-          "BlazeNet_12",
-          "BlazeNet_13",
-          "BlazeNet_14",
-          "BlazeNet_15",
-          "BlazeNet_16",
-          "BlazeNet_17",
-          "BlazeNet_18",
-          "BlazeNet_19",
-          "BlazeNet_20",
-          "BlazeNet_21",
-          "BlazeNet_22",
-          "BlazeNet_23",
-          "BlazeNet_24",
-          "BlazeNet_25",
-          "BlazeNet_26",
-          "BlazeNet_27",
-          "BlazeNet_28",
-          "BlazeNet_29",
-          "BlazeNet_30",
-          "BlazeNet_31",
-          "BlazeNet_32",
-          "BlazeNet_33",
-          "BlazeNet_34",
-          "BlazeNet_35",
-          "BlazeNet_36",
-          "BlazeNet_37",
-          "BlazeNet_38",
-          "BlazeNet_39",
-          "BlazeNet_40",
-          "BlazeNet_41",
-          "BlazeNet_42",
-          "BlazeNet_43",
-          "BlazeNet_44",
-          "BlazeNet_45",
-          "BlazeNet_46",
-          "BlazeNet_47",
-          "BlazeNet_48",
-          "BlazeNet_49",
-          "BlazeNet_50",
-          "BlazeNet_51",
-          "BlazeNet_52",
-          "BlazeNet_53",
-          "BlazeNet_54",
-          "BlazeNet_55",
-          "BlazeNet_56",
-          "BlazeNet_57",
-          "BlazeNet_58",
-          "BlazeNet_59",
-          "BlazeNet_60",
-          "BlazeNet_61",
-          "BlazeNet_62",
-          "BlazeNet_63",
-          "BlazeNet_64",
-          "BlazeNet_65",
-          "BlazeNet_66",
-          "BlazeNet_67",
-          "BlazeNet_68",
-          "BlazeNet_69",
-          "BlazeNet_70",
-          "BlazeNet_71",
-          "BlazeNet_72",
-          "BlazeNet_73",
-          "BlazeNet_74",
-          "BlazeNet_75",
-          "BlazeNet_76",
-          "BlazeNet_77",
-          "BlazeNet_78",
-          "BlazeNet_79",
-          "BlazeNet_80",
-          "BlazeNet_81",
-          "BlazeNet_82",
-          "BlazeNet_83",
-          "BlazeNet_84",
-          "BlazeNet_85",
-          "BlazeNet_86",
-          "BlazeNet_87",
-          "BlazeNet_88",
-          "BlazeNet_89",
-          "BlazeNet_90",
-          "BlazeNet_91",
-          "BlazeNet_92",
-          "BlazeNet_94",
-          "BlazeNet_95",
-          "BlazeNet_96",
-          "BlazeNet_97",
-          "BlazeNet_98",
-          "BlazeNet_99",
-          "BlazeNet_100",
-          "BlazeNet_101",
-          "BlazeNet_102",
-          "BlazeNet_103",
-          "BlazeNet_104",
-          "BlazeNet_105",
-          "BlazeNet_106",
-          "BlazeNet_107",
-          "BlazeNet_108",
-          "BlazeNet_109",
-          "BlazeNet_110",
-          "BlazeNet_111",
-          "BlazeNet_112",
-          "BlazeNet_113",
-          "BlazeNet_114",
-          "BlazeNet_115",
-          "BlazeNet_116",
-          "BlazeNet_117",
-          "BlazeNet_118",
-          "BlazeNet_119",
-          "BlazeNet_120",
-          "BlazeNet_121",
-          "BlazeNet_122",
-          "BlazeNet_124",
-          "BlazeNet_125",
-          "BlazeNet_126",
-          "BlazeNet_127",
-          "BlazeNet_128"
+          "NEO-NET"
         ],
         "strategy": {
           "type": "leastPing"
@@ -4560,195 +4013,43 @@
     "rules": [
       {
         "type": "field",
-        "outboundTag": "block",
-        "port": 443,
-        "network": "udp"
-      },
-      {
-        "type": "field",
-        "outboundTag": "block",
         "domain": [
-          "geosite:category-ads-all",
-          "domain:an.facebook.com",
-          "domain:ads.facebook.com",
-          "domain:graph.facebook.com",
-          "domain:b-graph.facebook.com"
-        ]
+          "geosite:instagram"
+        ],
+        "port": "443",
+        "network": "udp",
+        "outboundTag": "block"
       },
       {
         "type": "field",
         "outboundTag": "direct",
         "domain": [
-          "geosite:category-ir"
+          "geosite:category-ir",
+          "geosite:cn"
         ]
       },
       {
         "type": "field",
         "outboundTag": "direct",
         "ip": [
-          "geoip:ir"
+          "geoip:private",
+          "geoip:ir",
+          "geoip:cn"
         ]
       },
       {
         "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "domain": [
-          "geosite:instagram",
-          "domain:cdninstagram.com",
-          "domain:fbcdn.net",
-          "geosite:youtube",
-          "domain:googlevideo.com",
-          "domain:ytimg.com"
-        ]
-      },
-      {
-        "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "domain": [
-          "geosite:telegram",
-          "geosite:google"
-        ]
-      },
-      {
-        "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "network": "tcp,udp"
+        "network": "tcp,udp",
+        "balancerTag": "NEO-NET"
       }
     ]
   },
   "observatory": {
     "subjectSelector": [
-      "BlazeNet_0",
-      "BlazeNet_1",
-      "BlazeNet_2",
-      "BlazeNet_3",
-      "BlazeNet_4",
-      "BlazeNet_5",
-      "BlazeNet_6",
-      "BlazeNet_7",
-      "BlazeNet_8",
-      "BlazeNet_9",
-      "BlazeNet_10",
-      "BlazeNet_11",
-      "BlazeNet_12",
-      "BlazeNet_13",
-      "BlazeNet_14",
-      "BlazeNet_15",
-      "BlazeNet_16",
-      "BlazeNet_17",
-      "BlazeNet_18",
-      "BlazeNet_19",
-      "BlazeNet_20",
-      "BlazeNet_21",
-      "BlazeNet_22",
-      "BlazeNet_23",
-      "BlazeNet_24",
-      "BlazeNet_25",
-      "BlazeNet_26",
-      "BlazeNet_27",
-      "BlazeNet_28",
-      "BlazeNet_29",
-      "BlazeNet_30",
-      "BlazeNet_31",
-      "BlazeNet_32",
-      "BlazeNet_33",
-      "BlazeNet_34",
-      "BlazeNet_35",
-      "BlazeNet_36",
-      "BlazeNet_37",
-      "BlazeNet_38",
-      "BlazeNet_39",
-      "BlazeNet_40",
-      "BlazeNet_41",
-      "BlazeNet_42",
-      "BlazeNet_43",
-      "BlazeNet_44",
-      "BlazeNet_45",
-      "BlazeNet_46",
-      "BlazeNet_47",
-      "BlazeNet_48",
-      "BlazeNet_49",
-      "BlazeNet_50",
-      "BlazeNet_51",
-      "BlazeNet_52",
-      "BlazeNet_53",
-      "BlazeNet_54",
-      "BlazeNet_55",
-      "BlazeNet_56",
-      "BlazeNet_57",
-      "BlazeNet_58",
-      "BlazeNet_59",
-      "BlazeNet_60",
-      "BlazeNet_61",
-      "BlazeNet_62",
-      "BlazeNet_63",
-      "BlazeNet_64",
-      "BlazeNet_65",
-      "BlazeNet_66",
-      "BlazeNet_67",
-      "BlazeNet_68",
-      "BlazeNet_69",
-      "BlazeNet_70",
-      "BlazeNet_71",
-      "BlazeNet_72",
-      "BlazeNet_73",
-      "BlazeNet_74",
-      "BlazeNet_75",
-      "BlazeNet_76",
-      "BlazeNet_77",
-      "BlazeNet_78",
-      "BlazeNet_79",
-      "BlazeNet_80",
-      "BlazeNet_81",
-      "BlazeNet_82",
-      "BlazeNet_83",
-      "BlazeNet_84",
-      "BlazeNet_85",
-      "BlazeNet_86",
-      "BlazeNet_87",
-      "BlazeNet_88",
-      "BlazeNet_89",
-      "BlazeNet_90",
-      "BlazeNet_91",
-      "BlazeNet_92",
-      "BlazeNet_94",
-      "BlazeNet_95",
-      "BlazeNet_96",
-      "BlazeNet_97",
-      "BlazeNet_98",
-      "BlazeNet_99",
-      "BlazeNet_100",
-      "BlazeNet_101",
-      "BlazeNet_102",
-      "BlazeNet_103",
-      "BlazeNet_104",
-      "BlazeNet_105",
-      "BlazeNet_106",
-      "BlazeNet_107",
-      "BlazeNet_108",
-      "BlazeNet_109",
-      "BlazeNet_110",
-      "BlazeNet_111",
-      "BlazeNet_112",
-      "BlazeNet_113",
-      "BlazeNet_114",
-      "BlazeNet_115",
-      "BlazeNet_116",
-      "BlazeNet_117",
-      "BlazeNet_118",
-      "BlazeNet_119",
-      "BlazeNet_120",
-      "BlazeNet_121",
-      "BlazeNet_122",
-      "BlazeNet_124",
-      "BlazeNet_125",
-      "BlazeNet_126",
-      "BlazeNet_127",
-      "BlazeNet_128"
+      "NEO-NET"
     ],
-    "url": "https://www.google.com/favicon.ico",
-    "interval": "1m",
+    "probeUrl": "http://www.gstatic.com/generate_204",
+    "probeInterval": "1m",
     "enableConcurrency": true
-  },
-  "remarks": "BlazeNet"
+  }
 }
