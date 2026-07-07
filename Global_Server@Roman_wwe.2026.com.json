@@ -33,181 +33,291 @@
       "settings": {
         "vnext": [
           {
-            "address": "pocwane.rtpxc.com",
-            "port": 4487,
-            "users": [
-              {
-                "id": "39757a70-d447-30c7-9d3a-d60ae1f07d45",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yahoo.com",
-          "publicKey": "qb_gbW7hjeuegpgb0AgMst4xrEBCg2W1r371PxgX6Gs",
-          "shortId": "972594a9",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "switzerlandscloudnig.iranlast.com",
-            "port": 7009,
-            "users": [
-              {
-                "id": "3f298aca-2412-49ac-9f20-235f0e448d31",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yahoo.com",
-          "publicKey": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
-          "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.77.161.2",
-            "port": 8443,
-            "users": [
-              {
-                "id": "a6704fb4-4874-4e6b-98f4-571b048e3d90",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "prod.de-node-01.security-sbrf.ru",
-          "publicKey": "4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE",
-          "shortId": "db04ce8bdb8900f1",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "unitedkingdomvluding.iranlast.com",
-            "port": 7000,
-            "users": [
-              {
-                "id": "3f298aca-2412-49ac-9f20-235f0e448d31",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yahoo.com",
-          "publicKey": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
-          "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "check05.allenshop66244.ir",
-            "port": 8443,
-            "users": [
-              {
-                "id": "cc3e6e36-b329-435b-bb71-192fb5c718ae",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "play.google.com",
-          "publicKey": "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw",
-          "shortId": "b7b70c104ad267b8",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "83.168.71.216",
+            "address": "51.158.62.94",
             "port": 443,
             "users": [
               {
-                "id": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.laposte.fr",
+          "publicKey": "nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU",
+          "shortId": "ad3c6641d540b4e1",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_0"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "145.239.8.221",
+            "port": 443,
+            "users": [
+              {
+                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.leboncoin.fr",
+          "publicKey": "ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE",
+          "shortId": "c906f73d3ba8211f",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.89.106.101",
+            "port": 40443,
+            "users": [
+              {
+                "id": "6ae44ad9-c2cb-4bdf-8e48-6c01fa646372",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "deepl.com",
+          "publicKey": "f6MOnGRTqdns7Lut75DSrnFZeiiZ4N04gnj5m-l7KnM",
+          "shortId": "54ce",
+          "fingerprint": "firefox"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.218.95.14",
+            "port": 443,
+            "users": [
+              {
+                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.booking.com",
+          "publicKey": "UiZNJMasujuoM7dXc5NLSW1f4VssDlF3DBVg5rl82VM",
+          "shortId": "a7c8f0630da31f6a",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.89.106.99",
+            "port": 40443,
+            "users": [
+              {
+                "id": "df724c8a-5c5a-4859-974e-6e911b14955c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "deepl.com",
+          "publicKey": "-sirwzF9HjIp1PVRK-z-2Ux39ufs6_W1cBw1cFoHXHc",
+          "shortId": "a852",
+          "fingerprint": "firefox"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "144.225.187.179",
+            "port": 51015,
+            "users": [
+              {
+                "id": "c7ba28f1-dd0a-4fd8-941e-e622f24c8a19",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apple.com",
+          "publicKey": "wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk",
+          "shortId": "f25f1104",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.159.10.78",
+            "port": 443,
+            "users": [
+              {
+                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.vodafone.co.uk",
+          "publicKey": "6tORX9bm6UlGJ4dR8L2kzOd21oSrOyzpN7gC6SqGGyc",
+          "shortId": "d27683580fc15f1e",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "bypass.fr-gt-01.com",
+            "port": 8443,
+            "users": [
+              {
+                "id": "356ccb34-22cc-4446-a137-072bc60d65ca",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "publicKey": "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA",
+          "shortId": "f34818a561dfd1fe",
+          "fingerprint": "firefox"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hayabusa.proxy.rlwy.net",
+            "port": 18786,
+            "users": [
+              {
+                "id": "da694b2e-e844-4b72-a5b1-611f2f6dce2a",
                 "encryption": "none"
               }
             ]
@@ -218,10 +328,10 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "publicKey": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "shortId": "2f49bccf11150ef2",
-          "fingerprint": "chrome"
+          "serverName": "www.speedtest.net",
+          "publicKey": "e5xSYXvSb5M1EshCP1WKJJA57g_1ZeyCXLGqJkI4nHc",
+          "shortId": "f0ddc5bd81adc926",
+          "fingerprint": "ios"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -230,252 +340,7 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ShadowNet_5"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.26.28.179",
-            "port": 443,
-            "users": [
-              {
-                "id": "578c8541-16a0-40b7-bf72-9508d547f856",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "dl.google.com",
-          "publicKey": "NoUe-bym0cEln3DLkDSbQkdrQnAIEJsUaSAsBeqRyDI",
-          "shortId": "debe2d45025d8d1b",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "70.36.96.63",
-            "port": 8443,
-            "users": [
-              {
-                "id": "497631c4-a1a4-0034-a86a-f42873473bb6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "auto.quattro-tech.ru",
-          "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "130.94.81.176",
-            "port": 8443,
-            "users": [
-              {
-                "id": "497631c4-a1a4-0070-a86a-f42873473bb6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "auto.quattro-tech.ru",
-          "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "193.182.144.98",
-            "port": 8443,
-            "users": [
-              {
-                "id": "497631c4-a1a4-003e-a86a-f42873473bb6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "auto.quattro-tech.ru",
-          "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "telegram.private-networks-zk.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "5bb4eea6-7786-44c9-aafa-bd0113c1b800",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "publicKey": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
-          "shortId": "50",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_10"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "195.47.238.10",
-            "port": 443,
-            "users": [
-              {
-                "id": "497631c4-a1a4-45ff-a86a-f42873473bb6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "se.quattro-tech.ru",
-          "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_11"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "kz.quattro-tech.ru",
-            "port": 443,
-            "users": [
-              {
-                "id": "497631c4-a1a4-45ff-a86a-f42873473bb6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "kz.quattro-tech.ru",
-          "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "shortId": "43dcff53849b81e6",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_12"
+      "tag": "SprintNet_8"
     },
     {
       "protocol": "vless",
@@ -510,7 +375,42 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ShadowNet_13"
+      "tag": "SprintNet_9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "144.31.216.98",
+            "port": 8443,
+            "users": [
+              {
+                "id": "cf038a28-8f85-41fc-9e86-ba99a3fdd0d9",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "service.mycloudsfere.abrdns.com",
+          "publicKey": "Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw",
+          "shortId": "d9654598d4415f95",
+          "fingerprint": "firefox"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "SprintNet_10"
     },
     {
       "protocol": "vless",
@@ -545,123 +445,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ShadowNet_14"
+      "tag": "SprintNet_11"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "51.158.62.94",
+            "address": "gbos2.osvp.online",
             "port": 443,
             "users": [
               {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.laposte.fr",
-          "publicKey": "nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU",
-          "shortId": "ad3c6641d540b4e1",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_15"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.137.157.72",
-            "port": 443,
-            "users": [
-              {
-                "id": "55a5044d-5b35-405f-971c-ea7aacaafcb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.nvidia.com",
-          "publicKey": "z6_OFl0jskilOOxkQcUcdQOCS4-LVndwFF9i7kIOPzg",
-          "shortId": "d23753491eefde7e",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_16"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "217.217.247.252",
-            "port": 443,
-            "users": [
-              {
-                "id": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "enterprisekitten.com",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "shortId": "6ba85179e30d4fc2",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "ShadowNet_17"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.85.233.181",
-            "port": 443,
-            "users": [
-              {
-                "id": "e0bb3250-1873-4b9d-b9b5-7aa6c863885f",
+                "id": "367ff772-a8f4-4895-8e99-3702a868f0c6",
                 "encryption": "none"
               }
             ]
@@ -670,15 +465,13 @@
       },
       "streamSettings": {
         "network": "grpc",
-        "security": "reality",
+        "security": "tls",
         "grpcSettings": {
-          "serviceName": ""
+          "serviceName": "grpc-api"
         },
-        "realitySettings": {
-          "serverName": "c.primarymaster.online",
-          "publicKey": "S05RWQUVH-p3uqekd0iRpIeH__NpCt0XEN2xCiQJs3Y",
-          "shortId": "c56c3ba3b9f676c5",
-          "fingerprint": "chrome"
+        "tlsSettings": {
+          "serverName": "gbos2.osvp.online",
+          "allowInsecure": true
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -687,20 +480,19 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ShadowNet_18"
+      "tag": "SprintNet_12"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "217.217.247.253",
-            "port": 443,
+            "address": "it.fifapes.monster",
+            "port": 29148,
             "users": [
               {
-                "id": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "eab915bc-d2df-73d1-47d0-6eb240497055",
+                "encryption": "none"
               }
             ]
           }
@@ -708,13 +500,7 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "enterprisekitten.com",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "shortId": "6ba85179e30d4fc2",
-          "fingerprint": "chrome"
-        },
+        "security": "none",
         "sockopt": {
           "tcpFastOpen": true,
           "tcpNoDelay": true,
@@ -722,20 +508,19 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ShadowNet_19"
+      "tag": "SprintNet_13"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "odqwd.foot8all.ir",
-            "port": 50567,
+            "address": "gr1.fifapes.monster",
+            "port": 8882,
             "users": [
               {
-                "id": "681314c5-b3ee-41f1-a959-fa42841f5383",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "eab915bc-d2df-73d1-47d0-6eb240497055",
+                "encryption": "none"
               }
             ]
           }
@@ -743,13 +528,7 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "play.google.com",
-          "publicKey": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
-          "shortId": "c077229044b68285",
-          "fingerprint": "chrome"
-        },
+        "security": "none",
         "sockopt": {
           "tcpFastOpen": true,
           "tcpNoDelay": true,
@@ -757,20 +536,19 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ShadowNet_20"
+      "tag": "SprintNet_14"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "159.195.45.129",
-            "port": 443,
+            "address": "217.28.48.29",
+            "port": 25752,
             "users": [
               {
-                "id": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "27f2ae85-3e15-4a9a-9c71-49ee032e7b26",
+                "encryption": "none"
               }
             ]
           }
@@ -778,13 +556,7 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "3.oncloudnineservicestreang.com",
-          "publicKey": "dp-ncBuRHgZl5O80eHBYhSKo1i9qbt-J7MJ1alyWXmM",
-          "shortId": "1991780b928b292d",
-          "fingerprint": "chrome"
-        },
+        "security": "none",
         "sockopt": {
           "tcpFastOpen": true,
           "tcpNoDelay": true,
@@ -792,42 +564,25 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "ShadowNet_21"
+      "tag": "SprintNet_15"
     },
     {
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "159.89.87.21",
-            "port": 28190,
-            "users": [
-              {
-                "id": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
+            "address": "82.38.31.47",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "aws.amazon.com",
-          "publicKey": "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno",
-          "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "security": "none"
       },
-      "tag": "ShadowNet_22"
+      "tag": "SprintNet_16"
     },
     {
       "tag": "direct",
@@ -846,29 +601,23 @@
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "ShadowNet_0",
-          "ShadowNet_1",
-          "ShadowNet_2",
-          "ShadowNet_3",
-          "ShadowNet_4",
-          "ShadowNet_5",
-          "ShadowNet_6",
-          "ShadowNet_7",
-          "ShadowNet_8",
-          "ShadowNet_9",
-          "ShadowNet_10",
-          "ShadowNet_11",
-          "ShadowNet_12",
-          "ShadowNet_13",
-          "ShadowNet_14",
-          "ShadowNet_15",
-          "ShadowNet_16",
-          "ShadowNet_17",
-          "ShadowNet_18",
-          "ShadowNet_19",
-          "ShadowNet_20",
-          "ShadowNet_21",
-          "ShadowNet_22"
+          "SprintNet_0",
+          "SprintNet_1",
+          "SprintNet_2",
+          "SprintNet_3",
+          "SprintNet_4",
+          "SprintNet_5",
+          "SprintNet_6",
+          "SprintNet_7",
+          "SprintNet_8",
+          "SprintNet_9",
+          "SprintNet_10",
+          "SprintNet_11",
+          "SprintNet_12",
+          "SprintNet_13",
+          "SprintNet_14",
+          "SprintNet_15",
+          "SprintNet_16"
         ],
         "strategy": {
           "type": "leastPing"
@@ -936,33 +685,27 @@
   },
   "observatory": {
     "subjectSelector": [
-      "ShadowNet_0",
-      "ShadowNet_1",
-      "ShadowNet_2",
-      "ShadowNet_3",
-      "ShadowNet_4",
-      "ShadowNet_5",
-      "ShadowNet_6",
-      "ShadowNet_7",
-      "ShadowNet_8",
-      "ShadowNet_9",
-      "ShadowNet_10",
-      "ShadowNet_11",
-      "ShadowNet_12",
-      "ShadowNet_13",
-      "ShadowNet_14",
-      "ShadowNet_15",
-      "ShadowNet_16",
-      "ShadowNet_17",
-      "ShadowNet_18",
-      "ShadowNet_19",
-      "ShadowNet_20",
-      "ShadowNet_21",
-      "ShadowNet_22"
+      "SprintNet_0",
+      "SprintNet_1",
+      "SprintNet_2",
+      "SprintNet_3",
+      "SprintNet_4",
+      "SprintNet_5",
+      "SprintNet_6",
+      "SprintNet_7",
+      "SprintNet_8",
+      "SprintNet_9",
+      "SprintNet_10",
+      "SprintNet_11",
+      "SprintNet_12",
+      "SprintNet_13",
+      "SprintNet_14",
+      "SprintNet_15",
+      "SprintNet_16"
     ],
     "url": "https://www.google.com/favicon.ico",
     "interval": "1m",
     "enableConcurrency": true
   },
-  "remarks": "ShadowNet"
+  "remarks": "SprintNet"
 }
