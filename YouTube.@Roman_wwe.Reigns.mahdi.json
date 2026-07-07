@@ -33,11 +33,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.17.28.178",
-            "port": 2087,
+            "address": "162.159.38.119",
+            "port": 443,
             "users": [
               {
-                "id": "b1f7e8ee-5ca5-4729-8eb3-48be2cf29a60",
+                "id": "0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c",
                 "encryption": "none"
               }
             ]
@@ -48,13 +48,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/",
+          "path": "/au-do",
           "headers": {
-            "Host": "node-1796256123-ef08c6.mahdireignsgermany.workers.dev"
+            "Host": "unnes.ac.id.yxls.eu.cc"
           }
         },
         "tlsSettings": {
-          "serverName": "node-1796256123-ef08c6.mahdireignsgermany.workers.dev",
+          "serverName": "unnes.ac.id.yxls.eu.cc",
           "allowInsecure": true
         },
         "sockopt": {
@@ -64,18 +64,18 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "StealthVPN_0"
+      "tag": "QuantumProxy_0"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.171.16",
-            "port": 2053,
+            "address": "69.46.46.99",
+            "port": 443,
             "users": [
               {
-                "id": "b1f7e8ee-5ca5-4729-8eb3-48be2cf29a60",
+                "id": "0d8f6838-48d6-0897-4433-0b829b18ced1",
                 "encryption": "none"
               }
             ]
@@ -86,13 +86,13 @@
         "network": "ws",
         "security": "tls",
         "wsSettings": {
-          "path": "/",
+          "path": "/ws/0d8f6838-48d6-0897-4433-0b829b18ced1",
           "headers": {
-            "Host": "node-1796256123-ef08c6.mahdireignsgermany.workers.dev"
+            "Host": "x4g-production-e679.up.railway.app"
           }
         },
         "tlsSettings": {
-          "serverName": "node-1796256123-ef08c6.mahdireignsgermany.workers.dev",
+          "serverName": "x4g-production-e679.up.railway.app",
           "allowInsecure": true
         },
         "sockopt": {
@@ -102,7 +102,162 @@
           "tcpMtu": 1400
         }
       },
-      "tag": "StealthVPN_1"
+      "tag": "QuantumProxy_3"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "20.223.221.41",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "qkRNNhsIrzU6qnkL"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "QuantumProxy_4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cdnip.speadmaster.ir",
+            "port": 2087,
+            "users": [
+              {
+                "id": "083e5c65-d8e3-4ae7-aad9-180c27a2337c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "xhttpSettings": {
+          "path": "/api",
+          "host": "tr-spead.speadmaster.ir",
+          "mode": "auto"
+        },
+        "tlsSettings": {
+          "serverName": "tr-spead.speadmaster.ir",
+          "allowInsecure": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "QuantumProxy_5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.25.189.214",
+            "port": 2052,
+            "users": [
+              {
+                "id": "0e92ca5c-d15f-48b0-adeb-9dc9fe6fc467",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "security": "none",
+        "httpupgradeSettings": {
+          "path": "/",
+          "host": "cdn.safev2ray.site"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "QuantumProxy_10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.25.189.214",
+            "port": 2095,
+            "users": [
+              {
+                "id": "0e92ca5c-d15f-48b0-adeb-9dc9fe6fc467",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "security": "none",
+        "httpupgradeSettings": {
+          "path": "/",
+          "host": "cdn.safev2ray.site"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "tcpNoDelay": true,
+          "tcpKeepAliveInterval": 15,
+          "tcpMtu": 1400
+        }
+      },
+      "tag": "QuantumProxy_11"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "114.25.8.182",
+            "port": 50099,
+            "method": "chacha20-ietf-poly1305",
+            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "QuantumProxy_12"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.32",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "QuantumProxy_13"
     },
     {
       "tag": "direct",
@@ -121,8 +276,14 @@
       {
         "tag": "best_ping_balancer",
         "selector": [
-          "StealthVPN_0",
-          "StealthVPN_1"
+          "QuantumProxy_0",
+          "QuantumProxy_3",
+          "QuantumProxy_4",
+          "QuantumProxy_5",
+          "QuantumProxy_10",
+          "QuantumProxy_11",
+          "QuantumProxy_12",
+          "QuantumProxy_13"
         ],
         "strategy": {
           "type": "leastPing"
@@ -190,12 +351,18 @@
   },
   "observatory": {
     "subjectSelector": [
-      "StealthVPN_0",
-      "StealthVPN_1"
+      "QuantumProxy_0",
+      "QuantumProxy_3",
+      "QuantumProxy_4",
+      "QuantumProxy_5",
+      "QuantumProxy_10",
+      "QuantumProxy_11",
+      "QuantumProxy_12",
+      "QuantumProxy_13"
     ],
     "url": "https://www.google.com/favicon.ico",
     "interval": "1m",
     "enableConcurrency": true
   },
-  "remarks": "StealthVPN"
+  "remarks": "QuantumProxy"
 }
