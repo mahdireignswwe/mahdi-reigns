@@ -1,31 +1,49 @@
 {
+  "remarks": "InfinityConnect",
   "log": {
-    "loglevel": "none"
+    "loglevel": "warning"
   },
   "dns": {
     "servers": [
+      "localhost",
       "8.8.8.8",
       "1.1.1.1"
     ],
-    "queryStrategy": "UseIP"
+    "queryStrategy": "UseIPv4"
   },
   "inbounds": [
     {
+      "tag": "socks",
       "port": 10808,
       "listen": "127.0.0.1",
-      "protocol": "mixed",
+      "protocol": "socks",
       "settings": {
         "auth": "noauth",
-        "udp": true
+        "udp": true,
+        "userLevel": 8
       },
       "sniffing": {
         "enabled": true,
         "destOverride": [
           "http",
-          "tls",
-          "quic"
-        ],
-        "routeOnly": true
+          "tls"
+        ]
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "settings": {
+        "userLevel": 8
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
       }
     }
   ],
@@ -35,90 +53,15 @@
       "settings": {
         "vnext": [
           {
-            "address": "sca30.mysilipdir.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_0"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sca34.mysilipdir.com",
-            "port": 8880,
-            "users": [
-              {
-                "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_1"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "r3mrcg00129437x.cybervena.com",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_2"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.176",
+            "address": "u-cvds-s-vfdsds-a-dc.codesystem.ir",
             "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ"
+            "users": [
+              {
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -126,17 +69,22 @@
         "network": "tcp",
         "security": "none"
       },
-      "tag": "GhostShield_3"
+      "tag": "InfinityConnect-1"
     },
     {
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "82.38.31.155",
+            "address": "de1.codinos.ir",
             "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+            "users": [
+              {
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -144,17 +92,22 @@
         "network": "tcp",
         "security": "none"
       },
-      "tag": "GhostShield_4"
+      "tag": "InfinityConnect-2"
     },
     {
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "82.38.31.7",
+            "address": "tr1.codesystem.ir",
             "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+            "users": [
+              {
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -162,1091 +115,20 @@
         "network": "tcp",
         "security": "none"
       },
-      "tag": "GhostShield_5"
+      "tag": "InfinityConnect-3"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "x4g-production-c4c8.up.railway.app",
-            "port": 443,
+            "address": "145.239.30.75",
+            "port": 2026,
             "users": [
               {
-                "id": "efc4c5b4-8e14-8ba7-9764-84bc2dacb20c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/ws/efc4c5b4-8e14-8ba7-9764-84bc2dacb20c",
-          "headers": {
-            "Host": "x4g-production-c4c8.up.railway.app"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "x4g-production-c4c8.up.railway.app",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hayabusa.proxy.rlwy.net",
-            "port": 25518,
-            "users": [
-              {
-                "id": "043952c1-340a-47a0-91c9-65c5057a54b4",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "publicKey": "q0cXw-tcCCtyjH-HXCJcrQsrSttOs1fHA92QHrYTPEc",
-          "shortId": "145b",
-          "fingerprint": "ios"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_7"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.16",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_8"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "r3mrcg001287h3p.cybervena.com",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_9"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.47",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_10"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.129.96.62",
-            "port": 41348,
-            "method": "chacha20-ietf-poly1305",
-            "password": "6U3psR0sQuQxWXoBHB4KTD3YacwQwS21XvSEy9"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_11"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "r3mrcg001286ek2.cybervena.com",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_12"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "20.164.216.112",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Y1YSWNVWfufolplK"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_13"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.183",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_14"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.193",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_15"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.211",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "none"
-      },
-      "tag": "GhostShield_16"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdn.netraidly.ru",
-            "port": 40443,
-            "users": [
-              {
-                "id": "4bf5a71c-d726-4585-b095-7396675706d5",
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "deepl.com",
-          "publicKey": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU",
-          "shortId": "c84f",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_17"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de.ko.prod.n7.homes",
-            "port": 8443,
-            "users": [
-              {
-                "id": "dcba77d7-bb59-4802-b32c-37fd7011fca4",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "google.com",
-          "publicKey": "upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo",
-          "shortId": "3ca620a7ed5f3196",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_18"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "bypass.fr-gt-01.com",
-            "port": 8443,
-            "users": [
-              {
-                "id": "356ccb34-22cc-4446-a137-072bc60d65ca",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA",
-          "shortId": "f34818a561dfd1fe",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_19"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.159.10.78",
-            "port": 443,
-            "users": [
-              {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.vodafone.co.uk",
-          "publicKey": "6tORX9bm6UlGJ4dR8L2kzOd21oSrOyzpN7gC6SqGGyc",
-          "shortId": "d27683580fc15f1e",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_20"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.218.95.14",
-            "port": 443,
-            "users": [
-              {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.booking.com",
-          "publicKey": "UiZNJMasujuoM7dXc5NLSW1f4VssDlF3DBVg5rl82VM",
-          "shortId": "a7c8f0630da31f6a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_21"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "144.225.187.179",
-            "port": 51015,
-            "users": [
-              {
-                "id": "c7ba28f1-dd0a-4fd8-941e-e622f24c8a19",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "apple.com",
-          "publicKey": "wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk",
-          "shortId": "f25f1104",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_22"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "139.84.236.5",
-            "port": 443,
-            "users": [
-              {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.alibaba.com",
-          "publicKey": "UkoqOh9VtAhhMrlKY3wAmijgjCrLIKMZT-An0NjrHng",
-          "shortId": "8d17b7ebab7b99d7",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_23"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "77.246.109.191",
-            "port": 34045,
-            "users": [
-              {
-                "id": "d8dd94fd-540e-461d-b5d4-acebef02c22a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me",
-          "publicKey": "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA",
-          "shortId": "e8ab71d0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_24"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "137.184.218.169",
-            "port": 36925,
-            "users": [
-              {
-                "id": "c9fd0fb1-8251-4106-b09a-f4b426736f67",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "publicKey": "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0",
-          "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_25"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "netraidly.ru",
-            "port": 40443,
-            "users": [
-              {
-                "id": "4480161e-2c59-4d37-8736-675c9af32bf1",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "deepl.com",
-          "publicKey": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y",
-          "shortId": "01d1bf2d4755d40c",
-          "fingerprint": "qq"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_26"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.195.46.178",
-            "port": 443,
-            "users": [
-              {
-                "id": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "4.oncloudnineservicestreang.com",
-          "publicKey": "P5ceHLOW8Gmz45z-ozbm9T6xsdSsIGLB71-jMfSjCBQ",
-          "shortId": "04bc695105689674",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_27"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.158.62.94",
-            "port": 443,
-            "users": [
-              {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.laposte.fr",
-          "publicKey": "nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU",
-          "shortId": "ad3c6641d540b4e1",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_28"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.89.106.99",
-            "port": 40443,
-            "users": [
-              {
-                "id": "df724c8a-5c5a-4859-974e-6e911b14955c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "deepl.com",
-          "publicKey": "-sirwzF9HjIp1PVRK-z-2Ux39ufs6_W1cBw1cFoHXHc",
-          "shortId": "a852",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_29"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.89.106.101",
-            "port": 40443,
-            "users": [
-              {
-                "id": "6ae44ad9-c2cb-4bdf-8e48-6c01fa646372",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "deepl.com",
-          "publicKey": "f6MOnGRTqdns7Lut75DSrnFZeiiZ4N04gnj5m-l7KnM",
-          "shortId": "54ce",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_30"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "grif.dns-crypto-yandex.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "eb528c71-441a-4430-867d-ab63d301d4ee",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "reality",
-        "grpcSettings": {
-          "serviceName": "grpc"
-        },
-        "realitySettings": {
-          "serverName": "grif.dns-crypto-yandex.com",
-          "publicKey": "Bvdy2c0cxotdTPXwX1DXQ2RQDcWdRpNCaABu2tCwhzQ",
-          "shortId": "0e830794d04398",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_31"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.236.17.86",
-            "port": 443,
-            "users": [
-              {
-                "id": "6fdfdb73-51b0-4a14-89a5-c9355a0e0397",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "google.com",
-          "publicKey": "vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0",
-          "shortId": "b318242471ba4f5b",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_32"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.19.156.170",
-            "port": 443,
-            "users": [
-              {
-                "id": "36644091-0cec-47fe-9955-97c3f424baf7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "play.google.com",
-          "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
-          "shortId": "98fa0b00d09419f7",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_33"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "145.239.8.221",
-            "port": 443,
-            "users": [
-              {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.leboncoin.fr",
-          "publicKey": "ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE",
-          "shortId": "c906f73d3ba8211f",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_34"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.66.68.72",
-            "port": 443,
-            "users": [
-              {
-                "id": "a34b5e88-cf0d-4c01-8199-2d1002d3c787",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.wikihow.com",
-          "publicKey": "HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U",
-          "shortId": "",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_35"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.195.22.155",
-            "port": 443,
-            "users": [
-              {
-                "id": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "2.oncloudnineservicestreang.com",
-          "publicKey": "Mg3ZxHNUFbX96q1HpS3WReeM7rnhEsXXtlEzxALeTDc",
-          "shortId": "d8d3dc6c3ca45dd4",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_36"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.137.157.72",
-            "port": 443,
-            "users": [
-              {
-                "id": "55a5044d-5b35-405f-971c-ea7aacaafcb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.nvidia.com",
-          "publicKey": "z6_OFl0jskilOOxkQcUcdQOCS4-LVndwFF9i7kIOPzg",
-          "shortId": "d23753491eefde7e",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_37"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.195.45.129",
-            "port": 443,
-            "users": [
-              {
-                "id": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "3.oncloudnineservicestreang.com",
-          "publicKey": "dp-ncBuRHgZl5O80eHBYhSKo1i9qbt-J7MJ1alyWXmM",
-          "shortId": "1991780b928b292d",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_38"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.195.27.99",
-            "port": 443,
-            "users": [
-              {
-                "id": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "1.oncloudnineservicestreang.com",
-          "publicKey": "EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig",
-          "shortId": "28415a7918168947",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_39"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.89.117.21",
-            "port": 443,
-            "users": [
-              {
-                "id": "36644091-0cec-47fe-9955-97c3f424baf7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "play.google.com",
-          "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
-          "shortId": "98fa0b00d09419f7",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_40"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "77.73.232.61",
-            "port": 19747,
-            "users": [
-              {
-                "id": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
-                "encryption": "none"
+                "level": 8
               }
             ]
           }
@@ -1257,100 +139,48 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "yahoo.com",
-          "publicKey": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
-          "shortId": "2001",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_41"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.199.50.37",
-            "port": 443,
-            "users": [
-              {
-                "id": "43488128-319e-f480-64ea-0acdc712e2a8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.alibaba.com",
-          "publicKey": "kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw",
-          "shortId": "c906f73d3ba8211f",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "GhostShield_42"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "all136.allenshop66245.ir",
-            "port": 443,
-            "users": [
-              {
-                "id": "36644091-0cec-47fe-9955-97c3f424baf7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "play.google.com",
-          "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
-          "shortId": "98fa0b00d09419f7",
+          "publicKey": "484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8",
+          "shortId": "ca930e5d4a603c6a",
           "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
         }
       },
-      "tag": "GhostShield_43"
+      "tag": "InfinityConnect-4"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "207.57.129.74",
-            "port": 51864,
+            "address": "185.253.116.149",
+            "port": 8080,
             "users": [
               {
-                "id": "0bef99f1-1ab7-4949-8991-80914d9c7535",
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "InfinityConnect-5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ca.codinos.ir",
+            "port": 2026,
+            "users": [
+              {
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
+                "encryption": "none",
+                "level": 8
               }
             ]
           }
@@ -1360,19 +190,13 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "dash.cloudflare.com",
-          "publicKey": "p8vKj6rINds1EgmeSIFOv6uds8IxnN8ypjIslksAYgA",
-          "shortId": "",
+          "serverName": "yahoo.com",
+          "publicKey": "484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8",
+          "shortId": "ca930e5d4a603c6a",
           "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
         }
       },
-      "tag": "GhostShield_44"
+      "tag": "InfinityConnect-6"
     },
     {
       "tag": "direct",
@@ -1386,56 +210,17 @@
     }
   ],
   "routing": {
-    "domainStrategy": "AsIs",
+    "domainStrategy": "IPIfNonMatch",
     "balancers": [
       {
-        "tag": "best_ping_balancer",
+        "tag": "InfinityConnect-balancer",
         "selector": [
-          "GhostShield_0",
-          "GhostShield_1",
-          "GhostShield_2",
-          "GhostShield_3",
-          "GhostShield_4",
-          "GhostShield_5",
-          "GhostShield_6",
-          "GhostShield_7",
-          "GhostShield_8",
-          "GhostShield_9",
-          "GhostShield_10",
-          "GhostShield_11",
-          "GhostShield_12",
-          "GhostShield_13",
-          "GhostShield_14",
-          "GhostShield_15",
-          "GhostShield_16",
-          "GhostShield_17",
-          "GhostShield_18",
-          "GhostShield_19",
-          "GhostShield_20",
-          "GhostShield_21",
-          "GhostShield_22",
-          "GhostShield_23",
-          "GhostShield_24",
-          "GhostShield_25",
-          "GhostShield_26",
-          "GhostShield_27",
-          "GhostShield_28",
-          "GhostShield_29",
-          "GhostShield_30",
-          "GhostShield_31",
-          "GhostShield_32",
-          "GhostShield_33",
-          "GhostShield_34",
-          "GhostShield_35",
-          "GhostShield_36",
-          "GhostShield_37",
-          "GhostShield_38",
-          "GhostShield_39",
-          "GhostShield_40",
-          "GhostShield_41",
-          "GhostShield_42",
-          "GhostShield_43",
-          "GhostShield_44"
+          "InfinityConnect-1",
+          "InfinityConnect-2",
+          "InfinityConnect-3",
+          "InfinityConnect-4",
+          "InfinityConnect-5",
+          "InfinityConnect-6"
         ],
         "strategy": {
           "type": "leastPing"
@@ -1464,98 +249,43 @@
         "type": "field",
         "outboundTag": "direct",
         "domain": [
-          "geosite:category-ir"
+          "geosite:category-ir",
+          "domain:ir",
+          "domain:com.ir",
+          "domain:org.ir",
+          "domain:net.ir",
+          "domain:ac.ir",
+          "domain:gov.ir",
+          "domain:sch.ir",
+          "domain:co.ir"
         ]
       },
       {
         "type": "field",
         "outboundTag": "direct",
         "ip": [
+          "geoip:private",
           "geoip:ir"
         ]
       },
       {
         "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "domain": [
-          "geosite:instagram",
-          "domain:cdninstagram.com",
-          "domain:fbcdn.net",
-          "geosite:youtube",
-          "domain:googlevideo.com",
-          "domain:ytimg.com"
-        ]
-      },
-      {
-        "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "domain": [
-          "geosite:telegram",
-          "geosite:google"
-        ]
-      },
-      {
-        "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "network": "tcp,udp"
+        "network": "tcp,udp",
+        "balancerTag": "InfinityConnect-balancer"
       }
     ]
   },
-  "burstObservatory": {
+  "observatory": {
     "subjectSelector": [
-      "GhostShield_0",
-      "GhostShield_1",
-      "GhostShield_2",
-      "GhostShield_3",
-      "GhostShield_4",
-      "GhostShield_5",
-      "GhostShield_6",
-      "GhostShield_7",
-      "GhostShield_8",
-      "GhostShield_9",
-      "GhostShield_10",
-      "GhostShield_11",
-      "GhostShield_12",
-      "GhostShield_13",
-      "GhostShield_14",
-      "GhostShield_15",
-      "GhostShield_16",
-      "GhostShield_17",
-      "GhostShield_18",
-      "GhostShield_19",
-      "GhostShield_20",
-      "GhostShield_21",
-      "GhostShield_22",
-      "GhostShield_23",
-      "GhostShield_24",
-      "GhostShield_25",
-      "GhostShield_26",
-      "GhostShield_27",
-      "GhostShield_28",
-      "GhostShield_29",
-      "GhostShield_30",
-      "GhostShield_31",
-      "GhostShield_32",
-      "GhostShield_33",
-      "GhostShield_34",
-      "GhostShield_35",
-      "GhostShield_36",
-      "GhostShield_37",
-      "GhostShield_38",
-      "GhostShield_39",
-      "GhostShield_40",
-      "GhostShield_41",
-      "GhostShield_42",
-      "GhostShield_43",
-      "GhostShield_44"
+      "InfinityConnect-1",
+      "InfinityConnect-2",
+      "InfinityConnect-3",
+      "InfinityConnect-4",
+      "InfinityConnect-5",
+      "InfinityConnect-6"
     ],
-    "pingConfig": {
-      "destination": "http://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "connectTimeout": "1s",
-      "timeout": "3s",
-      "sampling": 2
-    }
-  },
-  "remarks": "GhostShield"
+    "probeUrl": "http://www.gstatic.com/generate_204",
+    "probeInterval": "1m",
+    "enableConcurrency": true
+  }
 }
