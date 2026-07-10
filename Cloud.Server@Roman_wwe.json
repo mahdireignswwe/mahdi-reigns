@@ -1,22 +1,26 @@
 {
+  "remarks": "FalconProxy",
   "log": {
-    "loglevel": "none"
+    "loglevel": "warning"
   },
   "dns": {
     "servers": [
+      "localhost",
       "8.8.8.8",
       "1.1.1.1"
     ],
-    "queryStrategy": "UseIP"
+    "queryStrategy": "UseIPv4"
   },
   "inbounds": [
     {
+      "tag": "mixed",
       "port": 10808,
       "listen": "127.0.0.1",
-      "protocol": "socks",
+      "protocol": "mixed",
       "settings": {
         "auth": "noauth",
-        "udp": true
+        "udp": true,
+        "userLevel": 8
       },
       "sniffing": {
         "enabled": true,
@@ -33,12 +37,727 @@
       "settings": {
         "vnext": [
           {
+            "address": "45.130.125.207",
+            "port": 2086,
+            "users": [
+              {
+                "id": "a13d3bce-a462-4244-88da-1fe5d4b17de3",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/?ed=2082",
+          "host": "jjjjJ.cafearen.ir",
+          "mode": "auto"
+        }
+      },
+      "tag": "FalconProxy-1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.17.81",
+            "port": 2086,
+            "users": [
+              {
+                "id": "a13d3bce-a462-4244-88da-1fe5d4b17de3",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/?ed=2082",
+          "host": "hhhhh.cafearen.ir",
+          "mode": "auto"
+        }
+      },
+      "tag": "FalconProxy-2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.129.126.82",
+            "port": 9090,
+            "users": [
+              {
+                "id": "29631d28-ea31-4ffa-99d3-7816adc92fb5",
+                "encryption": "mlkem768x25519plus.native.0rtt.a-nUkey-_SyhFBJ_XhbEgSL69XWCWYqjH-nIW9Ro9zE",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "",
+          "mode": "packet-up"
+        }
+      },
+      "tag": "FalconProxy-3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "193.111.236.227",
+            "port": 110,
+            "users": [
+              {
+                "id": "29631d28-ea31-4ffa-99d3-7816adc92fb5",
+                "encryption": "mlkem768x25519plus.native.0rtt.1rNu38khjbsP7TVzY7fuxaRUOBdkbKA3l-EXdN0Vqjw",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "xhttpSettings": {
+          "path": "/?ed=2560/v2ray",
+          "host": "",
+          "mode": "auto"
+        },
+        "tlsSettings": {
+          "serverName": "finland.amaratstore.ir",
+          "allowInsecure": true
+        }
+      },
+      "tag": "FalconProxy-4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.130.125.207",
+            "port": 2086,
+            "users": [
+              {
+                "id": "a13d3bce-a462-4244-88da-1fe5d4b17de3",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/?ed",
+          "host": "jjjjJ.cafearen.ir",
+          "mode": "auto"
+        }
+      },
+      "tag": "FalconProxy-5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.193.61",
+            "port": 80,
+            "users": [
+              {
+                "id": "101e0f08-f0bc-4c87-89d1-774085c9721c",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "Xuietu.Esvien.SitE.",
+          "mode": "auto"
+        }
+      },
+      "tag": "FalconProxy-6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "SPEEDtest.Net",
+            "port": 80,
+            "users": [
+              {
+                "id": "101e0f08-f0bc-4c87-89d1-774085c9721c",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "farangis.global.ssl.fastly.neT.",
+          "mode": "auto"
+        }
+      },
+      "tag": "FalconProxy-7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "167.82.101.210",
+            "port": 443,
+            "users": [
+              {
+                "id": "101e0f08-f0bc-4c87-89d1-774085c9721c",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "farangis.global.ssl.fastly.neT.",
+          "mode": "auto"
+        },
+        "tlsSettings": {
+          "serverName": "global.fastly.coM.",
+          "allowInsecure": true
+        }
+      },
+      "tag": "FalconProxy-8"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "20.223.152.73",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "I6RsSUIYrKHpI26J",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-9"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "20.164.202.74",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "Y1YSWNVWfufolplK",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-10"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.200",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "k1dBOmOB4oqi7Ump37a1bQ",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-11"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.7",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-12"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.3",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-13"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.92.180.178",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "rihjnjl3qsfr7u15",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-14"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "38.79.154.34",
+            "port": 8585,
+            "users": [
+              {
+                "id": "223d91ac-2eab-446a-ad15-7523a819d055",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "realitySettings": {
+          "serverName": "stg-eu-images.shop.samsung.com",
+          "publicKey": "a20AW-pKrDkwITkp3eZ6WC809AYkNqoW1rs4AfLs73Y",
+          "shortId": "f880ed2a48",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-15"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gerss.sannest.ir",
+            "port": 8443,
+            "users": [
+              {
+                "id": "6bd5c6cc-a154-3110-350e-7ce3e52fb076",
+                "encryption": "none",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "yahoo.com",
+          "publicKey": "DJ9B-OWkR4FwRvEfHpdAKqEasnRdVcZHoAaMueWEGWA",
+          "shortId": "bd",
+          "fingerprint": "qq"
+        }
+      },
+      "tag": "FalconProxy-16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "all171.allenshop66245.ir",
+            "port": 443,
+            "users": [
+              {
+                "id": "36644091-0cec-47fe-9955-97c3f424baf7",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "play.google.com",
+          "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "shortId": "98fa0b00d09419f7",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-17"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "all131.allenshop66245.ir",
+            "port": 443,
+            "users": [
+              {
+                "id": "36644091-0cec-47fe-9955-97c3f424baf7",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "play.google.com",
+          "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "shortId": "98fa0b00d09419f7",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hayabusa.proxy.rlwy.net",
+            "port": 12502,
+            "users": [
+              {
+                "id": "MAconnectt",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "xhttpSettings": {
+          "path": "/",
+          "host": "",
+          "mode": "auto"
+        },
+        "realitySettings": {
+          "serverName": "is1-ssl.mzstatic.com",
+          "publicKey": "5qUmBg-yImwiQ1Fuw18hUKRK15uqpp5Fq-73oyqEjgQ",
+          "shortId": "646aec27",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-19"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru.faygo.bot",
+            "port": 443,
+            "users": [
+              {
+                "id": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
+                "encryption": "none",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "enterprisekitten.com",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "shortId": "6ba85179e30d4fc2",
+          "fingerprint": "qq"
+        }
+      },
+      "tag": "FalconProxy-20"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "4b4ff133b2b76dea.sorcepack.ir",
+            "port": 56625,
+            "users": [
+              {
+                "id": "4d1d33b2-96d9-40c7-964d-a5016ba65984",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "realitySettings": {
+          "serverName": "icloud.com",
+          "publicKey": "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM",
+          "shortId": "789d7b5ed35fef93",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-21"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "a76061a5d90cb412.monopolitass.ir",
+            "port": 50567,
+            "users": [
+              {
+                "id": "4d1d33b2-96d9-40c7-964d-a5016ba65984",
+                "encryption": "none",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "play.google.com",
+          "publicKey": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
+          "shortId": "9b98825681aba023",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-22"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "32b92081e87d48b9.mechanicir.ir",
+            "port": 56625,
+            "users": [
+              {
+                "id": "4d1d33b2-96d9-40c7-964d-a5016ba65984",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "realitySettings": {
+          "serverName": "icloud.com",
+          "publicKey": "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM",
+          "shortId": "abbb6e5e07cdf34b",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-23"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fn4.sannest.ir",
+            "port": 8443,
+            "users": [
+              {
+                "id": "738f170e-e674-7991-9902-f182a8fa9b1c",
+                "encryption": "none",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.yahoo.com",
+          "publicKey": "DJ9B-OWkR4FwRvEfHpdAKqEasnRdVcZHoAaMueWEGWA",
+          "shortId": "bd",
+          "fingerprint": "qq"
+        }
+      },
+      "tag": "FalconProxy-24"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fr1-azad.0xoddity.ir",
+            "port": 5666,
+            "users": [
+              {
+                "id": "b6a37943-95a9-47da-9310-8263fe1f9ec5",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ca.rogers.yahoo.com",
+          "publicKey": "0qp2ibLJZMNQfIQYAbYmZzhyeeKRgVjm2AGxgbNDWhg",
+          "shortId": "2539f132f20e7271",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "FalconProxy-25"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.133.209.184",
+            "port": 4588,
+            "users": [
+              {
+                "id": "b6a37943-95a9-47da-9310-8263fe1f9ec5",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "aparat.com",
+          "publicKey": "49LjRovubjQuO8F6gMKlHZ7eTCbhpx-61rUszaTJYWk",
+          "shortId": "fa2401aad82386b5",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "FalconProxy-26"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "83.168.71.216",
             "port": 443,
             "users": [
               {
                 "id": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-                "encryption": "none"
+                "encryption": "none",
+                "level": 8
               }
             ]
           }
@@ -52,28 +771,111 @@
           "publicKey": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
           "shortId": "2f49bccf11150ef2",
           "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
         }
       },
-      "tag": "TitanVPN_0"
+      "tag": "FalconProxy-27"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.194.10.95",
+            "address": "207.148.84.152",
+            "port": 443,
+            "users": [
+              {
+                "id": "2ea4840c-8f4c-4103-a79f-e97202afd4be",
+                "encryption": "mlkem768x25519plus.native.0rtt.YOoII6pqexc-SAw3sk9fegw1AUjavhtUF6KkW6-NoiI",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.sony.com",
+          "publicKey": "H-QOeoIGhV_7R4o33zbsdAzmYTXeSYr_c_I1UVSw_Wc",
+          "shortId": "8d",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "FalconProxy-28"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.253.74.186",
+            "port": 2089,
+            "users": [
+              {
+                "id": "065d23e5-7151-46b2-b010-76300cdf0997",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.sony.com",
+          "publicKey": "EgU08aKdsWX7VkDnLhVjKfasViLjpBH_367vxFu5d1M",
+          "shortId": "",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "FalconProxy-29"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.233.106.243",
+            "port": 443,
+            "users": [
+              {
+                "id": "8fad5032-f740-4df1-bb87-e02a21665ced",
+                "encryption": "none",
+                "level": 8,
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "wikipedia.org",
+          "publicKey": "14mbxpFBwnpp817ZLgT-6dVqsOmNPIaH7ygYcYScjGg",
+          "shortId": "2b4790ccbac1edb2",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "FalconProxy-30"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "upload.ansooyefilter.ir",
             "port": 8443,
             "users": [
               {
-                "id": "3e7cede4-721a-4807-b0a2-5fe6586af907",
+                "id": "e37b91dc-9617-4e22-8c33-253fb0dd6fe2",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "level": 8
               }
             ]
           }
@@ -83,31 +885,26 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
-          "shortId": "2cfb5a0ae8ab0cb0",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "serverName": "pre-prod.samsung.com",
+          "publicKey": "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4",
+          "shortId": "63",
+          "fingerprint": "random"
         }
       },
-      "tag": "TitanVPN_1"
+      "tag": "FalconProxy-31"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.198.80.220",
+            "address": "184.174.97.211",
             "port": 443,
             "users": [
               {
-                "id": "eece4171-e025-40a3-9027-e395036ff99d",
-                "encryption": "none",
+                "id": "f09d18a9-d778-4e00-a49a-c0063d1c1b11",
+                "encryption": "mlkem768x25519plus.native.0rtt.At2jbnJuJG3K6LecNH78rQf4fBPR5iHbtD7dTWS5axY",
+                "level": 8,
                 "flow": "xtls-rprx-vision"
               }
             ]
@@ -115,70 +912,34 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "xhttp",
         "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
-          "shortId": "28047c78b3f5ee2c",
-          "fingerprint": "chrome"
+        "xhttpSettings": {
+          "path": "/",
+          "host": "",
+          "mode": "auto"
         },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+        "realitySettings": {
+          "serverName": "android.clients.google.com",
+          "publicKey": "EL3QUDoISPGWsTMd3uuqUXMpq1qshiyD2lk-LdScR0g",
+          "shortId": "541f",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "TitanVPN_2"
+      "tag": "FalconProxy-32"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "46.8.229.199",
-            "port": 2026,
-            "users": [
-              {
-                "id": "59d08a71-f206-4ca3-9a42-8c56d3bfdc3c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "blog.api.www.cloudflare.com",
-          "publicKey": "K3cxZLLRAOryqPVCaHu7WwkAyB_OfM_IvckqmbhnizQ",
-          "shortId": "ac56e3c1fe4f7a5d",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "46.8.229.199",
+            "address": "Amsterdam1.FaraSorat.Net",
             "port": 443,
             "users": [
               {
-                "id": "59d08a71-f206-4ca3-9a42-8c56d3bfdc3c",
+                "id": "1af29b3e-9093-4e96-8cfe-b541bc25ae74",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "level": 8
               }
             ]
           }
@@ -188,31 +949,26 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "intel.com",
-          "publicKey": "4o2G9iT8IN7YWwiDLgjMrpPmvwU5IQT6C6nE5Rh-wSQ",
-          "shortId": "da",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "serverName": "play.google.com",
+          "publicKey": "BPNa46azZQxem66ehwy2WuO7P6D40NfWBEEXOcQkPn8",
+          "shortId": "88",
+          "fingerprint": "ios"
         }
       },
-      "tag": "TitanVPN_4"
+      "tag": "FalconProxy-33"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ge-x77.pingcentr.ru",
+            "address": "185.66.68.72",
             "port": 443,
             "users": [
               {
-                "id": "66b63d3a-54ac-41f1-91f7-e74b171f3029",
+                "id": "a34b5e88-cf0d-4c01-8199-2d1002d3c787",
                 "encryption": "none",
+                "level": 8,
                 "flow": "xtls-rprx-vision"
               }
             ]
@@ -223,31 +979,26 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "ge-x77.pingcentr.ru",
-          "publicKey": "HEJjjCvVugA6DyRLNL8dTHzBhS1wuaQYizrd_fGiGxA",
+          "serverName": "www.wikihow.com",
+          "publicKey": "HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U",
           "shortId": "",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "fingerprint": "firefox"
         }
       },
-      "tag": "TitanVPN_5"
+      "tag": "FalconProxy-34"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.196.182.7",
+            "address": "us.hagrid-connected.com",
             "port": 443,
             "users": [
               {
-                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "id": "7499f0a0-3670-4cf6-a31c-ad4cd943cf18",
                 "encryption": "none",
+                "level": 8,
                 "flow": "xtls-rprx-vision"
               }
             ]
@@ -258,66 +1009,90 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
-          "shortId": "d020b987f84eb78a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "serverName": "us.hagrid-connected.com",
+          "publicKey": "nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q",
+          "shortId": "305570274c0c72cc",
+          "fingerprint": "edge"
         }
       },
-      "tag": "TitanVPN_6"
+      "tag": "FalconProxy-35"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.196.182.98",
-            "port": 443,
+            "address": "80301c11f6ad1d87.sorcepack.ir",
+            "port": 56625,
             "users": [
               {
-                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
+                "id": "87dc9072-662c-4288-bf7a-0621b8d09927",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "level": 8
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "grpc",
         "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
-          "shortId": "d020b987f84eb78a",
-          "fingerprint": "chrome"
+        "grpcSettings": {
+          "serviceName": ""
         },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+        "realitySettings": {
+          "serverName": "icloud.com",
+          "publicKey": "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM",
+          "shortId": "2acdb7659ae9df84",
+          "fingerprint": "firefox"
         }
       },
-      "tag": "TitanVPN_7"
+      "tag": "FalconProxy-36"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "falkoraz.sav-savteam.ir",
+            "address": "fa395521329bc522.mechanicir.ir",
+            "port": 56625,
+            "users": [
+              {
+                "id": "87dc9072-662c-4288-bf7a-0621b8d09927",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "realitySettings": {
+          "serverName": "icloud.com",
+          "publicKey": "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM",
+          "shortId": "b7c8604c2d6dbfd6",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "FalconProxy-37"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "falkoraz.sav-savteam.iR",
             "port": 55555,
             "users": [
               {
-                "id": "fede1a02-16f8-47f9-a8ea-d9b839ce6994",
-                "encryption": "none"
+                "id": "101e0f08-f0bc-4c87-89d1-774085c9721c",
+                "encryption": "none",
+                "level": 8
               }
             ]
           }
@@ -331,96 +1106,22 @@
           "publicKey": "XPuLE49PtDeixzwOmEHuMFSZexYDTQifZ7s99w5e4QY",
           "shortId": "880eeeef4927eed5",
           "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
         }
       },
-      "tag": "TitanVPN_8"
+      "tag": "FalconProxy-38"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "panel.dnteam.xyz",
-            "port": 443,
-            "users": [
-              {
-                "id": "14dabea0-f1c3-421d-90dc-38128b263331",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "publicKey": "hnDnAyYUfPf5jobFhVTYhpjUJLnVI8Nmjit5FwRcixQ",
-          "shortId": "cf2bf74ec4eb9a",
-          "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.89.227.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "36644091-0cec-47fe-9955-97c3f424baf7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "play.google.com",
-          "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
-          "shortId": "98fa0b00d09419f7",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_10"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.195.137.228",
+            "address": "de.ko.prod.n7.homes",
             "port": 8443,
             "users": [
               {
-                "id": "daff1228-8d1a-4812-a57a-09604faa5e0c",
+                "id": "dcba77d7-bb59-4802-b32c-37fd7011fca4",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "level": 8
               }
             ]
           }
@@ -430,138 +1131,26 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "shortId": "cf9d145ad8f1ea55",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_11"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.196.182.100",
-            "port": 443,
-            "users": [
-              {
-                "id": "701ea834-7c31-4544-95d6-f0a4dfe40b36",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "publicKey": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
-          "shortId": "d020b987f84eb78a",
+          "serverName": "google.com",
+          "publicKey": "upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo",
+          "shortId": "3ca620a7ed5f3196",
           "fingerprint": "chrome"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
         }
       },
-      "tag": "TitanVPN_12"
+      "tag": "FalconProxy-39"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "all136.allenshop66245.ir",
-            "port": 443,
+            "address": "fi1.restauranzorban.ir",
+            "port": 5533,
             "users": [
               {
-                "id": "36644091-0cec-47fe-9955-97c3f424baf7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "play.google.com",
-          "publicKey": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
-          "shortId": "98fa0b00d09419f7",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_13"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "38.79.154.34",
-            "port": 8585,
-            "users": [
-              {
-                "id": "2825cdb1-fe2f-4640-95c5-622302b214d7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "reality",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "realitySettings": {
-          "serverName": "ap-author.led.samsung.com",
-          "publicKey": "a20AW-pKrDkwITkp3eZ6WC809AYkNqoW1rs4AfLs73Y",
-          "shortId": "3dcb65",
-          "fingerprint": "firefox"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_14"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "135.125.218.196",
-            "port": 443,
-            "users": [
-              {
-                "id": "46882b9b-ef05-4655-a87d-47ce74d00939",
+                "id": "18c7c531-990c-4494-a50f-db5fffbf82e5",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "level": 8
               }
             ]
           }
@@ -571,31 +1160,26 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "icloud.com",
-          "publicKey": "oLuqJsj4z6m_kns9ETrsIPA8fDrysonWXEsmn3931kY",
-          "shortId": "bbfcad86d5e2e0ea",
-          "fingerprint": "safari"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
+          "serverName": "yahoo.com",
+          "publicKey": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014",
+          "shortId": "8f798d413a5dbf01",
+          "fingerprint": "firefox"
         }
       },
-      "tag": "TitanVPN_15"
+      "tag": "FalconProxy-40"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "dk2.darknet-bot.co.uk",
+            "address": "dataupdate.auragg.org",
             "port": 443,
             "users": [
               {
-                "id": "3f373e36-6363-4f3e-8ca3-0504612f490e",
-                "encryption": "none"
+                "id": "b05346a9-4d13-41a4-8d2a-6b7b64e73ffc",
+                "encryption": "none",
+                "level": 8
               }
             ]
           }
@@ -605,32 +1189,27 @@
         "network": "grpc",
         "security": "tls",
         "grpcSettings": {
-          "serviceName": "grpc"
+          "serviceName": "media.session.poll"
         },
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "dataupdate.auragg.org",
           "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
         }
       },
-      "tag": "TitanVPN_16"
+      "tag": "FalconProxy-41"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "sca27.speedmeter.shop",
+            "address": "151.115.166.129",
             "port": 8880,
             "users": [
               {
                 "id": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-                "encryption": "none"
+                "encryption": "none",
+                "level": 8
               }
             ]
           }
@@ -641,91 +1220,22 @@
         "security": "none",
         "grpcSettings": {
           "serviceName": ""
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
         }
       },
-      "tag": "TitanVPN_17"
+      "tag": "FalconProxy-42"
     },
     {
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "olds-1.lubbs.de",
-            "port": 2086,
+            "address": "tr1.codesystem.ir",
+            "port": 8080,
             "users": [
               {
-                "id": "edef0572-87d2-427f-a900-6d87b9b07861",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "httpupgrade",
-        "security": "none",
-        "httpupgradeSettings": {
-          "path": "/",
-          "host": "sub-4.linemtf.ir"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_18"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdn1.portalcode.ir",
-            "port": 2095,
-            "users": [
-              {
-                "id": "a4d329d2-196d-460b-94ec-e5acb029940c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "httpupgrade",
-        "security": "none",
-        "httpupgradeSettings": {
-          "path": "/",
-          "host": "zenesky.rainzone.ir"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
-      },
-      "tag": "TitanVPN_19"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "bot.sobhanpor.ir",
-            "port": 443,
-            "users": [
-              {
-                "id": "19954875-96ec-43c8-9922-b9638e02080a",
-                "encryption": "none"
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
+                "encryption": "none",
+                "level": 8
               }
             ]
           }
@@ -733,19 +1243,354 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "bot.sobhanpor.ir",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tcpNoDelay": true,
-          "tcpKeepAliveInterval": 15,
-          "tcpMtu": 1400
-        }
+        "security": "none"
       },
-      "tag": "TitanVPN_20"
+      "tag": "FalconProxy-43"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "u-cvds-s-vfdsds-a-dc.codesystem.ir",
+            "port": 8080,
+            "users": [
+              {
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-44"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de1.codinos.ir",
+            "port": 8080,
+            "users": [
+              {
+                "id": "f8cae104-2eaa-4b16-b258-65be28281b70",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-45"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "23.88.37.253",
+            "port": 80,
+            "users": [
+              {
+                "id": "b2e7573a-4211-4376-8934-a572363c4c3a",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-46"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gr1.fifapes.monster",
+            "port": 8882,
+            "users": [
+              {
+                "id": "eab915bc-d2df-73d1-47d0-6eb240497055",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-47"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "it.fifapes.monster",
+            "port": 29148,
+            "users": [
+              {
+                "id": "eab915bc-d2df-73d1-47d0-6eb240497055",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-48"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.45.34.17",
+            "port": 22223,
+            "users": [
+              {
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-49"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.45.34.17",
+            "port": 22222,
+            "users": [
+              {
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-50"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.45.34.17",
+            "port": 22224,
+            "users": [
+              {
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-51"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "145.239.137.250",
+            "port": 58748,
+            "users": [
+              {
+                "id": "21e22226-0b96-4b4e-9a91-5c7f9e3f1760",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-52"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ans-tel.up.railway.app",
+            "port": 443,
+            "users": [
+              {
+                "id": "72684cd5-6e9c-e067-8edc-c82cc5057644",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-53"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "46.8.231.126",
+            "port": 17333,
+            "users": [
+              {
+                "id": "421e489e-dc97-45d0-a0c0-2fe45950bba6",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-54"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.39.88.158",
+            "port": 22223,
+            "users": [
+              {
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-55"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.39.88.158",
+            "port": 22222,
+            "users": [
+              {
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-56"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "13.39.88.158",
+            "port": 22224,
+            "users": [
+              {
+                "id": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-57"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "46.4.230.210",
+            "port": 443,
+            "users": [
+              {
+                "id": "df542c98-1ceb-40ff-9d21-6ac78ff8b173",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "tag": "FalconProxy-58"
     },
     {
       "tag": "direct",
@@ -759,32 +1604,69 @@
     }
   ],
   "routing": {
-    "domainStrategy": "AsIs",
+    "domainStrategy": "IPIfNonMatch",
     "balancers": [
       {
-        "tag": "best_ping_balancer",
+        "tag": "FalconProxy-balancer",
         "selector": [
-          "TitanVPN_0",
-          "TitanVPN_1",
-          "TitanVPN_2",
-          "TitanVPN_3",
-          "TitanVPN_4",
-          "TitanVPN_5",
-          "TitanVPN_6",
-          "TitanVPN_7",
-          "TitanVPN_8",
-          "TitanVPN_9",
-          "TitanVPN_10",
-          "TitanVPN_11",
-          "TitanVPN_12",
-          "TitanVPN_13",
-          "TitanVPN_14",
-          "TitanVPN_15",
-          "TitanVPN_16",
-          "TitanVPN_17",
-          "TitanVPN_18",
-          "TitanVPN_19",
-          "TitanVPN_20"
+          "FalconProxy-1",
+          "FalconProxy-2",
+          "FalconProxy-3",
+          "FalconProxy-4",
+          "FalconProxy-5",
+          "FalconProxy-6",
+          "FalconProxy-7",
+          "FalconProxy-8",
+          "FalconProxy-9",
+          "FalconProxy-10",
+          "FalconProxy-11",
+          "FalconProxy-12",
+          "FalconProxy-13",
+          "FalconProxy-14",
+          "FalconProxy-15",
+          "FalconProxy-16",
+          "FalconProxy-17",
+          "FalconProxy-18",
+          "FalconProxy-19",
+          "FalconProxy-20",
+          "FalconProxy-21",
+          "FalconProxy-22",
+          "FalconProxy-23",
+          "FalconProxy-24",
+          "FalconProxy-25",
+          "FalconProxy-26",
+          "FalconProxy-27",
+          "FalconProxy-28",
+          "FalconProxy-29",
+          "FalconProxy-30",
+          "FalconProxy-31",
+          "FalconProxy-32",
+          "FalconProxy-33",
+          "FalconProxy-34",
+          "FalconProxy-35",
+          "FalconProxy-36",
+          "FalconProxy-37",
+          "FalconProxy-38",
+          "FalconProxy-39",
+          "FalconProxy-40",
+          "FalconProxy-41",
+          "FalconProxy-42",
+          "FalconProxy-43",
+          "FalconProxy-44",
+          "FalconProxy-45",
+          "FalconProxy-46",
+          "FalconProxy-47",
+          "FalconProxy-48",
+          "FalconProxy-49",
+          "FalconProxy-50",
+          "FalconProxy-51",
+          "FalconProxy-52",
+          "FalconProxy-53",
+          "FalconProxy-54",
+          "FalconProxy-55",
+          "FalconProxy-56",
+          "FalconProxy-57",
+          "FalconProxy-58"
         ],
         "strategy": {
           "type": "leastPing"
@@ -813,70 +1695,95 @@
         "type": "field",
         "outboundTag": "direct",
         "domain": [
-          "geosite:category-ir"
+          "geosite:category-ir",
+          "domain:ir",
+          "domain:com.ir",
+          "domain:org.ir",
+          "domain:net.ir",
+          "domain:ac.ir",
+          "domain:gov.ir",
+          "domain:sch.ir",
+          "domain:co.ir"
         ]
       },
       {
         "type": "field",
         "outboundTag": "direct",
         "ip": [
+          "geoip:private",
           "geoip:ir"
         ]
       },
       {
         "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "domain": [
-          "geosite:instagram",
-          "domain:cdninstagram.com",
-          "domain:fbcdn.net",
-          "geosite:youtube",
-          "domain:googlevideo.com",
-          "domain:ytimg.com"
-        ]
-      },
-      {
-        "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "domain": [
-          "geosite:telegram",
-          "geosite:google"
-        ]
-      },
-      {
-        "type": "field",
-        "balancerTag": "best_ping_balancer",
-        "network": "tcp,udp"
+        "network": "tcp,udp",
+        "balancerTag": "FalconProxy-balancer"
       }
     ]
   },
   "observatory": {
     "subjectSelector": [
-      "TitanVPN_0",
-      "TitanVPN_1",
-      "TitanVPN_2",
-      "TitanVPN_3",
-      "TitanVPN_4",
-      "TitanVPN_5",
-      "TitanVPN_6",
-      "TitanVPN_7",
-      "TitanVPN_8",
-      "TitanVPN_9",
-      "TitanVPN_10",
-      "TitanVPN_11",
-      "TitanVPN_12",
-      "TitanVPN_13",
-      "TitanVPN_14",
-      "TitanVPN_15",
-      "TitanVPN_16",
-      "TitanVPN_17",
-      "TitanVPN_18",
-      "TitanVPN_19",
-      "TitanVPN_20"
+      "FalconProxy-1",
+      "FalconProxy-2",
+      "FalconProxy-3",
+      "FalconProxy-4",
+      "FalconProxy-5",
+      "FalconProxy-6",
+      "FalconProxy-7",
+      "FalconProxy-8",
+      "FalconProxy-9",
+      "FalconProxy-10",
+      "FalconProxy-11",
+      "FalconProxy-12",
+      "FalconProxy-13",
+      "FalconProxy-14",
+      "FalconProxy-15",
+      "FalconProxy-16",
+      "FalconProxy-17",
+      "FalconProxy-18",
+      "FalconProxy-19",
+      "FalconProxy-20",
+      "FalconProxy-21",
+      "FalconProxy-22",
+      "FalconProxy-23",
+      "FalconProxy-24",
+      "FalconProxy-25",
+      "FalconProxy-26",
+      "FalconProxy-27",
+      "FalconProxy-28",
+      "FalconProxy-29",
+      "FalconProxy-30",
+      "FalconProxy-31",
+      "FalconProxy-32",
+      "FalconProxy-33",
+      "FalconProxy-34",
+      "FalconProxy-35",
+      "FalconProxy-36",
+      "FalconProxy-37",
+      "FalconProxy-38",
+      "FalconProxy-39",
+      "FalconProxy-40",
+      "FalconProxy-41",
+      "FalconProxy-42",
+      "FalconProxy-43",
+      "FalconProxy-44",
+      "FalconProxy-45",
+      "FalconProxy-46",
+      "FalconProxy-47",
+      "FalconProxy-48",
+      "FalconProxy-49",
+      "FalconProxy-50",
+      "FalconProxy-51",
+      "FalconProxy-52",
+      "FalconProxy-53",
+      "FalconProxy-54",
+      "FalconProxy-55",
+      "FalconProxy-56",
+      "FalconProxy-57",
+      "FalconProxy-58"
     ],
-    "url": "https://www.google.com/favicon.ico",
-    "interval": "1m",
+    "probeUrl": "http://www.gstatic.com/generate_204",
+    "probeInterval": "1m",
     "enableConcurrency": true
-  },
-  "remarks": "TitanVPN"
+  }
 }
