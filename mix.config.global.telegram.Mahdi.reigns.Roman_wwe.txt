@@ -1,8 +1,12 @@
 {
   "log": {
-    "loglevel": "debug",
-    "access": "/sdcard/Download/xray_log.txt",
-    "error": "/sdcard/Download/xray_error.txt"
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
   },
   "inbounds": [
     {
@@ -14,11 +18,7 @@
         "udp": true
       },
       "sniffing": {
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "enabled": true
+        "enabled": false
       },
       "tag": "socks"
     }
@@ -56,6 +56,10 @@
             "Host": "icy-base-c57a.mahdireignsgermany.workers.dev"
           }
         }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
       }
     },
     {
@@ -65,7 +69,7 @@
     }
   ],
   "routing": {
-    "domainStrategy": "IPIfNonMatch",
+    "domainStrategy": "AsIs",
     "rules": [
       {
         "type": "field",
