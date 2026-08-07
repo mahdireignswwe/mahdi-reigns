@@ -1,1 +1,1 @@
-vless://5dacd868-abc4-4065-88ed-0232b63b509e@104.16.251.22:443?path=%2Fproxyip%3D185.219.132.27&security=tls&encryption=none&insecure=0&host=icy-base-c57a.mahdireignsgermany.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=icy-base-c57a.mahdireignsgermany.workers.dev#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8914
+vless://d9aa9ea3-9388-483f-a58d-a754f33ec505@gr074.bamajobin.ir:2053?security=reality&encryption=none&pbk=GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY&fp=firefox&type=grpc&serviceName=api.v1.data&sni=play.google.com&sid=524efc1f88592266#proxy
