@@ -1,11 +1,11 @@
 {
-  "remarks": "ایرانسل🔑1",
+  "remarks": "ایرانسل⚡1",
   "log": {
     "loglevel": "warning"
   },
   "inbounds": [
     {
-      "tag": "socks-in",
+      "tag": "socks",
       "listen": "127.0.0.1",
       "port": 10808,
       "protocol": "socks",
@@ -18,13 +18,12 @@
         "enabled": true,
         "destOverride": [
           "http",
-          "tls",
-          "quic"
+          "tls"
         ]
       }
     },
     {
-      "tag": "http-in",
+      "tag": "http",
       "listen": "127.0.0.1",
       "port": 10809,
       "protocol": "http",
@@ -56,25 +55,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -94,25 +74,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -132,25 +93,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -170,25 +112,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -208,25 +131,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -246,25 +150,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -284,25 +169,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -322,25 +188,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -360,25 +207,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -398,25 +226,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -436,25 +245,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -474,25 +264,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -512,25 +283,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -550,25 +302,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -588,25 +321,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -626,25 +340,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -664,25 +359,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -702,25 +378,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -740,25 +397,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -778,25 +416,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -816,25 +435,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -854,25 +454,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -892,25 +473,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -930,25 +492,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -968,25 +511,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1006,25 +530,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1044,25 +549,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1082,25 +568,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1120,25 +587,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1158,25 +606,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1196,25 +625,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1234,25 +644,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1272,25 +663,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1310,25 +682,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1348,25 +701,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1386,25 +720,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1424,25 +739,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1462,25 +758,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1500,25 +777,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1538,25 +796,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1576,25 +815,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1614,25 +834,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1708,25 +909,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1746,25 +928,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1784,25 +947,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1822,25 +966,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1860,25 +985,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1898,25 +1004,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1936,25 +1023,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -1974,25 +1042,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -2012,25 +1061,6 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
@@ -2050,60 +1080,28 @@
             ]
           }
         ]
-      },
-      "streamSettings": {
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "store.steampowered.com"
-                ]
-              }
-            }
-          }
-        }
       }
     },
     {
       "tag": "direct",
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     },
     {
       "tag": "block",
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      }
+      "protocol": "blackhole"
     }
   ],
   "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "domainMatcher": "hybrid",
+    "domainStrategy": "AsIs",
     "balancers": [
       {
-        "tag": "proxy-balancer",
+        "tag": "bal",
         "selector": [
           "srv-"
         ],
-        "fallbackTag": "block",
+        "fallbackTag": "direct",
         "strategy": {
-          "type": "leastLoad",
-          "settings": {
-            "expected": 1,
-            "tolerance": 150,
-            "maxRTT": "3s",
-            "interruptExistConnections": true
-          }
+          "type": "leastPing"
         }
       }
     ],
@@ -2117,6 +1115,27 @@
       },
       {
         "type": "field",
+        "domain": [
+          "geosite:category-ads-all"
+        ],
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "regexp:.*\\.ir$",
+          "domain:aparat.com",
+          "domain:digikala.com",
+          "domain:torob.com",
+          "domain:filimo.com",
+          "domain:snappfood.com",
+          "domain:namava.com",
+          "domain:shatel.com"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
         "network": "udp",
         "port": 443,
         "outboundTag": "block"
@@ -2124,23 +1143,16 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "balancerTag": "proxy-balancer"
+        "balancerTag": "bal"
       }
     ]
   },
-  "burstObservatory": {
+  "observatory": {
     "subjectSelector": [
       "srv-"
     ],
-    "pingConfig": {
-      "destination": "https://www.gstatic.com/generate_204",
-      "connectivity": "https://www.gstatic.com/generate_204",
-      "interval": "30s",
-      "timeout": "5s",
-      "sampling": 2,
-      "successCount": 1,
-      "failureCount": 1,
-      "concurrency": true
-    }
+    "probeURL": "https://www.gstatic.com/generate_204",
+    "probeInterval": "30s",
+    "enableConcurrency": true
   }
 }
