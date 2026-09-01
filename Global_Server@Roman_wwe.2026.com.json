@@ -1,1 +1,967 @@
-{"remarks":"ایرانسل ²","log":{"loglevel":"none","dnsLog":false},"fakedns":[{"ipPool":"198.18.0.0/15","poolSize":65535},{"ipPool":"fc00::/18","poolSize":65535}],"dns":{"tag":"dns-internal","hosts":{"one.one.one.one":["1.1.1.1","1.0.0.1","2606:4700:4700::1111","2606:4700:4700::1001"],"dns.google":["8.8.8.8","8.8.4.4","2001:4860:4860::8888","2001:4860:4860::8844"],"dns.quad9.net":["9.9.9.9","149.112.112.112","2620:fe::fe","2620:fe::9"],"domain:googleapis.cn":"googleapis.com","dns.alidns.com":["223.5.5.5","223.6.6.6","2400:3200::1","2400:3200:baba::1"],"dns.sse.cisco.com":["208.67.220.220","208.67.222.222","2620:119:35::35","2620:119:53::53"],"dns.umbrella.com":["208.67.220.220","208.67.222.222","2620:119:35::35","2620:119:53::53"],"1dot1dot1dot1.cloudflare-dns.com":["1.1.1.1","1.0.0.1","2606:4700:4700::1111","2606:4700:4700::1001"],"dns.cloudflare.com":["162.159.61.8","172.64.41.8","2a06:98c1:52::8","2803:f800:53::8"],"cloudflare-dns.com":["104.16.248.249","104.16.249.249","2606:4700::6810:f8f9","2606:4700::6810:f9f9"],"cloudflareclient.com":["162.159.192.1","2606:4700:d0::a29f:c001"],"engage.cloudflareclient.com":["162.159.192.1","2606:4700:d0::a29f:c001"],"doh.pub":["1.12.12.12","120.53.53.53"],"dot.pub":["1.12.12.12","120.53.53.53"],"dns.sb":["45.11.45.11","185.222.222.222","2a09::","2a11::"],"common.dot.dns.yandex.net":["77.88.8.8","77.88.8.1","2a02:6b8::feed:0ff","2a02:6b8:0:1::feed:0ff"]},"servers":["fakedns",{"address":"https://1.1.1.1/dns-query","port":53,"domains":["geosite:google","geosite:geolocation-!cn"]},{"address":"https://8.8.8.8/dns-query","port":53,"domains":["geosite:google","geosite:geolocation-!cn"]},{"address":"223.5.5.5","domains":["geosite:category-ir"],"skipFallback":true,"tag":"domestic-dns"}],"queryStrategy":"UseIP","enableParallelQuery":true},"inbounds":[{"listen":"::","port":10808,"protocol":"socks","settings":{"auth":"noauth","udp":true,"userLevel":8},"sniffing":{"destOverride":["http","tls","fakedns"],"enabled":true,"routeOnly":false,"metadataOnly":false},"tag":"socks"},{"listen":"::","port":10809,"protocol":"http","settings":{"allowTransparent":false,"userLevel":8},"sniffing":{"destOverride":["http","tls","fakedns"],"enabled":true,"routeOnly":false,"metadataOnly":false},"tag":"http"},{"listen":"127.0.0.1","port":10085,"protocol":"dokodemo-door","settings":{"address":"127.0.0.1"},"tag":"api"}],"outbounds":[{"protocol":"freedom","streamSettings":{"sockopt":{"domainStrategy":"UseIP"}},"tag":"direct"},{"protocol":"blackhole","settings":{"response":{"type":"http"}},"tag":"block"},{"protocol":"dns","tag":"dns-out"},{"mux":{"concurrency":-1,"enabled":false},"protocol":"vless","settings":{"vnext":[{"address":"201.51.0.180","port":443,"users":[{"id":"NMdRyPXg9sG1iCGKj2P1rj","level":8,"encryption":"none","flow":"xtls-rprx-vision"}]}]},"tag":"proxy-proxy-1-🇩🇪-AliceVPN-DE-vless","streamSettings":{"network":"tcp","security":"reality","realitySettings":{"show":false,"fingerprint":"edge","serverName":"hiroshima.edgepool.net","publicKey":"ps8K4uhM0dwUU8Rudv_fY5lrQaGVHmg8ojZfRzwtN0M","shortId":"b04592cfe4aac2c0","spiderX":"/"},"tcpSettings":{"header":{"type":"none"}},"sockopt":{"domainStrategy":"UseIP","happyEyeballs":{"interleave":2,"maxConcurrentTry":4,"prioritizeIPv6":false,"tryDelayMs":250}}}},{"mux":{"concurrency":-1,"enabled":false},"protocol":"shadowsocks","settings":{"servers":[{"address":"167.233.130.87","port":5061,"method":"chacha20-ietf-poly1305","password":"NMdRyPXg9sG1iCGKj2P1rj","level":8}]},"tag":"proxy-proxy-2-🇩🇪-AliceVPN-DE-ss","streamSettings":{"network":"tcp","security":"none","tcpSettings":{"header":{"type":"none"}},"sockopt":{"domainStrategy":"UseIP","happyEyeballs":{"interleave":2,"maxConcurrentTry":4,"prioritizeIPv6":false,"tryDelayMs":250}}}},{"mux":{"concurrency":-1,"enabled":false},"protocol":"vless","settings":{"vnext":[{"address":"72.56.250.127","port":443,"users":[{"id":"hNqrAQHwxggy9VMvOZXBks","level":8,"encryption":"none","flow":"xtls-rprx-vision"}]}]},"tag":"proxy-proxy-3-🇬🇧-AliceVPN-UK-vless","streamSettings":{"network":"tcp","security":"reality","realitySettings":{"show":false,"fingerprint":"edge","serverName":"eren.edgemint.net","publicKey":"Fhex9fX3MkLQWmhkAv_dNLd-40NYqSX6BldJKip0ADo","shortId":"ec839990ec66ea9f","spiderX":"/"},"tcpSettings":{"header":{"type":"none"}},"sockopt":{"domainStrategy":"UseIP","happyEyeballs":{"interleave":2,"maxConcurrentTry":4,"prioritizeIPv6":false,"tryDelayMs":250}}}},{"mux":{"concurrency":-1,"enabled":false},"protocol":"vless","settings":{"vnext":[{"address":"186.246.13.86","port":443,"users":[{"id":"RwoBR2th1oD5cATyVuSeoG","level":8,"encryption":"none","flow":"xtls-rprx-vision"}]}]},"tag":"proxy-proxy-4-🇳🇱-AliceVPN-NL-vless","streamSettings":{"network":"tcp","security":"reality","realitySettings":{"show":false,"fingerprint":"edge","serverName":"sai.staticpool.org","publicKey":"3Mg7n5YwjTazbo8e_Xal6cQ0mEsaCH_A42XCaKru-kM","shortId":"8f27d865109838b1","spiderX":"/"},"tcpSettings":{"header":{"type":"none"}},"sockopt":{"domainStrategy":"UseIP","happyEyeballs":{"interleave":2,"maxConcurrentTry":4,"prioritizeIPv6":false,"tryDelayMs":250}}}},{"mux":{"concurrency":-1,"enabled":false},"protocol":"vless","settings":{"vnext":[{"address":"72.56.247.129","port":443,"users":[{"id":"GUVYInfumzHuqaiqvppRr5","level":8,"encryption":"none","flow":"xtls-rprx-vision"}]}]},"tag":"proxy-proxy-5-🇫🇮-AliceVPN-FI-vless","streamSettings":{"network":"tcp","security":"reality","realitySettings":{"show":false,"fingerprint":"edge","serverName":"yokohama.edgepool.net","publicKey":"WQjwWvoM_ISXB_UgTQiqKw0QAkcOyN26zXF-ym9h9TQ","shortId":"07f80d9956cb536f","spiderX":"/"},"tcpSettings":{"header":{"type":"none"}},"sockopt":{"domainStrategy":"UseIP","happyEyeballs":{"interleave":2,"maxConcurrentTry":4,"prioritizeIPv6":false,"tryDelayMs":250}}}},{"mux":{"concurrency":-1,"enabled":false},"protocol":"vless","settings":{"vnext":[{"address":"84.54.47.226","port":443,"users":[{"id":"3C2PbZqfzcLzM28Xeecn0t","level":8,"encryption":"none","flow":"xtls-rprx-vision"}]}]},"tag":"proxy-proxy-6-🇺🇸-AliceVPN-US-vless","streamSettings":{"network":"tcp","security":"reality","realitySettings":{"show":false,"fingerprint":"edge","serverName":"kobe.edgepool.net","publicKey":"KWgqu8pgf5jEHSNmX9veCfOifTmh-8vhKrdVeZrV9mg","shortId":"61aca2ad29612dfe","spiderX":"/"},"tcpSettings":{"header":{"type":"none"}},"sockopt":{"domainStrategy":"UseIP","happyEyeballs":{"interleave":2,"maxConcurrentTry":4,"prioritizeIPv6":false,"tryDelayMs":250}}}},{"mux":{"concurrency":-1,"enabled":false},"protocol":"vless","settings":{"vnext":[{"address":"186.246.13.99","port":443,"users":[{"id":"vVw2JAx6qJb6IyaxFkIX7C","level":8,"encryption":"none","flow":"xtls-rprx-vision"}]}]},"tag":"proxy-proxy-7-🇪🇪-AliceVPN-EE-vless","streamSettings":{"network":"tcp","security":"reality","realitySettings":{"show":false,"fingerprint":"qq","serverName":"tunnel.vk-apps.com","publicKey":"dIPQBjKoSYhy9K1LsxiZ85K5POasluyQcKIgmTUauSM","shortId":"3ed4fc78bea40a4d","spiderX":"/"},"tcpSettings":{"header":{"type":"none"}},"sockopt":{"domainStrategy":"UseIP","happyEyeballs":{"interleave":2,"maxConcurrentTry":4,"prioritizeIPv6":false,"tryDelayMs":250}}}}],"routing":{"domainStrategy":"AsIs","rules":[{"type":"field","port":53,"outboundTag":"dns-out"},{"type":"field","inboundTag":["dns-internal"],"balancerTag":"balancer-main"},{"type":"field","network":"udp","port":"443","outboundTag":"block"},{"type":"field","ip":["geoip:private"],"outboundTag":"direct"},{"type":"field","outboundTag":"block","domain":["geosite:category-ads-all"]},{"type":"field","outboundTag":"direct","domain":["geosite:category-ir","regexp:.*\\.ir$"]},{"type":"field","outboundTag":"direct","ip":["geoip:ir"]},{"type":"field","network":"tcp,udp","balancerTag":"balancer-main"}],"balancers":[{"tag":"balancer-main","selector":["proxy-proxy-"],"fallbackTag":"direct","strategy":{"type":"roundRobin"}}]},"observatory":{"subjectSelector":["proxy-proxy-"],"probeUrl":"https://www.google.com/generate_204","probeInterval":"1m","enableConcurrency":true},"api":{"tag":"api","services":["StatsService"]},"stats":{},"policy":{"levels":{"0":{"statsUserUplink":true,"statsUserDownlink":true}},"system":{"statsInboundUplink":true,"statsInboundDownlink":true,"statsOutboundUplink":true,"statsOutboundDownlink":true}}}
+{
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com",
+      "dns.alidns.com": [
+        "223.5.5.5",
+        "223.6.6.6",
+        "2400:3200::1",
+        "2400:3200:baba::1"
+      ],
+      "dns.sse.cisco.com": [
+        "208.67.220.220",
+        "208.67.222.222",
+        "2620:119:35::35",
+        "2620:119:53::53"
+      ],
+      "dns.umbrella.com": [
+        "208.67.220.220",
+        "208.67.222.222",
+        "2620:119:35::35",
+        "2620:119:53::53"
+      ],
+      "one.one.one.one": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
+      "1dot1dot1dot1.cloudflare-dns.com": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
+      "dns.cloudflare.com": [
+        "162.159.61.8",
+        "172.64.41.8",
+        "2a06:98c1:52::8",
+        "2803:f800:53::8"
+      ],
+      "cloudflare-dns.com": [
+        "104.16.248.249",
+        "104.16.249.249",
+        "2606:4700::6810:f8f9",
+        "2606:4700::6810:f9f9"
+      ],
+      "engage.cloudflareclient.com": [
+        "162.159.192.1",
+        "2606:4700:d0::a29f:c001"
+      ],
+      "doh.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
+      ],
+      "dot.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
+      ],
+      "dns.google": [
+        "8.8.8.8",
+        "8.8.4.4",
+        "2001:4860:4860::8888",
+        "2001:4860:4860::8844"
+      ],
+      "dns.quad9.net": [
+        "9.9.9.9",
+        "149.112.112.112",
+        "2620:fe::fe",
+        "2620:fe::9"
+      ],
+      "dns.sb": [
+        "45.11.45.11",
+        "185.222.222.222",
+        "2a09::",
+        "2a11::"
+      ],
+      "common.dot.dns.yandex.net": [
+        "77.88.8.8",
+        "77.88.8.1",
+        "2a02:6b8::feed:0ff",
+        "2a02:6b8:0:1::feed:0ff"
+      ]
+    },
+    "servers": [
+      "1.1.1.1"
+    ],
+    "tag": "dns-module"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": true,
+        "routeOnly": false
+      },
+      "tag": "socks"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "3m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-proxy-"
+    ]
+  },
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "146.190.229.166",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-1-Netherlands Gemini 14"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.62.212.180",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-2-Netherlands Gemini 20"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.248.196.245",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-3-Netherlands Gemini 16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "209.38.107.83",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-4-Netherlands Gemini 8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.62.249.76",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-5-Netherlands Gemini 15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.166.4.11",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-6-Netherlands Gemini 18"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "174.138.4.76",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-7-Netherlands Gemini 13"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "64.225.70.2",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-8-Netherlands Gemini 2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "64.227.65.78",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-9-Netherlands Gemini 3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "167.71.75.90",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-10-Netherlands Gemini 6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "209.38.46.191",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-11-Netherlands Gemini 9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "64.225.77.201",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-12-Netherlands Gemini 11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.166.111.130",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-13-Netherlands Gemini 1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "134.122.58.128",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-14-Netherlands Gemini 23"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "159.223.1.200",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "18f1b94e-35f1-4c7f-953c-7b4681c52339",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "store.steampowered.com"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-15-Netherlands Gemini 17"
+    },
+    {
+      "protocol": "freedom",
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP"
+        }
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "remarks": "Irancell ²",
+  "routing": {
+    "balancers": [
+      {
+        "selector": [
+          "proxy-proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "tag": "balancer-main"
+      }
+    ],
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "balancerTag": "balancer-main",
+        "inboundTag": [
+          "dns-module"
+        ],
+        "type": "field"
+      },
+      {
+        "balancerTag": "balancer-main",
+        "network": "tcp,udp",
+        "type": "field"
+      }
+    ]
+  }
+}
