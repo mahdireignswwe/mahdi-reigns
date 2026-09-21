@@ -1,1 +1,2 @@
-vless://8a0ddc85-91e7-4c75-9bad-d031e0bf964c@oborino.tr.sajadping.ir:40794?security=&encryption=none&headerType=&type=tcp#%F0%9F%87%B9%F0%9F%87%B7-not_username_32103680-1.00GB%F0%9F%93%8A-5D%2C23H%E2%8F%B3
+
+vless://593a8415-a18f-4cda-8bae-afa3ca51766c@oborino.tr.sajadping.ir:40794?encryption=none&security=none&type=tcp#%F0%9F%87%B9%F0%9F%87%B7-not_username_31213065-1.00GB%F0%9F%93%8A-5D,23H%E2%8F%B3
